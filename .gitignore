@@ -133,7 +133,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-game/saves/persistent
+./game/saves/persistent
 game/cache/shaders.txt
-log.txt
-gerror.txt
+.log.txt
+error.txt
+.traceback.txt
