@@ -43,7 +43,14 @@ label start:
     # This ends the game.
     if point > 0:
         n "คุณได้รับแมวหนึ่งตัว"
+        jump after
     else :
         n "คุณไม่เหลืออะไรอีกต่อไป"
  
     return
+
+label after:
+    scene bg room
+    show cat1
+
+    c "จะไปหยิบมาอีกตัวมั้ย"
