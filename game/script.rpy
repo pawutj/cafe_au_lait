@@ -13,6 +13,8 @@ image cat1:
 
 label start:
 
+    $ point = 0
+
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
     # images directory to show it.
@@ -32,6 +34,16 @@ label start:
     c "ไปหยิบแมวหน้าบ้านมาดีไหม"
 
     hide cat1
-    # This ends the game.
 
+    menu : 
+        "หยิบดิ รอไร" : 
+            $ point +=1
+        "แล้วแมวที่เมิงหล่ะ" : 
+            $ point +=0
+    # This ends the game.
+    if point > 0:
+        n "คุณได้รับแมวหนึ่งตัว"
+    else :
+        n "คุณไม่เหลืออะไรอีกต่อไป"
+ 
     return
