@@ -28,8 +28,8 @@ image eimi_t:
     zoom 0.7
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_030_03.png")
 
-image artroom_past= im.Scale("background/artroom_sepia.png",1920,1080)
-image artroom_afternoon = im.Scale("background/artroom_afternoon.png",1920,1080)
+image artroom_past= im.Scale("background/artroom/art-room2.jpg",1920,1080)
+image artroom_afternoon = im.Scale("background/artroom/art-room1.jpg",1920,1080)
 
 image lawn_afternoon= im.Scale("background/lawn_afternoon.png",1920,1080)
 image sky_afternoon = im.Scale("background/sky_afternoon.png",1920,1080)
@@ -38,7 +38,6 @@ label start:
 
     $ point = 0
     scene black
-    show eimi_t
     n "หากเราไม่พยายามและไม่เชื่อในสิ่งที่ตัวเองทำก็เท่ากับแพ้ตั้งแต่แรก ไม่ว่าจะเกิดอะไรขึ้นก็ตาม...จงอย่าทรยศต่อความฝันของตัวเอง..."
     scene artroom_past with Dissolve(1.0)
     tk "นายน่ะ เลิกเถอะ..."
