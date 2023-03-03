@@ -54,7 +54,7 @@ define gui.interface_text_color = '#ffffff'
 
 ## Fonts and Font Sizes ########################################################
 
-define gui.text_font = "THSarabunNew Bold.ttf"
+define gui.text_font = "SukhumvitSet-Medium.ttf"
 
 ## The font used for character names.
 define gui.name_text_font = "THSarabunNew Bold.ttf"
@@ -63,7 +63,7 @@ define gui.name_text_font = "THSarabunNew Bold.ttf"
 define gui.interface_text_font = "THSarabunNew Bold.ttf"
 
 ## The size of normal dialogue text.
-define gui.text_size = 33
+define gui.text_size = 30
 
 ## The size of character names.
 define gui.name_text_size = 45
