@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Scale object at 0x0000000005a97c10>:
-  File "game/script.rpy", line 114, in script
-    e0 "ขอโทษค่ะ! ฉันวิ่งไม่ดูทา..."
-OSError: Couldn't find file 'background/school-park/school-park1.png'.
+While loading <renpy.display.im.Composite object at 0x0000000005d9dc40>:
+  File "game/script.rpy", line 196, in script
+    ei "หา?????"
+OSError: Couldn't find file 'Sprite/Eimi01/Eimi_0.0.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 114, in script
-    e0 "ขอโทษค่ะ! ฉันวิ่งไม่ดูทา..."
+  File "game/script.rpy", line 196, in script
+    ei "หา?????"
   File "D:\renpy-8.0.1-sdk\renpy\ast.py", line 921, in execute
     renpy.exports.say(who, what, *args, **kwargs)
   File "D:\renpy-8.0.1-sdk\renpy\exports.py", line 1373, in say
@@ -52,12 +52,16 @@ Full traceback:
     rend = render(child, w, h, st, at)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\renpy-8.0.1-sdk\renpy\display\transform.py", line 747, in render
+    return transform_render(self, width, height, st, at)
+  File "accelerator.pyx", line 187, in renpy.display.accelerator.transform_render
+  File "render.pyx", line 266, in renpy.display.render.render
   File "D:\renpy-8.0.1-sdk\renpy\display\im.py", line 627, in render
     return cache.get(self, render=True)
   File "D:\renpy-8.0.1-sdk\renpy\display\im.py", line 295, in get
     surf = image.load()
-  File "D:\renpy-8.0.1-sdk\renpy\display\im.py", line 893, in load
-    child = cache.get(self.image)
+  File "D:\renpy-8.0.1-sdk\renpy\display\im.py", line 849, in load
+    rv.blit(cache.get(im), pos)
   File "D:\renpy-8.0.1-sdk\renpy\display\im.py", line 295, in get
     surf = image.load()
   File "D:\renpy-8.0.1-sdk\renpy\display\im.py", line 723, in load
@@ -66,9 +70,9 @@ Full traceback:
     filelike = renpy.loader.load(self.filename)
   File "D:\renpy-8.0.1-sdk\renpy\loader.py", line 820, in load
     raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'background/school-park/school-park1.png'.
+OSError: Couldn't find file 'Sprite/Eimi01/Eimi_0.0.png'.
 
 Windows-10-10.0.19042 AMD64
 Ren'Py 8.0.1.22070801
 Cafe_au_lait 1.0
-Mon Mar 13 23:19:15 2023
+Tue Mar 14 00:13:46 2023

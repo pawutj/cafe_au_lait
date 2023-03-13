@@ -23,13 +23,10 @@ image eimi_0_cry_meme1:
     zoom 0.7
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_cry_meme1.png")
 
-image eimi_0_cry_meme1:
-    zoom 0.7
-    im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_cry_meme1.png")
 
 image eimi_0_0_0:
     zoom 0.7
-    im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_0.0.png")
+    im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_0_0.png")
 
 
 image eimi_0_panic:
@@ -51,6 +48,19 @@ image eimi_0_cry_meme3:
 image eimi_0: 
     zoom 0.7
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_0.0.png")
+
+image eimi_2:
+    zoom 0.7
+    im.Composite((1920,2900), (0,1500), "Sprite/Eimi02/Eimi02.png")
+
+
+image eimi_02_wakaranai:
+    zoom 0.7
+    im.Composite((1920,2900), (0,1500), "Sprite/Eimi02/Eimi02_body.png" ,(30,1500),"Sprite/Eimi01/Eimi_Wakaranai.png")
+
+image eimi_02_0_0:
+    zoom 0.7
+    im.Composite((1920,2900), (0,1500), "Sprite/Eimi02/Eimi02_body.png"  ,(30,1500),"Sprite/Eimi01/Eimi_0_0.png")
 
 
 image eimi_30: 
@@ -152,7 +162,7 @@ label q002:
     n "ผมไม่อยากจะเชื่อภาพที่ตัวเองเห็น"
     "ถึงแม้จะเพิ่งล้มกลิ้งกับพื้นแต่ผมใช้กำลังที่ยังเหลืออยู่คลานไปหาภาพวาดของผม"
     tk "ไม่นะ! งานส่งประกวดของฉัน!"
-    hide eimi_0_cry_meme2
+    hide eimi_0_cry_meme1
     show eimi_0_0_0 with Dissolve(1.0)
     e0 "ห๊ะ? งานส่งประกวดเหรอคะ!?"
     n "...ภาพวาดของผมเต็มไปด้วยกาแฟทาบทับเต็มไปหมด"
@@ -173,22 +183,36 @@ label q002:
     n "หยาดเหงื่อแรงงานของผมพังเป็นชิ้นๆเพราะสาวน้อยคนหนึ่งและกาแฟอีกแก้วหนึ่ง"
     n "นี่มันเรื่องตลกอะไรกันฟะ!?"
     tk "เธอน่ะ...ชื่ออะไร?...ชั้นปีอะไร?"
+    hide eimi_0_cry_meme2 
+    show eimi_2 with Dissolve(1.0) 
     ei "อิทสึกิ เอมิค่ะ อยู่ม.4 ...เพิ่งย้ายเข้ามาเรียนโรงเรียนนี้ปีนี้ค่ะ"
     tk "เพิ่งย้ายเข้ามาก็สร้างความบรรลัยเลยนะ แสบจริงๆ"
+    hide eimi_2 
+    show eimi_02_wakaranai with Dissolve(1.0) 
     ei "คะ?"
     tk "ชดใช้..."
+    hide eimi_02_wakaranai
+    show eimi_02_0_0
     ei "หา?????"
     n "ผมสูดหายใจเข้าลึกๆก่อนที่จะส่งเสียงตะโกน"
     n "ผมมั่นใจว่าผมไม่เคยตะโกนดังขนาดนี้มาก่อนในชีวิต"
     tk "ยัยบ้า! ชดใช้มาเดี๋ยวนี้เลยนะเฟ้ยยยยยยยยย!!!!!!!!!!!!!!"
+    hide eimi_02_0_0
+    show eimi_0_panic
     ei "หวา!!! รุ่นพี่ค้า--!!"
     n "ผมพุ่งเข้าไปหารุ่นน้องตัวแสบพร้อมกับกำพู่กันในมือแน่น"
     n "รู้ตัวอีกทีความเดือดดาลก็ทำให้ผมเอาแท่งพู่กันยาวไล่แทงคนทำลายผลงานผมจนเธอต้องวิ่งหนีผมวนไปวนมารอบกองงานศิลปะผม"
     n "ไม่สิ...ต้องเรียกว่าสุสานของงานศิลปะผมดีกว่า งานของผมถูกกาแฟลบหายไปหมดแล้ว T_T”"
+    hide eimi_0_panic
+    show eimi_0_hurt_meme
     ei "กรี๊ดด! รุ่นพี่! อย่าเพิ่งฆ่าหนู!"
     tk "คนเรามันไม่ตายเพราะแท่งพู่กันเสียบหรอกโว้ย!"
+    hide eimi_0_hurt_meme
+    show eimi_0_cry_meme3
     ei "เมตตาหนูด้วยค่า เมตตาหนูด้วยค่า!"
     tk "ความผิดนี้น่ะ ฮาราคีรีสักล้านครั้งยังไม่พอเลยยัยบ้านี่!!!"
+    hide eimi_0_cry_meme3
+    show eimi_0_hurt_meme
     ei "ฮาราคีรีครั้งเดียวก็ตายแล้วค่า จะล้านครั้งทำไมกันค้า-- "
     tk "ไม่รู้ล่ะๆๆๆๆๆ ชดใช้มาๆๆๆๆ!!"
     ei "ไว้ชีวิตเค้าด้วย ม่ายยยยย!!!!!!!!!!!!!!!"
