@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 80: 'with' is not a keyword argument or valid child for the screen statement.
-    screen lawn_afternoon with Dissolve(1.0)
+File "game/script.rpy", line 137: 'with' is not a keyword argument or valid child for the screen statement.
+    screen school_park_1  with Dissolve(1.0)
                               ^
 
 Ren'Py Version: Ren'Py 8.0.1.22070801
-Fri Mar  3 19:44:37 2023
+Tue Mar 14 01:11:23 2023

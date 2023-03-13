@@ -16,59 +16,59 @@ define e0 = Character("{font=THSarabunNew Bold.ttf}{size=+10}???",color="#F0F8FF
 # The game starts here.
 
 image eimi_0_cry_meme2:
-    zoom 0.7
+    zoom 0.75
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_cry_meme2.png")
 
 image eimi_0_cry_meme1:
-    zoom 0.7
+    zoom 0.75
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_cry_meme1.png")
 
 
 image eimi_0_0_0:
-    zoom 0.7
+    zoom 0.75
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_0_0.png")
 
 
 image eimi_0_panic:
-    zoom 0.7
+    zoom 0.75
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_panic.png")
 
 image eimi_0_wakaranai:
-    zoom 0.7
+    zoom 0.75
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_Wakaranai.png")
 
 image eimi_0_hurt_meme:
-    zoom 0.7
+    zoom 0.75
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_hurt_meme.png")
 
 image eimi_0_cry_meme3:
-    zoom 0.7
+    zoom 0.75
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_cry_meme3.png")
 
 image eimi_0: 
-    zoom 0.7
+    zoom 0.75
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_0.0.png")
 
 image eimi_2:
-    zoom 0.7
+    zoom 0.75
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi02/Eimi02.png")
 
 
 image eimi_02_wakaranai:
-    zoom 0.7
+    zoom 0.75
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi02/Eimi02_body.png" ,(30,1500),"Sprite/Eimi01/Eimi_Wakaranai.png")
 
 image eimi_02_0_0:
-    zoom 0.7
+    zoom 0.75
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi02/Eimi02_body.png"  ,(30,1500),"Sprite/Eimi01/Eimi_0_0.png")
 
 
 image eimi_30: 
-    zoom 0.7
+    zoom 0.75
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_030_03.png")
 
 image eimi_t: 
-    zoom 0.7
+    zoom 0.75
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_030_03.png")
 
 image artroom_past= im.Scale("background/artroom/art-room2.jpg",1920,1080)
@@ -88,6 +88,7 @@ label start:
 
     $ point = 0
     scene black
+    play music "audio/bgm/nagai_no_yoru.mp3" volume 0.5
     n "หากเราไม่พยายามและไม่เชื่อในสิ่งที่ตัวเองทำก็เท่ากับแพ้ตั้งแต่แรก ไม่ว่าจะเกิดอะไรขึ้นก็ตาม...จงอย่าทรยศต่อความฝันของตัวเอง..."
     scene artroom_past with Dissolve(1.0)
     tk "นายน่ะ เลิกเถอะ..."
@@ -118,8 +119,14 @@ label start:
     n "ไม่มีคำตอบดังมาจากคนอื่นในห้องชมรมอีก"
     n "สิ่งเดียวที่ผมจำได้คือดวงตาของคนอื่นๆที่มองผมด้วยความผิดหวัง"
     n "...ไม่ก็ความหวาดกลัว"
+    stop music
+    n "..."
+    jump q002
 
-    scene artroom_afternoon with Dissolve(1.0)
+    return
+
+label q002:
+    scene artroom_afternoon with Dissolve(1.0)   
 
     tk "หืม?"
     n "ผมลืมตาตื่นขึ้นท่ามกลางห้องชมรมที่ไม่เหลือใครนอกจากผม ช่วงเวลาที่มีคนมากมายอยู่ในชมรมนี้มันกี่เดือนก่อนกันนะ? ผมเริ่มจะจำไม่ได้แล้ว"
@@ -127,12 +134,9 @@ label start:
     tk "ฝันเรื่องเก่าๆอีกแล้ว...อย่างงั้นเหรอ...?"
     n "ผมพึมพำกับตัวเองคนเดียว"
 
-    jump q002
-
-    return
-
-label q002:
-    screen school_park_1
+    scene school_park_1 with Dissolve(1.0)
+    play music "audio/bgm/hijimeta_no_date.mp3" volume 0.5
+    hide artroom_afternoon  with Dissolve(1.0)
     n "เดินออกมาจากห้องชมรมแล้ว ผมก็ทำตามกำหนดการที่วางแผนมาตั้งแต่แรก"
     n "กระดาษวาดรูป พร้อม!"
     n "พู่กันและจานสี พร้อม!"
@@ -153,72 +157,73 @@ label q002:
     n "ทั้งๆที่สาวน้อยคนนั้นตัวเล็กกว่าผม แต่ด้วยความเร็วและพละกำลังที่มากเกินขนาดตัวทำให้ผมกลิ้งโคโล่ไปกับพื้นสองสามเมตรเป็นเพื่อนอุปกรณ์วาดรูปของผม"
     n "วาดรูปอยู่ดีๆทำไมเรามานอนมองท้องฟ้ากันนะ ชีวิตผมมันเกิดบ้าอะไรขึ้น?"
     scene school_park_1 with Dissolve(1.0)
-    show eimi_0_cry_meme2 with Dissolve(1.0)
-    e0 "ขอโทษค่ะ! ฉันวิ่งไม่ดูทา..."
+    show eimi_0_cry_meme2 
+    e0 "ขอโทษค่ะ! ฉันวิ่งไม่ดูทา..." with dissolve
     tk "ว้ากกกกกกกกส์ส์ส์ส์!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-    hide eimi_0_cry_meme2
-    show eimi_0_cry_meme1 with Dissolve(1.0)
-    e0 "อุหวา! มันเกิดอะไรขึ้นเหรอค้า!?"
+    hide eimi_0_cry_meme2 
+    show eimi_0_cry_meme1 
+    e0 "อุหวา! มันเกิดอะไรขึ้นเหรอค้า!?" with dissolve
     n "ผมไม่อยากจะเชื่อภาพที่ตัวเองเห็น"
     "ถึงแม้จะเพิ่งล้มกลิ้งกับพื้นแต่ผมใช้กำลังที่ยังเหลืออยู่คลานไปหาภาพวาดของผม"
     tk "ไม่นะ! งานส่งประกวดของฉัน!"
-    hide eimi_0_cry_meme1
-    show eimi_0_0_0 with Dissolve(1.0)
-    e0 "ห๊ะ? งานส่งประกวดเหรอคะ!?"
+    hide eimi_0_cry_meme1 
+    show eimi_0_0_0
+    e0 "ห๊ะ? งานส่งประกวดเหรอคะ!?" with dissolve
     n "...ภาพวาดของผมเต็มไปด้วยกาแฟทาบทับเต็มไปหมด"
     "รูปวาดของผมจมกาแฟตายไปแล้ว!"
     tk "ทั้งๆที่ฉันใช้เวลาวาดมาสเตอร์พีซชิ้นนี้เกือบสัปดาห์หนึ่งแท้ๆ"
-    hide eimi_0_0_0
-    show eimi_0_panic with Dissolve(1.0)
-    e0 "สัปดาห์หนึ่ง!"
+    hide eimi_0_0_0 
+    show eimi_0_panic 
+    e0 "สัปดาห์หนึ่ง!" with dissolve
     tk "แล้วงานประกวดก็จะต้องส่งสัปดาห์หน้าแล้วด้วย..."
     e0 "งั้นก็ใกล้มากแล้วสิคะ"
     tk "ใกล้มากจนการทำงานใหม่ส่งแทบจะเป็นไปไม่ได้เลย โอวววว..."
     e0 "ทะ...ทำใจไว้ดีๆก่อนนะคะ"
     hide eimi_0_panic 
-    show eimi_0_cry_meme2 with Dissolve(1.0) 
-    n "วิญญาณน้อยๆของผมแทบจะหลุดลอยออกจากปาก"
+    show eimi_0_cry_meme2  
+    n "วิญญาณน้อยๆของผมแทบจะหลุดลอยออกจากปาก" with dissolve
     n "ความสิ้นหวังทะลักทลายเข้ามาในจิตใจผมอย่างหยุดไม่ได้"
     n "งานที่ผมทุ่มเทฝีมือทั้งหมด ใช้เวลากับมันอย่างยาวนานและมั่นใจว่ามันต้องออกมาดีมากแน่ๆเพราะผมใช้ทั้งฝีมือ แรงบันดาลใจและจิตวิญญาณทั้งหมดเพื่อคลอดผลงานนี้ออกมา"
     n "หยาดเหงื่อแรงงานของผมพังเป็นชิ้นๆเพราะสาวน้อยคนหนึ่งและกาแฟอีกแก้วหนึ่ง"
     n "นี่มันเรื่องตลกอะไรกันฟะ!?"
     tk "เธอน่ะ...ชื่ออะไร?...ชั้นปีอะไร?"
     hide eimi_0_cry_meme2 
-    show eimi_2 with Dissolve(1.0) 
-    ei "อิทสึกิ เอมิค่ะ อยู่ม.4 ...เพิ่งย้ายเข้ามาเรียนโรงเรียนนี้ปีนี้ค่ะ"
+    show eimi_2  
+    ei "อิทสึกิ เอมิค่ะ อยู่ม.4 ...เพิ่งย้ายเข้ามาเรียนโรงเรียนนี้ปีนี้ค่ะ" with dissolve
     tk "เพิ่งย้ายเข้ามาก็สร้างความบรรลัยเลยนะ แสบจริงๆ"
     hide eimi_2 
-    show eimi_02_wakaranai with Dissolve(1.0) 
-    ei "คะ?"
+    show eimi_02_wakaranai 
+    ei "คะ?" with dissolve
     tk "ชดใช้..."
     hide eimi_02_wakaranai
     show eimi_02_0_0
-    ei "หา?????"
+    ei "หา?????" with dissolve
     n "ผมสูดหายใจเข้าลึกๆก่อนที่จะส่งเสียงตะโกน"
     n "ผมมั่นใจว่าผมไม่เคยตะโกนดังขนาดนี้มาก่อนในชีวิต"
     tk "ยัยบ้า! ชดใช้มาเดี๋ยวนี้เลยนะเฟ้ยยยยยยยยย!!!!!!!!!!!!!!"
     hide eimi_02_0_0
     show eimi_0_panic
-    ei "หวา!!! รุ่นพี่ค้า--!!"
+    ei "หวา!!! รุ่นพี่ค้า--!!" with dissolve
     n "ผมพุ่งเข้าไปหารุ่นน้องตัวแสบพร้อมกับกำพู่กันในมือแน่น"
     n "รู้ตัวอีกทีความเดือดดาลก็ทำให้ผมเอาแท่งพู่กันยาวไล่แทงคนทำลายผลงานผมจนเธอต้องวิ่งหนีผมวนไปวนมารอบกองงานศิลปะผม"
     n "ไม่สิ...ต้องเรียกว่าสุสานของงานศิลปะผมดีกว่า งานของผมถูกกาแฟลบหายไปหมดแล้ว T_T”"
     hide eimi_0_panic
     show eimi_0_hurt_meme
-    ei "กรี๊ดด! รุ่นพี่! อย่าเพิ่งฆ่าหนู!"
+    ei "กรี๊ดด! รุ่นพี่! อย่าเพิ่งฆ่าหนู!" with dissolve
     tk "คนเรามันไม่ตายเพราะแท่งพู่กันเสียบหรอกโว้ย!"
     hide eimi_0_hurt_meme
     show eimi_0_cry_meme3
-    ei "เมตตาหนูด้วยค่า เมตตาหนูด้วยค่า!"
+    ei "เมตตาหนูด้วยค่า เมตตาหนูด้วยค่า!" with dissolve
     tk "ความผิดนี้น่ะ ฮาราคีรีสักล้านครั้งยังไม่พอเลยยัยบ้านี่!!!"
     hide eimi_0_cry_meme3
     show eimi_0_hurt_meme
-    ei "ฮาราคีรีครั้งเดียวก็ตายแล้วค่า จะล้านครั้งทำไมกันค้า-- "
+    ei "ฮาราคีรีครั้งเดียวก็ตายแล้วค่า จะล้านครั้งทำไมกันค้า-- " with dissolve
     tk "ไม่รู้ล่ะๆๆๆๆๆ ชดใช้มาๆๆๆๆ!!"
     ei "ไว้ชีวิตเค้าด้วย ม่ายยยยย!!!!!!!!!!!!!!!"
     scene sky_morning with Dissolve(1.0)
     n "นี่คือการพบกันครั้งแรกของผมกับเอมิ"
     n "ว่ากันตามตรงแล้วเป็นการพบกันครั้งแรกที่ตราตรึงในความทรงจำผมไปจนวันตายแน่นอน"
+    stop music
 
 
     
