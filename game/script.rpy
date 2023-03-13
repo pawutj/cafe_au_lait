@@ -15,6 +15,39 @@ define a = Character("{font=THSarabunNew Bold.ttf}{size=+10}Student A",color="#F
 define e0 = Character("{font=THSarabunNew Bold.ttf}{size=+10}???",color="#F0F8FF", who_outlines=[(1,"#000000")], what_outlines=[(2,"#000000")])
 # The game starts here.
 
+image eimi_0_cry_meme2:
+    zoom 0.7
+    im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_cry_meme2.png")
+
+image eimi_0_cry_meme1:
+    zoom 0.7
+    im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_cry_meme1.png")
+
+image eimi_0_cry_meme1:
+    zoom 0.7
+    im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_cry_meme1.png")
+
+image eimi_0_0_0:
+    zoom 0.7
+    im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_0.0.png")
+
+
+image eimi_0_panic:
+    zoom 0.7
+    im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_panic.png")
+
+image eimi_0_wakaranai:
+    zoom 0.7
+    im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_Wakaranai.png")
+
+image eimi_0_hurt_meme:
+    zoom 0.7
+    im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_hurt_meme.png")
+
+image eimi_0_cry_meme3:
+    zoom 0.7
+    im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_cry_meme3.png")
+
 image eimi_0: 
     zoom 0.7
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_0.0.png")
@@ -31,8 +64,15 @@ image eimi_t:
 image artroom_past= im.Scale("background/artroom/art-room2.jpg",1920,1080)
 image artroom_afternoon = im.Scale("background/artroom/art-room1.jpg",1920,1080)
 
-image lawn_afternoon= im.Scale("background/lawn_afternoon.png",1920,1080)
-image sky_afternoon = im.Scale("background/sky_afternoon.png",1920,1080)
+image school_park_1= im.Scale("background/school-park/school-park1.jpg",1920,1080)
+image school_park_2= im.Scale("background/school-park/school-park2.jpg",1920,1080)
+image school_park_3= im.Scale("background/school-park/school-park3.jpg",1920,1080)
+image school_park_4= im.Scale("background/school-park/school-park4.jpg",1920,1080)
+
+
+image sky_morning = im.Scale("background/SKY/Sky_Morning.png",1920,1080)
+
+
 
 label start:
 
@@ -82,7 +122,7 @@ label start:
     return
 
 label q002:
-    screen lawn_afternoon
+    screen school_park_1
     n "เดินออกมาจากห้องชมรมแล้ว ผมก็ทำตามกำหนดการที่วางแผนมาตั้งแต่แรก"
     n "กระดาษวาดรูป พร้อม!"
     n "พู่กันและจานสี พร้อม!"
@@ -92,7 +132,7 @@ label q002:
     n "มันก็เป็นหน้าที่ของผมที่จะต้องให้ชมรมมีผลงานสักอย่างก่อนที่ผมจะเรียนจบ"
     n "ภาพที่วาดมาหลายต่อหลายวันใกล้จะสำเร็จ"
     n "ว่าแล้วก็ลงมือเล..."
-    scene sky_afternoon with Dissolve(1.0)
+    scene sky_morning with Dissolve(1.0)
     n "{size=50}ตูมมมมมมมมมมมมมมมมมมมมมมม!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
     e0 "กรี๊ดดดด!!!!!!!"
     tk "อ้ากกกกกก!!!!!!!!!!"
@@ -102,11 +142,11 @@ label q002:
     n "อุปกรณ์วาดภาพ กระดาษบนขาตั้งวาดรูปและกาแฟบนโต๊ะน้อยๆของผมระเนระนาดไปหมด"
     n "ทั้งๆที่สาวน้อยคนนั้นตัวเล็กกว่าผม แต่ด้วยความเร็วและพละกำลังที่มากเกินขนาดตัวทำให้ผมกลิ้งโคโล่ไปกับพื้นสองสามเมตรเป็นเพื่อนอุปกรณ์วาดรูปของผม"
     n "วาดรูปอยู่ดีๆทำไมเรามานอนมองท้องฟ้ากันนะ ชีวิตผมมันเกิดบ้าอะไรขึ้น?"
-    scene lawn_afternoon with Dissolve(1.0)
-    show eimi_30 with Dissolve(1.0)
+    scene school_park_1 with Dissolve(1.0)
+    show eimi_0_cry_meme2 with Dissolve(1.0)
     e0 "ขอโทษค่ะ! ฉันวิ่งไม่ดูทา..."
-    hide eimi_30
     tk "ว้ากกกกกกกกส์ส์ส์ส์!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+    hide eimi_0_cry_meme2
     show eimi_0 with Dissolve(1.0)
     e0 "อุหวา! มันเกิดอะไรขึ้นเหรอค้า!?"
     n "ผมไม่อยากจะเชื่อภาพที่ตัวเองเห็น"
@@ -146,7 +186,7 @@ label q002:
     ei "ฮาราคีรีครั้งเดียวก็ตายแล้วค่า จะล้านครั้งทำไมกันค้า-- "
     tk "ไม่รู้ล่ะๆๆๆๆๆ ชดใช้มาๆๆๆๆ!!"
     ei "ไว้ชีวิตเค้าด้วย ม่ายยยยย!!!!!!!!!!!!!!!"
-    scene sky_afternoon with Dissolve(1.0)
+    scene sky_morning with Dissolve(1.0)
     n "นี่คือการพบกันครั้งแรกของผมกับเอมิ"
     n "ว่ากันตามตรงแล้วเป็นการพบกันครั้งแรกที่ตราตรึงในความทรงจำผมไปจนวันตายแน่นอน"
 
