@@ -103,6 +103,8 @@ image sky_morning = im.Scale("background/SKY/Sky_Morning.png",1920,1080)
 
 label start:
 
+    jump q003
+
     $ point = 0
     scene black
     play music "audio/bgm/nagai_no_yoru.mp3" volume 0.5

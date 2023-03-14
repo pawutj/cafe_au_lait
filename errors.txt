@@ -2,13 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 94: expected 'simple_expression' not found.
-    hide text with with Dissolve(1.0)
-                   ^
-
-File "game/script.rpy", line 97: expected 'simple_expression' not found.
-    hide text with with Dissolve(1.0)
-                   ^
+File "game/script2.rpy", line 1: expected statement.
+    ['Eimi.png', 'Eimi_0.0.png', 'Eimi_030.png', 'Eimi_030_02.png', 'Eimi_030_03.png', 'Eimi_0_0.png', 'Eimi_angry.png', 'Eimi_Body.png', 'Eimi_Body_shy.png', 'Eimi_bubu.png', 'Eimi_bubu2.png', 'Eimi_calm.png', 'Eimi_closeEye.png', 'Eimi_confident.png', 'Eimi_confident2.png', 'Eimi_cry_meme1.png', 'Eimi_cry_meme2.png', 'Eimi_cry_meme3.png', 'Eimi_hurt.png', 'Eimi_hurt_meme.png', 'Eimi_kira.png', 'Eimi_kuanteen.png', 'Eimi_kuanteen2.png', 'Eimi_meh.png', 'Eimi_normal.png', 'Eimi_o.png', 'Eimi_panic.png', 'Eimi_panic_shy.png', 'Eimi_pout.png', 'Eimi_sad.png', 'Eimi_sad2.png', 'Eimi_sample.png', 'Eimi_serous.png', 'Eimi_shy meme.png', 'Eimi_smile.png', 'Eimi_smile2.png', 'Eimi_smile3.png', 'Eimi_smile4.png', 'Eimi_smug.png', 'Eimi_smug2.png', 'Eimi_smug3.png', 'Eimi_wakaranai.png', 'Eimi_XD.png']
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ^
 
 Ren'Py Version: Ren'Py 8.0.1.22070801
-Tue Mar 14 16:06:21 2023
+Wed Mar 15 02:19:52 2023
