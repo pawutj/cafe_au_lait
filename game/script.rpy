@@ -6,7 +6,7 @@
 #navigation
 define n = Character(None, who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 #eimi
-define ei = Character("{font=THSarabunNew Bold.ttf}{size=+10}Eimi",color="#F0F8FF", who_outlines=[(1,"#000000")], what_outlines=[(2,"#000000")])
+define ei = Character("Eimi",color="#F0F8FF", image ="eimi", who_outlines=[(1,"#000000")], what_outlines=[(2,"#000000")])
 #takagi
 define tk = Character("{font=THSarabunNew Bold.ttf}{size=+10}Takagi",color="#F0F8FF", who_outlines=[(1,"#000000")], what_outlines=[(2,"#000000")])
 #student a
@@ -15,9 +15,21 @@ define a = Character("{font=THSarabunNew Bold.ttf}{size=+10}Student A",color="#F
 define e0 = Character("{font=THSarabunNew Bold.ttf}{size=+10}???",color="#F0F8FF", who_outlines=[(1,"#000000")], what_outlines=[(2,"#000000")])
 # The game starts here.
 
+transform crops:
+    crop(650,-800,1920,2900)
+
+image side eimi:
+    zoom 0.6
+    crops
+    im.Composite((1920,2900), (0,1500), "Sprite/Eimi02/Eimi02.png")
+
+
+
+
 image eimi_0_cry_meme2:
     zoom 0.75
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_cry_meme2.png")
+
 
 image eimi_0_cry_meme1:
     zoom 0.75
@@ -62,6 +74,10 @@ image eimi_02_0_0:
     zoom 0.75
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi02/Eimi02_body.png"  ,(30,1500),"Sprite/Eimi01/Eimi_0_0.png")
 
+
+image eimi_02_scared:
+    zoom 0.75
+    im.Composite((1920,2900), (0,1500), "Sprite/Eimi02/Eimi02_body.png" ,(30,1500),"Sprite/Eimi01/Eimi_Wakaranai.png")    
 
 image eimi_30: 
     zoom 0.75
@@ -165,8 +181,8 @@ label q002:
     show eimi_0_cry_meme2 
     e0 "ขอโทษค่ะ! ฉันวิ่งไม่ดูทา..." with dissolve
     tk "ว้ากกกกกกกกส์ส์ส์ส์!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-    hide eimi_0_cry_meme2 
-    show eimi_0_cry_meme1 
+    hide  eimi_0_cry_meme2 
+    show  eimi_0_cry_meme1 
     e0 "อุหวา! มันเกิดอะไรขึ้นเหรอค้า!?" with dissolve
     n "ผมไม่อยากจะเชื่อภาพที่ตัวเองเห็น"
     "ถึงแม้จะเพิ่งล้มกลิ้งกับพื้นแต่ผมใช้กำลังที่ยังเหลืออยู่คลานไปหาภาพวาดของผม"
