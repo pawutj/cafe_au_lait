@@ -89,10 +89,10 @@ label start:
     $ point = 0
     scene black
     play music "audio/bgm/nagai_no_yoru.mp3" volume 0.5
-    show text "หากเราไม่พยายามและไม่เชื่อในสิ่งที่ตัวเองทำก็เท่ากับแพ้ตั้งแต่แรก" with Dissolve(1.0)
+    show text "{size=40}หากเราไม่พยายามและไม่เชื่อในสิ่งที่ตัวเองทำก็เท่ากับแพ้ตั้งแต่แรก" with Dissolve(1.0)
     $ renpy.pause(2)
     hide text with Dissolve(1.0)
-    show text  "ไม่ว่าจะเกิดอะไรขึ้นก็ตาม...จงอย่าทรยศต่อความฝันของตัวเอง..." with Dissolve(1.0)
+    show text  "{size=40}ไม่ว่าจะเกิดอะไรขึ้นก็ตาม...จงอย่าทรยศต่อความฝันของตัวเอง..." with Dissolve(1.0)
     $ renpy.pause(2)
     hide text with Dissolve(1.0)
     scene artroom_past with Dissolve(1.0)
