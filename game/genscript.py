@@ -20,7 +20,7 @@ for i,c in data.iterrows():
         print("hide " +temp_charector_emotion +"\n")
         temp_charector = c['charector']
         temp_charector_emotion = temp_charector +"_"+c['emotion']
-        print("show " +c['emotion'] +"\n" )
+        print("show " +temp_charector_emotion +"\n" )
         
     else:
         if( c['emotion']):
