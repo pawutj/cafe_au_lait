@@ -104,6 +104,54 @@ image dot1 = im.Scale("Sprite/Effect/dot1.png",800,1000)
 image dot2 = im.Scale("Sprite/Effect/dot2.png",800,1000)
 image dot3 = im.Scale("Sprite/Effect/dot3.png",800,1000)
 
+image laught1 = im.Scale("Sprite/Effect/laught.png",800,1000) 
+image laught2 = im.Scale("Sprite/Effect/laught2.png",800,1000) 
+
+image angry:
+    "Sprite/Effect/angry.png"
+
+image aware:
+    "Sprite/Effect/aware.png"
+
+image border:
+    "Sprite/Effect/border.png"
+
+image dark:
+    "Sprite/Effect/dark.png"
+image down:
+    "Sprite/Effect/down.png"
+
+image excited:
+    "Sprite/Effect/excited1.png"
+    pause 0.5
+    "Sprite/Effect/excited2.png"
+    pause 0.5
+    repeat
+
+image happy:
+    "Sprite/Effect/happy.png"
+image heart:
+    "Sprite/Effect/heart.png"
+image huh:
+    "Sprite/Effect/huh.png"
+image moyamoya:
+    "Sprite/Effect/moyamoya.png"
+image pout:
+    "Sprite/Effect/pout.png"
+image question:
+    "Sprite/Effect/question.png"
+
+image shine:
+    "Sprite/Effect/shine.png"
+image surprise:
+    "Sprite/Effect/surprise.png"
+image sweat:
+    "Sprite/Effect/sweat.png"
+image wakaru:
+    "Sprite/Effect/wakaru.png"
+
+
+
 image dot:
     "Sprite/Effect/dot1.png"
     pause 0.5
@@ -114,7 +162,21 @@ image dot:
     "Sprite/Effect/dot1.png"
     repeat
 
+image laught:
+    "Sprite/Effect/laught.png"
+    pause 0.5
+    "Sprite/Effect/laught2.png"
+    pause 0.5
+    repeat
 
+image panic:
+    "Sprite/Effect/panic1.png"
+    pause 0.5
+    "Sprite/Effect/panic2.png"
+    pause 0.5
+    repeat
+
+    
 
 
 
