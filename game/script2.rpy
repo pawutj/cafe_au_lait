@@ -1,9 +1,6 @@
 image Eimi_Eimi:
     zoom 0.75
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi.png")
-image Eimi_Eimi_0:
-    zoom 0.75
-    im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_0.0.png")
 image Eimi_Eimi_030:
     zoom 0.75
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_030.png")
@@ -97,9 +94,9 @@ image Eimi_Eimi_sample:
 image Eimi_Eimi_serous:
     zoom 0.75
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_serous.png")
-image Eimi_Eimi_shy meme:
+image Eimi_Eimi_shy_meme:
     zoom 0.75
-    im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_shy meme.png")
+    im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_shy_meme.png")
 image Eimi_Eimi_smile:
     zoom 0.75
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_smile.png")
@@ -130,9 +127,6 @@ image Eimi_Eimi_XD:
 image Eimi_shy_Eimi:
     zoom 0.75
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body_shy.png" ,(0,1500),"Sprite/Eimi01/Eimi.png")
-image Eimi_shy_Eimi_0:
-    zoom 0.75
-    im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body_shy.png" ,(0,1500),"Sprite/Eimi01/Eimi_0.0.png")
 image Eimi_shy_Eimi_030:
     zoom 0.75
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body_shy.png" ,(0,1500),"Sprite/Eimi01/Eimi_030.png")
@@ -226,9 +220,9 @@ image Eimi_shy_Eimi_sample:
 image Eimi_shy_Eimi_serous:
     zoom 0.75
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body_shy.png" ,(0,1500),"Sprite/Eimi01/Eimi_serous.png")
-image Eimi_shy_Eimi_shy meme:
+image Eimi_shy_Eimi_shy_meme:
     zoom 0.75
-    im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body_shy.png" ,(0,1500),"Sprite/Eimi01/Eimi_shy meme.png")
+    im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body_shy.png" ,(0,1500),"Sprite/Eimi01/Eimi_shy_meme.png")
 image Eimi_shy_Eimi_smile:
     zoom 0.75
     im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body_shy.png" ,(0,1500),"Sprite/Eimi01/Eimi_smile.png")

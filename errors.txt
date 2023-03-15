@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script3.rpy", line 1: expected ':' not found.
-    label q003
-              ^
+File "game/script3.rpy", line 1: expected 'image_name_component' not found.
+    hide 
+         ^
 
 Ren'Py Version: Ren'Py 8.0.1.22070801
-Wed Mar 15 17:01:22 2023
+Wed Mar 15 17:36:51 2023
