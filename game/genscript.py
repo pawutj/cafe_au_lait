@@ -34,10 +34,14 @@ for i,c in data.iterrows():
         print("stop music \n")
 
     if(c['charector']):
-        printHide(temp_charector_emotion)
-        temp_charector = c['charector']
-        temp_charector_emotion = temp_charector +"_"+c['emotion']
-        print("show " +temp_charector_emotion +"\n" )
+        if(c['charector'] == 'hide'):
+            printHide(temp_charector_emotion)
+            temp_charector = ""
+        else :
+            printHide(temp_charector_emotion)
+            temp_charector = c['charector']
+            temp_charector_emotion = temp_charector +"_"+c['emotion']
+            print("show " +temp_charector_emotion +"\n" )
         
     else:
         if( c['emotion']):

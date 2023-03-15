@@ -1,8 +1,8 @@
 label q003:
+
     show artroom_afternoon
 
     play music "audio/bgm/asa_no_nigiyaka_mura.mp3" volume 0.5
-
     show Eimi02_Eimi02_scared
 
     tk "สรุปคือเธอชื่ออะไรนะ?"
@@ -127,6 +127,8 @@ label q003:
     n "ผมแอบเหล่มองเอมิที่เหงื่อตกสองสามหยด ดูเหมือนผมจะทำเธอสูญเสียความมั่นใจระดับหนึ่ง"
     show black_scene
 
+    hide artroom_afternoon
+
     hide Eimi02_Eimi02_shock
 
     show Eimi_Eimi_o
@@ -137,6 +139,8 @@ label q003:
     "น่าเอาเป็นแบบวาดภาพจริงๆ แต่นี่ไม่ใช่เวลาของเรื่องอย่างนั้น..."
     "ผมกำลังจริงจังกับชีวิตอยู่ ไม่มีเวลามาวาดอะไรเอาแต่ใจเอาสนุกอีกแล้ว"
     show artroom_afternoon
+
+    hide black_scene
 
     hide Eimi_Eimi_o
 
@@ -420,9 +424,9 @@ label q003:
     "พอนึกใบหน้าเหล่านั้น เสียงของพวกเขาเหล่านั้นก็จะดังขึ้นๆ"
     show artroom_past
 
-    hide Eimi_Eimi_smile3
+    hide artroom_afternoon
 
-    show -_
+    hide Eimi_Eimi_smile3
 
     a "รุ่นพี่จะบอกว่าที่ผมทำทั้งหมดมันไม่มีความหมายเหรอครับ"
     n "คำพูดที่เต็มไปด้วยความเจ็บปวดเหล่านั้นยังฝังอยู่ในใจผมชัดเจนราวกับมันเพิ่งเกิดขึ้นเมื่อไม่กี่นาทีก่อนหน้านี้"
@@ -430,7 +434,9 @@ label q003:
     "....."
     show artroom_afternoon
 
-    hide -_
+    hide artroom_past
+
+    hide Eimi_Eimi_smile3
 
     show Eimi_Eimi_smile3
 
@@ -439,5 +445,7 @@ label q003:
 
     "ผมควรจะทำอะไรกับเอมิดีนะ..."
     "ทำอะไรดี?"
-    "- "มันจะไม่มีความหมายได้ยังไงกัน ยัยบ้า"    เนื้อเรื่องเดินต่อ"
-    "- ให้เธอยอมรับความจริง      เข้า Bad end 1"
+
+    jump q004
+
+return 
