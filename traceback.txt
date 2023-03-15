@@ -1,7 +1,8 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script3.rpy", line 426, in script
+  File "game/script3.rpy", line 442, in script
+    "- "มันจะไม่มีความหมายได้ยังไงกัน ยัยบ้า"    เนื้อเรื่องเดินต่อ"
   File "renpy/common/00library.rpy", line 284, in say
     who(what, interact=interact, *args, **kwargs)
 Exception: Say has image attributes ('มันจะไม่มีความหมายได้ยังไงกัน', 'ยัยบ้า'), but there's no image tag associated with the speaking character.
@@ -9,7 +10,8 @@ Exception: Say has image attributes ('มันจะไม่มีความ
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script3.rpy", line 426, in script
+  File "game/script3.rpy", line 442, in script
+    "- "มันจะไม่มีความหมายได้ยังไงกัน ยัยบ้า"    เนื้อเรื่องเดินต่อ"
   File "D:\renpy-8.0.1-sdk\renpy\ast.py", line 921, in execute
     renpy.exports.say(who, what, *args, **kwargs)
   File "D:\renpy-8.0.1-sdk\renpy\exports.py", line 1371, in say
@@ -27,4 +29,4 @@ Exception: Say has image attributes ('มันจะไม่มีความ
 Windows-10-10.0.19042 AMD64
 Ren'Py 8.0.1.22070801
 Cafe_au_lait 1.0
-Wed Mar 15 17:58:36 2023
+Wed Mar 15 18:21:07 2023

@@ -96,6 +96,7 @@ image school_park_2= im.Scale("background/school-park/school-park2.jpg",1920,108
 image school_park_3= im.Scale("background/school-park/school-park3.jpg",1920,1080)
 image school_park_4= im.Scale("background/school-park/school-park4.jpg",1920,1080)
 
+image black_scene = im.Scale("background/black.jpg",1920,1080)
 
 image sky_morning = im.Scale("background/SKY/Sky_Morning.png",1920,1080)
 
