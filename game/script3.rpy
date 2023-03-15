@@ -4,7 +4,6 @@ label q003:
 
     play music "audio/bgm/asa_no_nigiyaka_mura.mp3" volume 0.5
     show Eimi02_Eimi02_scared
-
     tk "สรุปคือเธอชื่ออะไรนะ?"
     ei "อิทสึกิ เอมิไงคะ"
     tk "ไม่ได้จงใจบอกชื่อปลอมเพื่อให้คนอื่นมารับหน้าเสื่อแทนเธอใช่ไหม "

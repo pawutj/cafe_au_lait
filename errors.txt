@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script3.rpy", line 1: expected 'image_name_component' not found.
-    hide 
-         ^
+File "game/script.rpy", line 107: expected '=' not found.
+    image dot(w):
+             ^
 
 Ren'Py Version: Ren'Py 8.0.1.22070801
-Wed Mar 15 17:36:51 2023
+Wed Mar 15 22:27:51 2023

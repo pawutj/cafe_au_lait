@@ -100,6 +100,22 @@ image black_scene = im.Scale("background/black.jpg",1920,1080)
 
 image sky_morning = im.Scale("background/SKY/Sky_Morning.png",1920,1080)
 
+image dot1 = im.Scale("Sprite/Effect/dot1.png",800,1000)
+image dot2 = im.Scale("Sprite/Effect/dot2.png",800,1000)
+image dot3 = im.Scale("Sprite/Effect/dot3.png",800,1000)
+
+image dot:
+    "Sprite/Effect/dot1.png"
+    pause 0.5
+    "Sprite/Effect/dot2.png"
+    pause 0.5
+    "Sprite/Effect/dot3.png"
+    pause 0.5
+    "Sprite/Effect/dot1.png"
+    repeat
+
+
+
 
 
 label start:

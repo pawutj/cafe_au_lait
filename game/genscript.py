@@ -20,10 +20,11 @@ p = []
 temp_charector = ""
 temp_charector_emotion=""
 temp_screen = ""
+temp_disolve=True
 for i,c in data.iterrows():
 
     if(c['bg']):
-        print("show "+c['bg'] + "\n")
+        print("show "+c['bg'] +" with Dissolve(1.0)"+"\n")
         printHide(temp_screen)
         temp_screen = c['bg']
 
@@ -41,14 +42,19 @@ for i,c in data.iterrows():
             printHide(temp_charector_emotion)
             temp_charector = c['charector']
             temp_charector_emotion = temp_charector +"_"+c['emotion']
-            print("show " +temp_charector_emotion +"\n" )
+            print("show " +temp_charector_emotion +"\n")
+            temp_disolve = True
         
     else:
         if( c['emotion']):
             printHide(temp_charector_emotion)
             temp_charector_emotion = temp_charector + "_"+c['emotion']
             print("show " + temp_charector_emotion +"\n" )
+            temp_disolve = True
 
-    
-    print(c['summary'].strip())
+    if(temp_disolve):
+        print(c['summary'].strip() + " with dissolve")
+        temp_disolve = False
+    else:
+        print(c['summary'].strip())
 
