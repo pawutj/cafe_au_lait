@@ -1,51 +1,32 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 92, in script
-    n "หากเราไม่พยายามและไม่เชื่อในสิ่งที่ตัวเองทำก็เท่ากับแพ้ตั้งแต่แรก ไม่ว่าจะเกิดอะไรขึ้นก็ตาม...จงอย่าทรยศต่อความฝันของตัวเอง..."
-  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
-    _window_show(auto=True)
-  File "renpy/common/000window.rpy", line 69, in _window_show
-    renpy.with_statement(trans)
-OSError: Couldn't find file 'bgm/nagai_no_yoru.mp3'.
+  File "game/script3.rpy", line 404, in script
+    "- "มันจะไม่มีความหมายได้ยังไงกัน ยัยบ้า"    เนื้อเรื่องเดินต่อ"
+  File "renpy/common/00library.rpy", line 284, in say
+    who(what, interact=interact, *args, **kwargs)
+Exception: Say has image attributes ('มันจะไม่มีความหมายได้ยังไงกัน', 'ยัยบ้า'), but there's no image tag associated with the speaking character.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 92, in script
-    n "หากเราไม่พยายามและไม่เชื่อในสิ่งที่ตัวเองทำก็เท่ากับแพ้ตั้งแต่แรก ไม่ว่าจะเกิดอะไรขึ้นก็ตาม...จงอย่าทรยศต่อความฝันของตัวเอง..."
-  File "D:\renpy-8.0.1-sdk\renpy\ast.py", line 889, in execute
-    statement_name(stmt_name)
-  File "D:\renpy-8.0.1-sdk\renpy\ast.py", line 47, in statement_name
-    i(name)
-  File "renpy/common/000window.rpy", line 114, in _window_auto_callback
-    _window_show(auto=True)
-  File "renpy/common/000window.rpy", line 69, in _window_show
-    renpy.with_statement(trans)
-  File "D:\renpy-8.0.1-sdk\renpy\exports.py", line 1653, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "D:\renpy-8.0.1-sdk\renpy\display\core.py", line 2798, in do_with
-    return self.interact(trans_pause=True,
-  File "D:\renpy-8.0.1-sdk\renpy\display\core.py", line 3377, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs) # type: ignore
-  File "D:\renpy-8.0.1-sdk\renpy\display\core.py", line 4097, in interact_core
-    renpy.audio.audio.periodic()
-  File "D:\renpy-8.0.1-sdk\renpy\audio\audio.py", line 1166, in periodic
-    raise_(exc[0], exc[1], exc[2])
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
-  File "D:\renpy-8.0.1-sdk\renpy\audio\audio.py", line 1144, in periodic_thread_main
-    periodic_pass()
-  File "D:\renpy-8.0.1-sdk\renpy\audio\audio.py", line 1086, in periodic_pass
-    c.periodic()
-  File "D:\renpy-8.0.1-sdk\renpy\audio\audio.py", line 517, in periodic
-    topf = load(filename)
-  File "D:\renpy-8.0.1-sdk\renpy\audio\audio.py", line 70, in load
-    rv = renpy.loader.load(fn)
-  File "D:\renpy-8.0.1-sdk\renpy\loader.py", line 820, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'bgm/nagai_no_yoru.mp3'.
+  File "game/script3.rpy", line 404, in script
+    "- "มันจะไม่มีความหมายได้ยังไงกัน ยัยบ้า"    เนื้อเรื่องเดินต่อ"
+  File "D:\renpy-8.0.1-sdk\renpy\ast.py", line 921, in execute
+    renpy.exports.say(who, what, *args, **kwargs)
+  File "D:\renpy-8.0.1-sdk\renpy\exports.py", line 1371, in say
+    renpy.store.say(who, what, *args, **kwargs)
+  File "renpy/common/00library.rpy", line 284, in say
+    who(what, interact=interact, *args, **kwargs)
+  File "D:\renpy-8.0.1-sdk\renpy\character.py", line 1206, in __call__
+    old_attr_state = self.handle_say_attributes(False, interact)
+  File "D:\renpy-8.0.1-sdk\renpy\character.py", line 1030, in handle_say_attributes
+    if self.resolve_say_attributes(predicting, attrs):
+  File "D:\renpy-8.0.1-sdk\renpy\character.py", line 956, in resolve_say_attributes
+    raise Exception("Say has image attributes %r, but there's no image tag associated with the speaking character." % (attrs,))
+Exception: Say has image attributes ('มันจะไม่มีความหมายได้ยังไงกัน', 'ยัยบ้า'), but there's no image tag associated with the speaking character.
 
 Windows-10-10.0.19042 AMD64
 Ren'Py 8.0.1.22070801
 Cafe_au_lait 1.0
-Tue Mar 14 01:00:27 2023
+Thu Mar 16 00:20:38 2023

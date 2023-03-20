@@ -18,75 +18,75 @@ define e0 = Character("{font=THSarabunNew Bold.ttf}{size=+10}???",color="#F0F8FF
 transform crops:
     crop(650,-800,1920,2900)
 
-image side eimi:
-    zoom 0.6
-    crops
-    im.Composite((1920,2900), (0,1500), "Sprite/Eimi02/Eimi02.png")
+# image side eimi:
+#     zoom 0.6
+#     crops
+#     im.Composite((1920,2900), (0,1600), "Sprite/Eimi02/Eimi02.png")
 
 
 
 image eimi_0: 
-    zoom 0.75
-    im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_0.0.png")
+    zoom 0.85
+    im.Composite((1920,2900), (0,1600), "Sprite/Eimi01/Eimi_Body.png" ,(0,1600),"Sprite/Eimi01/Eimi_0.0.png")
 
 image eimi_2:
-    zoom 0.75
-    im.Composite((1920,2900), (0,1500), "Sprite/Eimi02/Eimi02.png")
+    zoom 0.85
+    im.Composite((1920,2900), (0,1600), "Sprite/Eimi02/Eimi02.png")
 
 
 image eimi_02_wakaranai:
-    zoom 0.75
-    im.Composite((1920,2900), (0,1500), "Sprite/Eimi02/Eimi02_body.png" ,(30,1500),"Sprite/Eimi01/Eimi_Wakaranai.png")
+    zoom 0.85
+    im.Composite((1920,2900), (0,1600), "Sprite/Eimi02/Eimi02_body.png" ,(30,1600),"Sprite/Eimi01/Eimi_Wakaranai.png")
 
 image eimi_02_0_0:
-    zoom 0.75
-    im.Composite((1920,2900), (0,1500), "Sprite/Eimi02/Eimi02_body.png"  ,(30,1500),"Sprite/Eimi01/Eimi_0_0.png")
+    zoom 0.85
+    im.Composite((1920,2900), (0,1600), "Sprite/Eimi02/Eimi02_body.png"  ,(30,1600),"Sprite/Eimi01/Eimi_0_0.png")
 
 
 image eimi_02_scared:
-    zoom 0.75
-    im.Composite((1920,2900), (0,1500), "Sprite/Eimi02/Eimi02_body.png" ,(30,1500),"Sprite/Eimi01/Eimi02_scared.png")    
+    zoom 0.85
+    im.Composite((1920,2900), (0,1600), "Sprite/Eimi02/Eimi02_body.png" ,(30,1600),"Sprite/Eimi01/Eimi02_scared.png")    
 
 image eimi_02_panic:
-    zoom 0.75
-    im.Composite((1920,2900), (0,1500), "Sprite/Eimi02/Eimi02_body.png" ,(30,1500),"Sprite/Eimi01/Eimi02_panic.png")    
+    zoom 0.85
+    im.Composite((1920,2900), (0,1600), "Sprite/Eimi02/Eimi02_body.png" ,(30,1600),"Sprite/Eimi01/Eimi02_panic.png")    
 
 image eimi_02_pout:
-    zoom 0.75
-    im.Composite((1920,2900), (0,1500), "Sprite/Eimi02/Eimi02_body.png" ,(30,1500),"Sprite/Eimi01/Eimi02_pout.png")
+    zoom 0.85
+    im.Composite((1920,2900), (0,1600), "Sprite/Eimi02/Eimi02_body.png" ,(30,1600),"Sprite/Eimi01/Eimi02_pout.png")
 
 image eimi_02_shock:
-    zoom 0.75
-    im.Composite((1920,2900), (0,1500), "Sprite/Eimi02/Eimi02_body.png" ,(30,1500),"Sprite/Eimi01/Eimi02_shock.png")
+    zoom 0.85
+    im.Composite((1920,2900), (0,1600), "Sprite/Eimi02/Eimi02_body.png" ,(30,1600),"Sprite/Eimi01/Eimi02_shock.png")
     
 image eimi_02_onegai:
-    zoom 0.75
-    im.Composite((1920,2900), (0,1500), "Sprite/Eimi02/Eimi02_body.png" ,(30,1500),"Sprite/Eimi01/Eimi02_onegai.png")
+    zoom 0.85
+    im.Composite((1920,2900), (0,1600), "Sprite/Eimi02/Eimi02_body.png" ,(30,1600),"Sprite/Eimi01/Eimi02_onegai.png")
 
 image eimi_02_shy_onegai:
-    zoom 0.75
-    im.Composite((1920,2900), (0,1500), "Sprite/Eimi02/Eimi02_body_shy.png" ,(30,1500),"Sprite/Eimi02/Eimi02_onegai.png")
+    zoom 0.85
+    im.Composite((1920,2900), (0,1600), "Sprite/Eimi02/Eimi02_body_shy.png" ,(30,1600),"Sprite/Eimi02/Eimi02_onegai.png")
 
 image eimi_02_shy_stupid:
-    zoom 0.75
-    im.Composite((1920,2900), (0,1500), "Sprite/Eimi02/Eimi02_body_shy.png" ,(30,1500),"Sprite/Eimi02/Eimi02_stupid.png")
+    zoom 0.85
+    im.Composite((1920,2900), (0,1600), "Sprite/Eimi02/Eimi02_body_shy.png" ,(30,1600),"Sprite/Eimi02/Eimi02_stupid.png")
     
 image eimi_02_shy_tired:
-    zoom 0.75
-    im.Composite((1920,2900), (0,1500), "Sprite/Eimi02/Eimi02_body_shy.png" ,(30,1500),"Sprite/Eimi02/Eimi02_tired.png")
+    zoom 0.85
+    im.Composite((1920,2900), (0,1600), "Sprite/Eimi02/Eimi02_body_shy.png" ,(30,1600),"Sprite/Eimi02/Eimi02_tired.png")
     
 image eimi_02_shy_meme02:
-    zoom 0.75
-    im.Composite((1920,2900), (0,1500), "Sprite/Eimi02/Eimi02_body_shy.png" ,(30,1500),"Sprite/Eimi02/Eimi02_meme02.png")
+    zoom 0.85
+    im.Composite((1920,2900), (0,1600), "Sprite/Eimi02/Eimi02_body_shy.png" ,(30,1600),"Sprite/Eimi02/Eimi02_meme02.png")
 
 
 image eimi_30: 
-    zoom 0.75
-    im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_030_03.png")
+    zoom 0.85
+    im.Composite((1920,2900), (0,1600), "Sprite/Eimi01/Eimi_Body.png" ,(0,1600),"Sprite/Eimi01/Eimi_030_03.png")
 
 image eimi_t: 
     zoom 0.75
-    im.Composite((1920,2900), (0,1500), "Sprite/Eimi01/Eimi_Body.png" ,(0,1500),"Sprite/Eimi01/Eimi_030_03.png")
+    im.Composite((1920,2900), (0,1600), "Sprite/Eimi01/Eimi_Body.png" ,(0,1600),"Sprite/Eimi01/Eimi_030_03.png")
 
 image artroom_past= im.Scale("background/artroom/art-room2.jpg",1920,1080)
 image artroom_afternoon = im.Scale("background/artroom/art-room1.jpg",1920,1080)
@@ -96,13 +96,91 @@ image school_park_2= im.Scale("background/school-park/school-park2.jpg",1920,108
 image school_park_3= im.Scale("background/school-park/school-park3.jpg",1920,1080)
 image school_park_4= im.Scale("background/school-park/school-park4.jpg",1920,1080)
 
+image black_scene = im.Scale("background/black.jpg",1920,1080)
 
 image sky_morning = im.Scale("background/SKY/Sky_Morning.png",1920,1080)
+
+image dot1 = im.Scale("Sprite/Effect/dot1.png",800,1000)
+image dot2 = im.Scale("Sprite/Effect/dot2.png",800,1000)
+image dot3 = im.Scale("Sprite/Effect/dot3.png",800,1000)
+
+image laught1 = im.Scale("Sprite/Effect/laught.png",800,1000) 
+image laught2 = im.Scale("Sprite/Effect/laught2.png",800,1000) 
+
+image angry:
+    "Sprite/Effect/angry.png"
+
+image aware:
+    "Sprite/Effect/aware.png"
+
+image border:
+    "Sprite/Effect/border.png"
+
+image dark:
+    "Sprite/Effect/dark.png"
+image down:
+    "Sprite/Effect/down.png"
+
+image excited:
+    "Sprite/Effect/excited1.png"
+    pause 0.5
+    "Sprite/Effect/excited2.png"
+    pause 0.5
+    repeat
+
+image happy:
+    "Sprite/Effect/happy.png"
+image heart:
+    "Sprite/Effect/heart.png"
+image huh:
+    "Sprite/Effect/huh.png"
+image moyamoya:
+    "Sprite/Effect/moyamoya.png"
+image pout:
+    "Sprite/Effect/pout.png"
+image question:
+    "Sprite/Effect/question.png"
+
+image shine:
+    "Sprite/Effect/shine.png"
+image surprise:
+    "Sprite/Effect/surprise.png"
+image sweat:
+    "Sprite/Effect/sweat.png"
+image wakaru:
+    "Sprite/Effect/wakaru.png"
+
+
+
+image dot:
+    "Sprite/Effect/dot1.png"
+    pause 0.5
+    "Sprite/Effect/dot2.png"
+    pause 0.5
+    "Sprite/Effect/dot3.png"
+    pause 0.5
+    "Sprite/Effect/dot1.png"
+    repeat
+
+image laught:
+    "Sprite/Effect/laught.png"
+    pause 0.5
+    "Sprite/Effect/laught2.png"
+    pause 0.5
+    repeat
+
+image panic:
+    "Sprite/Effect/panic1.png"
+    pause 0.5
+    "Sprite/Effect/panic2.png"
+    pause 0.5
+    repeat
+
+    
 
 
 
 label start:
-
     $ point = 0
     scene black
     play music "audio/bgm/nagai_no_yoru.mp3" volume 0.5
@@ -246,6 +324,8 @@ label q002:
     n "นี่คือการพบกันครั้งแรกของผมกับเอมิ"
     n "ว่ากันตามตรงแล้วเป็นการพบกันครั้งแรกที่ตราตรึงในความทรงจำผมไปจนวันตายแน่นอน"
     stop music
+    jump q003
+    return
 
 
     

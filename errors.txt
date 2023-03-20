@@ -2,13 +2,7 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 94: expected 'simple_expression' not found.
-    hide text with with Dissolve(1.0)
-                   ^
-
-File "game/script.rpy", line 97: expected 'simple_expression' not found.
-    hide text with with Dissolve(1.0)
-                   ^
+File "game/script5.rpy", line 1: Unexpected indentation at start of file.
 
 Ren'Py Version: Ren'Py 8.0.1.22070801
-Tue Mar 14 16:06:21 2023
+Wed Mar 15 22:56:10 2023
