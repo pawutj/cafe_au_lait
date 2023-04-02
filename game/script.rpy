@@ -182,7 +182,7 @@ image panic:
 
 
 label start:
-    jump q2_1
+    jump q2_2
     $ point = 0
     scene black
     play music "audio/bgm/nagai_no_yoru.mp3" volume 0.5
