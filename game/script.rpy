@@ -10,11 +10,11 @@ define ei = Character("{font=THSarabunNew Bold.ttf}{size=+10}Eimi",color="#F0F8F
 #takagi
 define tk = Character("{font=THSarabunNew Bold.ttf}{size=+10}Takagi",color="#F0F8FF", who_outlines=[(1,"#000000")], what_outlines=[(2,"#000000")])
 #student a
-define a = Character("{font=THSarabunNew Bold.ttf}{size=+10}Student A",color="#F0F8FF", who_outlines=[(1,"#000000")], what_outlines=[(2,"#000000")])
+define a = Character("{font=THSarabunNew Bold.ttf}{size=+10}Student A",color="#F0F8FF",image ="enjou1" ,  who_outlines=[(1,"#000000")], what_outlines=[(2,"#000000")])
 #student ???
 define e0 = Character("{font=THSarabunNew Bold.ttf}{size=+10}???",color="#F0F8FF", who_outlines=[(1,"#000000")], what_outlines=[(2,"#000000")])
 # The game starts here.
-define en = Character("{font=THSarabunNew Bold.ttf}{size=+10}Enjou",color="#F0F8FF", who_outlines=[(1,"#000000")], what_outlines=[(2,"#000000")])
+define en = Character("{font=THSarabunNew Bold.ttf}{size=+10}Enjou",color="#F0F8FF", image = "enjou2",who_outlines=[(1,"#000000")], what_outlines=[(2,"#000000")])
 transform crops:
     crop(650,-800,1920,2900)
 
@@ -22,6 +22,19 @@ transform crops:
 #     zoom 0.6
 #     crops
 #     im.Composite((1920,2900), (0,1525), "Sprite/Eimi02/Eimi02.png")
+
+
+image side enjou1:
+    zoom 1.3
+    im.Scale("Sprite/Other/Enjou01.png",300,300)
+    yoffset 50
+
+image side enjou2:
+    zoom 1.3
+    im.Scale("Sprite/Other/Enjou02.png",300,300)
+    yoffset 50
+
+
 
 
 
