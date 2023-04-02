@@ -150,7 +150,8 @@ image sweat:
 image wakaru:
     "Sprite/Effect/wakaru.png"
 
-
+image spotlight:
+    "Sprite/Effect/spotlight.png"
 
 image dot:
     "Sprite/Effect/dot1.png"
@@ -181,6 +182,7 @@ image panic:
 
 
 label start:
+    jump q2_4a
     $ point = 0
     scene black
     play music "audio/bgm/nagai_no_yoru.mp3" volume 0.5
