@@ -40,6 +40,9 @@ image Eimi_Eimi_confident:
 image Eimi_Eimi_confident2:
     zoom 0.75
     im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_Body.png" ,(0,1525),"Sprite/Eimi01/Eimi_confident2.png")
+image Eimi_Eimi_cry:
+    zoom 0.75
+    im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_Body.png" ,(0,1525),"Sprite/Eimi01/Eimi_cry.png")
 image Eimi_Eimi_cry_meme1:
     zoom 0.75
     im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_Body.png" ,(0,1525),"Sprite/Eimi01/Eimi_cry_meme1.png")
@@ -58,6 +61,9 @@ image Eimi_Eimi_hurt_meme:
 image Eimi_Eimi_kira:
     zoom 0.75
     im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_Body.png" ,(0,1525),"Sprite/Eimi01/Eimi_kira.png")
+image Eimi_Eimi_kiss:
+    zoom 0.75
+    im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_Body.png" ,(0,1525),"Sprite/Eimi01/Eimi_kiss.png")
 image Eimi_Eimi_kuanteen:
     zoom 0.75
     im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_Body.png" ,(0,1525),"Sprite/Eimi01/Eimi_kuanteen.png")
@@ -79,6 +85,9 @@ image Eimi_Eimi_panic:
 image Eimi_Eimi_panic_shy:
     zoom 0.75
     im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_Body.png" ,(0,1525),"Sprite/Eimi01/Eimi_panic_shy.png")
+image Eimi_Eimi_pero:
+    zoom 0.75
+    im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_Body.png" ,(0,1525),"Sprite/Eimi01/Eimi_pero.png")
 image Eimi_Eimi_pout:
     zoom 0.75
     im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_Body.png" ,(0,1525),"Sprite/Eimi01/Eimi_pout.png")
@@ -166,6 +175,9 @@ image Eimi_shy_Eimi_confident:
 image Eimi_shy_Eimi_confident2:
     zoom 0.75
     im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_Body_shy.png" ,(0,1525),"Sprite/Eimi01/Eimi_confident2.png")
+image Eimi_shy_Eimi_cry:
+    zoom 0.75
+    im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_Body_shy.png" ,(0,1525),"Sprite/Eimi01/Eimi_cry.png")
 image Eimi_shy_Eimi_cry_meme1:
     zoom 0.75
     im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_Body_shy.png" ,(0,1525),"Sprite/Eimi01/Eimi_cry_meme1.png")
@@ -184,6 +196,9 @@ image Eimi_shy_Eimi_hurt_meme:
 image Eimi_shy_Eimi_kira:
     zoom 0.75
     im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_Body_shy.png" ,(0,1525),"Sprite/Eimi01/Eimi_kira.png")
+image Eimi_shy_Eimi_kiss:
+    zoom 0.75
+    im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_Body_shy.png" ,(0,1525),"Sprite/Eimi01/Eimi_kiss.png")
 image Eimi_shy_Eimi_kuanteen:
     zoom 0.75
     im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_Body_shy.png" ,(0,1525),"Sprite/Eimi01/Eimi_kuanteen.png")
@@ -205,6 +220,9 @@ image Eimi_shy_Eimi_panic:
 image Eimi_shy_Eimi_panic_shy:
     zoom 0.75
     im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_Body_shy.png" ,(0,1525),"Sprite/Eimi01/Eimi_panic_shy.png")
+image Eimi_shy_Eimi_pero:
+    zoom 0.75
+    im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_Body_shy.png" ,(0,1525),"Sprite/Eimi01/Eimi_pero.png")
 image Eimi_shy_Eimi_pout:
     zoom 0.75
     im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_Body_shy.png" ,(0,1525),"Sprite/Eimi01/Eimi_pout.png")
@@ -292,6 +310,9 @@ image Eimi_zoom_in_Eimi_confident:
 image Eimi_zoom_in_Eimi_confident2:
     zoom 1
     im.Composite((1920,2900), (0,1800), "Sprite/Eimi01/Eimi_Body.png" ,(0,1800),"Sprite/Eimi01/Eimi_confident2.png")
+image Eimi_zoom_in_Eimi_cry:
+    zoom 1
+    im.Composite((1920,2900), (0,1800), "Sprite/Eimi01/Eimi_Body.png" ,(0,1800),"Sprite/Eimi01/Eimi_cry.png")
 image Eimi_zoom_in_Eimi_cry_meme1:
     zoom 1
     im.Composite((1920,2900), (0,1800), "Sprite/Eimi01/Eimi_Body.png" ,(0,1800),"Sprite/Eimi01/Eimi_cry_meme1.png")
@@ -310,6 +331,9 @@ image Eimi_zoom_in_Eimi_hurt_meme:
 image Eimi_zoom_in_Eimi_kira:
     zoom 1
     im.Composite((1920,2900), (0,1800), "Sprite/Eimi01/Eimi_Body.png" ,(0,1800),"Sprite/Eimi01/Eimi_kira.png")
+image Eimi_zoom_in_Eimi_kiss:
+    zoom 1
+    im.Composite((1920,2900), (0,1800), "Sprite/Eimi01/Eimi_Body.png" ,(0,1800),"Sprite/Eimi01/Eimi_kiss.png")
 image Eimi_zoom_in_Eimi_kuanteen:
     zoom 1
     im.Composite((1920,2900), (0,1800), "Sprite/Eimi01/Eimi_Body.png" ,(0,1800),"Sprite/Eimi01/Eimi_kuanteen.png")
@@ -331,6 +355,9 @@ image Eimi_zoom_in_Eimi_panic:
 image Eimi_zoom_in_Eimi_panic_shy:
     zoom 1
     im.Composite((1920,2900), (0,1800), "Sprite/Eimi01/Eimi_Body.png" ,(0,1800),"Sprite/Eimi01/Eimi_panic_shy.png")
+image Eimi_zoom_in_Eimi_pero:
+    zoom 1
+    im.Composite((1920,2900), (0,1800), "Sprite/Eimi01/Eimi_Body.png" ,(0,1800),"Sprite/Eimi01/Eimi_pero.png")
 image Eimi_zoom_in_Eimi_pout:
     zoom 1
     im.Composite((1920,2900), (0,1800), "Sprite/Eimi01/Eimi_Body.png" ,(0,1800),"Sprite/Eimi01/Eimi_pout.png")
@@ -418,6 +445,9 @@ image Eimi_shy_zoom_in_Eimi_confident:
 image Eimi_shy_zoom_in_Eimi_confident2:
     zoom 1
     im.Composite((1920,2900), (0,1800), "Sprite/Eimi01/Eimi_Body_shy.png" ,(0,1800),"Sprite/Eimi01/Eimi_confident2.png")
+image Eimi_shy_zoom_in_Eimi_cry:
+    zoom 1
+    im.Composite((1920,2900), (0,1800), "Sprite/Eimi01/Eimi_Body_shy.png" ,(0,1800),"Sprite/Eimi01/Eimi_cry.png")
 image Eimi_shy_zoom_in_Eimi_cry_meme1:
     zoom 1
     im.Composite((1920,2900), (0,1800), "Sprite/Eimi01/Eimi_Body_shy.png" ,(0,1800),"Sprite/Eimi01/Eimi_cry_meme1.png")
@@ -436,6 +466,9 @@ image Eimi_shy_zoom_in_Eimi_hurt_meme:
 image Eimi_shy_zoom_in_Eimi_kira:
     zoom 1
     im.Composite((1920,2900), (0,1800), "Sprite/Eimi01/Eimi_Body_shy.png" ,(0,1800),"Sprite/Eimi01/Eimi_kira.png")
+image Eimi_shy_zoom_in_Eimi_kiss:
+    zoom 1
+    im.Composite((1920,2900), (0,1800), "Sprite/Eimi01/Eimi_Body_shy.png" ,(0,1800),"Sprite/Eimi01/Eimi_kiss.png")
 image Eimi_shy_zoom_in_Eimi_kuanteen:
     zoom 1
     im.Composite((1920,2900), (0,1800), "Sprite/Eimi01/Eimi_Body_shy.png" ,(0,1800),"Sprite/Eimi01/Eimi_kuanteen.png")
@@ -457,6 +490,9 @@ image Eimi_shy_zoom_in_Eimi_panic:
 image Eimi_shy_zoom_in_Eimi_panic_shy:
     zoom 1
     im.Composite((1920,2900), (0,1800), "Sprite/Eimi01/Eimi_Body_shy.png" ,(0,1800),"Sprite/Eimi01/Eimi_panic_shy.png")
+image Eimi_shy_zoom_in_Eimi_pero:
+    zoom 1
+    im.Composite((1920,2900), (0,1800), "Sprite/Eimi01/Eimi_Body_shy.png" ,(0,1800),"Sprite/Eimi01/Eimi_pero.png")
 image Eimi_shy_zoom_in_Eimi_pout:
     zoom 1
     im.Composite((1920,2900), (0,1800), "Sprite/Eimi01/Eimi_Body_shy.png" ,(0,1800),"Sprite/Eimi01/Eimi_pout.png")
