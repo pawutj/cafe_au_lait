@@ -6,7 +6,7 @@
 #navigation
 define n = Character(None, who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 #eimi
-define ei = Character("Eimi",color="#F0F8FF", image ="eimi", who_outlines=[(1,"#000000")], what_outlines=[(2,"#000000")])
+define ei = Character("{font=THSarabunNew Bold.ttf}{size=+10}Eimi",color="#F0F8FF", image ="eimi", who_outlines=[(1,"#000000")], what_outlines=[(2,"#000000")])
 #takagi
 define tk = Character("{font=THSarabunNew Bold.ttf}{size=+10}Takagi",color="#F0F8FF", who_outlines=[(1,"#000000")], what_outlines=[(2,"#000000")])
 #student a
@@ -14,7 +14,7 @@ define a = Character("{font=THSarabunNew Bold.ttf}{size=+10}Student A",color="#F
 #student ???
 define e0 = Character("{font=THSarabunNew Bold.ttf}{size=+10}???",color="#F0F8FF", who_outlines=[(1,"#000000")], what_outlines=[(2,"#000000")])
 # The game starts here.
-
+define en = Character("{font=THSarabunNew Bold.ttf}{size=+10}Enjou",color="#F0F8FF", who_outlines=[(1,"#000000")], what_outlines=[(2,"#000000")])
 transform crops:
     crop(650,-800,1920,2900)
 
@@ -100,6 +100,12 @@ image black_scene = im.Scale("background/black.jpg",1920,1080)
 
 image sky_morning = im.Scale("background/SKY/Sky_Morning.png",1920,1080)
 
+image route1 = im.Scale("background/route/route1.jpg",1920,1080)
+image route2 = im.Scale("background/route/route2.jpg",1920,1080)
+image route3 = im.Scale("background/route/route3.jpg",1920,1080)
+image route4 = im.Scale("background/route/route4.jpg",1920,1080)
+image route5 = im.Scale("background/route/route5.jpg",1920,1080)
+
 image dot1 = im.Scale("Sprite/Effect/dot1.png",800,1000)
 image dot2 = im.Scale("Sprite/Effect/dot2.png",800,1000)
 image dot3 = im.Scale("Sprite/Effect/dot3.png",800,1000)
@@ -182,7 +188,7 @@ image panic:
 
 
 label start:
-    jump q2_4a
+    jump q2_6
     $ point = 0
     scene black
     play music "audio/bgm/nagai_no_yoru.mp3" volume 0.5
