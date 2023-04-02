@@ -1,22 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script2_5.rpy", line 46, in script
-    en "ไม่น่าเชื่อว่ารุ่นพี่จะจำชื่อคนที่ไม่มีความสามารถอย่างผมได้นะครับ"
-Exception: Sayer 'en' is not defined.
+  File "game/script4.rpy", line 260, in script
+    show Eimi_Eimi_cry meme
+Exception: Image 'Eimi_Eimi_cry' does not accept attributes 'meme'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script2_5.rpy", line 46, in script
-    en "ไม่น่าเชื่อว่ารุ่นพี่จะจำชื่อคนที่ไม่มีความสามารถอย่างผมได้นะครับ"
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 881, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 774, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer 'en' is not defined.
+  File "game/script4.rpy", line 260, in script
+    show Eimi_Eimi_cry meme
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 1408, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 1371, in show_imspec
+    renpy.config.show(name,
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\exports.py", line 686, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\image.py", line 414, in find_target
+    self.target = target._duplicate(a)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\transform.py", line 881, in _duplicate
+    args.extraneous()
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 265, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'Eimi_Eimi_cry' does not accept attributes 'meme'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
 Cafe_au_lait 1.0
-Mon Apr  3 02:07:47 2023
+Mon Apr  3 02:33:06 2023

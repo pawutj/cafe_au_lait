@@ -257,11 +257,11 @@ label q004:
     tk "ไม่มีมีด มีแต่พู่กัน จะเอามะ -_-+"
     hide Eimi_Eimi_panic
 
-    show Eimi_Eimi_cry meme
+    show Eimi_Eimi_cry_meme1
     ei "ไม่เอาดีกว่าค่ะ หนูพูดเล่นค่ะ หนูกลัว " with dissolve
     n "หน้าเอมิดูซีดๆลงตอนที่ผมชูพู่กันขึ้นโชว์เธอเป็นการเตือน"
     "ดูเหมือนผมจะทำให้รุ่นน้องคนนี้หลอนพู่กันไปแล้ว ให้ตายสิ"
-    hide Eimi_Eimi_cry meme
+    hide Eimi_Eimi_cry_meme1
 
     show Eimi_Eimi_smug3
     ei "แต่รุ่นพี่คะ..." with dissolve
