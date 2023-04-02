@@ -100,6 +100,8 @@ image black_scene = im.Scale("background/black.jpg",1920,1080)
 
 image sky_morning = im.Scale("background/SKY/Sky_Morning.png",1920,1080)
 
+image Canvas = im.Scale("Cutscene/Canvas00.png",1920,1080)
+
 image route1 = im.Scale("background/route/route1.jpg",1920,1080)
 image route2 = im.Scale("background/route/route2.jpg",1920,1080)
 image route3 = im.Scale("background/route/route3.jpg",1920,1080)
@@ -184,6 +186,10 @@ image panic:
     repeat
 
     
+label transition_screen:
+    scene Canvas with Dissolve(2.0)
+    $renpy.pause(2.0,hard = True)
+    jump q002
 
 
 
@@ -197,6 +203,9 @@ label start:
     show text  "{size=40}ไม่ว่าจะเกิดอะไรขึ้นก็ตาม...จงอย่าทรยศต่อความฝันของตัวเอง..." with Dissolve(1.0)
     $ renpy.pause(2)
     hide text with Dissolve(1.0)
+
+    
+
     scene artroom_past with Dissolve(1.0)
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
@@ -233,7 +242,7 @@ label start:
     return
 
 label q002:
-    scene artroom_afternoon with Dissolve(1.0)   
+    scene artroom_afternoon with Dissolve(2.0)   
 
     tk "หืม?"
     n "ผมลืมตาตื่นขึ้นท่ามกลางห้องชมรมที่ไม่เหลือใครนอกจากผม ช่วงเวลาที่มีคนมากมายอยู่ในชมรมนี้มันกี่เดือนก่อนกันนะ? ผมเริ่มจะจำไม่ได้แล้ว"

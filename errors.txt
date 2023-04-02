@@ -2,7 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script5.rpy", line 1: Unexpected indentation at start of file.
+File "game/script.rpy", line 240: end of line expected.
+    jump transition_screen with Dissolve(1.0)
+                           ^
 
-Ren'Py Version: Ren'Py 8.0.1.22070801
-Wed Mar 15 22:56:10 2023
+Ren'Py Version: Ren'Py 8.0.3.22090809
+Mon Apr  3 03:23:11 2023
