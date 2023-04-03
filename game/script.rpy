@@ -6,87 +6,100 @@
 #navigation
 define n = Character(None, who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 #eimi
-define ei = Character("Eimi",color="#F0F8FF", image ="eimi", who_outlines=[(1,"#000000")], what_outlines=[(2,"#000000")])
+define ei = Character("{font=THSarabunNew Bold.ttf}{size=+10}Eimi",color="#F0F8FF", image ="eimi", who_outlines=[(1,"#000000")], what_outlines=[(2,"#000000")])
 #takagi
 define tk = Character("{font=THSarabunNew Bold.ttf}{size=+10}Takagi",color="#F0F8FF", who_outlines=[(1,"#000000")], what_outlines=[(2,"#000000")])
 #student a
-define a = Character("{font=THSarabunNew Bold.ttf}{size=+10}Student A",color="#F0F8FF", who_outlines=[(1,"#000000")], what_outlines=[(2,"#000000")])
+define a = Character("{font=THSarabunNew Bold.ttf}{size=+10}Student A",color="#F0F8FF",image ="enjou1" ,  who_outlines=[(1,"#000000")], what_outlines=[(2,"#000000")])
 #student ???
 define e0 = Character("{font=THSarabunNew Bold.ttf}{size=+10}???",color="#F0F8FF", who_outlines=[(1,"#000000")], what_outlines=[(2,"#000000")])
 # The game starts here.
-
+define en = Character("{font=THSarabunNew Bold.ttf}{size=+10}Enjou",color="#F0F8FF", image = "enjou2",who_outlines=[(1,"#000000")], what_outlines=[(2,"#000000")])
 transform crops:
     crop(650,-800,1920,2900)
 
 # image side eimi:
 #     zoom 0.6
 #     crops
-#     im.Composite((1920,2900), (0,1600), "Sprite/Eimi02/Eimi02.png")
+#     im.Composite((1920,2900), (0,1525), "Sprite/Eimi02/Eimi02.png")
+
+
+image side enjou1:
+    zoom 1.3
+    im.Scale("Sprite/Other/Enjou01.png",300,300)
+    yoffset 50
+
+image side enjou2:
+    zoom 1.3
+    im.Scale("Sprite/Other/Enjou02.png",300,300)
+    yoffset 50
+
+
 
 
 
 image eimi_0: 
-    zoom 0.85
-    im.Composite((1920,2900), (0,1600), "Sprite/Eimi01/Eimi_Body.png" ,(0,1600),"Sprite/Eimi01/Eimi_0.0.png")
+    zoom 0.75
+    im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_Body.png" ,(0,1525),"Sprite/Eimi01/Eimi_0.0.png")
 
 image eimi_2:
-    zoom 0.85
-    im.Composite((1920,2900), (0,1600), "Sprite/Eimi02/Eimi02.png")
+    zoom 0.75
+    im.Composite((1920,2900), (0,1525), "Sprite/Eimi02/Eimi02.png")
 
 
 image eimi_02_wakaranai:
-    zoom 0.85
-    im.Composite((1920,2900), (0,1600), "Sprite/Eimi02/Eimi02_body.png" ,(30,1600),"Sprite/Eimi01/Eimi_Wakaranai.png")
+    zoom 0.75
+    im.Composite((1920,2900), (0,1525), "Sprite/Eimi02/Eimi02_body.png" ,(30,1525),"Sprite/Eimi01/Eimi_Wakaranai.png")
 
 image eimi_02_0_0:
-    zoom 0.85
-    im.Composite((1920,2900), (0,1600), "Sprite/Eimi02/Eimi02_body.png"  ,(30,1600),"Sprite/Eimi01/Eimi_0_0.png")
+    zoom 0.75
+    im.Composite((1920,2900), (0,1525), "Sprite/Eimi02/Eimi02_body.png"  ,(30,1525),"Sprite/Eimi01/Eimi_0_0.png")
 
 
 image eimi_02_scared:
-    zoom 0.85
-    im.Composite((1920,2900), (0,1600), "Sprite/Eimi02/Eimi02_body.png" ,(30,1600),"Sprite/Eimi01/Eimi02_scared.png")    
+    zoom 0.75
+    im.Composite((1920,2900), (0,1525), "Sprite/Eimi02/Eimi02_body.png" ,(30,1525),"Sprite/Eimi01/Eimi02_scared.png")    
 
 image eimi_02_panic:
-    zoom 0.85
-    im.Composite((1920,2900), (0,1600), "Sprite/Eimi02/Eimi02_body.png" ,(30,1600),"Sprite/Eimi01/Eimi02_panic.png")    
+    zoom 0.75
+    im.Composite((1920,2900), (0,1525), "Sprite/Eimi02/Eimi02_body.png" ,(30,1525),"Sprite/Eimi01/Eimi02_panic.png")    
 
 image eimi_02_pout:
-    zoom 0.85
-    im.Composite((1920,2900), (0,1600), "Sprite/Eimi02/Eimi02_body.png" ,(30,1600),"Sprite/Eimi01/Eimi02_pout.png")
+    zoom 0.75
+    im.Composite((1920,2900), (0,1525), "Sprite/Eimi02/Eimi02_body.png" ,(30,1525),"Sprite/Eimi01/Eimi02_pout.png")
 
 image eimi_02_shock:
-    zoom 0.85
-    im.Composite((1920,2900), (0,1600), "Sprite/Eimi02/Eimi02_body.png" ,(30,1600),"Sprite/Eimi01/Eimi02_shock.png")
+    zoom 0.75
+    im.Composite((1920,2900), (0,1525), "Sprite/Eimi02/Eimi02_body.png" ,(30,1525),"Sprite/Eimi01/Eimi02_shock.png")
     
 image eimi_02_onegai:
-    zoom 0.85
-    im.Composite((1920,2900), (0,1600), "Sprite/Eimi02/Eimi02_body.png" ,(30,1600),"Sprite/Eimi01/Eimi02_onegai.png")
+    zoom 0.75
+    im.Composite((1920,2900), (0,1525), "Sprite/Eimi02/Eimi02_body.png" ,(30,1525),"Sprite/Eimi01/Eimi02_onegai.png")
 
 image eimi_02_shy_onegai:
-    zoom 0.85
-    im.Composite((1920,2900), (0,1600), "Sprite/Eimi02/Eimi02_body_shy.png" ,(30,1600),"Sprite/Eimi02/Eimi02_onegai.png")
+    zoom 0.75
+    im.Composite((1920,2900), (0,1525), "Sprite/Eimi02/Eimi02_body_shy.png" ,(30,1525),"Sprite/Eimi02/Eimi02_onegai.png")
 
 image eimi_02_shy_stupid:
-    zoom 0.85
-    im.Composite((1920,2900), (0,1600), "Sprite/Eimi02/Eimi02_body_shy.png" ,(30,1600),"Sprite/Eimi02/Eimi02_stupid.png")
+    zoom 0.75
+    im.Composite((1920,2900), (0,1525), "Sprite/Eimi02/Eimi02_body_shy.png" ,(30,1525),"Sprite/Eimi02/Eimi02_stupid.png")
     
 image eimi_02_shy_tired:
-    zoom 0.85
-    im.Composite((1920,2900), (0,1600), "Sprite/Eimi02/Eimi02_body_shy.png" ,(30,1600),"Sprite/Eimi02/Eimi02_tired.png")
+    zoom 0.75
+    im.Composite((1920,2900), (0,1525), "Sprite/Eimi02/Eimi02_body_shy.png" ,(30,1525),"Sprite/Eimi02/Eimi02_tired.png")
     
 image eimi_02_shy_meme02:
-    zoom 0.85
-    im.Composite((1920,2900), (0,1600), "Sprite/Eimi02/Eimi02_body_shy.png" ,(30,1600),"Sprite/Eimi02/Eimi02_meme02.png")
+    zoom 0.75
+    im.Composite((1920,2900), (0,1525), "Sprite/Eimi02/Eimi02_body_shy.png" ,(30,1525),"Sprite/Eimi02/Eimi02_meme02.png")
 
 
 image eimi_30: 
-    zoom 0.85
-    im.Composite((1920,2900), (0,1600), "Sprite/Eimi01/Eimi_Body.png" ,(0,1600),"Sprite/Eimi01/Eimi_030_03.png")
+    zoom 0.75
+    im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_Body.png" ,(0,1525),"Sprite/Eimi01/Eimi_030_03.png")
 
 image eimi_t: 
     zoom 0.75
-    im.Composite((1920,2900), (0,1600), "Sprite/Eimi01/Eimi_Body.png" ,(0,1600),"Sprite/Eimi01/Eimi_030_03.png")
+    im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_Body.png" ,(0,1525),"Sprite/Eimi01/Eimi_030_03.png")
 
 image artroom_past= im.Scale("background/artroom/art-room2.jpg",1920,1080)
 image artroom_afternoon = im.Scale("background/artroom/art-room1.jpg",1920,1080)
@@ -99,6 +112,14 @@ image school_park_4= im.Scale("background/school-park/school-park4.jpg",1920,108
 image black_scene = im.Scale("background/black.jpg",1920,1080)
 
 image sky_morning = im.Scale("background/SKY/Sky_Morning.png",1920,1080)
+
+image Canvas = im.Scale("Cutscene/Canvas00.png",1920,1080)
+
+image route1 = im.Scale("background/route/route1.jpg",1920,1080)
+image route2 = im.Scale("background/route/route2.jpg",1920,1080)
+image route3 = im.Scale("background/route/route3.jpg",1920,1080)
+image route4 = im.Scale("background/route/route4.jpg",1920,1080)
+image route5 = im.Scale("background/route/route5.jpg",1920,1080)
 
 image dot1 = im.Scale("Sprite/Effect/dot1.png",800,1000)
 image dot2 = im.Scale("Sprite/Effect/dot2.png",800,1000)
@@ -178,11 +199,14 @@ image panic:
     repeat
 
     
+label transition_screen:
+    scene Canvas with Dissolve(2.0)
+    $renpy.pause(2.0,hard = True)
+    jump q002
 
 
 
 label start:
-    jump q2_4a
     $ point = 0
     scene black
     play music "audio/bgm/nagai_no_yoru.mp3" volume 0.5
@@ -192,6 +216,9 @@ label start:
     show text  "{size=40}ไม่ว่าจะเกิดอะไรขึ้นก็ตาม...จงอย่าทรยศต่อความฝันของตัวเอง..." with Dissolve(1.0)
     $ renpy.pause(2)
     hide text with Dissolve(1.0)
+
+    
+
     scene artroom_past with Dissolve(1.0)
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
@@ -228,7 +255,7 @@ label start:
     return
 
 label q002:
-    scene artroom_afternoon with Dissolve(1.0)   
+    scene artroom_afternoon with Dissolve(2.0)   
 
     tk "หืม?"
     n "ผมลืมตาตื่นขึ้นท่ามกลางห้องชมรมที่ไม่เหลือใครนอกจากผม ช่วงเวลาที่มีคนมากมายอยู่ในชมรมนี้มันกี่เดือนก่อนกันนะ? ผมเริ่มจะจำไม่ได้แล้ว"
