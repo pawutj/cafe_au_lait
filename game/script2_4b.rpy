@@ -59,13 +59,13 @@ label q2_4b:
     tk ".................... ._.”"
     n "เรื่องชอบทำหน้าตึงๆนี่เป็นปมด้อยผมพอสมควรถึงผมจะไม่เคยบ่นให้ใครฟังก็เถอะ"
     "พอเอมิทักเรื่องนี้ขึ้นมาเลยรู้สึกปวดอกหน่อยๆแฮะ"
-    stop music
     hide Eimi_Eimi_030_02
 
     show Eimi02_Eimi02_smile2
     show question with Dissolve(1.0)
     ei "แล้วตกลงพี่ชายรุ่นพี่นี่เหมือนรุ่นพี่ไหมคะ?" with dissolve
     hide question
+    stop music
     play music "audio/bgm/tsuyukusa.mp3" volume 0.5
     tk "นั่นสิ"
     hide Eimi02_Eimi02_smile2

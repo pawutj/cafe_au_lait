@@ -62,5 +62,4 @@ for i,c in data.iterrows():
     if(c['effect'] != ""):
         print("hide "+c['effect'])
 
-printHide(temp_charector)
-printHide(temp_screen)
+printHide(temp_charector_emotion)
