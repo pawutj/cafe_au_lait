@@ -1,15 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Scale object at 0x0000000005be3760>:
-  File "game/script.rpy", line 215, in script
-    a "รุ่นพี่ว่ายังไงนะครับ?"
-OSError: Couldn't find file 'Sprite/Other/Enou02.png'.
+While loading <renpy.display.im.Image object ('gui/textbox.png') at 0x0000000006208e50>:
+  File "game/script3.rpy", line 26, in script
+    n "หลังจากวิ่งไล่ล่ากันอยู่พักหนึ่ง ผมก็สงบใจลงแล้วลากจำเลยมายังฐานทัพหลักของผม"
+  File "game/script3.rpy", line 26, in script
+    n "หลังจากวิ่งไล่ล่ากันอยู่พักหนึ่ง ผมก็สงบใจลงแล้วลากจำเลยมายังฐานทัพหลักของผม"
+OSError: Couldn't find file 'gui/textbox.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 215, in script
-    a "รุ่นพี่ว่ายังไงนะครับ?"
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
+    renpy.main.main()
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\main.py", line 660, in main
+    run(restart)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\main.py", line 146, in run
+    renpy.execution.run_context(True)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\execution.py", line 938, in run_context
+    context.run()
+  File "game/script3.rpy", line 26, in script
+    n "หลังจากวิ่งไล่ล่ากันอยู่พักหนึ่ง ผมก็สงบใจลงแล้วลากจำเลยมายังฐานทัพหลักของผม"
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
+  File "game/script3.rpy", line 26, in script
+    n "หลังจากวิ่งไล่ล่ากันอยู่พักหนึ่ง ผมก็สงบใจลงแล้วลากจำเลยมายังฐานทัพหลักของผม"
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
     renpy.exports.say(who, what, *args, **kwargs)
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\exports.py", line 1373, in say
@@ -50,26 +63,12 @@ Full traceback:
     surf = render(child, width, height, cst, cat)
   File "render.pyx", line 170, in renpy.display.render.render
   File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\transform.py", line 747, in render
-    return transform_render(self, width, height, st, at)
-  File "accelerator.pyx", line 187, in renpy.display.accelerator.transform_render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\image.py", line 506, in render
-    return wrap_render(self.target, width, height, st, at)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\image.py", line 309, in wrap_render
-    rend = render(child, w, h, st, at)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\layout.py", line 1369, in render
+    back = render(style.background, bw, bh, st, at)
   File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\transform.py", line 747, in render
-    return transform_render(self, width, height, st, at)
-  File "accelerator.pyx", line 187, in renpy.display.accelerator.transform_render
   File "render.pyx", line 266, in renpy.display.render.render
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\im.py", line 627, in render
     return cache.get(self, render=True)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\im.py", line 295, in get
-    surf = image.load()
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\im.py", line 890, in load
-    child = cache.get(self.image)
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\im.py", line 295, in get
     surf = image.load()
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\im.py", line 720, in load
@@ -78,9 +77,9 @@ Full traceback:
     filelike = renpy.loader.load(self.filename)
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\loader.py", line 820, in load
     raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'Sprite/Other/Enou02.png'.
+OSError: Couldn't find file 'gui/textbox.png'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
 Cafe_au_lait 1.0
-Mon Apr  3 03:47:22 2023
+Wed Apr  5 02:21:12 2023
