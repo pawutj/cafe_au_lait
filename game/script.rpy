@@ -287,23 +287,31 @@ label q002:
     n "วาดรูปอยู่ดีๆทำไมเรามานอนมองท้องฟ้ากันนะ ชีวิตผมมันเกิดบ้าอะไรขึ้น?"
     scene school_park_1 with Dissolve(1.0)
     show Eimi_Eimi_cry_meme2
+    show sweat with Dissolve(1.0)
     e0 "ขอโทษค่ะ! ฉันวิ่งไม่ดูทา..." with dissolve
+    hide sweat
     tk "ว้ากกกกกกกกส์ส์ส์ส์!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
     hide  Eimi_Eimi_cry_meme2 
-    show  Eimi_Eimi_cry_meme1 
+    show  Eimi_Eimi_o 
+    show surprise with Dissolve(1.0)
     e0 "อุหวา! มันเกิดอะไรขึ้นเหรอค้า!?" with dissolve
+    hide surprise
     n "ผมไม่อยากจะเชื่อภาพที่ตัวเองเห็น"
     "ถึงแม้จะเพิ่งล้มกลิ้งกับพื้นแต่ผมใช้กำลังที่ยังเหลืออยู่คลานไปหาภาพวาดของผม"
     tk "ไม่นะ! งานส่งประกวดของฉัน!"
-    hide Eimi_Eimi_cry_meme1 
+    hide Eimi_Eimi_o 
     show Eimi_Eimi_0_0
+    show down with Dissolve(1.0)
     e0 "ห๊ะ? งานส่งประกวดเหรอคะ!?" with dissolve
+    hide down
     n "...ภาพวาดของผมเต็มไปด้วยกาแฟทาบทับเต็มไปหมด"
     "รูปวาดของผมจมกาแฟตายไปแล้ว!"
     tk "ทั้งๆที่ฉันใช้เวลาวาดมาสเตอร์พีซชิ้นนี้เกือบสัปดาห์หนึ่งแท้ๆ"
     hide Eimi_Eimi_0_0
     show Eimi_Eimi_panic 
+    show panic with Dissolve(1.0)
     e0 "สัปดาห์หนึ่ง!" with dissolve
+    hide panic
     tk "แล้วงานประกวดก็จะต้องส่งสัปดาห์หน้าแล้วด้วย..."
     e0 "งั้นก็ใกล้มากแล้วสิคะ"
     tk "ใกล้มากจนการทำงานใหม่ส่งแทบจะเป็นไปไม่ได้เลย โอวววว..."
@@ -322,9 +330,13 @@ label q002:
     tk "เพิ่งย้ายเข้ามาก็สร้างความบรรลัยเลยนะ แสบจริงๆ"
     hide eimi_2 
     show eimi_02_wakaranai 
+    show question with Dissolve(1.0)
     ei "คะ?" with dissolve
+    hide question
     tk "ชดใช้..."
     hide eimi_02_wakaranai
+    stop music
+    play music "audio/bgm/dotabata_happening.mp3"
     show eimi_02_0_0
     ei "หา?????" with dissolve
     n "ผมสูดหายใจเข้าลึกๆก่อนที่จะส่งเสียงตะโกน"
@@ -332,7 +344,9 @@ label q002:
     tk "ยัยบ้า! ชดใช้มาเดี๋ยวนี้เลยนะเฟ้ยยยยยยยยย!!!!!!!!!!!!!!"
     hide eimi_02_0_0
     show Eimi_Eimi_panic
+    show panic with Dissolve(1.0)
     ei "หวา!!! รุ่นพี่ค้า--!!" with dissolve
+    hide panic
     n "ผมพุ่งเข้าไปหารุ่นน้องตัวแสบพร้อมกับกำพู่กันในมือแน่น"
     n "รู้ตัวอีกทีความเดือดดาลก็ทำให้ผมเอาแท่งพู่กันยาวไล่แทงคนทำลายผลงานผมจนเธอต้องวิ่งหนีผมวนไปวนมารอบกองงานศิลปะผม"
     n "ไม่สิ...ต้องเรียกว่าสุสานของงานศิลปะผมดีกว่า งานของผมถูกกาแฟลบหายไปหมดแล้ว T_T”"
