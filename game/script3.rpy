@@ -123,7 +123,7 @@ label q003:
     hide surprise
     tk "ทำไมมันกลายเป็นเธอมาอวดตัวเองให้ฉันฟังแทนเนี่ย?"
     n "ผมแอบเหล่มองเอมิที่เหงื่อตกสองสามหยด ดูเหมือนผมจะทำเธอสูญเสียความมั่นใจระดับหนึ่ง"
-    show black_scene with Dissolve(1.0)
+    show imagine with Dissolve(1.0)
     hide artroom_afternoon
 
     hide Eimi02_Eimi02_shock
@@ -135,7 +135,7 @@ label q003:
     "น่าเอาเป็นแบบวาดภาพจริงๆ แต่นี่ไม่ใช่เวลาของเรื่องอย่างนั้น..."
     "ผมกำลังจริงจังกับชีวิตอยู่ ไม่มีเวลามาวาดอะไรเอาแต่ใจเอาสนุกอีกแล้ว"
     show artroom_afternoon with Dissolve(1.0)
-    hide black_scene
+    hide imagine
 
     hide Eimi_Eimi_o
 

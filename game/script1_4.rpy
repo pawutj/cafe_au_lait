@@ -411,5 +411,6 @@ label q1_4:
     hide Eimi02_Eimi02_smile2
 
     "...ผมภาวนา..."
-    jump q005
+    hide artroom_afternoon
+    jump q1_5
     return

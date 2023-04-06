@@ -104,6 +104,8 @@ image eimi_t:
 image artroom_past= im.Scale("background/artroom/art-room2.jpg",1920,1080)
 image artroom_afternoon = im.Scale("background/artroom/art-room1.jpg",1920,1080)
 
+image imagine = im.Scale("background/imagine.png",1920,1080)
+
 image school_park_1= im.Scale("background/SchoolPark01/school-park1.png",1920,1080)
 image school_park_2= im.Scale("background/SchoolPark01/school-park2.png",1920,1080)
 image school_park_3= im.Scale("background/SchoolPark01/school-park3.png",1920,1080)
@@ -128,6 +130,12 @@ image dot3 = im.Scale("Sprite/Effect/dot3.png",800,1000)
 image laught1 = im.Scale("Sprite/Effect/laught.png",800,1000) 
 image laught2 = im.Scale("Sprite/Effect/laught2.png",800,1000) 
 
+image coffee01 = im.Scale("CG/CG01/coffee01.png",1920,1080)
+image coffee02 = im.Scale("CG/CG01/coffee02.png",1920,1080)
+image coffee03 = im.Scale("CG/CG01/coffee03.png",1920,1080)
+image coffee04 = im.Scale("CG/CG01/coffee04.png",1920,1080)
+image coffee05 = im.Scale("CG/CG01/coffee05.png",1920,1080)
+image coffee06 = im.Scale("CG/CG01/coffee06.png",1920,1080)
 image angry:
     "Sprite/Effect/angry.png"
 
