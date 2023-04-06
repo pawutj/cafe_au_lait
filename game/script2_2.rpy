@@ -40,7 +40,7 @@ label q2_2:
     hide Eimi_Eimi_smug3
 
     show Eimi02_Eimi02_smile2
-    n "รุ่นพี่ก็ทำขู่ไปงั้นแหละค่ะ เอมิรู้" with dissolve
+    ei "รุ่นพี่ก็ทำขู่ไปงั้นแหละค่ะ เอมิรู้" with dissolve
     tk "..........."
     hide Eimi02_Eimi02_smile2
 

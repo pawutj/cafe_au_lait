@@ -9,7 +9,7 @@ def printHide(c):
 
 import pandas as pd
 
-data = pd.read_csv('script1_4.csv',encoding="utf-8")
+data = pd.read_csv('script2_5.csv',encoding="utf-8")
 
 data = data.fillna("")
 
@@ -62,3 +62,4 @@ for i,c in data.iterrows():
     if(c['effect'] != ""):
         print("hide "+c['effect'])
 
+printHide(temp_charector_emotion)

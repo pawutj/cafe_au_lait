@@ -1,9 +1,12 @@
-label q005:
-    show artroom_afternoon with Dissolve(1.0)
+label q1_5:
+    show sky_morning with Dissolve(1.0)
     play music "audio/bgm/hijimeta_no_date.mp3" volume 0.5
     n "วันใหม่เริ่มขึ้นแล้ว" with dissolve
-    "พร้อมกับที่ผมเริ่มผลงานใหม่ของผม"
+    "พร้อมกับที่ผมจะเริ่มผลงานใหม่ของผม"
     "ต่อจากนี้ผมจะเริ่มการต่อสู้ของตัวเองใหม่โดยไม่สนใจอดีตที่ผ่านมา"
+    show artroom_afternoon with Dissolve(1.0)
+    hide sky_morning
+
     "ในฐานะหัวหน้าชมรมและสมาชิกคนสุดท้ายของชมรมศิลปะ ผมจะไม่มีวันยอมแพ้ให้กับเป้าหมายที่วางไว้แต่แรกไม่ว่าจะมีอุปสรรคมากแค่ไหน"
     "กระดาษวาดรูป พร้อม!"
     "พู่กันและจานสี พร้อม!"
@@ -11,40 +14,41 @@ label q005:
     "..............................."
     "รู้สึกเหมือนขาดอะไรบางอย่างไปแฮะ? "
     "ผมพยายามนึกให้ออกว่าผมลืมอะไรไปกันแน่ แต่คิดมาเป็นนาทีแล้วก็นึกไม่ออกสักที"
-    show Eimi_Eimi_smile
-    ei "ลืมกาแฟหรือเปล่าคะ?" with dissolve
-    tk "เออใช่เลย ขอบคุณนะ"
-    hide Eimi_Eimi_smile
+    show coffee04 with Dissolve(1.0)
+    hide artroom_afternoon
 
-    show Eimi_Eimi_smile4
-    show happy with Dissolve(1.0)
-    ei "ไม่เป็นไรค่ะ..." with dissolve
-    hide happy
+    ei "ลืมกาแฟหรือเปล่าคะ?"
+    tk "เออใช่เลย ขอบคุณนะ"
+    show coffee02 with Dissolve(1.0)
+    hide coffee04
+
+    ei "ไม่เป็นไรค่ะ..."
     tk "ขอบคุณมา...เดี๋ยวนะ..."
     n "ผมเหลือบมองไปยังต้นเสียงที่มาจากข้างหลังผม "
     "เธอคือเด็กสาวเรือนผมสีน้ำตาลที่มีกาแฟกระป๋องอยู่ในกำมือ เด็กสาววางกาแฟราคาถูกที่เธอซื้อมาไว้บนโต๊ะข้างๆตัวผมก่อนที่จะส่งรอยยิ้มซื่อๆให้"
     tk "เอมิ "
-    hide Eimi_Eimi_smile4
+    show coffee06 with Dissolve(1.0)
+    hide coffee02
 
-    show Eimi_Eimi_XD
-    ei "ใช่ค้าๆ อิทสึกิ เอมิ รุ่นน้องปี 4 ผู้น่ารักเองค่า " with dissolve
+    ei "ใช่ค้าๆ อิทสึกิ เอมิ รุ่นน้องปี 4 ผู้น่ารักเองค่า "
     tk "จะมาโฆษณาตัวเองทำไมเนี่ย?"
-    hide Eimi_Eimi_XD
+    show coffee03 with Dissolve(1.0)
+    hide coffee06
 
-    show Eimi_Eimi_calm
-    ei "กำลังอารมณ์ดีอยู่ค่ะ เลยอยากพูดอะไรแปลกๆค่ะ " with dissolve
+    ei "กำลังอารมณ์ดีอยู่ค่ะ เลยอยากพูดอะไรแปลกๆค่ะ "
     tk "เธอนี่บ้าบอชะมัด"
-    stop music
-    hide Eimi_Eimi_calm
+    show coffee05 with Dissolve(1.0)
+    hide coffee03
 
-    show Eimi_Eimi_smile3
-    ei "ฮะๆๆ" with dissolve
+    ei "ฮะๆๆ"
     n "ทั้งๆที่โดนด่าแต่เธอคนนี้กลับหัวเราะให้ผม แปลกคนจริงๆ"
     "ที่แปลกยิ่งกว่าคือเธอจะกลับมาหาผมทำไมกัน?"
+    show artroom_afternoon with Dissolve(1.0)
+    hide coffee05
+
+    stop music
     tk "เธอไม่ไปชมรมบาสเกตบอลเหรอ?"
     play music "audio/bgm/morning_talk.mp3" volume 0.5
-    hide Eimi_Eimi_smile3
-
     show Eimi02_Eimi02_wink
     show shine with Dissolve(1.0)
     ei "ไปค่ะๆ แต่คิดว่าจะแบ่งเวลามานั่งเป็นเพื่อนกับรุ่นพี่เพื่อเป็นการขอบคุณค่ะ" with dissolve
@@ -145,5 +149,8 @@ label q005:
     stop music
     "...อีกต่อไป"
     hide Eimi_Eimi_smile
+
     jump q2_1
     return
+
+

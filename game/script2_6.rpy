@@ -17,16 +17,15 @@ label q2_6:
     "ยัยนี่ขนาดเวลาโกรธก็ยังไม่น่ากลัวเลยแฮะ อาจจะเพราะตัวเล็กด้วยล่ะ"
     tk "ฉันโกรธคนอื่นจนเหนื่อยแล้ว"
     hide Eimi_Eimi_pout
-
     show Eimi_Eimi_normal
     ei "...เหรอคะ" with dissolve
     tk "สมัยก่อนก็ทะเลาะกับคนอื่นมาเยอะ พอโตๆขึ้นก็เลยคิดว่าปล่อยๆมันไปบ้างก็ดี"
     hide Eimi_Eimi_normal
 
-    show Eimi_Eimi_smile
+    show Eimi_Eimi_smile2
     ei "...ใจดีจังค่ะ" with dissolve
     tk "ใจดี?"
-    hide Eimi_Eimi_smile
+    hide Eimi_Eimi_smile2
 
     show Eimi_Eimi_angry
     show angry with Dissolve(1.0)

@@ -1,12 +1,15 @@
-label q2_5:
-    show school_park_2 with Dissolve(1.0)
+label q2_5:    
+    show sunset4 with Dissolve(1.0)
+    "" with dissolve
+    show school_park_3 with Dissolve(1.0)
+    hide sunset4
+
     show Eimi_Eimi_normal
     tk "เธอจะเดินมากับฉันทำไม? " with dissolve
     ei "แค่เดินมาด้วยกันหลังเลิกเรียนนี่คะ"
     tk "บ้านเธอกับฉันไปกันคนละทางกันไม่ใช่เหรอ?"
     hide Eimi_Eimi_normal
-
-    show Eimi_Eimi_smile
+    show Eimi_Eimi_smile2
     show happy with Dissolve(1.0)
     ei "แต่พวกเราก็เดินออกไปโรงเรียนทางเดียวกันนี่คะ" with dissolve
     hide happy
@@ -15,7 +18,7 @@ label q2_5:
     "สำหรับผมที่เป็นคนพูดไม่เก่งแล้ว เอมิที่คิดคำพูดมาชวนคุยได้เรื่อยๆถือว่าเป็นคนที่เก่งมาก ถึงผมจะไม่เข้าใจความเก่งในการเข้าสังคมของเธอก็เถอะนะ"
     "ดูเหมือนคนที่น่าจะเพื่อนเยอะและเป็นที่นิยมได้ง่าย แต่เธอกลับมาคลุกคลีกับเรา "
     "ยิ่งคิดก็ยิ่งแปลกจริงๆ"
-    hide Eimi_Eimi_smile
+    hide Eimi_Eimi_smile2
 
     show Eimi_Eimi_meh
     ei "รุ่นพี่คะๆ" with dissolve
@@ -38,7 +41,7 @@ label q2_5:
     hide Eimi_Eimi_sad
 
     show Eimi_Eimi_normal
-    a "ไม่ได้คุยกันนาน รุ่นพี่ก็ยังเงียบๆเหมือนเดิมเลยนะครับ" with dissolve
+    a "ไม่ได้คุยกันนาน รุ่นพี่ก็ยังเงียบเหมือนเดิมเลยนะครับ" with dissolve
     n "ผมไม่ได้พูดเพราะผมไม่รู้จะตอบอะไรกลับไปดี"
     "คนตรงหน้าผมคือหนึ่งในสมาชิกของชมรมศิลปะที่ลาออกจากชมรมไปแล้ว"
     "พวกเราเคยบาดหมางกันในอดีตมาก่อนแต่เรื่องนั้นมันก็ผ่านมานานมากแล้ว สายตาของคนตรงหน้าไม่มีความโกรธเหลืออยู่อย่างสมัยก่อน อย่างไรก็ตาม มันก็เป็นสายตาที่เย็นชามากอยู่ดี"
@@ -86,10 +89,12 @@ label q2_5:
     play music "audio/bgm/alphard.mp3" volume 0.5
     hide Eimi_Eimi_normal
 
-    show Eimi02_Eimi02_sawagashi
+    show Eimi02_Eimi02_angry2
+    show excited with Dissolve(1.0)
     ei "คุณน่ะ..." with dissolve
+    hide excited
     en "..................."
-    hide Eimi02_Eimi02_sawagashi
+    hide Eimi02_Eimi02_angry2
 
     show Eimi02_Eimi02_angry
     ei "ฉันไม่รู้หรอกนะคะว่าทำไมคุณกับรุ่นพี่ถึงไม่ถูกกัน" with dissolve
@@ -128,5 +133,7 @@ label q2_5:
     en "ผมหวังว่าสักวัน เธอจะไม่กลายเป็นแบบผมไปอีกคน รุ่นพี่ทาคากิ "
     stop music
     n "แล้วเอ็นโจก็เดินจากพวกเราไปโดยที่เขาไม่หันมามองพวกเราอีก"
+    hide Eimi02_Eimi02_0
     jump q2_6
     return
+

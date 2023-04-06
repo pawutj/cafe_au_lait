@@ -101,17 +101,21 @@ image eimi_t:
     zoom 0.75
     im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_Body.png" ,(0,1525),"Sprite/Eimi01/Eimi_030_03.png")
 
-image artroom_past= im.Scale("background/artroom/art-room2.jpg",1920,1080)
+image artroom_past= im.Scale("background/artroom/art-room6.jpg",1920,1080)
 image artroom_afternoon = im.Scale("background/artroom/art-room1.jpg",1920,1080)
 
-image school_park_1= im.Scale("background/school-park/school-park1.jpg",1920,1080)
-image school_park_2= im.Scale("background/school-park/school-park2.jpg",1920,1080)
-image school_park_3= im.Scale("background/school-park/school-park3.jpg",1920,1080)
-image school_park_4= im.Scale("background/school-park/school-park4.jpg",1920,1080)
+image imagine = im.Scale("background/imagine.png",1920,1080)
+
+image school_park_1= im.Scale("background/SchoolPark01/school-park1.png",1920,1080)
+image school_park_2= im.Scale("background/SchoolPark01/school-park2.png",1920,1080)
+image school_park_3= im.Scale("background/SchoolPark01/school-park3.png",1920,1080)
+image school_park_4= im.Scale("background/SchoolPark01/school-park4.png",1920,1080)
 
 image black_scene = im.Scale("background/black.jpg",1920,1080)
 
 image sky_morning = im.Scale("background/SKY/Sky_Morning.png",1920,1080)
+image sunset4 = im.Scale("background/SKY/Sunset4.png",1920,1080)
+
 
 image Canvas = im.Scale("Cutscene/Canvas00.png",1920,1080)
 
@@ -128,6 +132,12 @@ image dot3 = im.Scale("Sprite/Effect/dot3.png",800,1000)
 image laught1 = im.Scale("Sprite/Effect/laught.png",800,1000) 
 image laught2 = im.Scale("Sprite/Effect/laught2.png",800,1000) 
 
+image coffee01 = im.Scale("CG/CG01/coffee01.png",1920,1080)
+image coffee02 = im.Scale("CG/CG01/coffee02.png",1920,1080)
+image coffee03 = im.Scale("CG/CG01/coffee03.png",1920,1080)
+image coffee04 = im.Scale("CG/CG01/coffee04.png",1920,1080)
+image coffee05 = im.Scale("CG/CG01/coffee05.png",1920,1080)
+image coffee06 = im.Scale("CG/CG01/coffee06.png",1920,1080)
 image angry:
     "Sprite/Effect/angry.png"
 
@@ -205,21 +215,23 @@ label transition_screen:
     jump q002
 
 
+style ascend:
+    outlines [ (absolute(1), "#00ff00", absolute(0), absolute(0)) ]
 
 label start:
     $ point = 0
-    scene black
-    play music "audio/bgm/nagai_no_yoru.mp3" volume 0.5
+    scene Canvas
+
+    play music "audio/bgm/nagai_no_yoru.mp3" volume 0.5 
     show text "{size=40}หากเราไม่พยายามและไม่เชื่อในสิ่งที่ตัวเองทำก็เท่ากับแพ้ตั้งแต่แรก" with Dissolve(1.0)
     $ renpy.pause(2)
     hide text with Dissolve(1.0)
     show text  "{size=40}ไม่ว่าจะเกิดอะไรขึ้นก็ตาม...จงอย่าทรยศต่อความฝันของตัวเอง..." with Dissolve(1.0)
     $ renpy.pause(2)
     hide text with Dissolve(1.0)
-
-    
-
+   
     scene artroom_past with Dissolve(1.0)
+    hide Canvas
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
     n "ผมไม่เข้าใจว่าทำไมผมต้องพูดซ้ำด้วย"
@@ -276,7 +288,9 @@ label q002:
     n "ภาพที่วาดมาหลายต่อหลายวันใกล้จะสำเร็จ"
     n "ว่าแล้วก็ลงมือเล..."
     scene sky_morning with Dissolve(1.0)
+    show excited with Dissolve(1.0)
     n "{size=50}ตูมมมมมมมมมมมมมมมมมมมมมมม!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+    hide excited
     e0 "กรี๊ดดดด!!!!!!!"
     tk "อ้ากกกกกก!!!!!!!!!!"
     n "เสียงผู้หญิงคนหนึ่งกรีดร้องดังขึ้นข้างๆผม"
@@ -287,23 +301,31 @@ label q002:
     n "วาดรูปอยู่ดีๆทำไมเรามานอนมองท้องฟ้ากันนะ ชีวิตผมมันเกิดบ้าอะไรขึ้น?"
     scene school_park_1 with Dissolve(1.0)
     show Eimi_Eimi_cry_meme2
+    show sweat with Dissolve(1.0)
     e0 "ขอโทษค่ะ! ฉันวิ่งไม่ดูทา..." with dissolve
+    hide sweat
     tk "ว้ากกกกกกกกส์ส์ส์ส์!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
     hide  Eimi_Eimi_cry_meme2 
-    show  Eimi_Eimi_cry_meme1 
+    show  Eimi_Eimi_o 
+    show surprise with Dissolve(1.0)
     e0 "อุหวา! มันเกิดอะไรขึ้นเหรอค้า!?" with dissolve
+    hide surprise
     n "ผมไม่อยากจะเชื่อภาพที่ตัวเองเห็น"
     "ถึงแม้จะเพิ่งล้มกลิ้งกับพื้นแต่ผมใช้กำลังที่ยังเหลืออยู่คลานไปหาภาพวาดของผม"
     tk "ไม่นะ! งานส่งประกวดของฉัน!"
-    hide Eimi_Eimi_cry_meme1 
+    hide Eimi_Eimi_o 
     show Eimi_Eimi_0_0
+    show down with Dissolve(1.0)
     e0 "ห๊ะ? งานส่งประกวดเหรอคะ!?" with dissolve
+    hide down
     n "...ภาพวาดของผมเต็มไปด้วยกาแฟทาบทับเต็มไปหมด"
     "รูปวาดของผมจมกาแฟตายไปแล้ว!"
     tk "ทั้งๆที่ฉันใช้เวลาวาดมาสเตอร์พีซชิ้นนี้เกือบสัปดาห์หนึ่งแท้ๆ"
     hide Eimi_Eimi_0_0
     show Eimi_Eimi_panic 
+    show panic with Dissolve(1.0)
     e0 "สัปดาห์หนึ่ง!" with dissolve
+    hide panic
     tk "แล้วงานประกวดก็จะต้องส่งสัปดาห์หน้าแล้วด้วย..."
     e0 "งั้นก็ใกล้มากแล้วสิคะ"
     tk "ใกล้มากจนการทำงานใหม่ส่งแทบจะเป็นไปไม่ได้เลย โอวววว..."
@@ -322,9 +344,13 @@ label q002:
     tk "เพิ่งย้ายเข้ามาก็สร้างความบรรลัยเลยนะ แสบจริงๆ"
     hide eimi_2 
     show eimi_02_wakaranai 
+    show question with Dissolve(1.0)
     ei "คะ?" with dissolve
+    hide question
     tk "ชดใช้..."
     hide eimi_02_wakaranai
+    stop music
+    play music "audio/bgm/dotabata_happening.mp3"
     show eimi_02_0_0
     ei "หา?????" with dissolve
     n "ผมสูดหายใจเข้าลึกๆก่อนที่จะส่งเสียงตะโกน"
@@ -332,7 +358,9 @@ label q002:
     tk "ยัยบ้า! ชดใช้มาเดี๋ยวนี้เลยนะเฟ้ยยยยยยยยย!!!!!!!!!!!!!!"
     hide eimi_02_0_0
     show Eimi_Eimi_panic
+    show panic with Dissolve(1.0)
     ei "หวา!!! รุ่นพี่ค้า--!!" with dissolve
+    hide panic
     n "ผมพุ่งเข้าไปหารุ่นน้องตัวแสบพร้อมกับกำพู่กันในมือแน่น"
     n "รู้ตัวอีกทีความเดือดดาลก็ทำให้ผมเอาแท่งพู่กันยาวไล่แทงคนทำลายผลงานผมจนเธอต้องวิ่งหนีผมวนไปวนมารอบกองงานศิลปะผม"
     n "ไม่สิ...ต้องเรียกว่าสุสานของงานศิลปะผมดีกว่า งานของผมถูกกาแฟลบหายไปหมดแล้ว T_T”"
