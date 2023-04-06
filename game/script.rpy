@@ -104,10 +104,10 @@ image eimi_t:
 image artroom_past= im.Scale("background/artroom/art-room2.jpg",1920,1080)
 image artroom_afternoon = im.Scale("background/artroom/art-room1.jpg",1920,1080)
 
-image school_park_1= im.Scale("background/school-park/school-park1.jpg",1920,1080)
-image school_park_2= im.Scale("background/school-park/school-park2.jpg",1920,1080)
-image school_park_3= im.Scale("background/school-park/school-park3.jpg",1920,1080)
-image school_park_4= im.Scale("background/school-park/school-park4.jpg",1920,1080)
+image school_park_1= im.Scale("background/SchoolPark01/school-park1.png",1920,1080)
+image school_park_2= im.Scale("background/SchoolPark01/school-park2.png",1920,1080)
+image school_park_3= im.Scale("background/SchoolPark01/school-park3.png",1920,1080)
+image school_park_4= im.Scale("background/SchoolPark01/school-park4.png",1920,1080)
 
 image black_scene = im.Scale("background/black.jpg",1920,1080)
 
