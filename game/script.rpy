@@ -114,6 +114,8 @@ image school_park_4= im.Scale("background/SchoolPark01/school-park4.png",1920,10
 image black_scene = im.Scale("background/black.jpg",1920,1080)
 
 image sky_morning = im.Scale("background/SKY/Sky_Morning.png",1920,1080)
+image sunset4 = im.Scale("background/SKY/Sunset4.png",1920,1080)
+
 
 image Canvas = im.Scale("Cutscene/Canvas00.png",1920,1080)
 
