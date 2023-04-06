@@ -101,7 +101,7 @@ image eimi_t:
     zoom 0.75
     im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_Body.png" ,(0,1525),"Sprite/Eimi01/Eimi_030_03.png")
 
-image artroom_past= im.Scale("background/artroom/art-room2.jpg",1920,1080)
+image artroom_past= im.Scale("background/artroom/art-room6.jpg",1920,1080)
 image artroom_afternoon = im.Scale("background/artroom/art-room1.jpg",1920,1080)
 
 image imagine = im.Scale("background/imagine.png",1920,1080)
