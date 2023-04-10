@@ -230,8 +230,12 @@ label start:
     $ renpy.pause(2)
     hide text with Dissolve(1.0)
    
+
     scene artroom_past with Dissolve(1.0)
     hide Canvas
+
+    jump q2_3
+
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
     n "ผมไม่เข้าใจว่าทำไมผมต้องพูดซ้ำด้วย"
