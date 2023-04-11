@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 224: end of line expected.
-    show text "{size=40}{outlines=#00ff00}หากเราไม่พยายามและไม่เชื่อในสิ่งที่ตัวเองทำก็เท่ากับแพ้ตั้งแต่แรก" style ascend
-                                                                                                             ^
+File "game/screens.rpy", line 293: 'show' is not a keyword argument or valid child for the screen statement.
+    show(blackimage)
+        ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Thu Apr  6 22:40:42 2023
+Wed Apr 12 04:19:30 2023

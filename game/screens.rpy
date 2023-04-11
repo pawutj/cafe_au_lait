@@ -287,6 +287,11 @@ style quick_button_text:
 ## This screen is included in the main and game menus, and provides navigation
 ## to other menus, and to start the game.
 
+image blackimage = Solid("#ff0000")
+
+screen black_screen():
+    add (blackimage)
+
 screen navigation():
 
     vbox:
@@ -299,7 +304,7 @@ screen navigation():
 
         if main_menu:
 
-            textbutton _("Start") action Start()
+            textbutton _("Start") action ShowMenu("black_screen",Dissolve(0.1)), Start()
 
         else:
 
