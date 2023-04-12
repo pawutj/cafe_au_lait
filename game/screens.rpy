@@ -402,6 +402,11 @@ screen main_menu():
     imagebutton auto "main_menu/main_exit_%s.png":
         #idle "map/m bath house_idle.png" 
         #hover "map/m bath house_hover.png" 
+        focus_mask True
+    
+    imagebutton auto "main_menu/main_language_%s.png":
+        #idle "map/m bath house_idle.png" 
+        #hover "map/m bath house_hover.png" 
         focus_mask True 
 
 
@@ -410,16 +415,16 @@ screen main_menu():
     # textbutton _("About") action ShowMenu("about")
 
 
-    if gui.show_name:
+    # if gui.show_name:
 
-        vbox:
-            style "main_menu_vbox"
+    #     vbox:
+    #         style "main_menu_vbox"
 
-            text "[config.name!t]":
-                style "main_menu_title"
+    #         text "[config.name!t]":
+    #             style "main_menu_title"
 
-            text "[config.version]":
-                style "main_menu_version"
+    #         text "[config.version]":
+    #             style "main_menu_version"
 
 
 style main_menu_frame is empty
