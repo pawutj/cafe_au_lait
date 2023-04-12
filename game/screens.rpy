@@ -368,7 +368,47 @@ screen main_menu():
 
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
-    use navigation
+    # use navigation
+
+    imagebutton auto "main_menu/main_start_%s.png":
+        #idle "map/m bath house_idle.png" 
+        #hover "map/m bath house_hover.png" 
+        focus_mask True 
+        action ShowMenu("black_screen",Dissolve(0.1)), Start()
+    
+    imagebutton auto "main_menu/main_continue_%s.png":
+        #idle "map/m bath house_idle.png" 
+        #hover "map/m bath house_hover.png" 
+        focus_mask True 
+        # action Start()
+    
+    imagebutton auto "main_menu/main_load_%s.png":
+        #idle "map/m bath house_idle.png" 
+        #hover "map/m bath house_hover.png" 
+        focus_mask True 
+        action ShowMenu("load")
+    
+    imagebutton auto "main_menu/main_config_%s.png":
+        #idle "map/m bath house_idle.png" 
+        #hover "map/m bath house_hover.png" 
+        focus_mask True 
+        action ShowMenu("preferences")
+    
+    imagebutton auto "main_menu/main_extra_%s.png":
+        #idle "map/m bath house_idle.png" 
+        #hover "map/m bath house_hover.png" 
+        focus_mask True 
+    
+    imagebutton auto "main_menu/main_exit_%s.png":
+        #idle "map/m bath house_idle.png" 
+        #hover "map/m bath house_hover.png" 
+        focus_mask True 
+
+
+
+
+    # textbutton _("About") action ShowMenu("about")
+
 
     if gui.show_name:
 
@@ -392,7 +432,7 @@ style main_menu_frame:
     xsize 420
     yfill True
 
-    background "gui/overlay/main_menu.png"
+    # background "gui/overlay/main_menu.png"
 
 style main_menu_vbox:
     xalign 1.0
