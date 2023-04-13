@@ -212,14 +212,15 @@ image main_scene_2 = im.Scale("Animation/anime02.png",1920,1080)
 image main_scene_3 = im.Scale("Animation/anime03.png",1920,1080)
 image main_scene_4 = im.Scale("Animation/anime04.png",1920,1080)
 image main_scene_5 = im.Scale("Animation/anime05.png",1920,1080)
-
-label start_scene:
+image main_scene_6 = im.Scale("Animation/anime06.png",1920,1080)
+label splashscreen:
     scene black with Dissolve(1.0)
     show main_scene_1 with Dissolve(0.5)
     show main_scene_2 with Dissolve(0.5)
     show main_scene_3 with Dissolve(0.5)
     show main_scene_4 with Dissolve(0.5)
     show main_scene_5 with Dissolve(0.5)
+    show main_scene_6 with Dissolve(0.5)
     return
 
     
