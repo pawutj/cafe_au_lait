@@ -365,43 +365,47 @@ screen load_menu():
     
     imagebutton auto "save_load/data01_%s.png":
         focus_mask True
-        action Hide("load_menu")
+        action FileLoad(1)
+
+    button:
+        action FileAction(1)
+        add FileScreenshot(1)
     
     imagebutton auto "save_load/data02_%s.png":
         focus_mask True
-        action Hide("load_menu")
+        action FileLoad(2)
     
     imagebutton auto "save_load/data03_%s.png":
         focus_mask True
-        action Hide("load_menu")
+        action FileLoad(3)
     
     imagebutton auto "save_load/data04_%s.png":
         focus_mask True
-        action Hide("load_menu")
+        action FileLoad(4)
     
     imagebutton auto "save_load/data05_%s.png":
         focus_mask True
-        action Hide("load_menu")
+        action FileLoad(5)
     
     imagebutton auto "save_load/data06_%s.png":
         focus_mask True
-        action Hide("load_menu")
+        action FileLoad(6)
     
     imagebutton auto "save_load/data07_%s.png":
         focus_mask True
-        action Hide("load_menu")
+        action FileLoad(7)
     
     imagebutton auto "save_load/data08_%s.png":
         focus_mask True
-        action Hide("load_menu")
+        action FileLoad(8)
     
     imagebutton auto "save_load/data09_%s.png":
         focus_mask True
-        action Hide("load_menu")
+        action FileLoad(9)
     
     imagebutton auto "save_load/data10_%s.png":
         focus_mask True
-        action Hide("load_menu")
+        action FileLoad(10)
 
     
     
