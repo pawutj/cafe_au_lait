@@ -112,8 +112,20 @@ image school_park_4= im.Scale("background/SchoolPark01/school-park4.png",1920,10
 image black_scene = im.Scale("background/black.jpg",1920,1080)
 
 image sky_morning = im.Scale("background/SKY/Sky_Morning.png",1920,1080)
-image sunset4 = im.Scale("background/SKY/Sunset4.png",1920,1080)
+image sky_summer = im.Scale("background/SKY/Sky_Summer.png",1920,1080)
 
+image art_room1 = im.Scale("background/artroom/art-room1.jpg",1920,1080)
+image art_room2 = im.Scale("background/artroom/art-room2.jpg",1920,1080)
+image art_room3 = im.Scale("background/artroom/art-room3.jpg",1920,1080)
+image art_room4 = im.Scale("background/artroom/art-room4.jpg",1920,1080)
+image art_room5 = im.Scale("background/artroom/art-room5.jpg",1920,1080)
+image art_room6 = im.Scale("background/artroom/art-room6.jpg",1920,1080)
+
+
+image sunset1 = im.Scale("background/SKY/Sunset1.png",1920,1080)
+image sunset2 = im.Scale("background/SKY/Sunset2.png",1920,1080)
+image sunset3 = im.Scale("background/SKY/Sunset3.png",1920,1080)
+image sunset4 = im.Scale("background/SKY/Sunset4.png",1920,1080)
 
 image Canvas = im.Scale("Cutscene/Canvas00.png",1920,1080)
 
@@ -136,6 +148,9 @@ image coffee03 = im.Scale("CG/CG01/coffee03.png",1920,1080)
 image coffee04 = im.Scale("CG/CG01/coffee04.png",1920,1080)
 image coffee05 = im.Scale("CG/CG01/coffee05.png",1920,1080)
 image coffee06 = im.Scale("CG/CG01/coffee06.png",1920,1080)
+
+
+
 image angry:
     "Sprite/Effect/angry.png"
 
@@ -250,7 +265,7 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump q2_3
+    jump q3_2
 
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
