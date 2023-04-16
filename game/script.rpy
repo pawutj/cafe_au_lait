@@ -114,12 +114,12 @@ image black_scene = im.Scale("background/black.jpg",1920,1080)
 image sky_morning = im.Scale("background/SKY/Sky_Morning.png",1920,1080)
 image sky_summer = im.Scale("background/SKY/Sky_Summer.png",1920,1080)
 
-image art_room1 = im.Scale("background/artroom/art-room1",1920,1080)
-image art_room2 = im.Scale("background/artroom/art-room2",1920,1080)
-image art_room3 = im.Scale("background/artroom/art-room3",1920,1080)
-image art_room4 = im.Scale("background/artroom/art-room4",1920,1080)
-image art_room5 = im.Scale("background/artroom/art-room5",1920,1080)
-image art_room6 = im.Scale("background/artroom/art-room6",1920,1080)
+image art_room1 = im.Scale("background/artroom/art-room1.jpg",1920,1080)
+image art_room2 = im.Scale("background/artroom/art-room2.jpg",1920,1080)
+image art_room3 = im.Scale("background/artroom/art-room3.jpg",1920,1080)
+image art_room4 = im.Scale("background/artroom/art-room4.jpg",1920,1080)
+image art_room5 = im.Scale("background/artroom/art-room5.jpg",1920,1080)
+image art_room6 = im.Scale("background/artroom/art-room6.jpg",1920,1080)
 
 
 image sunset1 = im.Scale("background/SKY/Sunset1.png",1920,1080)
@@ -265,7 +265,7 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump q3_1
+    jump q3_2
 
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
