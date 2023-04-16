@@ -355,6 +355,57 @@ style navigation_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
+screen load_menu():
+    tag load_menu
+    add gui.load_menu_background
+
+    imagebutton auto "save_load/back_%s.png":
+        focus_mask True
+        action Hide("load_menu")
+    
+    imagebutton auto "save_load/data01_%s.png":
+        focus_mask True
+        action Hide("load_menu")
+    
+    imagebutton auto "save_load/data02_%s.png":
+        focus_mask True
+        action Hide("load_menu")
+    
+    imagebutton auto "save_load/data03_%s.png":
+        focus_mask True
+        action Hide("load_menu")
+    
+    imagebutton auto "save_load/data04_%s.png":
+        focus_mask True
+        action Hide("load_menu")
+    
+    imagebutton auto "save_load/data05_%s.png":
+        focus_mask True
+        action Hide("load_menu")
+    
+    imagebutton auto "save_load/data06_%s.png":
+        focus_mask True
+        action Hide("load_menu")
+    
+    imagebutton auto "save_load/data07_%s.png":
+        focus_mask True
+        action Hide("load_menu")
+    
+    imagebutton auto "save_load/data08_%s.png":
+        focus_mask True
+        action Hide("load_menu")
+    
+    imagebutton auto "save_load/data09_%s.png":
+        focus_mask True
+        action Hide("load_menu")
+    
+    imagebutton auto "save_load/data10_%s.png":
+        focus_mask True
+        action Hide("load_menu")
+
+    
+    
+
 screen main_menu():
 
     ## This ensures that any other menu screen is replaced.
@@ -380,7 +431,7 @@ screen main_menu():
         #idle "map/m bath house_idle.png" 
         #hover "map/m bath house_hover.png" 
         focus_mask True 
-        # action Start()
+        action Show("load_menu")
     
     imagebutton auto "main_menu/main_load_%s.png":
         #idle "map/m bath house_idle.png" 
