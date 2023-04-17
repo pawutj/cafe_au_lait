@@ -413,7 +413,11 @@ screen save():
         button :
             background "save_load/save.png"
             focus_mask True
-        
+
+
+        imagebutton auto "save_load/load_button_%s.png":
+            focus_mask True
+            action [ShowMenu("load"),Hide("save")]
 
 
         grid gui.file_slot_cols gui.file_slot_rows:
@@ -499,6 +503,11 @@ screen load():
     button :
         background "save_load/load.png"
         focus_mask True
+
+    imagebutton auto "save_load/save_button_%s.png":
+        focus_mask True
+        action [ShowMenu("save"),Hide("load")]
+
     
 
 
