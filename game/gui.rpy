@@ -232,12 +232,12 @@ define gui.slot_button_text_selected_idle_color = gui.selected_color
 define gui.slot_button_text_selected_hover_color = gui.hover_color
 
 ## The width and height of thumbnails used by the save slots.
-define config.thumbnail_width = 384
-define config.thumbnail_height = 216
+define config.thumbnail_width = 192
+define config.thumbnail_height = 108
 
 ## The number of columns and rows in the grid of save slots.
-define gui.file_slot_cols = 3
-define gui.file_slot_rows = 2
+define gui.file_slot_cols = 2
+define gui.file_slot_rows = 5
 
 
 ## Positioning and Spacing #####################################################

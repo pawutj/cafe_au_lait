@@ -355,57 +355,127 @@ style navigation_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
+image test_01:
+    on idle:
+        "save_load/data01_idle.png"
+    on hover:
+        "save_load/data01_idle.png"
+
+
+
 screen load_menu():
     tag load_menu
     add gui.load_menu_background
 
+    # button:
+    #     focus_mask True
+    #     action FileLoad(1)
+    #     background "save_load/data01_idle.png"
+    #     # idle_background "save_load/data01_idle.png"
+    #     # add FileScreenshot(1) size(200,130) xpos 500 ypos 100
+
+    # button:
+    #     action FileLoad(1)
+    #     add FileScreenshot(1) size(200,130) xpos 500 ypos 100
+
+
+    # imagebutton auto "save_load/data01_%s.png":
+    #     focus_mask True
+    #     action FileLoad(1)
+
     imagebutton auto "save_load/back_%s.png":
         focus_mask True
         action Hide("load_menu")
-    
-    imagebutton auto "save_load/data01_%s.png":
-        focus_mask True
-        action FileLoad(1)
 
-    button:
-        action FileAction(1)
-        add FileScreenshot(1)
+    grid gui.file_slot_cols gui.file_slot_rows:
+        style_prefix "slot"
+
+        xalign 0.81
+        yalign 0.4
+
+        spacing gui.slot_spacing
+
+        for i in range(gui.file_slot_cols * gui.file_slot_rows):
+
+                    $ slot = i + 1
+
+                    button:
+                        action FileLoad(slot)
+
+
+                        add FileScreenshot(slot,empty="save_load/box01.png") size(225,125)
+
+                        # text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
+                        #     style "slot_time_text"
+
+                        # text FileSaveName(slot):
+                        #     style "slot_name_text"
+
+                        key "save_delete" action FileDelete(slot)
+
+                        xsize 650
+                        ysize 150
+
+                        background "save_load/data01_idle1.png"
+                        hover_background "save_load/data01_hover1.png"
+                    
+
+
+
+    # button:
+    #     action FileLoad(1)
+    #     xpos 500
+    #     ypos 100
+    #     idle_background  "save_load/data01_idle1.png"
+    #     hover_background "save_load/data01_hover1.png"
+    #     add FileScreenshot(1) size(200,130)
+    #     xsize 650
+    #     ysize 150
+
+
+    # button:
+    #     action FileLoad(1)
+    #     xpos 500
+    #     ypos 100
+    #     idle_background  "save_load/data01_idle1.png"
+    #     hover_background "save_load/data01_hover1.png"
+    #     add FileScreenshot(2) size(200,130)
+    #     xsize 650
+    #     ysize 150
+
+
     
-    imagebutton auto "save_load/data02_%s.png":
-        focus_mask True
-        action FileLoad(2)
+    # imagebutton auto "save_load/data03_%s.png":
+    #     focus_mask True
+    #     action FileLoad(3)
     
-    imagebutton auto "save_load/data03_%s.png":
-        focus_mask True
-        action FileLoad(3)
+    # imagebutton auto "save_load/data04_%s.png":
+    #     focus_mask True
+    #     action FileLoad(4)
     
-    imagebutton auto "save_load/data04_%s.png":
-        focus_mask True
-        action FileLoad(4)
+    # imagebutton auto "save_load/data05_%s.png":
+    #     focus_mask True
+    #     action FileLoad(5)
     
-    imagebutton auto "save_load/data05_%s.png":
-        focus_mask True
-        action FileLoad(5)
+    # imagebutton auto "save_load/data06_%s.png":
+    #     focus_mask True
+    #     action FileLoad(6)
     
-    imagebutton auto "save_load/data06_%s.png":
-        focus_mask True
-        action FileLoad(6)
+    # imagebutton auto "save_load/data07_%s.png":
+    #     focus_mask True
+    #     action FileLoad(7)
     
-    imagebutton auto "save_load/data07_%s.png":
-        focus_mask True
-        action FileLoad(7)
+    # imagebutton auto "save_load/data08_%s.png":
+    #     focus_mask True
+    #     action FileLoad(8)
     
-    imagebutton auto "save_load/data08_%s.png":
-        focus_mask True
-        action FileLoad(8)
+    # imagebutton auto "save_load/data09_%s.png":
+    #     focus_mask True
+    #     action FileLoad(9)
     
-    imagebutton auto "save_load/data09_%s.png":
-        focus_mask True
-        action FileLoad(9)
-    
-    imagebutton auto "save_load/data10_%s.png":
-        focus_mask True
-        action FileLoad(10)
+    # imagebutton auto "save_load/data10_%s.png":
+    #     focus_mask True
+    #     action FileLoad(10)
 
     
     

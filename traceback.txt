@@ -1,21 +1,19 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/screens.rpy", line 358, in execute
+  File "game/screens.rpy", line 366, in execute
     screen load_menu():
-  File "game/screens.rpy", line 358, in execute
+  File "game/screens.rpy", line 366, in execute
     screen load_menu():
-  File "game/screens.rpy", line 370, in execute
+  File "game/screens.rpy", line 390, in execute
+    grid gui.file_slot_cols gui.file_slot_rows:
+  File "game/screens.rpy", line 398, in execute
+    for i in range(gui.file_slot_cols * gui.file_slot_rows):
+  File "game/screens.rpy", line 402, in execute
     button:
-  File "game/screens.rpy", line 373, in execute
-    has vbox
-  File "game/screens.rpy", line 383, in execute
-    key "save_delete" action FileDelete(slot)
-  File "game/screens.rpy", line 383, in keywords
-    key "save_delete" action FileDelete(slot)
-  File "game/screens.rpy", line 383, in <module>
-    key "save_delete" action FileDelete(slot)
-NameError: name 'slot' is not defined
+  File "game/screens.rpy", line 406, in execute
+    add FileScreenshot(slot,empty="") size(300,150)
+Exception: An empty string cannot be used as a displayable.
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -50,23 +48,25 @@ Full traceback:
     self.update()
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\screen.py", line 653, in update
     self.screen.function(**self.scope)
-  File "game/screens.rpy", line 358, in execute
+  File "game/screens.rpy", line 366, in execute
     screen load_menu():
-  File "game/screens.rpy", line 358, in execute
+  File "game/screens.rpy", line 366, in execute
     screen load_menu():
-  File "game/screens.rpy", line 370, in execute
+  File "game/screens.rpy", line 390, in execute
+    grid gui.file_slot_cols gui.file_slot_rows:
+  File "game/screens.rpy", line 398, in execute
+    for i in range(gui.file_slot_cols * gui.file_slot_rows):
+  File "game/screens.rpy", line 402, in execute
     button:
-  File "game/screens.rpy", line 373, in execute
-    has vbox
-  File "game/screens.rpy", line 383, in execute
-    key "save_delete" action FileDelete(slot)
-  File "game/screens.rpy", line 383, in keywords
-    key "save_delete" action FileDelete(slot)
-  File "game/screens.rpy", line 383, in <module>
-    key "save_delete" action FileDelete(slot)
-NameError: name 'slot' is not defined
+  File "game/screens.rpy", line 406, in execute
+    add FileScreenshot(slot,empty="") size(300,150)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\sl2\sldisplayables.py", line 450, in sl2add
+    d = renpy.easy.displayable(d, scope=scope)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\easy.py", line 112, in displayable
+    raise Exception("An empty string cannot be used as a displayable.")
+Exception: An empty string cannot be used as a displayable.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
 Cafe_au_lait 1.0
-Mon Apr 17 00:52:04 2023
+Mon Apr 17 22:30:50 2023
