@@ -258,6 +258,7 @@ screen quick_menu():
             textbutton _("Save") action ShowMenu('save')
             textbutton _("Q.Save") action QuickSave()
             textbutton _("Q.Load") action QuickLoad()
+            textbutton _("Load") action Show("load_menu")
             textbutton _("Prefs") action ShowMenu('preferences')
 
 
@@ -367,22 +368,6 @@ screen load_menu():
     tag load_menu
     add gui.load_menu_background
 
-    # button:
-    #     focus_mask True
-    #     action FileLoad(1)
-    #     background "save_load/data01_idle.png"
-    #     # idle_background "save_load/data01_idle.png"
-    #     # add FileScreenshot(1) size(200,130) xpos 500 ypos 100
-
-    # button:
-    #     action FileLoad(1)
-    #     add FileScreenshot(1) size(200,130) xpos 500 ypos 100
-
-
-    # imagebutton auto "save_load/data01_%s.png":
-    #     focus_mask True
-    #     action FileLoad(1)
-
     imagebutton auto "save_load/back_%s.png":
         focus_mask True
         action Hide("load_menu")
@@ -465,62 +450,6 @@ screen load_menu():
 
 
 
-    # button:
-    #     action FileLoad(1)
-    #     xpos 500
-    #     ypos 100
-    #     idle_background  "save_load/data01_idle1.png"
-    #     hover_background "save_load/data01_hover1.png"
-    #     add FileScreenshot(1) size(200,130)
-    #     xsize 650
-    #     ysize 150
-
-
-    # button:
-    #     action FileLoad(1)
-    #     xpos 500
-    #     ypos 100
-    #     idle_background  "save_load/data01_idle1.png"
-    #     hover_background "save_load/data01_hover1.png"
-    #     add FileScreenshot(2) size(200,130)
-    #     xsize 650
-    #     ysize 150
-
-
-    
-    # imagebutton auto "save_load/data03_%s.png":
-    #     focus_mask True
-    #     action FileLoad(3)
-    
-    # imagebutton auto "save_load/data04_%s.png":
-    #     focus_mask True
-    #     action FileLoad(4)
-    
-    # imagebutton auto "save_load/data05_%s.png":
-    #     focus_mask True
-    #     action FileLoad(5)
-    
-    # imagebutton auto "save_load/data06_%s.png":
-    #     focus_mask True
-    #     action FileLoad(6)
-    
-    # imagebutton auto "save_load/data07_%s.png":
-    #     focus_mask True
-    #     action FileLoad(7)
-    
-    # imagebutton auto "save_load/data08_%s.png":
-    #     focus_mask True
-    #     action FileLoad(8)
-    
-    # imagebutton auto "save_load/data09_%s.png":
-    #     focus_mask True
-    #     action FileLoad(9)
-    
-    # imagebutton auto "save_load/data10_%s.png":
-    #     focus_mask True
-    #     action FileLoad(10)
-
-    
     
 
 screen main_menu():
