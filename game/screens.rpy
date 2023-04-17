@@ -564,7 +564,7 @@ screen main_menu():
         #idle "map/m bath house_idle.png" 
         #hover "map/m bath house_hover.png" 
         focus_mask True 
-        action Show("load_menu")
+        action Show("load")
     
     imagebutton auto "main_menu/main_load_%s.png":
         #idle "map/m bath house_idle.png" 

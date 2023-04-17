@@ -149,7 +149,15 @@ image coffee04 = im.Scale("CG/CG01/coffee04.png",1920,1080)
 image coffee05 = im.Scale("CG/CG01/coffee05.png",1920,1080)
 image coffee06 = im.Scale("CG/CG01/coffee06.png",1920,1080)
 
+image school_gym_a = im.Scale("background/gym/school_gym_a",1920,1080)
+image school_gym_b = im.Scale("background/gym/school_gym_b",1920,1080)
+image school_gym_c = im.Scale("background/gym/school_gym_c",1920,1080)
 
+image School_Hallway1_sunset = im.Scale("background/school_Hallway/School_Hallway1_sunset.png",1920,1080)
+image Roof = im.Scale("background/Roof2/Roof.jpg",1920,1080)
+
+image GoldenTime01 = im.Scale("CG/CG02/GoldenTime01.png",1920,1080)
+image GoldenTime02 = im.Scale("CG/CG02/GoldenTime02.png",1920,1080)
 
 image angry:
     "Sprite/Effect/angry.png"
