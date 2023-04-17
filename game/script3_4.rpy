@@ -390,11 +390,11 @@ label q3_4:
     tk "ต่อให้ตัดเรื่องมุมมองของเธอไป ฉันก็ยังอยากให้เธอไปต่อนะ"
     hide Eimi_shy_Eimi_sad2
 
-    show Eimi_shy_Eimi_scared
+    show Eimi_shy_Eimi_sad
     ei "ทำไมล่ะคะ?" with dissolve
     tk "เพราะฉันชอบเธอที่ร่าเริงและมุ่งมั่นจะทำตามฝันน่ะสิ"
     n "เอมิเบิกตาโตและอ้าปากกว้างขึ้นกว่าเดิมหลังจากฟังผม"
-    hide Eimi_shy_Eimi_scared
+    hide Eimi_shy_Eimi_sad
 
     show Eimi_shy_Eimi_panic_shy
     ei "ชะ...ชอบเหรอคะ!? " with dissolve

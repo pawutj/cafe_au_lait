@@ -127,6 +127,12 @@ image sunset2 = im.Scale("background/SKY/Sunset2.png",1920,1080)
 image sunset3 = im.Scale("background/SKY/Sunset3.png",1920,1080)
 image sunset4 = im.Scale("background/SKY/Sunset4.png",1920,1080)
 
+
+image Sunset1 = im.Scale("background/SKY/Sunset1.png",1920,1080)
+image Sunset2 = im.Scale("background/SKY/Sunset2.png",1920,1080)
+image Sunset3 = im.Scale("background/SKY/Sunset3.png",1920,1080)
+image Sunset4 = im.Scale("background/SKY/Sunset4.png",1920,1080)
+
 image Canvas = im.Scale("Cutscene/Canvas00.png",1920,1080)
 
 image route1 = im.Scale("background/route/route1.jpg",1920,1080)
@@ -149,9 +155,9 @@ image coffee04 = im.Scale("CG/CG01/coffee04.png",1920,1080)
 image coffee05 = im.Scale("CG/CG01/coffee05.png",1920,1080)
 image coffee06 = im.Scale("CG/CG01/coffee06.png",1920,1080)
 
-image school_gym_a = im.Scale("background/gym/school_gym_a",1920,1080)
-image school_gym_b = im.Scale("background/gym/school_gym_b",1920,1080)
-image school_gym_c = im.Scale("background/gym/school_gym_c",1920,1080)
+image school_gym_a = im.Scale("background/gym/school_gym_a.jpg",1920,1080)
+image school_gym_b = im.Scale("background/gym/school_gym_b.jpg",1920,1080)
+image school_gym_c = im.Scale("background/gym/school_gym_c.jpg",1920,1080)
 
 image School_Hallway1_sunset = im.Scale("background/school_Hallway/School_Hallway1_sunset.png",1920,1080)
 image Roof = im.Scale("background/Roof2/Roof.jpg",1920,1080)
@@ -273,7 +279,7 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump q3_2
+    jump q3_1
 
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
