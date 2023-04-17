@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 842: Line is indented, but the preceding default statement statement does not expect a block. Please check this line's indentation.
-    button:
-    ^
+File "game/screens.rpy", line 544: 'play' is not a keyword argument or valid child for the screen statement.
+    play music "audio/bgm/natsu_no_omoide.mp3" volume 0.5
+        ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Tue Apr 18 00:03:38 2023
+Tue Apr 18 01:39:47 2023

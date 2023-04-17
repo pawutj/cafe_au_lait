@@ -371,11 +371,11 @@ screen save():
     
         imagebutton auto "save_load/back_%s.png":
             focus_mask True
-            action Hide("save")
+            action Return()
         
         imagebutton auto "save_load/title_%s.png":
             focus_mask True
-            action Hide("save")
+            action MainMenu()
 
         imagebutton auto "save_load/page01_%s.png":
             focus_mask True
@@ -457,11 +457,11 @@ screen load():
 
     imagebutton auto "save_load/back_%s.png":
         focus_mask True
-        action Hide("load")
+        action Return()
     
     imagebutton auto "save_load/title_%s.png":
         focus_mask True
-        action Hide("load")
+        action MainMenu()
 
     imagebutton auto "save_load/page01_%s.png":
         focus_mask True
@@ -553,6 +553,9 @@ screen main_menu():
     ## The use statement includes another screen inside this one. The actual
     ## contents of the main menu are in the navigation screen.
     # use navigation
+
+    button :
+        add "main_menu/Home_logo.png"
 
     imagebutton auto "main_menu/main_start_%s.png":
         #idle "map/m bath house_idle.png" 
