@@ -386,6 +386,49 @@ screen load_menu():
     imagebutton auto "save_load/back_%s.png":
         focus_mask True
         action Hide("load_menu")
+    
+    imagebutton auto "save_load/title_%s.png":
+        focus_mask True
+        action Hide("load_menu")
+
+    imagebutton auto "save_load/page01_%s.png":
+        focus_mask True
+        action Hide("load_menu")
+    
+    imagebutton auto "save_load/page02_%s.png":
+        focus_mask True
+        action Hide("load_menu")
+    
+        
+    imagebutton auto "save_load/page03_%s.png":
+        focus_mask True
+        action Hide("load_menu")
+            
+    imagebutton auto "save_load/page04_%s.png":
+        focus_mask True
+        action Hide("load_menu")
+            
+    imagebutton auto "save_load/page05_%s.png":
+        focus_mask True
+        action Hide("load_menu")
+            
+    imagebutton auto "save_load/page06_%s.png":
+        focus_mask True
+        action Hide("load_menu")
+            
+    imagebutton auto "save_load/page07_%s.png":
+        focus_mask True
+        action Hide("load_menu")
+            
+    imagebutton auto "save_load/page08_%s.png":
+        focus_mask True
+        action Hide("load_menu")
+    
+    button :
+        background "save_load/load.png"
+        focus_mask True
+    
+
 
     grid gui.file_slot_cols gui.file_slot_rows:
         style_prefix "slot"

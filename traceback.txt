@@ -5,15 +5,9 @@ While running game code:
     screen load_menu():
   File "game/screens.rpy", line 366, in execute
     screen load_menu():
-  File "game/screens.rpy", line 390, in execute
-    grid gui.file_slot_cols gui.file_slot_rows:
-  File "game/screens.rpy", line 398, in execute
-    for i in range(gui.file_slot_cols * gui.file_slot_rows):
-  File "game/screens.rpy", line 402, in execute
-    button:
-  File "game/screens.rpy", line 406, in execute
-    add FileScreenshot(slot,empty="") size(300,150)
-Exception: An empty string cannot be used as a displayable.
+  File "game/screens.rpy", line 427, in execute
+    imagebutton :
+Exception: Imagebutton does not have a idle image.
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -52,21 +46,15 @@ Full traceback:
     screen load_menu():
   File "game/screens.rpy", line 366, in execute
     screen load_menu():
-  File "game/screens.rpy", line 390, in execute
-    grid gui.file_slot_cols gui.file_slot_rows:
-  File "game/screens.rpy", line 398, in execute
-    for i in range(gui.file_slot_cols * gui.file_slot_rows):
-  File "game/screens.rpy", line 402, in execute
-    button:
-  File "game/screens.rpy", line 406, in execute
-    add FileScreenshot(slot,empty="") size(300,150)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\sl2\sldisplayables.py", line 450, in sl2add
-    d = renpy.easy.displayable(d, scope=scope)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\easy.py", line 112, in displayable
-    raise Exception("An empty string cannot be used as a displayable.")
-Exception: An empty string cannot be used as a displayable.
+  File "game/screens.rpy", line 427, in execute
+    imagebutton :
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ui.py", line 952, in _imagebutton
+    idle = choice(idle, idle_image, "idle", required=True)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ui.py", line 948, in choice
+    raise Exception("Imagebutton does not have a %s image." % (name,))
+Exception: Imagebutton does not have a idle image.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
 Cafe_au_lait 1.0
-Mon Apr 17 22:30:50 2023
+Mon Apr 17 23:03:32 2023

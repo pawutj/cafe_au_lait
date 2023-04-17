@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 409: Line is indented, but the preceding text statement does not expect a block. Please check this line's indentation.
-    style "slot_time_text"
-    ^
+File "game/screens.rpy", line 427: expected a keyword argument, colon, or end of line.
+    imagebutton "save_load/load.png":
+                ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Mon Apr 17 22:45:25 2023
+Mon Apr 17 23:03:17 2023
