@@ -240,11 +240,26 @@ screen config():
         imagebutton auto "config/window_%s.png":
             focus_mask True
             action Preference("display", "window")
+    
+    
 
     hbox:
                 style_prefix "slider"
                 box_wrap True
 
+
+
+                vbox:
+                    bar :
+                        value Preference("auto-forward time")
+                        xsize 450
+                        ysize 20
+                    xpos 1075
+                    ypos 725
+            
+
+
+            
                 # vbox:
 
                 #     label _("Text Speed")
@@ -254,11 +269,6 @@ screen config():
                 #     label _("Auto-Forward Time")
 
                 #     bar value Preference("auto-forward time")
-
-                # vbox:
-                #     bar value Preference("auto-forward time")
-                #     xpos 500
-                #     ypos 200
 
 
                 # vbox:

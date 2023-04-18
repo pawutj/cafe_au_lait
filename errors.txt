@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 215: Line is indented, but the preceding imagebutton statement does not expect a block. Please check this line's indentation.
-    focus_mask True
+File "game/screens.rpy", line 252: Line is indented, but the preceding box_wrap statement does not expect a block. Please check this line's indentation.
+    bar :
     ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Wed Apr 19 00:01:57 2023
+Wed Apr 19 00:57:17 2023
