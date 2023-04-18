@@ -1,40 +1,71 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-TypeError: get_tooltip() missing 1 required positional argument: 'self'
+  File "renpy/common/00gamemenu.rpy", line 170, in script
+    $ ui.interact()
+  File "renpy/common/00gamemenu.rpy", line 170, in <module>
+    $ ui.interact()
+  File "game/screens.rpy", line 202, in execute
+    screen config():
+  File "game/screens.rpy", line 202, in execute
+    screen config():
+  File "game/screens.rpy", line 223, in execute
+    if  preferences.fullscreen==False:
+  File "game/screens.rpy", line 224, in execute
+    imagebutton auto "config/window_hover.png"
+  File "renpy/common/00defaults.rpy", line 139, in _imagemap_auto_function
+    rv = auto_param % variant
+TypeError: not all arguments converted during string formatting
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
-    python hide:
+  File "renpy/common/00gamemenu.rpy", line 170, in script
+    $ ui.interact()
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 1131, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\python.py", line 1061, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
-    python hide:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
-    ui.interact()
+  File "renpy/common/00gamemenu.rpy", line 170, in <module>
+    $ ui.interact()
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 4253, in interact_core
-    rv = renpy.display.focus.mouse_handler(ev, x, y)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\focus.py", line 572, in mouse_handler
-    return change_focus(new_focus, default=default)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\focus.py", line 521, in change_focus
-    set_focused(current, newfocus.arg, newfocus.screen)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\focus.py", line 197, in set_focused
-    new_tooltip = widget._get_tooltip()
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\behavior.py", line 860, in _get_tooltip
-    return get_tooltip(self.action)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\behavior.py", line 382, in get_tooltip
-    return func()
-TypeError: get_tooltip() missing 1 required positional argument: 'self'
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3810, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 1 more time]
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\screen.py", line 451, in visit_all
+    callback(self)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3810, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\screen.py", line 462, in per_interact
+    self.update()
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\screen.py", line 653, in update
+    self.screen.function(**self.scope)
+  File "game/screens.rpy", line 202, in execute
+    screen config():
+  File "game/screens.rpy", line 202, in execute
+    screen config():
+  File "game/screens.rpy", line 223, in execute
+    if  preferences.fullscreen==False:
+  File "game/screens.rpy", line 224, in execute
+    imagebutton auto "config/window_hover.png"
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ui.py", line 952, in _imagebutton
+    idle = choice(idle, idle_image, "idle", required=True)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ui.py", line 940, in choice
+    rv = renpy.config.imagemap_auto_function(auto, name)
+  File "renpy/common/00defaults.rpy", line 139, in _imagemap_auto_function
+    rv = auto_param % variant
+TypeError: not all arguments converted during string formatting
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
 Cafe_au_lait 1.0
-Tue Apr 18 22:42:43 2023
+Tue Apr 18 23:42:02 2023
