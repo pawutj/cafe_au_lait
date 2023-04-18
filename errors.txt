@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 252: Line is indented, but the preceding box_wrap statement does not expect a block. Please check this line's indentation.
-    bar :
-    ^
+File "game/screens.rpy", line 249: 'bar' is not a keyword argument or valid child for the bar statement.
+    bar value Preference("music volume")
+       ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Wed Apr 19 00:57:17 2023
+Wed Apr 19 01:08:11 2023
