@@ -240,22 +240,64 @@ screen config():
         imagebutton auto "config/window_%s.png":
             focus_mask True
             action Preference("display", "window")
-    
-    
 
     hbox:
-                style_prefix "slider"
-                box_wrap True
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                value Preference("music volume")
+                xsize 450
+                ysize 20
+            xpos 390
+            ypos 595
 
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                value Preference("sound volume")
+                xsize 450
+                ysize 20
+            xpos 390
+            ypos 725
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                value Preference("voice volume")
+                xsize 450
+                ysize 20
+            xpos 390
+            ypos 865
+                
+    
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                value Preference("Text Speed")
+                xsize 450
+                ysize 20
+            xpos 1075
+            ypos 595
+                
 
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                value Preference("auto-forward time")
+                xsize 450
+                ysize 20
+            xpos 1075
+            ypos 725
+                
 
-                vbox:
-                    bar :
-                        value Preference("auto-forward time")
-                        xsize 450
-                        ysize 20
-                    xpos 1075
-                    ypos 725
             
 
 
