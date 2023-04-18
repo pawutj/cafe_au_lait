@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 601: expected a keyword argument or end of line.
-    action $renpy.quit()
-           ^
+File "game/screens.rpy", line 225: 'add' is not a keyword argument or valid child for the imagebutton statement.
+    add "config/window_hover.png"
+       ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Tue Apr 18 22:42:14 2023
+Tue Apr 18 23:40:12 2023

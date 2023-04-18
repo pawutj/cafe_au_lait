@@ -199,6 +199,43 @@ style input:
     xmaximum gui.dialogue_width
 
 
+screen config():
+    add "config/config_bg.png"      
+    imagebutton auto "config/config_back_%s.png":
+        focus_mask True
+        action Return()
+        
+    imagebutton auto "config/config_title_%s.png":
+        focus_mask True
+        action MainMenu()
+    
+    imagebutton auto "config/read_only_%s.png":
+        focus_mask True
+        action MainMenu()
+
+
+    
+
+    imagebutton auto "config/all_%s.png":
+        focus_mask True
+        action MainMenu()
+    
+    if  preferences.fullscreen==False:
+        imagebutton auto "config/window_%s.png":
+            focus_mask True
+            action Preference("display", "window")
+    else:
+        imagebutton auto "config/window_%s.png":
+            focus_mask True
+            action Preference("display", "window")
+
+    
+
+    imagebutton auto "config/fullscreen_%s.png":
+        focus_mask True
+        action Preference("display", "fullscreen")
+
+
 ## Choice screen ###############################################################
 ##
 ## This screen is used to display the in-game choices presented by the menu
@@ -258,6 +295,7 @@ screen quick_menu():
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Q.Save") action QuickSave()
             textbutton _("Q.Load") action QuickLoad()
+            textbutton _("Config") action ShowMenu("config")
             textbutton _("Prefs") action ShowMenu('preferences')
 
 
@@ -360,6 +398,8 @@ image test_01:
         "save_load/data01_idle.png"
     on hover:
         "save_load/data01_idle.png"
+
+
 
 
 screen save():
