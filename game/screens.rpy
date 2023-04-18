@@ -208,32 +208,42 @@ screen config():
     imagebutton auto "config/config_title_%s.png":
         focus_mask True
         action MainMenu()
-    
-    imagebutton auto "config/read_only_%s.png":
-        focus_mask True
-        action MainMenu()
-
 
     
-
-    imagebutton auto "config/all_%s.png":
-        focus_mask True
-        action MainMenu()
+    if  preferences.skip_unseen ==True:
+        imagebutton:
+            focus_mask True
+            idle "config/all_hover.png"
+        imagebutton auto "config/read_only_%s.png":
+            focus_mask True
+            action Preference("skip", "toggle")
+    else:
+        imagebutton:
+            focus_mask True
+            idle "config/read_only_hover.png"
+        imagebutton auto "config/all_%s.png":
+            focus_mask True
+            action Preference("skip", "toggle")
     
     if  preferences.fullscreen==False:
-        imagebutton auto "config/window_%s.png":
+        imagebutton:
             focus_mask True
-            action Preference("display", "window")
+            idle "config/window_hover.png"
+        imagebutton auto "config/fullscreen_%s.png":
+            focus_mask True
+            action Preference("display", "fullscreen")
+            
     else:
+        imagebutton:
+            focus_mask True
+            idle "config/fullscreen_hover.png"
         imagebutton auto "config/window_%s.png":
             focus_mask True
             action Preference("display", "window")
 
     
 
-    imagebutton auto "config/fullscreen_%s.png":
-        focus_mask True
-        action Preference("display", "fullscreen")
+
 
 
 ## Choice screen ###############################################################

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 225: 'add' is not a keyword argument or valid child for the imagebutton statement.
-    add "config/window_hover.png"
-       ^
+File "game/screens.rpy", line 215: Line is indented, but the preceding imagebutton statement does not expect a block. Please check this line's indentation.
+    focus_mask True
+    ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Tue Apr 18 23:40:12 2023
+Wed Apr 19 00:01:57 2023
