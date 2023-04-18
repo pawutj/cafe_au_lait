@@ -598,6 +598,7 @@ screen main_menu():
     imagebutton auto "main_menu/main_exit_%s.png":
         #idle "map/m bath house_idle.png" 
         #hover "map/m bath house_hover.png" 
+        action Quit(confirm= True)
         focus_mask True
     
     imagebutton auto "main_menu/main_language_%s.png":
