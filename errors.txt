@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 544: 'play' is not a keyword argument or valid child for the screen statement.
-    play music "audio/bgm/natsu_no_omoide.mp3" volume 0.5
-        ^
+File "game/script3_1.rpy", line 3: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
+    hide route2
+    ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Tue Apr 18 01:39:47 2023
+Tue Apr 18 20:24:46 2023

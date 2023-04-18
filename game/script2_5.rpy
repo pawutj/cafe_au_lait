@@ -1,5 +1,6 @@
 label q2_5:    
     show sunset4 with Dissolve(1.0)
+    hide artroom_afternoon
     "" with dissolve
     show school_park_3 with Dissolve(1.0)
     hide sunset4
@@ -134,7 +135,6 @@ label q2_5:
     stop music
     n "แล้วเอ็นโจก็เดินจากพวกเราไปโดยที่เขาไม่หันมามองพวกเราอีก"
     hide Eimi02_Eimi02_0
-    hide school_park_3
     jump q2_6
     return
 

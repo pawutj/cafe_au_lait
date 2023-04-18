@@ -1,5 +1,6 @@
 label q3_1:
     show artroom_afternoon with Dissolve(1.0)
+    hide route2
     play music "audio/bgm/yasashii_harp.mp3" volume 0.5
     show Eimi02_Eimi02_sad
     n "น่าจะประมาณหนึ่งสัปดาห์แล้วที่เอมิมาหาผมบ่อยๆในห้องชมรมที่ไม่มีใคร" with dissolve
