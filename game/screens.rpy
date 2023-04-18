@@ -250,12 +250,12 @@ screen quick_menu():
 
             xalign 0.5
             yalign 1.0
-
+            textbutton _("Save") action ShowMenu("save")
+            textbutton _("Load") action ShowMenu("load")
             textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
-            textbutton _("Save") action ShowMenu('save')
             textbutton _("Q.Save") action QuickSave()
             textbutton _("Q.Load") action QuickLoad()
             textbutton _("Prefs") action ShowMenu('preferences')
@@ -355,55 +355,197 @@ style navigation_button_text:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
 
-screen load_menu():
-    tag load_menu
+image test_01:
+    on idle:
+        "save_load/data01_idle.png"
+    on hover:
+        "save_load/data01_idle.png"
+
+
+screen save():
+    tag save
+    fixed:
+    
+        add gui.load_menu_background
+
+    
+        imagebutton auto "save_load/back_%s.png":
+            focus_mask True
+            action Return()
+        
+        imagebutton auto "save_load/title_%s.png":
+            focus_mask True
+            action MainMenu()
+
+        imagebutton auto "save_load/page01_%s.png":
+            focus_mask True
+            action Hide("save")
+        
+        imagebutton auto "save_load/page02_%s.png":
+            focus_mask True
+            action Hide("save")
+        
+            
+        imagebutton auto "save_load/page03_%s.png":
+            focus_mask True
+            action Hide("save")
+                
+        imagebutton auto "save_load/page04_%s.png":
+            focus_mask True
+            action Hide("save")
+                
+        imagebutton auto "save_load/page05_%s.png":
+            focus_mask True
+            action Hide("save")
+                
+        imagebutton auto "save_load/page06_%s.png":
+            focus_mask True
+            action Hide("save")
+                
+        imagebutton auto "save_load/page07_%s.png":
+            focus_mask True
+            action Hide("save")
+                
+        imagebutton auto "save_load/page08_%s.png":
+            focus_mask True
+            action Hide("save")
+        
+        button :
+            background "save_load/save.png"
+            focus_mask True
+
+
+        imagebutton auto "save_load/load_button_%s.png":
+            focus_mask True
+            action [ShowMenu("load"),Hide("save")]
+
+
+        grid gui.file_slot_cols gui.file_slot_rows:
+            style_prefix "slot"
+
+            xalign 0.81
+            yalign 0.4
+
+            spacing gui.slot_spacing
+
+
+
+            for i in range(gui.file_slot_cols * gui.file_slot_rows):
+
+                        $ slot = i + 1
+
+                        button:
+                            action FileSave(slot,confirm = False)
+
+
+                            add FileScreenshot(slot,empty="save_load/box01.png") size(225,125)
+
+                            # text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
+                            #     style "slot_time_text"
+
+                            # text FileSaveName(slot):
+                            #     style "slot_name_text"
+                            xsize 650
+                            ysize 150
+
+                            background "save_load/data01_idle1.png"
+                            hover_background "save_load/data01_hover1.png"
+                    
+
+
+
+
+screen load():
+    tag load
     add gui.load_menu_background
 
     imagebutton auto "save_load/back_%s.png":
         focus_mask True
-        action Hide("load_menu")
+        action Return()
     
-    imagebutton auto "save_load/data01_%s.png":
+    imagebutton auto "save_load/title_%s.png":
         focus_mask True
-        action Hide("load_menu")
+        action MainMenu()
+
+    imagebutton auto "save_load/page01_%s.png":
+        focus_mask True
+        action Hide("load")
     
-    imagebutton auto "save_load/data02_%s.png":
+    imagebutton auto "save_load/page02_%s.png":
         focus_mask True
-        action Hide("load_menu")
+        action Hide("load")
     
-    imagebutton auto "save_load/data03_%s.png":
+        
+    imagebutton auto "save_load/page03_%s.png":
         focus_mask True
-        action Hide("load_menu")
+        action Hide("load")
+            
+    imagebutton auto "save_load/page04_%s.png":
+        focus_mask True
+        action Hide("load")
+            
+    imagebutton auto "save_load/page05_%s.png":
+        focus_mask True
+        action Hide("load")
+            
+    imagebutton auto "save_load/page06_%s.png":
+        focus_mask True
+        action Hide("load")
+            
+    imagebutton auto "save_load/page07_%s.png":
+        focus_mask True
+        action Hide("load")
+            
+    imagebutton auto "save_load/page08_%s.png":
+        focus_mask True
+        action Hide("load")
     
-    imagebutton auto "save_load/data04_%s.png":
+    button :
+        background "save_load/load.png"
         focus_mask True
-        action Hide("load_menu")
-    
-    imagebutton auto "save_load/data05_%s.png":
+
+    imagebutton auto "save_load/save_button_%s.png":
         focus_mask True
-        action Hide("load_menu")
-    
-    imagebutton auto "save_load/data06_%s.png":
-        focus_mask True
-        action Hide("load_menu")
-    
-    imagebutton auto "save_load/data07_%s.png":
-        focus_mask True
-        action Hide("load_menu")
-    
-    imagebutton auto "save_load/data08_%s.png":
-        focus_mask True
-        action Hide("load_menu")
-    
-    imagebutton auto "save_load/data09_%s.png":
-        focus_mask True
-        action Hide("load_menu")
-    
-    imagebutton auto "save_load/data10_%s.png":
-        focus_mask True
-        action Hide("load_menu")
+        action [ShowMenu("save"),Hide("load")]
 
     
+
+
+    grid gui.file_slot_cols gui.file_slot_rows:
+        style_prefix "slot"
+
+        xalign 0.81
+        yalign 0.4
+
+        spacing gui.slot_spacing
+
+        for i in range(gui.file_slot_cols * gui.file_slot_rows):
+
+                    $ slot = i + 1
+
+                    button:
+                        action FileLoad(slot)
+
+
+                        add FileScreenshot(slot,empty="save_load/box01.png") size(225,125)
+
+                        # text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
+                        #     style "slot_time_text"
+
+                        # text FileSaveName(slot):
+                        #     style "slot_name_text"
+
+                        key "save_delete" action FileDelete(slot)
+
+                        xsize 650
+                        ysize 150
+
+                        background "save_load/data01_idle1.png"
+                        hover_background "save_load/data01_hover1.png"
+                    
+
+
+
     
 
 screen main_menu():
@@ -421,6 +563,9 @@ screen main_menu():
     ## contents of the main menu are in the navigation screen.
     # use navigation
 
+    button :
+        add "main_menu/Home_logo.png"
+
     imagebutton auto "main_menu/main_start_%s.png":
         #idle "map/m bath house_idle.png" 
         #hover "map/m bath house_hover.png" 
@@ -431,7 +576,7 @@ screen main_menu():
         #idle "map/m bath house_idle.png" 
         #hover "map/m bath house_hover.png" 
         focus_mask True 
-        action Show("load_menu")
+        action Show("load")
     
     imagebutton auto "main_menu/main_load_%s.png":
         #idle "map/m bath house_idle.png" 
@@ -682,31 +827,30 @@ style about_label_text:
 ## https://www.renpy.org/doc/html/screen_special.html#save https://
 ## www.renpy.org/doc/html/screen_special.html#load
 
-screen save():
+# screen save():
 
-    tag menu
+#     tag menu
 
-    use file_slots(_("Save"))
+#     use file_slots(_("Save"))
 
 
-screen load():
+# screen load():
 
-    tag menu
+#     tag menu
 
-    use file_slots(_("Load"))
+#     use file_slots(_("Load"))
 
 
 screen file_slots(title):
 
     default page_name_value = FilePageNameInputValue(pattern=_("Page {}"), auto=_("Automatic saves"), quick=_("Quick saves"))
 
-    use game_menu(title):
 
-        fixed:
+    fixed:
 
             ## This ensures the input will get the enter event before any of the
             ## buttons do.
-            order_reverse True
+            # order_reverse True
 
             ## The page name, which can be edited by clicking on a button.
             button:
@@ -734,7 +878,7 @@ screen file_slots(title):
                     $ slot = i + 1
 
                     button:
-                        action FileAction(slot)
+                        action FileSave(slot,confirm=False)
 
                         has vbox
 

@@ -1,5 +1,6 @@
 label q2_6:
     show route2 with Dissolve(1.0)
+    hide school_park_3
     play music "audio/bgm/oshakai_no_junbi.mp3" volume 0.5
     show Eimi_Eimi_angry
     show angry with Dissolve(1.0)
@@ -122,9 +123,11 @@ label q2_6:
     show surprise with Dissolve(1.0)
     ei "ปลาทองกิ!!! " with dissolve
     hide surprise
+    hide Eimi02_Eimi02_shock
     tk "หุบปาก! 0_0”"
     n "ผมแกล้งทำเป็นลืมไปเพราะเอมิที่ลนลานดูน่ารักและตลกดี"
     "บางทีการมีรุ่นน้องที่ชอบยุ่งเรื่องชาวบ้าน พูดจาเรื่อยเปื่อย บ้าบอ แต่ใจดีและอ่อนโยนขนาดนี้อาจจะไม่ใช่เรื่องแย่ก็ได้"
     stop music
     "ผมต้องขอบคุณเธอคนนี้จริงๆที่ทำให้ชีวิตผมมีสีสันยิ่งขึ้น"
+    jump q3_1
     return

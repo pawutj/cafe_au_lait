@@ -2,6 +2,7 @@ label q2_3:
     show artroom_afternoon with Dissolve(1.0)
     play music "audio/bgm/nodokana_hi.mp3" volume 0.5
     show Eimi02_Eimi02_smile
+    hide Eimi_Eimi_smile2
     n "เวลาผ่านไป เอมิก็ยังนั่งเป็นเพื่อนผมเหมือนเดิม" with dissolve
     "ผมไม่เข้าใจว่าผมมีอะไรให้เอมิมาเกาะติดผมนักหนา แต่ยัยนี่ก็ยังเลือกที่จะมานั่งเป็นเพื่อนคุยข้างๆผมอยู่เรื่อย"
     "ผู้หญิงนี่เข้าใจยากจริงๆ"

@@ -1,5 +1,6 @@
 label q2_5:    
     show sunset4 with Dissolve(1.0)
+    hide artroom_afternoon
     "" with dissolve
     show school_park_3 with Dissolve(1.0)
     hide sunset4
