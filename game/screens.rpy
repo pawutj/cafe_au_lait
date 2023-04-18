@@ -241,6 +241,61 @@ screen config():
             focus_mask True
             action Preference("display", "window")
 
+    hbox:
+                style_prefix "slider"
+                box_wrap True
+
+                # vbox:
+
+                #     label _("Text Speed")
+
+                #     bar value Preference("text speed")
+
+                #     label _("Auto-Forward Time")
+
+                #     bar value Preference("auto-forward time")
+
+                # vbox:
+                #     bar value Preference("auto-forward time")
+                #     xpos 500
+                #     ypos 200
+
+
+                # vbox:
+
+                #     if config.has_music:
+                #         label _("Music Volume")
+
+                #         hbox:
+                #             bar value Preference("music volume")
+
+                #     if config.has_sound:
+
+                #         label _("Sound Volume")
+
+                #         hbox:
+                #             bar value Preference("sound volume")
+
+                #             if config.sample_sound:
+                #                 textbutton _("Test") action Play("sound", config.sample_sound)
+
+
+                #     if config.has_voice:
+                #         label _("Voice Volume")
+
+                #         hbox:
+                #             bar value Preference("voice volume")
+
+                #             if config.sample_voice:
+                #                 textbutton _("Test") action Play("voice", config.sample_voice)
+
+                #     if config.has_music or config.has_sound or config.has_voice:
+                #         null height gui.pref_spacing
+
+                #         textbutton _("Mute All"):
+                #             action Preference("all mute", "toggle")
+                #             style "mute_all_button"
+
     
 
 
