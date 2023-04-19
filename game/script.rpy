@@ -275,7 +275,7 @@ label start:
     $ renpy.pause(2)
     hide text with Dissolve(1.0)
    
-
+    
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
@@ -315,8 +315,10 @@ label start:
     return
 
 label q002:
-    scene artroom_afternoon with Dissolve(2.0)   
 
+    scene dark with Dissolve(0.2)
+    scene artroom_afternoon with Dissolve(2.0)   
+    hide dark
     tk "หืม?"
     n "ผมลืมตาตื่นขึ้นท่ามกลางห้องชมรมที่ไม่เหลือใครนอกจากผม ช่วงเวลาที่มีคนมากมายอยู่ในชมรมนี้มันกี่เดือนก่อนกันนะ? ผมเริ่มจะจำไม่ได้แล้ว"
     n "ผมขยี้ตาเพื่อปลุกให้ตัวเองตื่นขึ้นก่อนจะผุดลุกขึ้นช้าๆ"
