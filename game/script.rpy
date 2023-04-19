@@ -391,19 +391,19 @@ label q002:
     ei "อิทสึกิ เอมิค่ะ อยู่ม.4 ...เพิ่งย้ายเข้ามาเรียนโรงเรียนนี้ปีนี้ค่ะ" with dissolve
     tk "เพิ่งย้ายเข้ามาก็สร้างความบรรลัยเลยนะ แสบจริงๆ"
     hide eimi_2 
-    show eimi_02_wakaranai 
+    show Eimi02_Eimi02_smile 
     show question with Dissolve(1.0)
     ei "คะ?" with dissolve
     hide question
     tk "ชดใช้..."
-    hide eimi_02_wakaranai
+    hide Eimi02_Eimi02_smile
     stop music
     play music "audio/bgm/dotabata_happening.mp3"
-    show eimi_02_0_0
+    show Eimi02_Eimi02_0
     ei "หา?????" with dissolve
     n "ผมสูดหายใจเข้าลึกๆก่อนที่จะส่งเสียงตะโกนแบบที่ผมมั่นใจว่าไม่เคยตะโกนดังขนาดนี้มาก่อนในชีวิต"
     tk "ยัยบ้า! ชดใช้มาเดี๋ยวนี้เลยนะเฟ้ยยยยยยยยย!!!!!!!!!!!!!!"
-    hide eimi_02_0_0
+    hide Eimi02_Eimi02_0
     show Eimi_Eimi_panic
     show panic with Dissolve(1.0)
     ei "หวา!!! รุ่นพี่ค้า--!!" with dissolve
