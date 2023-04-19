@@ -63,7 +63,7 @@ label q1_5:
     hide Eimi02_Eimi02_smile2
 
     show Eimi02_Eimi02_smile
-    ei "ฉันชอบฟังคำพูดของรุ่นพี่นะคะ" with dissolve
+    ei "หนูชอบฟังคำพูดของรุ่นพี่นะคะ" with dissolve
     n "ผมขมวดคิ้วเป็นปมแน่นด้วยความไม่เข้าใจ"
     tk "ฟังคำด่ามันดีตรงไหนกันนะ?"
     hide Eimi02_Eimi02_smile
@@ -93,7 +93,7 @@ label q1_5:
     show panic with Dissolve(1.0)
     ei "ยังไม่เลิกแค้นอีกเหรอค้า!" with dissolve
     hide panic
-    tk "ให้อภัยแต่ฉันไม่ลืม"
+    tk "ให้อภัยแต่ว่าลืมไม่ได้"
     hide Eimi02_Eimi02_shock
 
     show Eimi02_Eimi02_memeEYE
@@ -107,7 +107,7 @@ label q1_5:
     hide Eimi02_Eimi02_kirakira
 
     show Eimi_Eimi_smile3
-    ei "ไม่ไล่ฉันเหรอคะ?" with dissolve
+    ei "ไม่ไล่ฉันไปเหรอคะ?" with dissolve
     tk "อุตส่าห์ซื้อกาแฟมาให้ จะไล่ไปก็ใจร้ายไปหน่อย"
     hide Eimi_Eimi_smile3
 
