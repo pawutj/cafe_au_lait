@@ -339,6 +339,8 @@ label q002:
     show excited with Dissolve(1.0)
     n "{size=50}ตูมมมมมมมมมมมมมมมมมมมมมมม!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
     hide excited
+    stop music
+    play music "audio/bgm/dotabata_happening.mp3"
     e0 "กรี๊ดดดด!!!!!!!"
     tk "อ้ากกกกกก!!!!!!!!!!"
     n "เสียงผู้หญิงคนหนึ่งกรีดร้องดังขึ้นข้างๆผม"
