@@ -1,9 +1,9 @@
 label q3_4:
-    show school_gym_b with Dissolve(1.0)
+    show school_gym_b with fade 
     n "ตามหาต่ออีกนิดนึงดีกว่า" with dissolve
     "...ถึงจะไม่มีหลักฐานอะไร แต่ผมก็แอบคิดว่าอาจจะเป็น ‘ที่นั่น’ ก็ได้"
     "เพราะยัยนั่นก็ชอบทำอะไรแปลกๆอยู่แล้วนี่นา"
-    show Roof with Dissolve(1.0)
+    show Roof with fade 
     hide school_gym_b
     stop music
     play music "audio/bgm/remind.mp3" volume 0.5
