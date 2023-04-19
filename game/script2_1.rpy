@@ -7,7 +7,7 @@ label q2_1:
 
     show Eimi_Eimi_smile2
     show happy with Dissolve(1.0)
-    ei "ก็เห็นรุ่นพี่เหงาค่ะเลยมาหาบ่อยๆ" with dissolve
+    ei "ก็เห็นรุ่นพี่เหงาไงคะเลยมาหาบ่อยๆ" with dissolve
     hide happy
     tk "ฉันไม่ได้บอกว่าเหงาสักคำ"
     hide Eimi_Eimi_smile2
@@ -21,7 +21,7 @@ label q2_1:
     show shine with Dissolve(1.0)
     ei "รุ่นพี่ไม่คิดว่าสาวน้อยที่มีพลังจินตนาการสูงมันดีเหรอคะ?" with dissolve
     hide shine
-    tk "ไม่ล่ะ เธอเพ้อเจ้อ"
+    tk "ไม่ล่ะ เพ้อเจ้อ"
     hide Eimi_Eimi_kira
 
     show Eimi_Eimi_panic
@@ -56,7 +56,7 @@ label q2_1:
     show question with Dissolve(1.0)
     ei "เอ...เอมิไม่รู้หรอกนะคะว่า ‘สาวน้อยเพ้อเจ้อ’ คนนั้นคือใครกันค่ะ?" with dissolve
     hide question
-    tk "ไม่รู้ก็ไปส่องกระจกไป ถ้ายังไม่รู้อีกก็เกินเยียวยา -_-+"
+    tk "ไม่รู้ก็ไปส่องกระจกไป"
     hide Eimi02_Eimi02_stupid
 
     show Eimi02_Eimi02_ehhh
@@ -86,7 +86,7 @@ label q2_1:
     hide Eimi_Eimi_cry_meme1
 
     show Eimi_Eimi_smug
-    n "เอมิตาตั้งไปแล้วเพราะกลัวโดนผมเล่นงาน แต่สุดท้ายเธอก็กลับมายิ้มและส่งเสียงหัวเราะในลำคอเบาๆเหมือนเดิม" with dissolve
+    n "เอมิตาโตไปแล้วเพราะกลัวโดนผมเล่นงาน แต่สุดท้ายเธอก็กลับมายิ้มและส่งเสียงหัวเราะในลำคอเบาๆเหมือนเดิม" with dissolve
     "ถ้าไม่นับตอนที่ทำหน้าเศร้าครั้งแรกที่เจอกัน ยัยนี่ก็คงยิ้มแทบตลอดเวลาล่ะมั้ง"
     tk "ทำหน้าตาสดชื่นขึ้นนะ"
     hide Eimi_Eimi_smug
@@ -120,7 +120,7 @@ label q2_1:
 
     show Eimi02_Eimi02_memeEYE
     show aware with Dissolve(1.0)
-    ei "หรือว่ารุ่นพี่จะสนใจหนูคะ? ร้ายนะคะๆ " with dissolve
+    ei "หรือว่ารุ่นพี่จะสนใจหนูคะ? ร้ายนะคะเนี่ย" with dissolve
     hide aware
     tk "ก็สนใจอยู่นะ"
     hide Eimi02_Eimi02_memeEYE
@@ -303,7 +303,7 @@ label q2_1:
     show shine with Dissolve(1.0)
     ei "หนูจะรอวันที่รุ่นพี่วาดมังงะ H เด็ดๆนะคะ" with dissolve
     hide shine
-    tk "ฉันชอบสาวๆ 3D...พอเหอะ "
+    tk "ฉันชอบสาวๆ 3D ต่างหาก"
     hide Eimi_Eimi_kira
 
     show Eimi_Eimi_panic
