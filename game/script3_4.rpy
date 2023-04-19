@@ -19,7 +19,7 @@ label q3_4:
     hide Eimi02_shy_Eimi02_onegai
 
     show Eimi02_shy_Eimi02_smile
-    ei "เอมิใครจะใครล่ะ" with dissolve
+    ei "เอมิไงจะใครล่ะ" with dissolve
     tk "..........."
     hide Eimi02_shy_Eimi02_smile
 
