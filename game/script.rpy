@@ -104,6 +104,7 @@ image artroom_afternoon = im.Scale("background/artroom/art-room1.jpg",1920,1080)
 
 image imagine = im.Scale("background/imagine.png",1920,1080)
 
+
 image school_park_1= im.Scale("background/SchoolPark01/school-park1.png",1920,1080)
 image school_park_2= im.Scale("background/SchoolPark01/school-park2.png",1920,1080)
 image school_park_3= im.Scale("background/SchoolPark01/school-park3.png",1920,1080)
@@ -160,6 +161,7 @@ image school_gym_b = im.Scale("background/gym/school_gym_b.jpg",1920,1080)
 image school_gym_c = im.Scale("background/gym/school_gym_c.jpg",1920,1080)
 
 image School_Hallway1_sunset = im.Scale("background/school_Hallway/School_Hallway1_sunset.png",1920,1080)
+image School_Hallway1_1 = im.Scale("background/school_Hallway/School_Hallway1_1.png",1920,1080)
 image Roof = im.Scale("background/Roof2/Roof.jpg",1920,1080)
 
 image GoldenTime01 = im.Scale("CG/CG02/GoldenTime01.png",1920,1080)
