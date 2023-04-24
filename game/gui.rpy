@@ -56,7 +56,8 @@ define gui.interface_text_color = '#ffffff'
 ## Fonts and Font Sizes ########################################################
 
 define gui.text_font = "SukhumvitSet-Medium.ttf"
-
+define gui.history_font = "SukhumvitSet-Medium.ttf"
+define gui.history_text_font = "SukhumvitSet-Medium.ttf"
 ## The font used for character names.
 define gui.name_text_font = "THSarabunNew Bold.ttf"
 
@@ -348,6 +349,7 @@ define gui.history_name_xpos = 233
 define gui.history_name_ypos = 0
 define gui.history_name_width = 233
 define gui.history_name_xalign = 1.0
+
 
 ## The position, width, and alignment of the dialogue text.
 define gui.history_text_xpos = 255

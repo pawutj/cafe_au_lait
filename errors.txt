@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 249: 'bar' is not a keyword argument or valid child for the bar statement.
-    bar value Preference("music volume")
-       ^
+File "game/screens.rpy", line 1333: 'font' is not a keyword argument or valid child for the fixed statement.
+    font "SukhumvitSet-Medium.ttf" size(35)
+        ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Wed Apr 19 01:08:11 2023
+Mon Apr 24 23:15:19 2023
