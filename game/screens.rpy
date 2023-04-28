@@ -753,10 +753,10 @@ screen main_menu():
         action Quit(confirm= True)
         focus_mask True
     
-    imagebutton auto "main_menu/main_language_%s.png":
-        #idle "map/m bath house_idle.png" 
-        #hover "map/m bath house_hover.png" 
-        focus_mask True 
+    # imagebutton auto "main_menu/main_language_%s.png":
+    #     #idle "map/m bath house_idle.png" 
+    #     #hover "map/m bath house_hover.png" 
+    #     focus_mask True 
 
 
 
