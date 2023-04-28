@@ -1,28 +1,57 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script3_3.rpy", line 10, in script
-    show dark with Dissolv(0.2)
-  File "game/script3_3.rpy", line 10, in <module>
-    show dark with Dissolv(0.2)
-NameError: name 'Dissolv' is not defined
+  File "renpy/common/00gamemenu.rpy", line 170, in script
+    $ ui.interact()
+  File "renpy/common/00gamemenu.rpy", line 170, in <module>
+    $ ui.interact()
+Exception: Style 'history_text_font' does not exist.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script3_3.rpy", line 10, in script
-    show dark with Dissolv(0.2)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 1654, in execute
-    paired = renpy.python.py_eval(self.paired)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\python.py", line 1092, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\python.py", line 1085, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script3_3.rpy", line 10, in <module>
-    show dark with Dissolv(0.2)
-NameError: name 'Dissolv' is not defined
+  File "renpy/common/00gamemenu.rpy", line 170, in script
+    $ ui.interact()
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\python.py", line 1061, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00gamemenu.rpy", line 170, in <module>
+    $ ui.interact()
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3810, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\screen.py", line 456, in visit_all
+    self.child.visit_all(callback, seen=None)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  [Previous line repeated 4 more times]
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 572, in visit_all
+    for d in self.visit():
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\layout.py", line 1254, in visit
+    self.style._visit_window(rv.append)
+  File "style.pyx", line 541, in renpy.style.StyleCore._visit_window
+  File "style.pyx", line 528, in renpy.style.StyleCore._get_unoffset
+  File "style.pyx", line 493, in renpy.style.StyleCore._get
+  File "style.pyx", line 679, in renpy.style.build_style
+  File "style.pyx", line 142, in renpy.style.get_full_style
+  File "style.pyx", line 98, in renpy.style.get_style
+Exception: Style 'history_text_font' does not exist.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
 Cafe_au_lait 1.0
-Wed Apr 19 22:12:58 2023
+Mon Apr 24 23:09:12 2023

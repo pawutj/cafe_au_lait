@@ -402,7 +402,7 @@ screen quick_menu():
             textbutton _("Save") action ShowMenu("save")
             textbutton _("Load") action ShowMenu("load")
             textbutton _("Back") action Rollback()
-            textbutton _("History") action ShowMenu('history')
+            textbutton _("History") action ShowMenu('history2')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Q.Save") action QuickSave()
@@ -1268,22 +1268,26 @@ style slider_vbox:
 ##
 ## https://www.renpy.org/doc/html/history.html
 
-screen history():
+style history_name_text:
+    font "SukhumvitSet-Medium.ttf" size(35)
+
+screen history2():
 
     tag menu
 
     predict False
-
+    add "backlog_BG.png"
     frame:
 
         style_prefix "history"
 
         ## Style this as needed in the style definitions
-        label _("History")
+        
 
         ## If you have a custom image you want to use for the screen, you can set it as
         ## a Frame below.
-        # background Frame(["gui/frame.png"], gui.history_frame_borders, tile=True)
+
+        background Frame(["gui/zero.png"], tile=True)
 
         ## Using margin properties will allow the screen to automatically adjust should
         ## you choose to use a different resolution than 1080p, and will always be centered. 
@@ -1326,9 +1330,10 @@ screen history():
                             yfit True
 
                         if h.who:
-
+                           
                             label h.who:
-                                style "history_name"
+                                style "history_name_text"
+                                
                                 substitute False
 
                                 ## Take the color of the who text from the Character, if
@@ -1340,6 +1345,8 @@ screen history():
                         text what:
                             line_spacing 5
                             substitute False
+                            font "SukhumvitSet-Medium.ttf"
+                            
 
                     ## This puts some space between entries so it's easier to read
                     null height 20
@@ -1351,10 +1358,10 @@ screen history():
                     ## from getting cut off. Adjust when replacing the
                     ## default fonts.
 
-        textbutton "Return":
-            style "history_return_button"
-            action Return()
-            alt _("Return") 
+        # textbutton "Return":
+        #     style "history_return_button"
+        #     action Return()
+        #     alt _("Return") 
 
 
 ## This determines what tags are allowed to be displayed on the history screen.
@@ -1365,7 +1372,7 @@ define gui.history_allow_tags = { "alt", "noalt" }
 style history_window is empty
 
 style history_name is gui_label
-style history_name_text is gui_label_text
+# style history_name_text is gui_label_text
 style history_text is gui_text
 
 style history_label is gui_label
@@ -1381,9 +1388,9 @@ style history_name:
     ypos gui.history_name_ypos
     xsize gui.history_name_width
 
-style history_name_text:
-    min_width gui.history_name_width
-    text_align gui.history_name_xalign
+# style history_name_text:
+#     min_width gui.history_name_width
+#     text_align gui.history_name_xalign
 
 style history_text:
     xpos gui.history_text_xpos

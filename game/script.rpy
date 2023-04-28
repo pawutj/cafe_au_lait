@@ -112,6 +112,8 @@ image school_park_4= im.Scale("background/SchoolPark01/school-park4.png",1920,10
 
 image black_scene = im.Scale("background/black.jpg",1920,1080)
 
+image Sky_Morning = im.Scale("background/SKY/Sky_Morning.png",1920,1080)
+image Sky_Summer = im.Scale("background/SKY/Sky_Summer.png",1920,1080)
 image sky_morning = im.Scale("background/SKY/Sky_Morning.png",1920,1080)
 image sky_summer = im.Scale("background/SKY/Sky_Summer.png",1920,1080)
 
@@ -271,7 +273,6 @@ label start:
     scene dark with Dissolve(2.0)
     $ point = 0
     scene Canvas with Dissolve(2.0)
-
     play music "audio/bgm/nagai_no_yoru.mp3" volume 0.5 
     show text "{size=40}หากเราไม่พยายามและไม่เชื่อในสิ่งที่ตัวเองทำก็เท่ากับแพ้ตั้งแต่แรก" with Dissolve(1.0)
     $ renpy.pause(2)
