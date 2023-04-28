@@ -1,63 +1,35 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "renpy/common/00gamemenu.rpy", line 170, in script
-    $ ui.interact()
-  File "renpy/common/00gamemenu.rpy", line 170, in <module>
-    $ ui.interact()
-  File "game/screens.rpy", line 1600, in execute
-    screen confirm(message, yes_action, no_action):
-  File "game/screens.rpy", line 1600, in execute
-    screen confirm(message, yes_action, no_action):
-  File "game/screens.rpy", line 1612, in execute
-    imagebutton auto "config/yes_%s.png":
-Exception: Imagebutton does not have a idle image. (auto='config/yes_%s.png').
+  File "game/script.rpy", line 277, in script
+    image badend_0 = im.Scale("Cutscene/badend/badend02.png")
+  File "game/script.rpy", line 277, in script
+    image badend_0 = im.Scale("Cutscene/badend/badend02.png")
+  File "game/script.rpy", line 277, in <module>
+    image badend_0 = im.Scale("Cutscene/badend/badend02.png")
+TypeError: __init__() missing 2 required positional arguments: 'width' and 'height'
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/00gamemenu.rpy", line 170, in script
-    $ ui.interact()
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 1131, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\python.py", line 1061, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/00gamemenu.rpy", line 170, in <module>
-    $ ui.interact()
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3810, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  [Previous line repeated 1 more time]
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\screen.py", line 451, in visit_all
-    callback(self)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3810, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\screen.py", line 462, in per_interact
-    self.update()
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\screen.py", line 653, in update
-    self.screen.function(**self.scope)
-  File "game/screens.rpy", line 1600, in execute
-    screen confirm(message, yes_action, no_action):
-  File "game/screens.rpy", line 1600, in execute
-    screen confirm(message, yes_action, no_action):
-  File "game/screens.rpy", line 1612, in execute
-    imagebutton auto "config/yes_%s.png":
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ui.py", line 952, in _imagebutton
-    idle = choice(idle, idle_image, "idle", required=True)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ui.py", line 946, in choice
-    raise Exception("Imagebutton does not have a %s image. (auto=%r)." % (name, auto))
-Exception: Imagebutton does not have a idle image. (auto='config/yes_%s.png').
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
+    renpy.main.main()
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\main.py", line 558, in main
+    renpy.game.context().run(node)
+  File "game/script.rpy", line 277, in script
+    image badend_0 = im.Scale("Cutscene/badend/badend02.png")
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
+  File "game/script.rpy", line 277, in script
+    image badend_0 = im.Scale("Cutscene/badend/badend02.png")
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 1230, in execute
+    img = renpy.python.py_eval_bytecode(self.code.bytecode)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\python.py", line 1085, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script.rpy", line 277, in <module>
+    image badend_0 = im.Scale("Cutscene/badend/badend02.png")
+TypeError: __init__() missing 2 required positional arguments: 'width' and 'height'
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
 Cafe_au_lait 1.0
-Fri Apr 28 23:54:42 2023
+Sat Apr 29 00:28:53 2023

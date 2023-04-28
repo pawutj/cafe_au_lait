@@ -101,5 +101,6 @@ label badend1:
     stop music
     "...ผมนี่เป็นหัวหน้าชมรมศิลปะที่น่าผิดหวังจริงๆ..."
     hide Eimi_shy_Eimi_cry
+    jump badend
     return
 

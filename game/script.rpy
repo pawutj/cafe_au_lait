@@ -251,12 +251,12 @@ image main_scene_5 = im.Scale("Animation/anime05.png",1920,1080)
 image main_scene_6 = im.Scale("Animation/anime06.png",1920,1080)
 label splashscreen:
     scene black with Dissolve(1.0)
-    show main_scene_1 with Dissolve(0.5)
-    show main_scene_2 with Dissolve(0.5)
-    show main_scene_3 with Dissolve(0.5)
-    show main_scene_4 with Dissolve(0.5)
-    show main_scene_5 with Dissolve(0.5)
-    show main_scene_6 with Dissolve(0.5)
+    scene main_scene_1 with Dissolve(0.5)
+    scene main_scene_2 with Dissolve(0.5)
+    scene main_scene_3 with Dissolve(0.5)
+    scene main_scene_4 with Dissolve(0.5)
+    scene main_scene_5 with Dissolve(0.5)
+    scene main_scene_6 with Dissolve(0.5)
     return
 
 image cutscene_1_0 =  im.Scale("Cutscene/unit01/unit01_00.png",1920,1080)
@@ -274,18 +274,21 @@ image cutscene_3_1 =  im.Scale("Cutscene/unit03/unit03_01.png",1920,1080)
 image cutscene_3_2 =  im.Scale("Cutscene/unit03/unit03_02.png",1920,1080)
 image _cutscene_3_2 =  im.Scale("Cutscene/unit03/unit03_02.png",1920,1080)
 
+image badend_0 = im.Scale("Cutscene/badend/badend02.png",1920,1080)
+image _badend_0 = im.Scale("Cutscene/badend/badend02.png",1920,1080)
+
 label cutscene_1:
-    $renpy.pause(3.0,hard = True)
+    $renpy.pause(1.0,hard = True)
     scene black with Dissolve(1.0)
-    show cutscene_1_0 with Dissolve(1.0)
-    show cutscene_1_1 with Dissolve(1.0)
-    show cutscene_1_2 with Dissolve(1.0)
-    show _cutscene_1_2 with Dissolve(2.0)
+    scene cutscene_1_0 with Dissolve(1.0)
+    scene cutscene_1_1 with Dissolve(1.0)
+    scene cutscene_1_2 with Dissolve(1.0)
+    scene _cutscene_1_2 with Dissolve(2.0)
     hide artroom_afternoon
     jump q2_1
     
 label cutscene_2:
-    $renpy.pause(3.0,hard = True)
+    $renpy.pause(1.0,hard = True)
     scene black with Dissolve(1.0)
     show cutscene_2_0 with Dissolve(1.0)
     show cutscene_2_1 with Dissolve(1.0)
@@ -294,12 +297,22 @@ label cutscene_2:
     jump q3_1
 
 label cutscene_3:
-    $renpy.pause(3.0,hard = True)
+    $ quick_menu = False
+    $renpy.pause(1.0,hard = True)
     scene black with Dissolve(1.0)
     show cutscene_3_0 with Dissolve(1.0)
     show cutscene_3_1 with Dissolve(1.0)
     show cutscene_3_2 with Dissolve(1.0)
     show _cutscene_3_2 with Dissolve(2.0)
+    jump splashscreen
+    return
+
+label badend:
+    $ quick_menu = False
+    $renpy.pause(1.0,hard = True)
+    scene black with Dissolve(1.0)
+    scene badend_0 with Dissolve(2.0)
+    scene _badend_0 with Dissolve(3.0)
     jump splashscreen
     return
 
