@@ -1280,8 +1280,12 @@ screen history2():
     key "K_ESCAPE" action Return()
     tag menu
 
+
     predict False
     add "backlog_BG.png"
+    imagebutton auto "backlog/title_%s.png":
+        focus_mask True 
+        action Return()
     frame:
 
         style_prefix "history"
@@ -1362,6 +1366,8 @@ screen history2():
                     ## Adding line_spacing prevents the bottom of the text
                     ## from getting cut off. Adjust when replacing the
                     ## default fonts.
+
+    
 
         # textbutton "Return":
         #     style "history_return_button"
