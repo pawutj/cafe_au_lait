@@ -1,15 +1,19 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Scale object at 0x0000000000cce190>:
-  File "game/script3_1.rpy", line 6, in script
-    n "น่าจะประมาณหนึ่งสัปดาห์แล้วที่เอมิมาหาผมบ่อยๆในห้องชมรมที่ไม่มีใคร" with dissolve
-OSError: Couldn't find file 'Cutscene/unit02/unit02_00.png'.
+While running game code:
+  File "game/script3_4.rpy", line 22, in script
+    ei "เอมิไงจะใครล่ะ" with dissolve
+  File "renpy/common/00action_data.rpy", line 79, in get_selected
+    return __get_field(self.object, self.field, self.kind) == self.value
+  File "renpy/common/00action_data.rpy", line 39, in _m1_00action_data__get_field
+    raise NameError("The {} {} does not exist.".format(kind, name))
+NameError: The variable hiding does not exist.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script3_1.rpy", line 6, in script
-    n "น่าจะประมาณหนึ่งสัปดาห์แล้วที่เอมิมาหาผมบ่อยๆในห้องชมรมที่ไม่มีใคร" with dissolve
+  File "game/script3_4.rpy", line 22, in script
+    ei "เอมิไงจะใครล่ะ" with dissolve
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
     renpy.exports.say(who, what, *args, **kwargs)
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\exports.py", line 1373, in say
@@ -24,51 +28,37 @@ Full traceback:
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
     repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3912, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 2602, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 495, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\transform.py", line 747, in render
-    return transform_render(self, width, height, st, at)
-  File "accelerator.pyx", line 187, in renpy.display.accelerator.transform_render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\image.py", line 506, in render
-    return wrap_render(self.target, width, height, st, at)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\image.py", line 309, in wrap_render
-    rend = render(child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\im.py", line 627, in render
-    return cache.get(self, render=True)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\im.py", line 295, in get
-    surf = image.load()
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\im.py", line 890, in load
-    child = cache.get(self.image)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\im.py", line 295, in get
-    surf = image.load()
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\im.py", line 720, in load
-    raise e
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\im.py", line 685, in load
-    filelike = renpy.loader.load(self.filename)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\loader.py", line 820, in load
-    raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'Cutscene/unit02/unit02_00.png'.
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3810, in interact_core
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\screen.py", line 456, in visit_all
+    self.child.visit_all(callback, seen=None)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
+    d.visit_all(callback, seen)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 584, in visit_all
+    callback(self)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3810, in <lambda>
+    root_widget.visit_all(lambda i : i.per_interact())
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\behavior.py", line 968, in per_interact
+    if self.is_selected():
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\behavior.py", line 956, in is_selected
+    return is_selected(self.action)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\behavior.py", line 401, in is_selected
+    return action.get_selected()
+  File "renpy/common/00action_data.rpy", line 79, in get_selected
+    return __get_field(self.object, self.field, self.kind) == self.value
+  File "renpy/common/00action_data.rpy", line 39, in _m1_00action_data__get_field
+    raise NameError("The {} {} does not exist.".format(kind, name))
+NameError: The variable hiding does not exist.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
 Cafe_au_lait 1.0
-Fri Apr 28 22:50:11 2023
+Fri Apr 28 23:04:51 2023

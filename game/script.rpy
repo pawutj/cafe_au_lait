@@ -327,9 +327,7 @@ label start:
     show text  "{size=40}ไม่ว่าจะเกิดอะไรขึ้นก็ตาม...จงอย่าทรยศต่อความฝันของตัวเอง..." with Dissolve(1.0)
     $ renpy.pause(2)
     hide text with Dissolve(1.0)
-   
 
-    jump q3_4
 
     scene artroom_past with Dissolve(1.0)
     hide Canvas

@@ -200,6 +200,8 @@ style input:
 
 
 screen config():
+    key "mouseup_3" action Return()
+    key "K_ESCAPE" action Return()
     add "config/config_bg.png"      
     imagebutton auto "config/config_back_%s.png":
         focus_mask True
@@ -397,18 +399,17 @@ screen quick_menu():
         hbox:
             style_prefix "quick"
 
-            xalign 0.5
+            xalign 0.8
             yalign 1.0
             textbutton _("Save") action ShowMenu("save")
             textbutton _("Load") action ShowMenu("load")
-            textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history2')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Q.Save") action QuickSave()
             textbutton _("Q.Load") action QuickLoad()
             textbutton _("Config") action ShowMenu("config")
-            textbutton _("Prefs") action ShowMenu('preferences')
+            # textbutton _("Prefs") action ShowMenu('preferences')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -515,6 +516,8 @@ image test_01:
 
 
 screen save():
+    key "mouseup_3" action Return()
+    key "K_ESCAPE" action Return()
     tag save
     fixed:
     
@@ -608,6 +611,8 @@ screen save():
 
 
 screen load():
+    key "mouseup_3" action Return()
+    key "K_ESCAPE" action Return()
     tag load
     add gui.load_menu_background
 
@@ -1109,7 +1114,6 @@ style slot_button_text:
 ## https://www.renpy.org/doc/html/screen_special.html#preferences
 
 screen preferences():
-
     tag menu
 
     use game_menu(_("Preferences"), scroll="viewport"):
@@ -1272,7 +1276,8 @@ style history_name_text:
     font "SukhumvitSet-Medium.ttf" size(35)
 
 screen history2():
-
+    key "mouseup_3" action Return()
+    key "K_ESCAPE" action Return()
     tag menu
 
     predict False
