@@ -489,11 +489,10 @@ screen quick_menu():
     zorder 100
 
     if quick_menu:
-
         hbox:
             style_prefix "quick"
 
-            xalign 0.8
+            xalign 0.95
             yalign 1.0
             textbutton _("Save") action ShowMenu("save")
             textbutton _("Load") action ShowMenu("load")
@@ -655,8 +654,8 @@ screen save():
 
                             add FileScreenshot(slot,empty="save_load/box01.png") size(225,125)
 
-                            # text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
-                            #     style "slot_time_text"
+                            text FileTime(slot, format=_("{#file_time} %B %d %Y, %H:%M"), empty=_("empty slot")):
+                                style "slot_time_text"
 
                             # text FileSaveName(slot):
                             #     style "slot_name_text"
@@ -695,8 +694,8 @@ screen load_main():
 
                         add FileScreenshot(slot,empty="save_load/box01.png") size(225,125)
 
-                        # text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
-                        #     style "slot_time_text"
+                        text FileTime(slot, format=_("{#file_time} %B %d %Y, %H:%M"), empty=_("empty slot")):
+                            style "slot_time_text"
 
                         # text FileSaveName(slot):
                         #     style "slot_name_text"
@@ -763,8 +762,8 @@ screen load():
 
                         add FileScreenshot(slot,empty="save_load/box01.png") size(225,125)
 
-                        # text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
-                        #     style "slot_time_text"
+                        text FileTime(slot, format=_("{#file_time}%B %d %Y, %H:%M"), empty=_("empty slot")):
+                            style "slot_time_text"
 
                         # text FileSaveName(slot):
                         #     style "slot_name_text"
@@ -1758,20 +1757,9 @@ style confirm_button_text:
 ## https://www.renpy.org/doc/html/screen_special.html#skip-indicator
 
 screen skip_indicator():
-
     zorder 100
-    style_prefix "skip"
+    add "skip.png"
 
-    frame:
-
-        hbox:
-            spacing 9
-
-            text _("Skipping")
-
-            text "▸" at delayed_blink(0.0, 1.0) style "skip_triangle"
-            text "▸" at delayed_blink(0.2, 1.0) style "skip_triangle"
-            text "▸" at delayed_blink(0.4, 1.0) style "skip_triangle"
 
 
 ## This transform is used to blink the arrows one after another.

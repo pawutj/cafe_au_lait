@@ -93,6 +93,7 @@ label q2_6:
 
     show Eimi_Eimi_wakaranai
     show question with Dissolve(1.0)
+    play sound "audio/SoundEffect/arere.mp3" volume 1.3
     ei "อ่าเร้? หัวเราะทำไมคะ?" with dissolve
     hide question
     tk "จำไม่ได้แล้ว "

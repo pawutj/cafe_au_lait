@@ -89,6 +89,7 @@ label q003:
 
     show Eimi02_Eimi02_ara
     show question with Dissolve(1.0)
+    play sound "audio/SoundEffect/arere.mp3" volume 1.3
     ei "อ่าเร้? " with dissolve
     hide question
     tk "จะ ‘อ่าเร้?’ ทำไม?"

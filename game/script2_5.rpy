@@ -6,6 +6,7 @@ label q2_5:
     hide sunset4
 
     show Eimi_Eimi_normal
+    play sound "audio/SoundEffect/footsteps_normal.ogg" volume 5.0
     tk "เธอจะเดินมากับฉันทำไม? " with dissolve
     ei "แค่เดินมาด้วยกันหลังเลิกเรียนนี่คะ"
     tk "บ้านเธอกับฉันไปกันคนละทางกันไม่ใช่เหรอ?"
