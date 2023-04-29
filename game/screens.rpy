@@ -654,8 +654,8 @@ screen save():
 
                             add FileScreenshot(slot,empty="save_load/box01.png") size(225,125)
 
-                            # text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
-                            #     style "slot_time_text"
+                            text FileTime(slot, format=_("{#file_time} %B %d %Y, %H:%M"), empty=_("empty slot")):
+                                style "slot_time_text"
 
                             # text FileSaveName(slot):
                             #     style "slot_name_text"
@@ -694,8 +694,8 @@ screen load_main():
 
                         add FileScreenshot(slot,empty="save_load/box01.png") size(225,125)
 
-                        # text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
-                        #     style "slot_time_text"
+                        text FileTime(slot, format=_("{#file_time} %B %d %Y, %H:%M"), empty=_("empty slot")):
+                            style "slot_time_text"
 
                         # text FileSaveName(slot):
                         #     style "slot_name_text"
@@ -762,8 +762,8 @@ screen load():
 
                         add FileScreenshot(slot,empty="save_load/box01.png") size(225,125)
 
-                        # text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
-                        #     style "slot_time_text"
+                        text FileTime(slot, format=_("{#file_time}%B %d %Y, %H:%M"), empty=_("empty slot")):
+                            style "slot_time_text"
 
                         # text FileSaveName(slot):
                         #     style "slot_name_text"

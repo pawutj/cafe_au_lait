@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script2_5.rpy", line 9: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
-    play sound "audio/SoundEffect/footsteps_normal.ogg" volume 2.0
+File "game/screens.rpy", line 658: Line is indented, but the preceding text statement does not expect a block. Please check this line's indentation.
+    style "slot_time_text"
     ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sat Apr 29 22:30:53 2023
+Sat Apr 29 23:33:22 2023
