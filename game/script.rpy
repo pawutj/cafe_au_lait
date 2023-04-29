@@ -169,6 +169,10 @@ image Roof = im.Scale("background/Roof2/Roof.jpg",1920,1080)
 image GoldenTime01 = im.Scale("CG/CG02/GoldenTime01.png",1920,1080)
 image GoldenTime02 = im.Scale("CG/CG02/GoldenTime02.png",1920,1080)
 
+
+image clickToContinue:
+    "diamond-large-off.png"
+
 image canvas_death:
     "CG/Canvas_Death/item02.png"
 

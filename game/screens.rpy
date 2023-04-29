@@ -489,11 +489,10 @@ screen quick_menu():
     zorder 100
 
     if quick_menu:
-
         hbox:
             style_prefix "quick"
 
-            xalign 0.8
+            xalign 0.95
             yalign 1.0
             textbutton _("Save") action ShowMenu("save")
             textbutton _("Load") action ShowMenu("load")
