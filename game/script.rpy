@@ -259,6 +259,8 @@ label splashscreen:
     scene main_scene_6 with Dissolve(0.5)
     return
 
+image BadPic2 =  im.Scale("CG/Eimi_bird/BadPic2.png",1920,1080)
+
 image cutscene_1_0 =  im.Scale("Cutscene/unit01/unit01_00.png",1920,1080)
 image cutscene_1_1 =  im.Scale("Cutscene/unit01/unit01_01.png",1920,1080)
 image cutscene_1_2 =  im.Scale("Cutscene/unit01/unit01_02.png",1920,1080)
