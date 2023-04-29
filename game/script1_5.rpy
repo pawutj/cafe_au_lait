@@ -1,10 +1,10 @@
 label q1_5:
-    show sky_morning with Dissolve(1.0)
+    scene sky_morning with Dissolve(1.0)
     play music "audio/bgm/hijimeta_no_date.mp3" volume 0.5
     n "วันใหม่เริ่มขึ้นแล้ว" with dissolve
     "พร้อมกับที่ผมจะเริ่มผลงานใหม่ของผม"
     "ต่อจากนี้ผมจะเริ่มการต่อสู้ของตัวเองใหม่โดยไม่สนใจอดีตที่ผ่านมา"
-    show artroom_afternoon with Dissolve(1.0)
+    scene artroom_afternoon with Dissolve(1.0)
     hide sky_morning
 
     "ในฐานะหัวหน้าชมรมและสมาชิกคนสุดท้ายของชมรมศิลปะ ผมจะไม่มีวันยอมแพ้ให้กับเป้าหมายที่วางไว้แต่แรกไม่ว่าจะมีอุปสรรคมากแค่ไหน"

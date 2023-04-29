@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 658: Line is indented, but the preceding text statement does not expect a block. Please check this line's indentation.
-    style "slot_time_text"
-    ^
+File "game/script1_5.rpy", line 2: expected statement.
+    scr sky_morning with Dissolve(1.0)
+                    ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sat Apr 29 23:33:22 2023
+Sun Apr 30 00:41:14 2023
