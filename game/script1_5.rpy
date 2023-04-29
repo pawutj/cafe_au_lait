@@ -150,10 +150,7 @@ label q1_5:
     "...อีกต่อไป"
     hide Eimi_Eimi_smile
 
-    scene Canvas with Dissolve(2.0)
-    hide artroom_afternoon
-    $renpy.pause(2.0,hard = True)
-    jump q2_1
+    jump cutscene_1
 
 
     return

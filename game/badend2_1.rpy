@@ -90,5 +90,6 @@ label badend2_1:
     stop music
     "...แม้แต่ครั้งเดียว..."
     hide Eimi_Eimi_sad2
+    jump badend
     return
 

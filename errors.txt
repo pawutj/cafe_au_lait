@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 1333: 'font' is not a keyword argument or valid child for the fixed statement.
-    font "SukhumvitSet-Medium.ttf" size(35)
-        ^
+File "game/gui.rpy", line 14: is not terminated with a newline. (Check strings and parenthesis.)
+(Perhaps you left out a ' at the end of the first line.)
+        config.keymap['game_menu'] = ['K_MENU', 'K_PAUSE','mouseup_3]
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Mon Apr 24 23:15:19 2023
+Fri Apr 28 23:13:23 2023

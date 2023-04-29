@@ -199,7 +199,103 @@ style input:
     xmaximum gui.dialogue_width
 
 
+screen config_main():
+    key "mouseup_3" action Return()
+    key "K_ESCAPE" action Return()
+    add "config/config_bg.png"      
+    imagebutton auto "config/config_back_%s.png":
+        focus_mask True
+        action Hide('config_main')
+        
+
+    
+    if  preferences.skip_unseen ==True:
+        imagebutton:
+            focus_mask True
+            idle "config/all_hover.png"
+        imagebutton auto "config/read_only_%s.png":
+            focus_mask True
+            action Preference("skip", "toggle")
+    else:
+        imagebutton:
+            focus_mask True
+            idle "config/read_only_hover.png"
+        imagebutton auto "config/all_%s.png":
+            focus_mask True
+            action Preference("skip", "toggle")
+    
+    if  preferences.fullscreen==False:
+        imagebutton:
+            focus_mask True
+            idle "config/window_hover.png"
+        imagebutton auto "config/fullscreen_%s.png":
+            focus_mask True
+            action Preference("display", "fullscreen")
+            
+    else:
+        imagebutton:
+            focus_mask True
+            idle "config/fullscreen_hover.png"
+        imagebutton auto "config/window_%s.png":
+            focus_mask True
+            action Preference("display", "window")
+
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                value Preference("music volume")
+                xsize 450
+            xpos 390
+            ypos 590
+
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                value Preference("sound volume")
+                xsize 450
+            xpos 390
+            ypos 720
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                value Preference("voice volume")
+                xsize 450
+            xpos 390
+            ypos 860
+                
+    
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                value Preference("Text Speed")
+                xsize 450
+            xpos 1075
+            ypos 590
+                
+
+    hbox:
+        style_prefix "slider"
+        box_wrap True
+        vbox:
+            bar :
+                value Preference("auto-forward time")
+                xsize 450
+            xpos 1075
+            ypos 720
+
+
+
 screen config():
+    key "mouseup_3" action Return()
+    key "K_ESCAPE" action Return()
     add "config/config_bg.png"      
     imagebutton auto "config/config_back_%s.png":
         focus_mask True
@@ -397,18 +493,17 @@ screen quick_menu():
         hbox:
             style_prefix "quick"
 
-            xalign 0.5
+            xalign 0.8
             yalign 1.0
             textbutton _("Save") action ShowMenu("save")
             textbutton _("Load") action ShowMenu("load")
-            textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history2')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Q.Save") action QuickSave()
             textbutton _("Q.Load") action QuickLoad()
             textbutton _("Config") action ShowMenu("config")
-            textbutton _("Prefs") action ShowMenu('preferences')
+            # textbutton _("Prefs") action ShowMenu('preferences')
 
 
 ## This code ensures that the quick_menu screen is displayed in-game, whenever
@@ -515,6 +610,8 @@ image test_01:
 
 
 screen save():
+    key "mouseup_3" action Return()
+    key "K_ESCAPE" action Return()
     tag save
     fixed:
     
@@ -528,40 +625,6 @@ screen save():
         imagebutton auto "save_load/title_%s.png":
             focus_mask True
             action MainMenu()
-
-        imagebutton auto "save_load/page01_%s.png":
-            focus_mask True
-            action Hide("save")
-        
-        imagebutton auto "save_load/page02_%s.png":
-            focus_mask True
-            action Hide("save")
-        
-            
-        imagebutton auto "save_load/page03_%s.png":
-            focus_mask True
-            action Hide("save")
-                
-        imagebutton auto "save_load/page04_%s.png":
-            focus_mask True
-            action Hide("save")
-                
-        imagebutton auto "save_load/page05_%s.png":
-            focus_mask True
-            action Hide("save")
-                
-        imagebutton auto "save_load/page06_%s.png":
-            focus_mask True
-            action Hide("save")
-                
-        imagebutton auto "save_load/page07_%s.png":
-            focus_mask True
-            action Hide("save")
-                
-        imagebutton auto "save_load/page08_%s.png":
-            focus_mask True
-            action Hide("save")
-        
         button :
             background "save_load/save.png"
             focus_mask True
@@ -605,9 +668,60 @@ screen save():
                     
 
 
+screen load_main():
+    key "mouseup_3" action Return()
+    key "K_ESCAPE" action Return()
+    tag load_main
+    add gui.load_menu_background
+
+    imagebutton auto "save_load/back_%s.png":
+        focus_mask True
+        action Hide('load_main')
+    grid gui.file_slot_cols gui.file_slot_rows:
+        style_prefix "slot"
+
+        xalign 0.81
+        yalign 0.4
+
+        spacing gui.slot_spacing
+
+        for i in range(gui.file_slot_cols * gui.file_slot_rows):
+
+                    $ slot = i + 1
+
+                    button:
+                        action FileLoad(slot)
+
+
+                        add FileScreenshot(slot,empty="save_load/box01.png") size(225,125)
+
+                        # text FileTime(slot, format=_("{#file_time}%A, %B %d %Y, %H:%M"), empty=_("empty slot")):
+                        #     style "slot_time_text"
+
+                        # text FileSaveName(slot):
+                        #     style "slot_name_text"
+
+                        key "save_delete" action FileDelete(slot)
+
+                        xsize 650
+                        ysize 150
+
+                        background "save_load/data01_idle1.png"
+                        hover_background "save_load/data01_hover1.png"
+    
+
+
+    
+    button :
+        background "save_load/load.png"
+        focus_mask True
+
+
 
 
 screen load():
+    key "mouseup_3" action Return()
+    key "K_ESCAPE" action Return()
     tag load
     add gui.load_menu_background
 
@@ -619,38 +733,6 @@ screen load():
         focus_mask True
         action MainMenu()
 
-    imagebutton auto "save_load/page01_%s.png":
-        focus_mask True
-        action Hide("load")
-    
-    imagebutton auto "save_load/page02_%s.png":
-        focus_mask True
-        action Hide("load")
-    
-        
-    imagebutton auto "save_load/page03_%s.png":
-        focus_mask True
-        action Hide("load")
-            
-    imagebutton auto "save_load/page04_%s.png":
-        focus_mask True
-        action Hide("load")
-            
-    imagebutton auto "save_load/page05_%s.png":
-        focus_mask True
-        action Hide("load")
-            
-    imagebutton auto "save_load/page06_%s.png":
-        focus_mask True
-        action Hide("load")
-            
-    imagebutton auto "save_load/page07_%s.png":
-        focus_mask True
-        action Hide("load")
-            
-    imagebutton auto "save_load/page08_%s.png":
-        focus_mask True
-        action Hide("load")
     
     button :
         background "save_load/load.png"
@@ -728,19 +810,19 @@ screen main_menu():
         #idle "map/m bath house_idle.png" 
         #hover "map/m bath house_hover.png" 
         focus_mask True 
-        action Show("load")
+        action ShowMenu("black_screen",Dissolve(0.1)),QuickLoad()
     
     imagebutton auto "main_menu/main_load_%s.png":
         #idle "map/m bath house_idle.png" 
         #hover "map/m bath house_hover.png" 
         focus_mask True 
-        action ShowMenu("load")
+        action ShowMenu("load_main")
     
     imagebutton auto "main_menu/main_config_%s.png":
         #idle "map/m bath house_idle.png" 
         #hover "map/m bath house_hover.png" 
         focus_mask True 
-        action ShowMenu("preferences")
+        action ShowMenu("config_main")
     
     imagebutton auto "main_menu/main_extra_%s.png":
         #idle "map/m bath house_idle.png" 
@@ -753,10 +835,10 @@ screen main_menu():
         action Quit(confirm= True)
         focus_mask True
     
-    imagebutton auto "main_menu/main_language_%s.png":
-        #idle "map/m bath house_idle.png" 
-        #hover "map/m bath house_hover.png" 
-        focus_mask True 
+    # imagebutton auto "main_menu/main_language_%s.png":
+    #     #idle "map/m bath house_idle.png" 
+    #     #hover "map/m bath house_hover.png" 
+    #     focus_mask True 
 
 
 
@@ -1109,7 +1191,6 @@ style slot_button_text:
 ## https://www.renpy.org/doc/html/screen_special.html#preferences
 
 screen preferences():
-
     tag menu
 
     use game_menu(_("Preferences"), scroll="viewport"):
@@ -1272,11 +1353,16 @@ style history_name_text:
     font "SukhumvitSet-Medium.ttf" size(35)
 
 screen history2():
-
+    key "mouseup_3" action Return()
+    key "K_ESCAPE" action Return()
     tag menu
+
 
     predict False
     add "backlog_BG.png"
+    imagebutton auto "backlog/title_%s.png":
+        focus_mask True 
+        action Return()
     frame:
 
         style_prefix "history"
@@ -1357,6 +1443,8 @@ screen history2():
                     ## Adding line_spacing prevents the bottom of the text
                     ## from getting cut off. Adjust when replacing the
                     ## default fonts.
+
+    
 
         # textbutton "Return":
         #     style "history_return_button"
@@ -1596,27 +1684,47 @@ screen confirm(message, yes_action, no_action):
     style_prefix "confirm"
 
     add "gui/overlay/confirm.png"
+    add "images/confirm/confirm_bg.png"
 
-    frame:
-
-        vbox:
-            xalign .5
-            yalign .5
-            spacing 45
-
-            label _(message):
-                style "confirm_prompt"
-                xalign 0.5
-
-            hbox:
-                xalign 0.5
-                spacing 150
-
-                textbutton _("Yes") action yes_action
-                textbutton _("No") action no_action
-
-    ## Right-click and escape answer "no".
+    imagebutton auto "images/confirm/yes_%s.png":
+        focus_mask True
+        action yes_action
+    imagebutton auto "images/confirm/no_%s.png":
+        focus_mask True
+        action no_action
     key "game_menu" action no_action
+
+# screen confirm(message, yes_action, no_action):
+
+#     ## Ensure other screens do not get input while this screen is displayed.
+#     modal True
+
+#     zorder 200
+
+#     style_prefix "confirm"
+
+#     add "gui/overlay/confirm.png"
+
+#     frame:
+
+#         vbox:
+#             xalign .5
+#             yalign .5
+#             spacing 45
+
+#             label _(message):
+#                 style "confirm_prompt"
+#                 xalign 0.5
+
+#             hbox:
+#                 xalign 0.5
+#                 spacing 150
+
+#                 textbutton _("Yes") action yes_action
+#                 textbutton _("No") action no_action
+
+#     ## Right-click and escape answer "no".
+#     key "game_menu" action no_action
 
 
 style confirm_frame is gui_frame
