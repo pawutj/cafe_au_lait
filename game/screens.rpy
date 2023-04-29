@@ -1757,20 +1757,9 @@ style confirm_button_text:
 ## https://www.renpy.org/doc/html/screen_special.html#skip-indicator
 
 screen skip_indicator():
-
     zorder 100
-    style_prefix "skip"
+    add "skip.png"
 
-    frame:
-
-        hbox:
-            spacing 9
-
-            text _("Skipping")
-
-            text "▸" at delayed_blink(0.0, 1.0) style "skip_triangle"
-            text "▸" at delayed_blink(0.2, 1.0) style "skip_triangle"
-            text "▸" at delayed_blink(0.4, 1.0) style "skip_triangle"
 
 
 ## This transform is used to blink the arrows one after another.
