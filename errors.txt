@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/gui.rpy", line 14: is not terminated with a newline. (Check strings and parenthesis.)
-(Perhaps you left out a ' at the end of the first line.)
-        config.keymap['game_menu'] = ['K_MENU', 'K_PAUSE','mouseup_3]
+File "game/script2_5.rpy", line 9: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
+    play sound "audio/SoundEffect/footsteps_normal.ogg" volume 2.0
+    ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Fri Apr 28 23:13:23 2023
+Sat Apr 29 22:30:53 2023
