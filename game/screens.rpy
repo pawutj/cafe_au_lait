@@ -1383,7 +1383,7 @@ screen history2():
 
         ## xmargin essentially combines the left_margin and right_margin properties
         ## and sets them to the same value
-        xmargin 200
+        xmargin 150
 
         ## ymargin essentially combines the top_margin and bottom_margin properties
         ## and sets them to the same value
@@ -1399,7 +1399,7 @@ screen history2():
 
         vpgrid:
 
-            cols 1
+            cols 1.0
             yinitial 1.0
 
             draggable True
@@ -1432,6 +1432,7 @@ screen history2():
                         text what:
                             line_spacing 5
                             substitute False
+                            size 30
                             font "SukhumvitSet-Medium.ttf"
                             
 
