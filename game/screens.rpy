@@ -662,8 +662,8 @@ screen save():
                             xsize 650
                             ysize 150
 
-                            background "save_load/data01_idle1.png"
-                            hover_background "save_load/data01_hover1.png"
+                            background "save_load/data" + str(i+1) +"_idle1.png"
+                            hover_background "save_load/data" + str(i+1) +"_hover1.png"
                     
 
 
@@ -705,8 +705,9 @@ screen load_main():
                         xsize 650
                         ysize 150
 
-                        background "save_load/data01_idle1.png"
-                        hover_background "save_load/data01_hover1.png"
+
+                        background "save_load/data" + str(i+1) +"_idle1.png"
+                        hover_background "save_load/data" + str(i+1) +"_hover1.png"
     
 
 
@@ -773,8 +774,9 @@ screen load():
                         xsize 650
                         ysize 150
 
-                        background "save_load/data01_idle1.png"
-                        hover_background "save_load/data01_hover1.png"
+
+                        background "save_load/data" + str(i+1) +"_idle1.png"
+                        hover_background "save_load/data" + str(i+1) +"_hover1.png"
                     
 
 

@@ -1,35 +1,82 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While running game code:
-  File "game/script.rpy", line 277, in script
-    image badend_0 = im.Scale("Cutscene/badend/badend02.png")
-  File "game/script.rpy", line 277, in script
-    image badend_0 = im.Scale("Cutscene/badend/badend02.png")
-  File "game/script.rpy", line 277, in <module>
-    image badend_0 = im.Scale("Cutscene/badend/badend02.png")
-TypeError: __init__() missing 2 required positional arguments: 'width' and 'height'
+While loading <renpy.display.im.Image object ('save_load/data01_idle1.png') at 0x000000000626da30>:
+  File "renpy/common/00gamemenu.rpy", line 170, in script
+    $ ui.interact()
+  File "renpy/common/00gamemenu.rpy", line 170, in <module>
+    $ ui.interact()
+OSError: Couldn't find file 'save_load/data01_idle1.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\bootstrap.py", line 277, in bootstrap
-    renpy.main.main()
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\main.py", line 558, in main
-    renpy.game.context().run(node)
-  File "game/script.rpy", line 277, in script
-    image badend_0 = im.Scale("Cutscene/badend/badend02.png")
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
-  File "game/script.rpy", line 277, in script
-    image badend_0 = im.Scale("Cutscene/badend/badend02.png")
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 1230, in execute
-    img = renpy.python.py_eval_bytecode(self.code.bytecode)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\python.py", line 1085, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script.rpy", line 277, in <module>
-    image badend_0 = im.Scale("Cutscene/badend/badend02.png")
-TypeError: __init__() missing 2 required positional arguments: 'width' and 'height'
+  File "renpy/common/00gamemenu.rpy", line 170, in script
+    $ ui.interact()
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\python.py", line 1061, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00gamemenu.rpy", line 170, in <module>
+    $ ui.interact()
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3912, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 2602, in draw_screen
+    surftree = renpy.display.render.render_screen(
+  File "render.pyx", line 495, in renpy.display.render.render_screen
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\transition.py", line 378, in render
+    top = render(self.new_widget, width, height, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\screen.py", line 704, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\layout.py", line 497, in render
+    renders = [ render(i, renwidth, renheight, st, at) for i in children ]
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\layout.py", line 497, in <listcomp>
+    renders = [ render(i, renwidth, renheight, st, at) for i in children ]
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\behavior.py", line 885, in render
+    rv = super(Button, self).render(width, height, st, at)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\layout.py", line 1369, in render
+    back = render(style.background, bw, bh, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 266, in renpy.display.render.render
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\im.py", line 627, in render
+    return cache.get(self, render=True)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\im.py", line 295, in get
+    surf = image.load()
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\im.py", line 720, in load
+    raise e
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\im.py", line 685, in load
+    filelike = renpy.loader.load(self.filename)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\loader.py", line 820, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'save_load/data01_idle1.png'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
 Cafe_au_lait 1.0
-Sat Apr 29 00:28:53 2023
+Sun Apr 30 00:20:31 2023
