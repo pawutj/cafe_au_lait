@@ -69,7 +69,7 @@ label badend1:
     "ระหว่างเราไม่มีคำพูดหยิบยื่นให้กันแม้แต่คำเดียว"
     stop music
     hide Eimi_shy_Eimi_cry
-
+    play sound "audio/SoundEffect/footsteps_fast.ogg" volume 5.0
     "เอมิส่ายหน้าทั้งน้ำตาก่อนที่เธอวิ่งออกไปจากห้องชมรมศิลปะและไม่หันหลังกลับมา"
     show Sky_Morning with Dissolve(1.0)
     hide artroom_afternoon

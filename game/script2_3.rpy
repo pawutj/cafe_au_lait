@@ -13,6 +13,7 @@ label q2_3:
     hide question
     n "จู่ๆเอมิก็ถามผมด้วยดวงตาอยากรู้อยากเห็นเหมือนลูกสุนัขตัวน้อย"
     "ผมหันไปมองเธอเรียบๆเพราะไม่นึกว่าเธอจะสนใจเรื่องนี้ด้วย"
+    play sound "audio/SoundEffect/nezimawashi.mp3" volume 1.0
     tk "ก็กำลังแอบวาดๆอยู่"
     hide Eimi02_Eimi02_0
 

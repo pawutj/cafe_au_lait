@@ -341,8 +341,6 @@ label start:
     $ renpy.pause(2)
     hide text with Dissolve(1.0)
 
-    jump q3_2
-
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
@@ -406,10 +404,11 @@ label q002:
     n "ว่าแล้วก็ลงมือเล..."
     scene sky_morning with Dissolve(1.0)
     show excited with Dissolve(1.0)
+    stop music
+    play music "audio/bgm/dotabata_happening.mp3" volume 0.5
+    play sound "audio/SoundEffect/KFJZC74-crash-with-debris.mp3" volume 1.0
     n "{size=50}ตูมมมมมมมมมมมมมมมมมมมมมมม!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
     hide excited
-    stop music
-    play music "audio/bgm/dotabata_happening.mp3"
     e0 "กรี๊ดดดด!!!!!!!"
     tk "อ้ากกกกกก!!!!!!!!!!"
     n "เสียงผู้หญิงคนหนึ่งกรีดร้องดังขึ้นข้างๆผม"
@@ -468,8 +467,7 @@ label q002:
     hide question
     tk "ชดใช้..."
     hide Eimi02_Eimi02_smile
-    stop music
-    play music "audio/bgm/dotabata_happening.mp3"
+
     show Eimi02_Eimi02_0
     ei "หา?????" with dissolve
     n "ผมสูดหายใจเข้าลึกๆก่อนที่จะส่งเสียงตะโกนแบบที่ผมมั่นใจว่าไม่เคยตะโกนดังขนาดนี้มาก่อนในชีวิต"
@@ -480,6 +478,7 @@ label q002:
     ei "หวา!!! รุ่นพี่ค้า--!!" with dissolve
     hide panic
     n "ผมพุ่งเข้าไปหารุ่นน้องตัวแสบพร้อมกับกำพู่กันในมือแน่น"
+    play sound "audio/SoundEffect/zakuxtu.mp3" volume 1.0
     n "รู้ตัวอีกทีความเดือดดาลก็ทำให้ผมเอาแท่งพู่กันยาวไล่แทงคนทำลายผลงานผมจนเธอต้องวิ่งหนีผมวนไปวนมารอบกองงานศิลปะผม"
     n "ไม่สิ...ต้องเรียกว่าสุสานของงานศิลปะผมดีกว่า งานของผมถูกกาแฟลบหายไปหมดแล้ว T_T”"
     hide Eimi_Eimi_panic
