@@ -283,44 +283,65 @@ image _cutscene_3_2 =  im.Scale("Cutscene/unit03/unit03_02.png",1920,1080)
 image badend_0 = im.Scale("Cutscene/badend/badend02.png",1920,1080)
 image _badend_0 = im.Scale("Cutscene/badend/badend02.png",1920,1080)
 
+screen pausenow():
+    key "dismiss" action NullAction()
 label cutscene_1:
-    $renpy.pause(1.0,hard = True)
+
     scene black with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
     scene cutscene_1_0 with Dissolve(1.0)
     play sound "audio/SoundEffect/sumahokessai.mp3" volume 1.0
+    $renpy.pause(0.01, hard=True)
     scene cutscene_1_1 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
     scene cutscene_1_2 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
     scene _cutscene_1_2 with Dissolve(2.0)
     hide artroom_afternoon
     jump q2_1
     
 label cutscene_2:
-    $renpy.pause(1.0,hard = True)
+    $renpy.pause(0.01, hard=True)
     scene black with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
     show cutscene_2_0 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
     play sound "audio/SoundEffect/sumahokessai.mp3" volume 1.0
+    $renpy.pause(0.01, hard=True)
     show cutscene_2_1 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
     show cutscene_2_2 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
     show _cutscene_2_2 with Dissolve(2.0)
+
     jump q3_1
 
 label cutscene_3:
+    $renpy.pause(0.01, hard=True)
     $ quick_menu = False
-    $renpy.pause(1.0,hard = True)
+    $renpy.pause(0.01, hard=True)
     scene black with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
     show cutscene_3_0 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
     play sound "audio/SoundEffect/sumahokessai.mp3" volume 1.0
+    $renpy.pause(0.01, hard=True)
     show cutscene_3_1 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
     show cutscene_3_2 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
     show _cutscene_3_2 with Dissolve(2.0)
     jump splashscreen
     return
 
 label badend:
+    $renpy.pause(0.01, hard=True)
     $ quick_menu = False
-    $renpy.pause(1.0,hard = True)
+    $renpy.pause(0.01, hard=True)
     scene black with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
     scene badend_0 with Dissolve(2.0)
+    $renpy.pause(0.01, hard=True)
     scene _badend_0 with Dissolve(3.0)
     jump splashscreen
     return
