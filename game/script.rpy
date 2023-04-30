@@ -287,6 +287,7 @@ label cutscene_1:
     $renpy.pause(1.0,hard = True)
     scene black with Dissolve(1.0)
     scene cutscene_1_0 with Dissolve(1.0)
+    play sound "audio/SoundEffect/sumahokessai.mp3" volume 1.0
     scene cutscene_1_1 with Dissolve(1.0)
     scene cutscene_1_2 with Dissolve(1.0)
     scene _cutscene_1_2 with Dissolve(2.0)
@@ -297,6 +298,7 @@ label cutscene_2:
     $renpy.pause(1.0,hard = True)
     scene black with Dissolve(1.0)
     show cutscene_2_0 with Dissolve(1.0)
+    play sound "audio/SoundEffect/sumahokessai.mp3" volume 1.0
     show cutscene_2_1 with Dissolve(1.0)
     show cutscene_2_2 with Dissolve(1.0)
     show _cutscene_2_2 with Dissolve(2.0)
@@ -307,6 +309,7 @@ label cutscene_3:
     $renpy.pause(1.0,hard = True)
     scene black with Dissolve(1.0)
     show cutscene_3_0 with Dissolve(1.0)
+    play sound "audio/SoundEffect/sumahokessai.mp3" volume 1.0
     show cutscene_3_1 with Dissolve(1.0)
     show cutscene_3_2 with Dissolve(1.0)
     show _cutscene_3_2 with Dissolve(2.0)
@@ -347,6 +350,8 @@ label start:
     $ renpy.pause(2)
     hide text with Dissolve(1.0)
 
+
+
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
@@ -354,6 +359,8 @@ label start:
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
     n "ผมไม่เข้าใจว่าทำไมผมต้องพูดซ้ำด้วย"
+
+    jump cutscene_1
     n "นอกจากจะไม่มีความสามารถแล้วยังหูไม่ดีอีก ต้องให้ผมเสียเวลาแค่ไหนกันถึงจะให้คนพวกนี้เข้าใจสภาพความจริงได้"
     tk "นายฝืนวาดไปเรื่อยๆแบบนี้นายก็ไม่เก่งขึ้น นายกำลังเสียเวลาอยู่"
     a "รุ่นพี่จะบอกว่าที่ผมทำทั้งหมดมันไม่มีความหมายเหรอครับ"
