@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 296: expected statement.
-    renpy.pause(5, hard=True)
-                             ^
+File "game/screens.rpy", line 635: Line is indented, but the preceding action statement does not expect a block. Please check this line's indentation.
+    hover_sound "audio/UIsound/cursor.ogg"
+    ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sun Apr 30 22:09:12 2023
+Sun Apr 30 22:58:15 2023
