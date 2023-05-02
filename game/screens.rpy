@@ -816,8 +816,8 @@ screen main_menu():
     ## contents of the main menu are in the navigation screen.
     # use navigation
 
-    button :
-        add "main_menu/Home_logo.png"
+    # button :
+    #     add "main_menu/Home_logo.png"
 
     imagebutton auto "main_menu/main_start_%s.png":
         hover_sound "audio/UIsound/cursor.ogg" 
