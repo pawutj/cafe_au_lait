@@ -65,7 +65,7 @@ define gui.name_text_font = "THSarabunNew Bold.ttf"
 
 ## The font used for out-of-game text.
 define gui.interface_text_font = "THSarabunNew Bold.ttf"
-define  gui.text_outlines = [(2,"#000000")]
+# define  gui.text_outlines = [(2,"#000000")]
 ## The size of normal dialogue text.
 define gui.text_size = 30
 
