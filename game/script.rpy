@@ -262,6 +262,12 @@ label splashscreen:
     scene main_scene_5 with Dissolve(0.5)
     scene main_scene_6 with Dissolve(0.5)
     return
+image thankyouImg = im.Scale("thx.png",1920,1080)
+image endCredit= im.Scale("credit.png",1920,1080)
+image _thankyouImg = im.Scale("thx.png",1920,1080)
+image _endCredit= im.Scale("credit.png",1920,1080)
+
+
 
 image BadPic2 =  im.Scale("CG/Eimi_bird/BadPic2.png",1920,1080)
 
@@ -331,6 +337,21 @@ label cutscene_3:
     show cutscene_3_2 with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
     show _cutscene_3_2 with Dissolve(2.0)
+    $renpy.pause(0.01, hard=True)
+    jump endcreditScreen
+    return
+
+label endcreditScreen:
+    pause 0.01
+    scene black with Dissolve(1.0)
+    scene thankyouImg with Dissolve(2.0)
+    pause 0.01
+    scene _thankyouImg with Dissolve(2.0)
+    pause 2
+    scene endCredit with Dissolve(2.0)
+    pause 0.01
+    scene _endCredit with Dissolve(2.0)
+    pause 2
     jump splashscreen
     return
 
@@ -343,6 +364,7 @@ label badend:
     scene badend_0 with Dissolve(2.0)
     $renpy.pause(0.01, hard=True)
     scene _badend_0 with Dissolve(3.0)
+    $renpy.pause(0.01, hard=True)
     jump splashscreen
     return
 
@@ -371,6 +393,7 @@ label start:
     $ renpy.pause(2)
     hide text with Dissolve(1.0)
 
+    jump cutscene_3
 
 
     scene artroom_past with Dissolve(1.0)

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 635: Line is indented, but the preceding action statement does not expect a block. Please check this line's indentation.
-    hover_sound "audio/UIsound/cursor.ogg"
-    ^
+File "game/script.rpy", line 353: expected 'image_name_component' not found.
+    show scene death
+        ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sun Apr 30 22:58:15 2023
+Sat May  6 21:07:20 2023
