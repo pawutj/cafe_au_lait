@@ -6,15 +6,15 @@
 #navigation
 define n = Character(None, who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 #eimi
-define ei = Character("{font=THSarabunNew Bold.ttf}{size=+10}Eimi",color="#F0F8FF", image ="eimi", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define ei = Character("{font=SukhumvitSet-Medium.ttf}เอมิ",color="#F0F8FF", image ="eimi", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 #takagi
-define tk = Character("{font=THSarabunNew Bold.ttf}{size=+10}Takagi",color="#F0F8FF", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define tk = Character("{font=SukhumvitSet-Medium.ttf}ทาคากิ",color="#F0F8FF", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 #student a
-define a = Character("{font=THSarabunNew Bold.ttf}{size=+10}Student A",color="#F0F8FF",image ="enjou1" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define a = Character("{font=SukhumvitSet-Medium.ttf}นักเรียน A",color="#F0F8FF",image ="enjou1" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 #student ???
-define e0 = Character("{font=THSarabunNew Bold.ttf}{size=+10}???",color="#F0F8FF", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define e0 = Character("{font=SukhumvitSet-Medium.ttf}???",color="#F0F8FF", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 # The game starts here.
-define en = Character("{font=THSarabunNew Bold.ttf}{size=+10}Enjou",color="#F0F8FF", image = "enjou2",who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define en = Character("{font=SukhumvitSet-Medium.ttf}เอนโจว",color="#F0F8FF", image = "enjou2",who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 transform crops:
     crop(650,-800,1920,2900)
 
@@ -344,13 +344,13 @@ label cutscene_3:
 label endcreditScreen:
     pause 0.01
     scene black with Dissolve(1.0)
-    scene thankyouImg with Dissolve(2.0)
-    pause 0.01
-    scene _thankyouImg with Dissolve(2.0)
-    pause 2
     scene endCredit with Dissolve(2.0)
     pause 0.01
     scene _endCredit with Dissolve(2.0)
+    pause 2
+    scene thankyouImg with Dissolve(2.0)
+    pause 0.01
+    scene _thankyouImg with Dissolve(2.0)
     pause 2
     jump splashscreen
     return
@@ -393,7 +393,6 @@ label start:
     $ renpy.pause(2)
     hide text with Dissolve(1.0)
 
-    jump cutscene_3
 
 
     scene artroom_past with Dissolve(1.0)
