@@ -65,7 +65,7 @@ define gui.name_text_font = "THSarabunNew Bold.ttf"
 
 ## The font used for out-of-game text.
 define gui.interface_text_font = "THSarabunNew Bold.ttf"
-
+# define  gui.text_outlines = [(2,"#000000")]
 ## The size of normal dialogue text.
 define gui.text_size = 30
 
@@ -88,7 +88,7 @@ define gui.title_text_size = 75
 ## Main and Game Menus #########################################################
 
 ## The images used for the main and game menus.
-define gui.main_menu_background = "gui/main_menu.png"
+define gui.main_menu_background = "gui/Home/Home02.png"
 define gui.game_menu_background = "gui/game_menu.png"
 define gui.load_menu_background = "gui/load/bg.png"
 

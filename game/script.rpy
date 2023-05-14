@@ -6,15 +6,15 @@
 #navigation
 define n = Character(None, who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 #eimi
-define ei = Character("{font=THSarabunNew Bold.ttf}{size=+10}Eimi",color="#F0F8FF", image ="eimi", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define ei = Character("{font=SukhumvitSet-Medium.ttf}เอมิ",color="#F0F8FF", image ="eimi", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 #takagi
-define tk = Character("{font=THSarabunNew Bold.ttf}{size=+10}Takagi",color="#F0F8FF", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define tk = Character("{font=SukhumvitSet-Medium.ttf}ทาคากิ",color="#F0F8FF", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 #student a
-define a = Character("{font=THSarabunNew Bold.ttf}{size=+10}Student A",color="#F0F8FF",image ="enjou1" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define a = Character("{font=SukhumvitSet-Medium.ttf}นักเรียน A",color="#F0F8FF",image ="enjou1" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 #student ???
-define e0 = Character("{font=THSarabunNew Bold.ttf}{size=+10}???",color="#F0F8FF", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define e0 = Character("{font=SukhumvitSet-Medium.ttf}???",color="#F0F8FF", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 # The game starts here.
-define en = Character("{font=THSarabunNew Bold.ttf}{size=+10}Enjou",color="#F0F8FF", image = "enjou2",who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define en = Character("{font=SukhumvitSet-Medium.ttf}เอนโจว",color="#F0F8FF", image = "enjou2",who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 transform crops:
     crop(650,-800,1920,2900)
 
@@ -262,6 +262,12 @@ label splashscreen:
     scene main_scene_5 with Dissolve(0.5)
     scene main_scene_6 with Dissolve(0.5)
     return
+image thankyouImg = im.Scale("thx.png",1920,1080)
+image endCredit= im.Scale("credit.png",1920,1080)
+image _thankyouImg = im.Scale("thx.png",1920,1080)
+image _endCredit= im.Scale("credit.png",1920,1080)
+
+
 
 image BadPic2 =  im.Scale("CG/Eimi_bird/BadPic2.png",1920,1080)
 
@@ -283,42 +289,82 @@ image _cutscene_3_2 =  im.Scale("Cutscene/unit03/unit03_02.png",1920,1080)
 image badend_0 = im.Scale("Cutscene/badend/badend02.png",1920,1080)
 image _badend_0 = im.Scale("Cutscene/badend/badend02.png",1920,1080)
 
+screen pausenow():
+    key "dismiss" action NullAction()
 label cutscene_1:
-    $renpy.pause(1.0,hard = True)
+
     scene black with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
     scene cutscene_1_0 with Dissolve(1.0)
+    play sound "audio/SoundEffect/sumahokessai.mp3" volume 1.0
+    $renpy.pause(0.01, hard=True)
     scene cutscene_1_1 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
     scene cutscene_1_2 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
     scene _cutscene_1_2 with Dissolve(2.0)
     hide artroom_afternoon
     jump q2_1
     
 label cutscene_2:
-    $renpy.pause(1.0,hard = True)
+    $renpy.pause(0.01, hard=True)
     scene black with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
     show cutscene_2_0 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
+    play sound "audio/SoundEffect/sumahokessai.mp3" volume 1.0
+    $renpy.pause(0.01, hard=True)
     show cutscene_2_1 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
     show cutscene_2_2 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
     show _cutscene_2_2 with Dissolve(2.0)
+
     jump q3_1
 
 label cutscene_3:
+    $renpy.pause(0.01, hard=True)
     $ quick_menu = False
-    $renpy.pause(1.0,hard = True)
+    $renpy.pause(0.01, hard=True)
     scene black with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
     show cutscene_3_0 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
+    play sound "audio/SoundEffect/sumahokessai.mp3" volume 1.0
+    $renpy.pause(0.01, hard=True)
     show cutscene_3_1 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
     show cutscene_3_2 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
     show _cutscene_3_2 with Dissolve(2.0)
+    $renpy.pause(0.01, hard=True)
+    jump endcreditScreen
+    return
+
+label endcreditScreen:
+    pause 0.01
+    scene black with Dissolve(1.0)
+    scene endCredit with Dissolve(2.0)
+    pause 0.01
+    scene _endCredit with Dissolve(2.0)
+    pause 2
+    scene thankyouImg with Dissolve(2.0)
+    pause 0.01
+    scene _thankyouImg with Dissolve(2.0)
+    pause 2
     jump splashscreen
     return
 
 label badend:
+    $renpy.pause(0.01, hard=True)
     $ quick_menu = False
-    $renpy.pause(1.0,hard = True)
+    $renpy.pause(0.01, hard=True)
     scene black with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
     scene badend_0 with Dissolve(2.0)
+    $renpy.pause(0.01, hard=True)
     scene _badend_0 with Dissolve(3.0)
+    $renpy.pause(0.01, hard=True)
     jump splashscreen
     return
 
@@ -347,6 +393,8 @@ label start:
     $ renpy.pause(2)
     hide text with Dissolve(1.0)
 
+
+
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
@@ -354,6 +402,7 @@ label start:
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
     n "ผมไม่เข้าใจว่าทำไมผมต้องพูดซ้ำด้วย"
+
     n "นอกจากจะไม่มีความสามารถแล้วยังหูไม่ดีอีก ต้องให้ผมเสียเวลาแค่ไหนกันถึงจะให้คนพวกนี้เข้าใจสภาพความจริงได้"
     tk "นายฝืนวาดไปเรื่อยๆแบบนี้นายก็ไม่เก่งขึ้น นายกำลังเสียเวลาอยู่"
     a "รุ่นพี่จะบอกว่าที่ผมทำทั้งหมดมันไม่มีความหมายเหรอครับ"
@@ -421,7 +470,7 @@ label q002:
     n "ผมอยากจะบอกเลยว่าคนอยากกรี๊ดคือผมต่างหาก อยากจะกรี๊ดให้คอแตกไปข้างเลย"
     n "ยังปลุกใจตัวเองคนเดียวไม่เสร็จก็มีสาวน้อยคนหนึ่งวิ่งด้วยความเร็วราวกับรถแข่งเอฟวันเข้ามาหาผม"
     n "อุปกรณ์วาดภาพ กระดาษบนขาตั้งวาดรูปและกาแฟบนโต๊ะน้อยๆของผมระเนระนาดไปหมด"
-    n "ทั้งๆที่สาวน้อยคนนั้นตัวเล็กกว่าผม แต่ด้วยความเร็วและพละกำลังที่มากเกินขนาดตัวทำให้ผมกลิ้งโคโล่ไปกับพื้นสองสามเมตรเป็นเพื่อนอุปกรณ์วาดรูปของผม"
+    n "ทั้งๆที่สาวน้อยคนนั้นตัวเล็กกว่าผม แต่ด้วยความเร็วและพละกำลังที่มากเกินขนาดตัวทำให้ผมกลิ้งโคโล่ไปกับพื้นสองสามเมตร\nเป็นเพื่อนอุปกรณ์วาดรูปของผม"
     n "วาดรูปอยู่ดีๆทำไมเรามานอนมองท้องฟ้ากันนะ ชีวิตผมมันเกิดบ้าอะไรขึ้น?"
     scene school_park_1 with Dissolve(1.0)
     show Eimi_Eimi_cry_meme2
@@ -458,7 +507,7 @@ label q002:
     show Eimi_Eimi_cry_meme2  
     n "วิญญาณน้อยๆของผมแทบจะหลุดลอยออกจากปาก" with dissolve
     n "ความสิ้นหวังทะลักทลายเข้ามาในจิตใจผมอย่างหยุดไม่ได้"
-    n "งานที่ผมทุ่มเทฝีมือทั้งหมด ใช้เวลากับมันอย่างยาวนานและมั่นใจว่ามันต้องออกมาดีมากแน่ๆเพราะผมใช้ทั้งฝีมือ แรงบันดาลใจและจิตวิญญาณทั้งหมดเพื่อคลอดผลงานนี้ออกมา"
+    n "งานที่ผมทุ่มเทฝีมือทั้งหมด ใช้เวลากับมันอย่างยาวนานและมั่นใจว่ามันต้องออกมาดีมากแน่ๆเพราะผมใช้ทั้งฝีมือ \nแรงบันดาลใจและจิตวิญญาณทั้งหมดเพื่อคลอดผลงานนี้ออกมา"
     n "หยาดเหงื่อแรงงานของผมพังเป็นชิ้นๆเพราะสาวน้อยคนหนึ่งและกาแฟอีกแก้วหนึ่ง"
     n "นี่มันเรื่องตลกอะไรกันฟะ!?"
     tk "เธอน่ะ...ชื่ออะไร?...ชั้นปีอะไร?"
@@ -485,7 +534,8 @@ label q002:
     hide panic
     n "ผมพุ่งเข้าไปหารุ่นน้องตัวแสบพร้อมกับกำพู่กันในมือแน่น"
     play sound "audio/SoundEffect/zakuxtu.mp3" volume 1.0
-    n "รู้ตัวอีกทีความเดือดดาลก็ทำให้ผมเอาแท่งพู่กันยาวไล่แทงคนทำลายผลงานผมจนเธอต้องวิ่งหนีผมวนไปวนมารอบกองงานศิลปะผม"
+    n "รู้ตัวอีกทีความเดือดดาลก็ทำให้ผมเอาแท่งพู่กันยาวไล่แทงคนทำลายผลงานผมจนเธอต้อง\nวิ่งหนีผมวนไปวนมารอบกองงานศิลปะผม"
+    n ""
     n "ไม่สิ...ต้องเรียกว่าสุสานของงานศิลปะผมดีกว่า งานของผมถูกกาแฟลบหายไปหมดแล้ว T_T”"
     hide Eimi_Eimi_panic
     show Eimi_Eimi_hurt_meme

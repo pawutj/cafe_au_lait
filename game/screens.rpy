@@ -206,6 +206,8 @@ screen config_main():
     imagebutton auto "config/config_back_%s.png":
         focus_mask True
         action Hide('config_main')
+        hover_sound "audio/UIsound/cursor.ogg"
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
         
 
     
@@ -300,10 +302,14 @@ screen config():
     imagebutton auto "config/config_back_%s.png":
         focus_mask True
         action Return()
+        hover_sound "audio/UIsound/cursor.ogg"
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
         
     imagebutton auto "config/config_title_%s.png":
         focus_mask True
         action MainMenu()
+        hover_sound "audio/UIsound/cursor.ogg"
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
 
     
     if  preferences.skip_unseen ==True:
@@ -620,10 +626,14 @@ screen save():
         imagebutton auto "save_load/back_%s.png":
             focus_mask True
             action Return()
+            hover_sound "audio/UIsound/cursor.ogg"
+            activate_sound "audio/UIsound/choice_confirm_01.ogg" 
         
         imagebutton auto "save_load/title_%s.png":
             focus_mask True
             action MainMenu()
+            hover_sound "audio/UIsound/cursor.ogg"
+            activate_sound "audio/UIsound/choice_confirm_01.ogg" 
         button :
             background "save_load/save.png"
             focus_mask True
@@ -632,6 +642,7 @@ screen save():
         imagebutton auto "save_load/load_button_%s.png":
             focus_mask True
             action [ShowMenu("load"),Hide("save")]
+            activate_sound "audio/UIsound/choice_confirm_01.ogg" 
 
 
         grid gui.file_slot_cols gui.file_slot_rows:
@@ -664,6 +675,7 @@ screen save():
 
                             background "save_load/data" + str(i+1) +"_idle1.png"
                             hover_background "save_load/data" + str(i+1) +"_hover1.png"
+                            activate_sound "audio/UIsound/save_01.ogg" 
                     
 
 
@@ -676,6 +688,8 @@ screen load_main():
     imagebutton auto "save_load/back_%s.png":
         focus_mask True
         action Hide('load_main')
+        hover_sound "audio/UIsound/cursor.ogg"
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
     grid gui.file_slot_cols gui.file_slot_rows:
         style_prefix "slot"
 
@@ -708,6 +722,7 @@ screen load_main():
 
                         background "save_load/data" + str(i+1) +"_idle1.png"
                         hover_background "save_load/data" + str(i+1) +"_hover1.png"
+                        activate_sound "audio/UIsound/load_01.ogg" 
     
 
 
@@ -741,6 +756,7 @@ screen load():
     imagebutton auto "save_load/save_button_%s.png":
         focus_mask True
         action [ShowMenu("save"),Hide("load")]
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
 
     
 
@@ -758,12 +774,13 @@ screen load():
                     $ slot = i + 1
 
                     button:
+                        activate_sound "audio/UIsound/load_01.ogg" 
                         action FileLoad(slot)
 
 
                         add FileScreenshot(slot,empty="save_load/box01.png") size(225,125)
 
-                        text FileTime(slot, format=_("{#file_time}%B %d %Y, %H:%M"), empty=_("empty slot")):
+                        text FileTime(slot, format=_("{#file_time} %B %d %Y, %H:%M"), empty=_("empty slot")):
                             style "slot_time_text"
 
                         # text FileSaveName(slot):
@@ -777,6 +794,7 @@ screen load():
 
                         background "save_load/data" + str(i+1) +"_idle1.png"
                         hover_background "save_load/data" + str(i+1) +"_hover1.png"
+                      
                     
 
 
@@ -798,43 +816,61 @@ screen main_menu():
     ## contents of the main menu are in the navigation screen.
     # use navigation
 
-    button :
-        add "main_menu/Home_logo.png"
+    # button :
+    #     add "main_menu/Home_logo.png"
 
     imagebutton auto "main_menu/main_start_%s.png":
+        hover_sound "audio/UIsound/cursor.ogg" 
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
         #idle "map/m bath house_idle.png" 
         #hover "map/m bath house_hover.png" 
         focus_mask True 
         action ShowMenu("black_screen",Dissolve(0.1)), Start()
+
     
     imagebutton auto "main_menu/main_continue_%s.png":
+        hover_sound "audio/UIsound/cursor.ogg" 
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
         #idle "map/m bath house_idle.png" 
         #hover "map/m bath house_hover.png" 
         focus_mask True 
         action ShowMenu("black_screen",Dissolve(0.1)),QuickLoad()
+
     
     imagebutton auto "main_menu/main_load_%s.png":
+        hover_sound "audio/UIsound/cursor.ogg" 
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
         #idle "map/m bath house_idle.png" 
         #hover "map/m bath house_hover.png" 
         focus_mask True 
         action ShowMenu("load_main")
+
     
     imagebutton auto "main_menu/main_config_%s.png":
+        hover_sound "audio/UIsound/cursor.ogg" 
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
         #idle "map/m bath house_idle.png" 
         #hover "map/m bath house_hover.png" 
         focus_mask True 
         action ShowMenu("config_main")
+
     
     imagebutton auto "main_menu/main_extra_%s.png":
+        hover_sound "audio/UIsound/cursor.ogg" 
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
         #idle "map/m bath house_idle.png" 
         #hover "map/m bath house_hover.png" 
         focus_mask True 
+
     
     imagebutton auto "main_menu/main_exit_%s.png":
+        hover_sound "audio/UIsound/cursor.ogg" 
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
         #idle "map/m bath house_idle.png" 
         #hover "map/m bath house_hover.png" 
         action Quit(confirm= True)
         focus_mask True
+
     
     # imagebutton auto "main_menu/main_language_%s.png":
     #     #idle "map/m bath house_idle.png" 
@@ -1383,7 +1419,7 @@ screen history2():
 
         ## xmargin essentially combines the left_margin and right_margin properties
         ## and sets them to the same value
-        xmargin 200
+        xmargin 150
 
         ## ymargin essentially combines the top_margin and bottom_margin properties
         ## and sets them to the same value
@@ -1399,7 +1435,7 @@ screen history2():
 
         vpgrid:
 
-            cols 1
+            cols 1.0
             yinitial 1.0
 
             draggable True
@@ -1432,6 +1468,7 @@ screen history2():
                         text what:
                             line_spacing 5
                             substitute False
+                            size 30
                             font "SukhumvitSet-Medium.ttf"
                             
 
@@ -1688,11 +1725,18 @@ screen confirm(message, yes_action, no_action):
     add "images/confirm/confirm_bg.png"
 
     imagebutton auto "images/confirm/yes_%s.png":
+        hover_sound "audio/UIsound/cursor.ogg"
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
         focus_mask True
         action yes_action
+
+
     imagebutton auto "images/confirm/no_%s.png":
+        hover_sound "audio/UIsound/cursor.ogg"
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
         focus_mask True
         action no_action
+
     key "game_menu" action no_action
 
 # screen confirm(message, yes_action, no_action):
