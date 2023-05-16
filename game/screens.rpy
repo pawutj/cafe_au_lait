@@ -199,6 +199,19 @@ style input:
     xmaximum gui.dialogue_width
 
 
+screen extra():
+    key "mouseup_3" action Hide('extra')
+    key "K_ESCAPE" action Hide('extra')
+    add "extra/gallery_bg.png"
+
+    imagebutton auto "extra/back_%s.png":
+        focus_mask True
+        action  Hide('extra')
+        hover_sound "audio/UIsound/cursor.ogg"
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+        
+    
+
 screen config_main():
     key "mouseup_3" action Return()
     key "K_ESCAPE" action Return()
@@ -861,6 +874,7 @@ screen main_menu():
         #idle "map/m bath house_idle.png" 
         #hover "map/m bath house_hover.png" 
         focus_mask True 
+        action ShowMenu("extra")
 
     
     imagebutton auto "main_menu/main_exit_%s.png":
