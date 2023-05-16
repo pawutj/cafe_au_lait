@@ -198,18 +198,31 @@ style input:
     xalign gui.dialogue_text_xalign
     xmaximum gui.dialogue_width
 
+init python:
+
+    # Step 1. Create a MusicRoom instance.
+    mr = MusicRoom(fadeout=1.0)
+
+    # Step 2. Add music files.
+    mr.add("audio/bgm/natsu_no_omoide.mp3", always_unlocked=True)
+    mr.add("audio/bgm/alphard.mp3")
 
 screen extra():
     key "mouseup_3" action Hide('extra')
     key "K_ESCAPE" action Hide('extra')
     add "extra/gallery_bg.png"
-
+    $numbers = [f'{i:02d}' for i in range(1, 13)]
     imagebutton auto "extra/back_%s.png":
         focus_mask True
         action  Hide('extra')
         hover_sound "audio/UIsound/cursor.ogg"
         activate_sound "audio/UIsound/choice_confirm_01.ogg" 
-        
+    for i in numbers:
+        imagebutton:
+            focus_mask
+            idle f"extra/pic{i}_idle.png"
+            action Show("show_cg01_01")
+    # textbutton "Track 1" action mr.Play("audio/bgm/alphard.mp3")
     
 
 screen config_main():

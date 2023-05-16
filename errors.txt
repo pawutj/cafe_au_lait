@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 870: 'actoin' is not a keyword argument or valid child for the imagebutton statement.
-    actoin ShowMenu("extra")
-          ^
+File "game/screens.rpy", line 202: 'play' is not a keyword argument or valid child for the screen statement.
+    play music "audio/bgm/remind.mp3" volume 0.5
+        ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Tue May 16 23:57:39 2023
+Wed May 17 00:43:53 2023
