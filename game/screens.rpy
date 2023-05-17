@@ -206,12 +206,33 @@ init python:
     # Step 2. Add music files.
     mr.add("audio/bgm/natsu_no_omoide.mp3", always_unlocked=True)
     mr.add("audio/bgm/alphard.mp3")
+    mr.add("audio/bgm/asa_no_nigiyaka_mura.mp3")
+    mr.add("audio/bgm/cafe_de_swing.mp3")
+    mr.add("audio/bgm/dotabata_happening.mp3")
+    mr.add("audio/bgm/hijimeta_no_date.mp3")
+    mr.add("audio/bgm/luminous.mp3")
+    mr.add("audio/bgm/midori_no_iko.mp3")
+    mr.add("audio/bgm/morning_talk.mp3")
+    mr.add("audio/bgm/musukari_no_hana.mp3")
+    mr.add("audio/bgm/nagai_no_yoru.mp3")
+    mr.add("audio/bgm/nodokana_hi.mp3")
+    mr.add("audio/bgm/oshakai_no_junbi.mp3")
+
 
 screen extra():
+
+
+    $song_list = ["alphard","asa_no_nigiyaka_mura","cafe_de_swing"
+    ,"dotabata_happening","hijimeta_no_date" ,"luminous","midori_no_iko"
+    ,"morning_talk","musukari_no_hana","nagai_no_yoru"
+    ,"nodokana_hi","oshakai_no_junbi"
+    ]
+
     key "mouseup_3" action Hide('extra')
     key "K_ESCAPE" action Hide('extra')
     add "extra/gallery_bg.png"
     $numbers = [f'{i:02d}' for i in range(1, 13)]
+    $numbers2 = [f'{i:02d}' for i in range(1,13)]
     imagebutton auto "extra/back_%s.png":
         focus_mask True
         action  Hide('extra')
@@ -219,9 +240,14 @@ screen extra():
         activate_sound "audio/UIsound/choice_confirm_01.ogg" 
     for i in numbers:
         imagebutton:
-            focus_mask
+            focus_mask True
             idle f"extra/pic{i}_idle.png"
             action Show("show_cg01_01")
+    for idx,i in enumerate(numbers2) :
+        imagebutton auto f"extra/music{i}_%s.png":
+            focus_mask True
+            action mr.Play(f"audio/bgm/{song_list[idx]}.mp3")
+
     # textbutton "Track 1" action mr.Play("audio/bgm/alphard.mp3")
     
 
