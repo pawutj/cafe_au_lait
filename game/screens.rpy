@@ -1776,16 +1776,16 @@ screen confirm(message, yes_action, no_action):
     style_prefix "confirm"
 
     add "gui/overlay/confirm.png"
-    add "images/confirm/confirm_bg.png"
+    add "images/new_confirm/confirm_bg.png"
 
-    imagebutton auto "images/confirm/yes_%s.png":
+    imagebutton auto "images/new_confirm/yes_%s.png":
         hover_sound "audio/UIsound/cursor.ogg"
         activate_sound "audio/UIsound/choice_confirm_01.ogg" 
         focus_mask True
         action yes_action
 
 
-    imagebutton auto "images/confirm/no_%s.png":
+    imagebutton auto "images/new_confirm/no_%s.png":
         hover_sound "audio/UIsound/cursor.ogg"
         activate_sound "audio/UIsound/choice_confirm_01.ogg" 
         focus_mask True
