@@ -252,8 +252,8 @@ screen extra():
     
 
 screen config_main():
-    key "mouseup_3" action Return()
-    key "K_ESCAPE" action Return()
+    key "mouseup_3" action Hide('config_main')
+    key "K_ESCAPE" action Hide('config_main')
     add "config/setting_th_bg.png"      
     imagebutton auto "config/config_back_%s.png":
         focus_mask True
@@ -1776,16 +1776,16 @@ screen confirm(message, yes_action, no_action):
     style_prefix "confirm"
 
     add "gui/overlay/confirm.png"
-    add "images/confirm/confirm_bg.png"
+    add "images/new_confirm/confirm_bg.png"
 
-    imagebutton auto "images/confirm/yes_%s.png":
+    imagebutton auto "images/new_confirm/yes_%s.png":
         hover_sound "audio/UIsound/cursor.ogg"
         activate_sound "audio/UIsound/choice_confirm_01.ogg" 
         focus_mask True
         action yes_action
 
 
-    imagebutton auto "images/confirm/no_%s.png":
+    imagebutton auto "images/new_confirm/no_%s.png":
         hover_sound "audio/UIsound/cursor.ogg"
         activate_sound "audio/UIsound/choice_confirm_01.ogg" 
         focus_mask True
