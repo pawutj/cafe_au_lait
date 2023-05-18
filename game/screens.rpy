@@ -254,7 +254,7 @@ screen extra():
 screen config_main():
     key "mouseup_3" action Return()
     key "K_ESCAPE" action Return()
-    add "config/config_bg.png"      
+    add "config/setting_th_bg.png"      
     imagebutton auto "config/config_back_%s.png":
         focus_mask True
         action Hide('config_main')
@@ -350,7 +350,7 @@ screen config_main():
 screen config():
     key "mouseup_3" action Return()
     key "K_ESCAPE" action Return()
-    add "config/config_bg.png"      
+    add "config/setting_th_bg.png"      
     imagebutton auto "config/config_back_%s.png":
         focus_mask True
         action Return()
@@ -542,6 +542,7 @@ style choice_button_text is default:
 ## menus.
 
 screen quick_menu():
+    add "blackk.png"
 
     ## Ensure this appears on top of other screens.
     zorder 100
@@ -672,7 +673,7 @@ screen save():
     tag save
     fixed:
     
-        add gui.load_menu_background
+        add gui.save_menu_background
 
     
         imagebutton auto "save_load/back_%s.png":
