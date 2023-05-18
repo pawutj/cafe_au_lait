@@ -672,7 +672,7 @@ screen save():
     tag save
     fixed:
     
-        add gui.load_menu_background
+        add gui.save_menu_background
 
     
         imagebutton auto "save_load/back_%s.png":
