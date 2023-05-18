@@ -252,8 +252,8 @@ screen extra():
     
 
 screen config_main():
-    key "mouseup_3" action Return()
-    key "K_ESCAPE" action Return()
+    key "mouseup_3" action Hide('config_main')
+    key "K_ESCAPE" action Hide('config_main')
     add "config/setting_th_bg.png"      
     imagebutton auto "config/config_back_%s.png":
         focus_mask True
