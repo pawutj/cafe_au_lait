@@ -1,73 +1,30 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/screens.rpy", line 210, in execute
-    screen extra():
-  File "game/screens.rpy", line 210, in execute
-    screen extra():
-  File "game/screens.rpy", line 230, in execute
-    for idx,i in enumerate(numbers2) :
-  File "game/screens.rpy", line 231, in execute
-    imagebutton auto f"extra/music{i}_%s.png":
-  File "game/screens.rpy", line 231, in keywords
-    imagebutton auto f"extra/music{i}_%s.png":
-  File "game/screens.rpy", line 233, in <module>
-    action mr.Play(f"audio/bgm/{song_list[idx]}.mp3")
-  File "renpy/common/00musicroom.rpy", line 460, in Play
-    raise Exception("{0!r} is not a filename registered with this music room.".format(filename))
-Exception: 'audio/bgm/asa_no_nigiyaka_mura.mp3' is not a filename registered with this music room.
+  File "game/script4_2.rpy", line 222, in script
+    show Eimi_Eimi_cry meme3
+Exception: Image 'Eimi_Eimi_cry' does not accept attributes 'meme3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
-    python hide:
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 1131, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\python.py", line 1061, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
-    python hide:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
-    ui.interact()
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3810, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  [Previous line repeated 1 more time]
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\screen.py", line 451, in visit_all
-    callback(self)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3810, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\screen.py", line 462, in per_interact
-    self.update()
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\screen.py", line 653, in update
-    self.screen.function(**self.scope)
-  File "game/screens.rpy", line 210, in execute
-    screen extra():
-  File "game/screens.rpy", line 210, in execute
-    screen extra():
-  File "game/screens.rpy", line 230, in execute
-    for idx,i in enumerate(numbers2) :
-  File "game/screens.rpy", line 231, in execute
-    imagebutton auto f"extra/music{i}_%s.png":
-  File "game/screens.rpy", line 231, in keywords
-    imagebutton auto f"extra/music{i}_%s.png":
-  File "game/screens.rpy", line 233, in <module>
-    action mr.Play(f"audio/bgm/{song_list[idx]}.mp3")
-  File "renpy/common/00musicroom.rpy", line 460, in Play
-    raise Exception("{0!r} is not a filename registered with this music room.".format(filename))
-Exception: 'audio/bgm/asa_no_nigiyaka_mura.mp3' is not a filename registered with this music room.
+  File "game/script4_2.rpy", line 222, in script
+    show Eimi_Eimi_cry meme3
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 1408, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 1371, in show_imspec
+    renpy.config.show(name,
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\exports.py", line 686, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\image.py", line 414, in find_target
+    self.target = target._duplicate(a)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\transform.py", line 881, in _duplicate
+    args.extraneous()
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 265, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'Eimi_Eimi_cry' does not accept attributes 'meme3'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
 Cafe_au_lait 1.0
-Wed May 17 01:32:17 2023
+Tue May 23 23:08:56 2023
