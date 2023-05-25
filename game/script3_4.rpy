@@ -33,7 +33,7 @@ label q3_4:
     show surprise with Dissolve(1.0)
     ei "แหงะ รุ่นพี่จะหาว่าหนูเป็นตัวร้ายในหนังเหรอคะ ทั้งๆที่หน้าตาหนูน่ะระดับนางเอกชัดๆ " with dissolve
     hide surprise
-    tk "ไม่คิดว่าตัวเองจะเป็นคนบ้าเลยเหรอเนี่ย ._."
+    tk "ไม่คิดว่าตัวเองจะเป็นคนบ้าเลยเหรอเนี่ย"
     hide Eimi02_shy_Eimi02_shock
 
     show Eimi02_shy_Eimi02_angry3
