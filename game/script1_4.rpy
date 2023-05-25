@@ -255,7 +255,7 @@ label q1_4:
     show panic with Dissolve(1.0)
     ei "รุ่นพี่ด่ากันขนาดนี้เอามีดมาแทงหนูเลยดีกว่าค่ะ " with dissolve
     hide panic
-    tk "ไม่มีมีด มีแต่พู่กัน จะเอามะ -_-+"
+    tk "ไม่มีมีด มีแต่พู่กัน จะเอามะ"
     hide Eimi_Eimi_panic
 
     show Eimi_Eimi_cry_meme1

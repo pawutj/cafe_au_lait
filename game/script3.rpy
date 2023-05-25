@@ -272,7 +272,7 @@ label q003:
     show panic with Dissolve(1.0)
     ei "แสดงว่ารุ่นพี่ชอบผู้ชายสินะคะ " with dissolve
     hide panic
-    tk "0_0"
+    tk "......"
     hide Eimi02_Eimi02_shock
 
     show Eimi_Eimi_smug

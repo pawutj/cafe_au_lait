@@ -278,7 +278,7 @@ label q2_1:
 
     show Eimi02_Eimi02_closeEYE2
     ei "รุ่นพี่คะ นักวาดรูปสมัยนี้ก็ชอบผันตัวไปวาดอะไรกามๆบ่อยจะตาย" with dissolve
-    tk "ฉันไม่ได้เป็นนักวาดสายนั้น 0_0"
+    tk "ฉันไม่ได้เป็นนักวาดสายนั้น"
     hide Eimi02_Eimi02_closeEYE2
 
     show Eimi02_Eimi02_confident2
@@ -288,7 +288,7 @@ label q2_1:
 
     show Eimi_Eimi_smug
     ei "รุ่นพี่ไม่รู้เหรอคะว่าสาวๆที่อ่านมังงะ H เยอะจะตายค่ะ" with dissolve
-    tk "ฉันไม่อยากรู้ๆ 0_0"
+    tk "ฉันไม่อยากรู้ๆ"
     hide Eimi_Eimi_smug
 
     show Eimi_Eimi_smug2
