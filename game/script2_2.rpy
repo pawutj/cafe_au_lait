@@ -1,69 +1,64 @@
-label q2_2:
+label q2_2:    
     show artroom_afternoon with Dissolve(1.0)
     play music "audio/bgm/oshakai_no_junbi.mp3" volume 0.5
     show Eimi_Eimi_smile
     tk "อย่ามาล้อเล่นกับคนอายุมากกว่าสิ" with dissolve
     hide Eimi_Eimi_smile
+    show sexy1 with Dissolve(1.0)
+    ei "แหม...รุ่นพี่ก็ทำเกรงใจไปได้นะคะ"
 
-    show Eimi_Eimi_smug
-    show happy with Dissolve(1.0)
-    ei "แหม...รุ่นพี่ก็ทำเกรงใจไปได้นะคะ" with dissolve
-    hide happy
-    tk "......"
-    hide Eimi_Eimi_smug
-
-    show Eimi_Eimi_confident
-    show shine with Dissolve(1.0)
-    ei "ถึงพูดแบบนี้อาจจะดูหลงตัวเอง แต่เอมิก็มั่นใจในรูปร่างหน้าตาตัวเองพอสมควรนะคะ " with dissolve
-    hide shine
+    tk "..........."
+    ei "ถึงพูดแบบนี้อาจจะดูหลงตัวเอง แต่เอมิก็มั่นใจในรูปร่างหน้าตาตัวเองพอสมควรนะคะ "
     tk "ทำไมจู่ๆกลายเป็นรายการโฆษณาตัวเองเนี่ย ._."
-    hide Eimi_Eimi_confident
+    show sexy3 with Dissolve(1.0)
+    hide sexy1
 
-    show Eimi_Eimi_kira
-    show shine with Dissolve(1.0)
-    ei "รุ่นพี่จำไม่ได้เหรอคะ 85 เชียวนะคะ... 85 น่ะ!" with dissolve
-    hide shine
+    ei "รุ่นพี่จำไม่ได้เหรอคะ 85 เชียวนะคะ... 85 น่ะ!"
+
     tk "เลิกเอาขนาดหน้าอกตัวเองมาประกาศได้แล้วเฟ้ย 0_0"
-    hide Eimi_Eimi_kira
+    show sexy4 with Dissolve(1.0)
+    hide sexy3
 
-    show Eimi_Eimi_smug2
-    ei "รุ่นพี่ก็จำได้นี่คะ " with dissolve
+    ei "ถึงรุ่นพี่จะทำเป็นปฎิเสธแต่หลังจากที่รุ่นพี่เห็นเรือนร่างของเอมิรุ่นพี่ก็ไม่สามารถควบคุมตัวเองได้ "
+
+    "รุ่นพี่ก็จะกลายเป็นหมาป่าหิวกระหายเข้าจู่โจมเอมิ"
+    show sexy5 with Dissolve(1.0)
+    hide sexy4
+
+    "ด้วยความที่รุ่นพี่เองก็เป็นผู้ชายแถมอายุมากกว่า เอมิคงไม่อาจขัดขืนรุ่นพี่ได้"
+   
+    "ได้แต่มองดูเสื้อผ้าของตัวเองที่ค่อยๆถูกถอดออกทีละชิ้นด้วยน้ำตาที่คลอเบ้า"
+    "สิ่งเดียวที่ทำได้เหลือเพียงยอมรับว่าความบริสุทธิ์ของเอมิกำลังถูกทำให้แปดเปื้อน"
+    "แล้วเอมิก็ถูกกระทำแบบนู้นแบบนี้"
+    show sexy6 with Dissolve(1.0)
+    hide sexy5
+
+    "อร๊ายย! รุ่นพี่ทาคากิลามก คิกๆๆ"
     tk "......"
-    n "ผมถึงกับหุบปากเพราะเริ่มจับได้ว่าตัวเองเดินไปตามเกมของเอมิแล้ว รุ่นน้องของผมนี่ก็ขี้แกล้งเสียจริงๆ"
-    hide Eimi_Eimi_smug2
+    n "ผมได้แต่ทำหน้าเบื่อโลกเมื่อเอมิเอาผมไปคิดเองเออเองแล้วสวมบทบาทคนบ้ากามให้เสร็จสรรพ"
+    "ไม่มีวันหรอกที่ผมจะทำแบบนั้นกับรุ่นน้อง"
+    tk "พูดมากเดี๋ยวก็โดนพู่กันจ้วงตาหรอก เธอน่ะ "
+    show sexy1 with Dissolve(1.0)
+    hide sexy6
 
-    show Eimi_Eimi_smug3
-    show laught with Dissolve(1.0)
-    ei "รุ่นพี่ทาคากิ คนลามก คิกๆๆ " with dissolve
-    hide laught
-    tk "ล้อฉันมากเดี๋ยวก็โดนพู่กันจ้วงตาหรอก เธอน่ะ "
-    hide Eimi_Eimi_smug3
-
-    show Eimi02_Eimi02_smile2
-    ei "รุ่นพี่ก็ทำขู่ไปงั้นแหละค่ะ เอมิรู้" with dissolve
-    tk "......"
-    hide Eimi02_Eimi02_smile2
-
-    show Eimi02_Eimi02_shock
-    show panic with Dissolve(1.0)
-    ei "รุ่นพี่ทาคากิเป็นคนปากร้ายแต่ใจดี ยังไงๆก็คงไม่กล้าทำร้ายสุภาพสตรีอย่างเอมิหรอกค่ะ แอ๊ะ! " with dissolve
-    hide panic
-    play sound "audio/SoundEffect/zakuxtu.mp3" volume 1.0
+    ei "รุ่นพี่ก็ทำขู่ไปงั้นแหละค่ะ เอมิรู้"
+    tk "..........."
+    ei "รุ่นพี่ทาคากิเป็นคนปากร้ายแต่ใจดี ยังไงๆก็คงไม่กล้าทำร้ายสุภาพสตรีอย่างเอมิหรอกค่ะ แอ๊ะ! "
+    show sexy2 with Dissolve(1.0)
+    hide sexy1
     n "เอมิร้องขึ้นพร้อมกับเด้งตัวจากเก้าอี้เพราะโดนผมใช้พู่กันจิ้มเข้าที่บั้นท้าย"
     "เธอกระโดดดึ๋งขึ้นสักพักก่อนจะกลับมานั่งลงแล้วงอแงใส่ผม"
-    hide Eimi02_Eimi02_shock
-
-    show Eimi_Eimi_hurt_meme
-    ei "แงง...รุ่นพี่ทำร้ายสุภาพสตรีอ่ะ " with dissolve
+    ei "แงง...รุ่นพี่ทำร้ายสุภาพสตรีอ่ะ "
     tk "ปกติฉันไม่ชอบทำร้ายสุภาพสตรีแต่เธอไม่ใช่สุภาพสตรี"
-    hide Eimi_Eimi_hurt_meme
+    hide sexy2
 
-    show Eimi_Eimi_panic
-    show sweat with Dissolve(1.0)
+
+    show Eimi_Eimi_cry_meme2 
+    show panic with Dissolve(1.0)
     n "คำวิจารณ์ของผมทำให้เอมิอ้าปากค้างเป็นเวลานานพอจะให้แมลงสิบกว่าตัวบินเข้าไปพร้อมๆกัน" with dissolve
-    hide sweat
+    hide panic
     "จะตกใจเว่อร์ไปหน่อยแล้ว ยัยนี่"
-    hide Eimi_Eimi_panic
+    hide Eimi_Eimi_cry_meme2 
 
     show Eimi_Eimi_panic_shy
     show surprise with Dissolve(1.0)
@@ -90,7 +85,7 @@ label q2_2:
     hide Eimi02_Eimi02_0
 
     show Eimi02_Eimi02_normal
-    ei "......" with dissolve
+    ei "..............." with dissolve
     tk "ฉันพูดก็เพราะฉันเป็นห่วงเธอนะ ไม่ได้อยากจู้จี้อะไรหรอก "
     hide Eimi02_Eimi02_normal
 
@@ -116,3 +111,4 @@ label q2_2:
     hide Eimi_Eimi_smile2
     jump q2_3
     return
+

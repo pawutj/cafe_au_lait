@@ -170,6 +170,54 @@ image GoldenTime01 = im.Scale("CG/CG02/GoldenTime01.png",1920,1080)
 image GoldenTime02 = im.Scale("CG/CG02/GoldenTime02.png",1920,1080)
 
 
+image sexy1:
+    "CG/SD_sexy/sexy01.png"
+    pause 0.5
+    "CG/SD_sexy/sexy02.png"
+    pause 0.5
+    repeat
+
+image sexy2:
+    "CG/SD_sexy/sexy03.png"
+    pause 0.5
+    "CG/SD_sexy/sexy04.png"
+    pause 0.5
+    repeat
+
+
+image sexy3:
+    "CG/SD_sexy/sexy05.png"
+    pause 0.5
+    "CG/SD_sexy/sexy06.png"
+    pause 0.5
+    repeat
+
+
+image sexy4:
+    "CG/SD_sexy/sexy07.png"
+    pause 0.5
+    "CG/SD_sexy/sexy08.png"
+    pause 0.5
+    repeat
+
+image sexy5:
+    "CG/SD_sexy/sexy09.png"
+    pause 0.5
+    "CG/SD_sexy/sexy10.png"
+    pause 0.5
+    repeat
+
+image sexy6:
+    "CG/SD_sexy/sexy11.png"
+    pause 0.5
+    "CG/SD_sexy/sexy12.png"
+    pause 0.5
+    repeat
+
+
+
+
+
 image clickToContinue:
     "diamond-large-off.png"
 
@@ -398,7 +446,7 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump q4_1
+    jump q2_2
 
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
