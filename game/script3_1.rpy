@@ -32,14 +32,14 @@ label q3_1:
     hide Eimi02_Eimi02_smile
 
     show Eimi_Eimi_sad
-    ei ".........." with dissolve
-    tk "............ ._."
+    ei "......" with dissolve
+    tk "...... ._."
     hide Eimi_Eimi_sad
 
     show Eimi_Eimi_smile
     n "พอเห็นความหม่นหมองจากเอมิ ผมหันหน้าไปหาเธออีกครั้ง แต่กลับพบรอยยิ้มแทน" with dissolve
-    ei "................."
-    tk "........................ ._."
+    ei "......"
+    tk "...... ._."
     hide Eimi_Eimi_smile
 
     show Eimi_Eimi_sad2
@@ -61,7 +61,7 @@ label q3_1:
     hide Eimi_Eimi_panic_shy
 
     show Eimi02_Eimi02_sad
-    ei "............" with dissolve
+    ei "......" with dissolve
     tk "มีอะไรจะปรึกษาก็พูดได้ ไม่งั้นจะวาดรูปต่อแล้ว"
     hide Eimi02_Eimi02_sad
 
@@ -72,7 +72,7 @@ label q3_1:
 
     show Eimi02_Eimi02_smile2
     ei "ว่าแต่นี่ใกล้เวลาส่งรูปประกวดแล้วใช่ไหมคะรุ่นพี่คะ?" with dissolve
-    tk "........."
+    tk "......"
     hide Eimi02_Eimi02_smile2
 
     show Eimi02_Eimi02_smile3
@@ -157,19 +157,19 @@ label q3_1:
     show shine with Dissolve(1.0)
     ei "ค่ะ...ปีนี้หนูแค่ทำหน้าต่างที่บ้านพังไปแค่ 4 บานเอง แล้วก็เผลอทำประตูบ้านพังแค่ 2 รอบเองค่ะ " with dissolve
     hide shine
-    tk "................ =_=”"
+    tk "...... =_=”"
     n "ตรงไหนที่บอกว่ามันไม่บ่อยกันฟะ!? ยัยนี่มันเป็นจักรกลทำลายล้างหรือยังไงกัน?"
     tk "เธอไปทำอีท่าไหนมันถึงพังกัน?"
     hide Eimi_Eimi_confident
 
     show Eimi_Eimi_calm
     ei "แค่ซ้อมบาสที่บ้านแล้วโยนลูกแรงไปหน่อยค่ะ " with dissolve
-    tk "................ =_=”"
+    tk "...... =_=”"
     hide Eimi_Eimi_calm
 
     show Eimi_Eimi_0_0
     ei "หน้าต่างนี่หนูก็เข้าใจนะคะว่ามันเป็นกระจกเลยแตกง่ายๆ แต่ประตูสมัยนี้นี่เปราะจังเลยนะคะ แค่โดนลูกบาสกระแทกหน่อยๆก็กลอนพัง ไม่ก็ประตูลงไปกองกับพื้นแล้วค่ะ ฮะๆๆๆๆๆๆ " with dissolve
-    tk "................ =_=”"
+    tk "...... =_=”"
     hide Eimi_Eimi_0_0
 
     show Eimi_Eimi_serous
@@ -227,7 +227,7 @@ label q3_1:
 
     show Eimi_Eimi_meh
     ei "แล้วทีนี้รุ่นพี่ก็ทำหน้าเศร้าค่ะ " with dissolve
-    tk ".........."
+    tk "......"
     hide Eimi_Eimi_meh
 
     show Eimi_Eimi_sad
@@ -250,7 +250,7 @@ label q3_1:
     hide Eimi02_Eimi02_0
 
     show Eimi02_Eimi02_normal
-    ei "............" with dissolve
+    ei "......" with dissolve
     tk "การโดนอ่านออกมันไม่ใช่เรื่องที่ดีหรอกนะ"
     n "ผมพูดเสียงเรียบต่อหน้าเอมิ"
     "ผมพยายามสะกดกลั้นความไม่พอใจที่เริ่มลุกฮือขึ้นมาในใจ แน่นอนว่าผมไม่ได้ไม่พอใจเอมิ แต่ผมไม่พอใจตัวเองที่นึกเรื่องเก่าๆกลับมาหลอกหลอนตัวเอง	"
@@ -259,7 +259,7 @@ label q3_1:
 
     show Eimi02_Eimi02_smug2
     ei "รุ่นพี่ไม่ชอบให้คนอื่นมาเข้าใจตัวเองเหรอคะ?" with dissolve
-    tk "................."
+    tk "......"
     hide Eimi02_Eimi02_smug2
 
     show Eimi02_Eimi02_scared
@@ -270,7 +270,7 @@ label q3_1:
     hide Eimi02_Eimi02_scared
 
     show Eimi02_Eimi02_sad
-    ei "............" with dissolve
+    ei "......" with dissolve
     tk "ต่อให้เชื่อถือคนอื่นมากแค่ไหน แต่สุดท้ายการที่จะไว้ใจคนอื่นหรือเข้าใจคนอื่นมันก็มีขีดจำกัดอยู่ดี สำหรับฉันที่ชอบทำอะไรคนเดียวแล้ว การพึ่งพาคนอื่นและคอยมาเข้าใจกันน่ะมันไม่ใช่สไตล์ของฉัน"
     hide Eimi02_Eimi02_sad
 
@@ -287,7 +287,7 @@ label q3_1:
     hide Eimi_Eimi_normal
 
     show Eimi_Eimi_sad
-    ei "...................." with dissolve
+    ei "......" with dissolve
     tk "ฉันเคยพยายามจะลองเข้าใจและพึ่งพาคนอื่นดูแล้วล่ะ ฉันทำมาเยอะแล้ว..."
     hide Eimi_Eimi_sad
 
@@ -297,14 +297,14 @@ label q3_1:
     hide Eimi_Eimi_sad2
 
     show Eimi_Eimi_sad
-    ei "................" with dissolve
+    ei "......" with dissolve
     n "คำพูดของผมทำให้เอมิปิดปากเงียบสนิท"
     "ผมไม่รู้ว่าคำพูดของผมทิ่มแทงเธออะไรหรือเปล่า รอยยิ้มบนใบหน้าเธอถึงได้ถูกลบหายไป"
     tk "...แย่ชะมัด"
     hide Eimi_Eimi_sad
 
     show Eimi_Eimi_normal
-    ei "..........." with dissolve
+    ei "......" with dissolve
     tk "โทษทีที่บ่นมากเกินไป เธอคงจะไม่อยากฟังเรื่องหดหู่สินะ"
     hide Eimi_Eimi_normal
 
@@ -342,7 +342,7 @@ label q3_1:
 
     show Eimi_Eimi_smug3
     ei "ก็รุ่นพี่บอกว่าไม่คิดจะเข้าใจคนที่ไม่มีความสามารถ แต่รุ่นพี่ก็นั่งฟังเอมิอยู่เรื่อยนี่คะ" with dissolve
-    tk "........"
+    tk "......"
     hide Eimi_Eimi_smug3
 
     show Eimi_Eimi_confident2
@@ -363,7 +363,7 @@ label q3_1:
 
     show Eimi02_Eimi02_smile
     ei "รุ่นพี่ถึงกับพูดไม่ออกเลยเหรอคะ? " with dissolve
-    tk "........."
+    tk "......"
     hide Eimi02_Eimi02_smile
 
     show Eimi02_Eimi02_smile2
@@ -394,12 +394,12 @@ label q3_1:
 
     show Eimi02_Eimi02_smile
     ei "เอมิไม่ได้คิดอะไรมากหรอกค่ะ เอมิแค่คิดว่าคุยกับรุ่นพี่แล้วสนุกดีเลยมาหารุ่นพี่บ่อยๆค่ะ" with dissolve
-    tk "............."
+    tk "......"
     hide Eimi02_Eimi02_smile
 
     show Eimi_Eimi_XD
     ei "นั่นแน่ๆ ฮะๆๆ พอมีสาวมาหาบ่อยๆ รุ่นพี่ต้องแอบคิดแน่ๆเลยว่ายัยคนนี้น่ะหลงเราหรือเปล่านะ? " with dissolve
-    tk "................ -_-"
+    tk "...... -_-"
     hide Eimi_Eimi_XD
 
     show Eimi_Eimi_smug2

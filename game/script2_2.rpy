@@ -9,7 +9,7 @@ label q2_2:
     show happy with Dissolve(1.0)
     ei "แหม...รุ่นพี่ก็ทำเกรงใจไปได้นะคะ" with dissolve
     hide happy
-    tk "..........."
+    tk "......"
     hide Eimi_Eimi_smug
 
     show Eimi_Eimi_confident
@@ -28,7 +28,7 @@ label q2_2:
 
     show Eimi_Eimi_smug2
     ei "รุ่นพี่ก็จำได้นี่คะ " with dissolve
-    tk "............."
+    tk "......"
     n "ผมถึงกับหุบปากเพราะเริ่มจับได้ว่าตัวเองเดินไปตามเกมของเอมิแล้ว รุ่นน้องของผมนี่ก็ขี้แกล้งเสียจริงๆ"
     hide Eimi_Eimi_smug2
 
@@ -41,7 +41,7 @@ label q2_2:
 
     show Eimi02_Eimi02_smile2
     ei "รุ่นพี่ก็ทำขู่ไปงั้นแหละค่ะ เอมิรู้" with dissolve
-    tk "..........."
+    tk "......"
     hide Eimi02_Eimi02_smile2
 
     show Eimi02_Eimi02_shock
@@ -90,7 +90,7 @@ label q2_2:
     hide Eimi02_Eimi02_0
 
     show Eimi02_Eimi02_normal
-    ei "..............." with dissolve
+    ei "......" with dissolve
     tk "ฉันพูดก็เพราะฉันเป็นห่วงเธอนะ ไม่ได้อยากจู้จี้อะไรหรอก "
     hide Eimi02_Eimi02_normal
 

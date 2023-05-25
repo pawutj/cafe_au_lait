@@ -60,7 +60,7 @@ label q2_3:
 
     show Eimi02_Eimi02_normal
     ei "แล้วนี่รุ่นพี่กำลังวาดรูปอะไรอยู่คะ?" with dissolve
-    tk "............"
+    tk "......"
     hide Eimi02_Eimi02_normal
 
     show Eimi02_Eimi02_stupid
@@ -72,7 +72,7 @@ label q2_3:
 
     show Eimi02_Eimi02_smile2
     ei "เหมือนภาพมุมมองที่คนมองท้องฟ้าจากข้างบนภูเขาเลยค่ะ" with dissolve
-    tk ".........."
+    tk "......"
     hide Eimi02_Eimi02_smile2
 
     show Eimi02_Eimi02_smile
