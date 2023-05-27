@@ -39,7 +39,7 @@ label q2_6:
     hide Eimi_Eimi_angry
 
     show Eimi02_Eimi02_onegai
-    ei "................" with dissolve
+    ei "......" with dissolve
     tk "เธอก็แค่ไม่เคยเห็นด้านแย่ๆของฉัน ก็เลยยังทนอยู่กับฉันได้เท่านั้นเอง"
     hide Eimi02_Eimi02_onegai
 
@@ -47,7 +47,7 @@ label q2_6:
     show moyamoya with Dissolve(1.0)
     ei "ที่กัดเอมิทุกวันนี่ยังไม่แย่ที่สุดอีกเหรอคะ กัดบ่อยกว่านี้ก็ชนะบูลด็อกแถวบ้านเอมิแล้วค่ะ " with dissolve
     hide moyamoya
-    tk "................"
+    tk "......"
     n "ไปๆมาๆยัยนี่ก็กลับมาเสียดสีผมซะงั้น ช่างเป็นรุ่นน้องที่น่าปวดหัวจริงๆ"
     hide Eimi02_Eimi02_fuyukai
 
@@ -74,7 +74,7 @@ label q2_6:
     show question with Dissolve(1.0)
     ei "ลืมแล้วเหรอคะ?" with dissolve
     hide question
-    tk "................"
+    tk "......"
     n "ผมไม่มีคำตอบออกจากปากเพราะลืมจริงๆ"
     "เท่าที่ผมจำได้ผมก็ไม่ได้ทำอะไรให้เอมิเป็นพิเศษนี่นา"
     hide Eimi02_Eimi02_stupid

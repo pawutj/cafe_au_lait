@@ -121,7 +121,7 @@ label q4_2:
 
     show Eimi_Eimi_smug
     ei "เตรียมใจโดนเล่นงานหรือยังคะ?" with dissolve
-    tk "........."
+    tk "......"
     hide Eimi_Eimi_smug
 
     show Eimi_Eimi_smug2

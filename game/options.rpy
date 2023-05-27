@@ -148,7 +148,7 @@ define config.save_directory = "Cafe_au_lait-1676556193"
 ##
 ## The icon displayed on the taskbar or dock.
 
-define config.window_icon = "gui/window_icon.png"
+define config.window_icon = "gui/icon32.jpg"
 
 ## Build configuration #########################################################
 ##

@@ -50,7 +50,7 @@ label q4_1:
     show shine with Dissolve(1.0)
     ei "หรือว่ารุ่นพี่จะหลงใหลความงามของเอมิขนาดที่เห็นหน้าหนูแล้วตะลึงค้างไปเลย ต้องใช่แน่ๆ" with dissolve
     hide shine
-    tk "......."
+    tk "......"
     hide Eimi02_Eimi02_confident2
 
     show Eimi02_Eimi02_smug3
