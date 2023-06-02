@@ -675,6 +675,19 @@ screen save():
     
         add gui.save_menu_background
 
+        for i in range(8):
+            if persistent.page == i:
+                button :
+                    background f"save_load/page0{str(i+1)}_hover.png"
+                    focus_mask True
+                    action SetVariable("persistent.page" , i)
+            else:
+                button :
+                    background f"save_load/page0{str(i+1)}_idle.png"
+                    focus_mask True
+                    action SetVariable("persistent.page" , i)
+    
+
     
         imagebutton auto "save_load/back_%s.png":
             focus_mask True
@@ -710,7 +723,7 @@ screen save():
 
             for i in range(gui.file_slot_cols * gui.file_slot_rows):
 
-                        $ slot = i + 1
+                        $ slot = i + 1 + persistent.page*10
 
                         button:
                             action FileSave(slot,confirm = False)
@@ -731,7 +744,6 @@ screen save():
                             activate_sound "audio/UIsound/save_01.ogg" 
                     
 
-
 screen load_main():
     key "mouseup_3" action Return()
     key "K_ESCAPE" action Return()
@@ -743,6 +755,20 @@ screen load_main():
         action Hide('load_main')
         hover_sound "audio/UIsound/cursor.ogg"
         activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+
+    for i in range(8):
+        if persistent.page == i:
+            button :
+                background f"save_load/page0{str(i+1)}_hover.png"
+                focus_mask True
+                action SetVariable("persistent.page" , i)
+        else:
+            button :
+                background f"save_load/page0{str(i+1)}_idle.png"
+                focus_mask True
+                action SetVariable("persistent.page" , i)
+    
+
     grid gui.file_slot_cols gui.file_slot_rows:
         style_prefix "slot"
 
@@ -753,7 +779,7 @@ screen load_main():
 
         for i in range(gui.file_slot_cols * gui.file_slot_rows):
 
-                    $ slot = i + 1
+                    $ slot = i + 1 + persistent.page*10
 
                     button:
                         action FileLoad(slot)
@@ -774,7 +800,7 @@ screen load_main():
 
 
                         background "save_load/data" + str(i+1) +"_idle1.png"
-                        hover_background "save_load/data" + str(i+1) +"_hover1.png"
+                        hover_background "save_load/data" +  str(i+1) +"_hover1.png"
                         activate_sound "audio/UIsound/load_01.ogg" 
     
 
@@ -792,6 +818,19 @@ screen load():
     key "K_ESCAPE" action Return()
     tag load
     add gui.load_menu_background
+
+    
+    for i in range(8):
+        if persistent.page == i:
+            button :
+                    background f"save_load/page0{str(i+1)}_hover.png"
+                    focus_mask True
+                    action SetVariable("persistent.page" , i)
+        else:
+            button :
+                background f"save_load/page0{str(i+1)}_idle.png"
+                focus_mask True
+                action SetVariable("persistent.page" , i)
 
     imagebutton auto "save_load/back_%s.png":
         focus_mask True
@@ -824,7 +863,7 @@ screen load():
 
         for i in range(gui.file_slot_cols * gui.file_slot_rows):
 
-                    $ slot = i + 1
+                    $ slot = i + 1 + persistent.page*10
 
                     button:
                         activate_sound "audio/UIsound/load_01.ogg" 

@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 202: 'play' is not a keyword argument or valid child for the screen statement.
-    play music "audio/bgm/remind.mp3" volume 0.5
-        ^
+File "game/options.rpy", line 15: expected '=' not found.
+    default  fine load.page = 0
+                  ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Wed May 17 00:43:53 2023
+Fri Jun  2 23:20:59 2023
