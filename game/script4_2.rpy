@@ -315,5 +315,6 @@ label q4_2:
     "-	ขยับมือหาที่ยึดเกาะก่อน    => Scene A"
     stop music
     "-	ลืมตาขึ้นก่อน  => Scene B"
+    jump q4_3a
     return
 

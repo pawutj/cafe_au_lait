@@ -12,6 +12,8 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
+default persistent.page = 0
+
 define config.name = _("Cafe_au_lait")
 
 
