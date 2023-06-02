@@ -2,7 +2,7 @@
 #set PYTHONLEGACYWINDOWSSTDIO=utf-8
 
 import re
-with open("badend1.rpy", encoding="utf-8") as file:
+with open("script3_4.rpy", encoding="utf-8") as file:
     content = file.read()
     lines  = content.split("\n")
     count = 0
@@ -27,7 +27,7 @@ with open("badend1.rpy", encoding="utf-8") as file:
             t = re.sub(pattern, '', i)
         if("ei" in t):
             x = "{0:0=2d}".format(count)
-            print(t + " bad1_1_"+x+".mp3")
+            print(t + " 3_4_"+x+".mp3")
             count = count+1
         else:
             print(t)
