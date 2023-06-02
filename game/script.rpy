@@ -318,7 +318,7 @@ image _endCredit= im.Scale("credit.png",1920,1080)
 
 
 image BadPic2 =  im.Scale("CG/Eimi_bird/BadPic2.png",1920,1080)
-
+image BirdPic =  im.Scale("CG/Eimi_bird/BirdPic.png",1920,1080)
 image cutscene_1_0 =  im.Scale("Cutscene/unit01/unit01_00.png",1920,1080)
 image cutscene_1_1 =  im.Scale("Cutscene/unit01/unit01_01.png",1920,1080)
 image cutscene_1_2 =  im.Scale("Cutscene/unit01/unit01_02.png",1920,1080)
@@ -446,7 +446,7 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump q2_2
+    jump q4_1
 
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
