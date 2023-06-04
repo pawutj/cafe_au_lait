@@ -15,6 +15,9 @@ define a = Character("{font=SukhumvitSet-Medium.ttf}นักเรียน A",
 define e0 = Character("{font=SukhumvitSet-Medium.ttf}???",color="#F0F8FF", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 # The game starts here.
 define en = Character("{font=SukhumvitSet-Medium.ttf}เอนโจว",color="#F0F8FF", image = "enjou2",who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+
+define o = Character("{font=SukhumvitSet-Medium.ttf}คนแก่",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+
 transform crops:
     crop(650,-800,1920,2900)
 
@@ -295,6 +298,43 @@ image panic:
     "Sprite/Effect/panic1.png"
     pause 0.5
     "Sprite/Effect/panic2.png"
+    pause 0.5
+    repeat
+
+image fish:
+    "CG/fish/fish01.png"
+    pause 0.5
+    "CG/fish/fish02.png"
+    pause 0.5
+    "CG/fish/fish03.png"
+    pause 0.5
+    repeat
+
+image seal01:
+    "CG/seal/seal01.png"
+    pause 0.5
+    "CG/seal/seal02.png"
+    pause 0.5
+    repeat
+
+image seal02:
+    "CG/seal/seal03.png"
+    pause 0.5
+    "CG/seal/seal04.png"
+    pause 0.5
+    repeat
+
+image seal03:
+    "CG/seal/seal05.png"
+    pause 0.5
+    "CG/seal/seal06.png"
+    pause 0.5
+    repeat
+
+image seal04:
+    "CG/seal/seal07.png"
+    pause 0.5
+    "CG/seal/seal08.png"
     pause 0.5
     repeat
 
