@@ -124,6 +124,7 @@ image art_room4 = im.Scale("background/artroom/art-room4.jpg",1920,1080)
 image art_room5 = im.Scale("background/artroom/art-room5.jpg",1920,1080)
 image art_room6 = im.Scale("background/artroom/art-room6.jpg",1920,1080)
 
+image station5 = im.Scale("background/station/station5.jpg",1920,1080)
 
 image sunset1 = im.Scale("background/SKY/Sunset1.png",1920,1080)
 image sunset2 = im.Scale("background/SKY/Sunset2.png",1920,1080)
