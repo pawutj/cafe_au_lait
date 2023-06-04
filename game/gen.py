@@ -58,7 +58,8 @@ for c in onlyfiles:
 ###################################################################################################
 
 #####################################################################
-
+mypath = "./images/Sprite/Eimi01"
+onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
 for c in onlyfiles:
     print("image" + " " + "Eimi_bas_body_"+c.split('.')[0]+":")
     print("    "+"zoom 0.75")
@@ -82,6 +83,8 @@ for c in onlyfiles:
 
 ##################################################################
 
+mypath = "./images/Sprite/Eimi02"
+onlyfiles = [f for f in listdir(mypath) if isfile(join(mypath, f))]
 for c in onlyfiles:
     print("image" + " " + "Eimi02_bas_body_"+c.split('.')[0]+":")
     print("    "+"zoom 0.75")

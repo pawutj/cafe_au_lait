@@ -36,16 +36,16 @@ label q5_2:
     "ระหว่างที่ผมยืนมองไปรอบๆเพราะไม่มีอะไรทำ จู่ๆสัมผัสอุ่นๆก็วางบนไหล่ผมจากข้างหลัง"
     hide Eimi_Body_shy_Eimi_smile2
 
-    show eimi_date_body_Eimi_smile
+    show Eimi_date_body_Eimi_smile
     "ผมหันไปทางต้นตอของการสัมผัสก็พบกับรอยยิ้มซุกซนที่คุ้นเคย" with dissolve
     "ยัยนี่แอบย่องเข้าข้างหลังเพื่ออะไรกันนะ?"
     tk "มาเร็วกว่าที่คิดนะ"
-    hide eimi_date_body_Eimi_smile
+    hide Eimi_date_body_Eimi_smile
 
-    show eimi_date_body_Eimi_smile2
+    show Eimi_date_body_Eimi_smile2
     ei "รุ่นพี่คิดว่าเอมิจะมาสายเหรอคะ?" with dissolve
     tk "คิดว่าเธอจะลืมนัดของเราแล้วปล่อยฉันยืนทั้งวันซะอีก"
-    hide eimi_date_body_Eimi_smile2
+    hide Eimi_date_body_Eimi_smile2
 
     show Eimi02_date_body_Eimi02_pout
     show pout with Dissolve(1.0)

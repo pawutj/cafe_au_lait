@@ -172,6 +172,7 @@ image GoldenTime02 = im.Scale("CG/CG02/GoldenTime02.png",1920,1080)
 
 image PlayerHomeM_Night4 = im.Scale("background/male-room/PlayerHomeM_Morning1.png",1920,1080)
 
+image Aquarium_Morning = im.Scale("background/Aquarium/Aquarium_Morning.png",1920,1080)
 
 image sexy1:
     "CG/SD_sexy/sexy01.png"
