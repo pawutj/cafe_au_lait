@@ -54,4 +54,54 @@ for c in onlyfiles:
     print('    im.Composite((1920,2900), (0,1800), "Sprite/Eimi02/Eimi02_Body_shy.png" ,(0,1800),"Sprite/Eimi02/'+c+"\")")
 
 
-#########################
+
+###################################################################################################
+
+#####################################################################
+
+for c in onlyfiles:
+    print("image" + " " + "Eimi_bas_body_"+c.split('.')[0]+":")
+    print("    "+"zoom 0.75")
+    print('    im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_bas_body.png" ,(0,1525),"Sprite/Eimi01/'+c+"\")")
+
+for c in onlyfiles:
+    print("image" + " " + "Eimi_bas_body_shy_"+c.split('.')[0]+":")
+    print("    "+"zoom 0.75")
+    print('    im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_bas_body_shy.png" ,(0,1525),"Sprite/Eimi01/'+c+"\")")
+
+
+for c in onlyfiles:
+    print("image" + " " + "Eimi_date_body_"+c.split('.')[0]+":")
+    print("    "+"zoom 0.75")
+    print('    im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_date_body.png" ,(0,1525),"Sprite/Eimi01/'+c+"\")")
+
+for c in onlyfiles:
+    print("image" + " " + "Eimi_date_body_shy_"+c.split('.')[0]+":")
+    print("    "+"zoom 0.75")
+    print('    im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_date_body_shy.png" ,(0,1525),"Sprite/Eimi01/'+c+"\")")
+
+##################################################################
+
+for c in onlyfiles:
+    print("image" + " " + "Eimi02_bas_body_"+c.split('.')[0]+":")
+    print("    "+"zoom 0.75")
+    print('    im.Composite((1920,2900), (0,1525), "Sprite/Eimi02/Eimi02_bas_body.png" ,(0,1525),"Sprite/Eimi02/'+c+"\")")
+
+for c in onlyfiles:
+    print("image" + " " + "Eimi02_bas_body_shy_"+c.split('.')[0]+":")
+    print("    "+"zoom 0.75")
+    print('    im.Composite((1920,2900), (0,1525), "Sprite/Eimi02/Eimi02_bas_body_shy.png" ,(0,1525),"Sprite/Eimi02/'+c+"\")")
+
+
+for c in onlyfiles:
+    print("image" + " " + "Eimi02_date_body_"+c.split('.')[0]+":")
+    print("    "+"zoom 0.75")
+    print('    im.Composite((1920,2900), (0,1525), "Sprite/Eimi02/Eimi02_date_body.png" ,(0,1525),"Sprite/Eimi02/'+c+"\")")
+
+for c in onlyfiles:
+    print("image" + " " + "Eimi02_date_body_shy_"+c.split('.')[0]+":")
+    print("    "+"zoom 0.75")
+    print('    im.Composite((1920,2900), (0,1525), "Sprite/Eimi02/Eimi02_date_body_shy.png" ,(0,1525),"Sprite/Eimi02/'+c+"\")")
+
+
+###############################################################
