@@ -169,6 +169,8 @@ image Roof = im.Scale("background/Roof2/Roof.jpg",1920,1080)
 image GoldenTime01 = im.Scale("CG/CG02/GoldenTime01.png",1920,1080)
 image GoldenTime02 = im.Scale("CG/CG02/GoldenTime02.png",1920,1080)
 
+image PlayerHomeM_Night4 = im.Scale("background/male-room/PlayerHomeM_Morning1.png",1920,1080)
+
 
 image sexy1:
     "CG/SD_sexy/sexy01.png"
@@ -434,10 +436,10 @@ label start:
     $ point = 0
     scene Canvas with Dissolve(2.0)
     play music "audio/bgm/nagai_no_yoru.mp3" volume 0.5 
-    show text "{size=40}หากเราไม่พยายามและไม่เชื่อในสิ่งที่ตัวเองทำก็เท่ากับแพ้ตั้งแต่แรก" with Dissolve(1.0)
+    show text "{size= 40}หากเราไม่พยายามและไม่เชื่อในสิ่งที่ตัวเองทำก็เท่ากับแพ้ตั้งแต่แรก" with Dissolve(1.0)
     $ renpy.pause(2)
     hide text with Dissolve(1.0)
-    show text  "{size=40}ไม่ว่าจะเกิดอะไรขึ้นก็ตาม...จงอย่าทรยศต่อความฝันของตัวเอง..." with Dissolve(1.0)
+    show text  "{size= 40}ไม่ว่าจะเกิดอะไรขึ้นก็ตาม...จงอย่าทรยศต่อความฝันของตัวเอง..." with Dissolve(1.0)
     $ renpy.pause(2)
     hide text with Dissolve(1.0)
 
@@ -446,7 +448,7 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump q4_1
+    jump q5_1
 
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
@@ -511,7 +513,7 @@ label q002:
     stop music
     play music "audio/bgm/dotabata_happening.mp3" volume 0.5
     play sound "audio/SoundEffect/KFJZC74-crash-with-debris.mp3" volume 1.0
-    n "{size=50}ตูมมมมมมมมมมมมมมมมมมมมมมม!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+    n "{size= 50}ตูมมมมมมมมมมมมมมมมมมมมมมม!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
     hide excited
     e0 "กรี๊ดดดด!!!!!!!"
     tk "อ้ากกกกกก!!!!!!!!!!"
