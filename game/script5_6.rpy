@@ -7,9 +7,9 @@ label q5_6:
     hide Eimi02_date_body_Eimi02_sawagashi
 
     show Eimi02_date_body_Eimi02_kirakira
-    show wink with Dissolve(1.0)
+    show shine with Dissolve(1.0)
     ei "แมวน้ำนี่นา! " with dissolve
-    hide wink
+    hide shine
     hide Eimi02_date_body_Eimi02_kirakira
 
     show seal01
@@ -31,9 +31,9 @@ label q5_6:
     hide seal01
 
     show Eimi02_date_body_Eimi02_confident
-    show wink with Dissolve(1.0)
+    show shine with Dissolve(1.0)
     ei "กองพันหน้าเครียด 101 ที่ชอบเอาพู่กันมารังแกสาวน้อยค่ะ " with dissolve
-    hide wink
+    hide shine
     tk "......."
     hide Eimi02_date_body_Eimi02_confident
 
@@ -148,7 +148,7 @@ label q5_6:
     show surprise with Dissolve(1.0)
     ei "โอ๊ะ!" with dissolve
     hide surprise
-    a "อึก!"
+    o "อึก!"
     hide Eimi_date_body_Eimi_0_0
 
     show Eimi_date_body_Eimi_normal

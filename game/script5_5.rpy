@@ -62,9 +62,9 @@ label q5_5:
     hide Eimi_date_body_Eimi_smug3
 
     show Eimi_date_body_Eimi_confident
-    show wink with Dissolve(1.0)
+    show shine with Dissolve(1.0)
     ei "เปิดช่องโหว่ค่ะ " with dissolve
-    hide wink
+    hide shine
     n "ทันทีที่ผมจะอ้าปากบ่นเธอ เอมิก็จับมือผมลงไปสัมผัสปลาดาวข้างในบ่อน้ำตื้น"
     "ผมตกใจที่จู่ๆก็ถูกเอมิสัมผัสตัวกะทันหัน แต่ก็ไม่กล้าชักมือหนีเพราะกลัวเสียมารยาท"
     tk "เธอ..."
@@ -160,9 +160,9 @@ label q5_5:
     hide Eimi_date_body_Eimi_kuanteen
 
     show Eimi_date_body_Eimi_confident
-    show wink with Dissolve(1.0)
+    show shine with Dissolve(1.0)
     ei "รุ่นพี่ที่ชอบกินหัวทุกคนที่ขวางหน้าค่ะ " with dissolve
-    hide wink
+    hide shine
     n "ผมกุมขมับตัวเองหลังฟังคำกล่าวหาจากเอมิ"
     "คราวก่อนก็เป็นปลาทอง คราวนี้ก็กลายเป็นฉลาม เธอจะให้ผมเป็นได้ทุกอย่างจริงๆสินะ"
     tk "เอมิ เรามีเรื่องต้องคุยกัน..."

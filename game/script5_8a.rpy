@@ -1,9 +1,9 @@
 label q5_8a:
     show Restaurant_Morning1 with Dissolve(1.0)
     play music "audio/bgm/cafe_de_swing.mp3" volume 0.5
-    show eimi_date_body_Eimi_XD
+    show Eimi_date_body_Eimi_XD
     tk "ก็ไม่มีอะไรเป็นพิเศษนะ" with dissolve
-    hide eimi_date_body_Eimi_XD
+    hide Eimi_date_body_Eimi_XD
 
     show Eimi02_date_body_Eimi02_smug2
     show laught with Dissolve(1.0)
@@ -48,12 +48,12 @@ label q5_8a:
     tk "เล่นละครก็ทำให้เนียนหน่อย ตัวประกอบชั้นสามยังเป็นไม่ได้เลยนะเธอเนี่ย"
     hide Eimi02_date_body_Eimi02_meme02
 
-    show eimi_date_body_Eimi_panic_shy
+    show Eimi_date_body_Eimi_panic_shy
     ei "อุหวา รุ่นพี่จับไต๋หนูได้ยังไงคะ " with dissolve
     tk "ถ้าฉันจับไม่ได้ ฉันก็คงโง่จนต้องขอลาออกจากการเป็นคนแล้วมั้ง"
-    hide eimi_date_body_Eimi_panic_shy
+    hide Eimi_date_body_Eimi_panic_shy
 
-    show eimi_date_body_Eimi_pout
+    show Eimi_date_body_Eimi_pout
     show pout with Dissolve(1.0)
     ei "รุ่นพี่กัดหนูกระทั่งตอนมาเที่ยวกันเลยนะคะ " with dissolve
     hide pout
@@ -61,20 +61,20 @@ label q5_8a:
     n "ผมถอนใจต่อหน้าเอมิ "
     "บางทีผมก็พูดอะไรแรงเกินไป ผมคงต้องระวังมันไว้ถ้ามันแทงใจเธอมากเกินไป "
     "ว่ากันตามตรงนะ ยัยนี่เวลาคึกคักน่ะน่ารำคาญ แถมยังเล่นมุกได้ไม่รู้จบจนฟังแล้วปวดหัวไปหมด แต่เวลายัยนี่ทำหน้าเศร้า ผมกลับรู้สึกแย่กว่า"
-    hide eimi_date_body_Eimi_pout
+    hide Eimi_date_body_Eimi_pout
 
-    show eimi_date_body_Eimi_smile3
+    show Eimi_date_body_Eimi_smile3
     ei "รุ่นพี่ก็ปากร้ายไปงั้นแหละค่ะ เอมิชินแล้ว" with dissolve
     tk "....."
-    hide eimi_date_body_Eimi_smile3
+    hide Eimi_date_body_Eimi_smile3
 
-    show eimi_date_body_Eimi_smile2
+    show Eimi_date_body_Eimi_smile2
     ei "เอมิรู้ดีนะคะว่ารุ่นพี่น่ะร้ายแต่ปาก แต่จริงๆใจดีจะตาย เพราะงั้นเอมิไม่คิดมากหรอกค่ะ ฮะๆๆ" with dissolve
     n "เอมิหัวเราะเสียงกังวานใสต่อหน้าผมก่อนที่เธอจะกลับไปตั้งใจทานอาหารตรงหน้า"
     "ถึงจะตัวเล็ก แต่ยัยนี่นับว่ากินค่อนข้างเร็วทีเดียว ผมชักสงสัยว่าสปาเกตตี้จานโตนั่นมันหายไปเพราะถูกกินหรือถูกดูดกันแน่ เพราะปริมาณของอาหารในจานเธอพร่องลงเร็วกว่าผมประมาณสองสามเท่า ต่อหน้าผมที่เป็นคนทานช้า เอมิดูไม่ต่างจากเครื่องดูดฝุ่นใส่วิกสีน้ำตาล"
-    hide eimi_date_body_Eimi_smile2
+    hide Eimi_date_body_Eimi_smile2
 
-    show eimi_date_body_Eimi_smile
+    show Eimi_date_body_Eimi_smile
     "เป็นคนที่ทานอะไรได้ดูเจริญอาหารดีนะ ผมคิดในใจ" with dissolve
     "....."
     "ถ้าพูดถึงเรื่องใจดีแล้ว ผมก็เริ่มคิดถึงตัวเองขึ้นมา	"
@@ -82,7 +82,7 @@ label q5_8a:
     "ทำไมกัน?"
     "นั่นสิ...ทำไมกันนะ? "
     "ผมเริ่มถามตัวเองแม้รู้ว่าจะไม่มีใครตอบคำตอบนั้นได้นอกจากตัวผมคนเดียว"
-    hide eimi_date_body_Eimi_smile
+    hide Eimi_date_body_Eimi_smile
     jump q5_9
     return
 

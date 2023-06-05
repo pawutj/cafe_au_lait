@@ -59,9 +59,9 @@ play music "audio/bgm/dotabata_happening.mp3" volume 0.5
 hide Eimi02_date_body_Eimi02_smile2
 
 show Eimi02_date_body_Eimi02_confident
-show wink with Dissolve(1.0)
+show shine with Dissolve(1.0)
 ei "รุ่นพี่หวังจะเอาหนูเป็นต้นแบบนางเอกมังงะ H ใช่ไหมคะ? " with dissolve
-hide wink
+hide shine
 tk "..... "
 n "การคาดเดาของเอมิทำเอาผมเป็นใบ้ไปเลย"
 "มันต้องเป็นพรสวรรค์พิเศษของยัยนี่แน่ๆที่สามารถทำลายบรรยากาศที่ผมสร้างขึ้นมาเพื่อหยอกล้อเธอด้วยการพูดคำไม่กี่คำ"

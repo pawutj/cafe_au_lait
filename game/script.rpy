@@ -16,7 +16,7 @@ define e0 = Character("{font=SukhumvitSet-Medium.ttf}???",color="#F0F8FF", who_o
 # The game starts here.
 define en = Character("{font=SukhumvitSet-Medium.ttf}เอนโจว",color="#F0F8FF", image = "enjou2",who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 
-define o = Character("{font=SukhumvitSet-Medium.ttf}คนแก่",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define o = Character("{font=SukhumvitSet-Medium.ttf}หญิงชรา",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 
 transform crops:
     crop(650,-800,1920,2900)
@@ -128,7 +128,7 @@ image art_room5 = im.Scale("background/artroom/art-room5.jpg",1920,1080)
 image art_room6 = im.Scale("background/artroom/art-room6.jpg",1920,1080)
 
 image station5 = im.Scale("background/station/station5.jpg",1920,1080)
-
+image station2 = im.Scale("background/station/station2.jpg",1920,1080)
 image sunset1 = im.Scale("background/SKY/Sunset1.png",1920,1080)
 image sunset2 = im.Scale("background/SKY/Sunset2.png",1920,1080)
 image sunset3 = im.Scale("background/SKY/Sunset3.png",1920,1080)
@@ -176,6 +176,8 @@ image GoldenTime02 = im.Scale("CG/CG02/GoldenTime02.png",1920,1080)
 image PlayerHomeM_Night4 = im.Scale("background/male-room/PlayerHomeM_Morning1.png",1920,1080)
 
 image Aquarium_Morning = im.Scale("background/Aquarium/Aquarium_Morning.png",1920,1080)
+
+image Restaurant_Morning1 = im.Scale("background/restaurant/Restaurant_Morning1.png",1920,1080)
 
 image sexy1:
     "CG/SD_sexy/sexy01.png"
@@ -276,6 +278,14 @@ image wakaru:
 
 image spotlight:
     "Sprite/Effect/spotlight.png"
+
+image shark01:
+    "CG/shark/shark01.png"
+image shark02:
+    "CG/shark/shark02.png"
+
+image kiss:
+    "CG/kiss.png"
 
 image dot:
     "Sprite/Effect/dot1.png"
