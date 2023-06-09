@@ -1,5 +1,6 @@
 label q6_4:
-    show route2 with Dissolve(1.0)
+    scene route2 with Dissolve(1.0)
+    hide school_park_3
     play music "audio/bgm/midori_no_iko.mp3" volume 0.5
     n "หลังจากจบการประกาศสงคราม ผมก็รีบดึงเอมิออกมาจากคู่กัดเธอเพราะกลัวเกิดการต่อสู้กันก่อนสนามจริง " with dissolve
     "แน่นอนว่าเพื่อนของคู่กัดเอมิก็น่าจะคิดเหมือนผม เธอเลยพยายามพาเพื่อนเธอกลับบ้านแต่โดยดี เหตุการณ์วันนี้เลยจบลงด้วยสันติ"
@@ -13,11 +14,11 @@ label q6_4:
     tk "ปกติเธอดูไม่เหมือนคนที่จะคิดมากหรือคิดแค้นใครน่ะ"
     hide Eimi_Eimi_normal
 
-    show Eimi_Body_shy_Eimi_panic_shy
+    show Eimi_shy_Eimi_panic_shy
     n "เอมิเลิกคิ้วขึ้นน้อยๆหลังฟังความเห็นของผม เด็กสาวผมสีน้ำตาลใบหน้าแดงระเรื่อขึ้นเล็กน้อย" with dissolve
     ei "รุ่นพี่ทาคากิก็มองเอมิในแง่ดีเกินไปแล้วค่ะ"
     tk "เหรอ?"
-    hide Eimi_Body_shy_Eimi_panic_shy
+    hide Eimi_shy_Eimi_panic_shy
 
     show Eimi_Eimi_smug3
     ei "เอมิดีใจนะคะที่รุ่นพี่คิดว่าเอมิเป็นร่าเริงและไม่คิดอะไรมาก แต่จริงๆแล้วเอมิก็ไม่ได้เป็นคนที่ให้อภัยคนอื่นง่ายขนาดนั้นหรอกค่ะ" with dissolve

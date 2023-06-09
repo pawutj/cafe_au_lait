@@ -5,10 +5,10 @@
 
 
 define ho_u = Character("{font=SukhumvitSet-Medium.ttf}???",color="#F0F8FF",image ="honoka_1", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
-define h = Character("{font=SukhumvitSet-Medium.ttf}โฮโนกะ",color="#F0F8FF", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define h = Character("{font=SukhumvitSet-Medium.ttf}โฮโนกะ",color="#F0F8FF", image ="honoka_1", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 
-define t_u = Character("{font=SukhumvitSet-Medium.ttf}???",color="#F0F8FF", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
-define t = Character("{font=SukhumvitSet-Medium.ttf}โทโมเอะ",color="#F0F8FF", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define t_u = Character("{font=SukhumvitSet-Medium.ttf}???",color="#F0F8FF",image ="tomoe_1" , who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define t = Character("{font=SukhumvitSet-Medium.ttf}โทโมเอะ",color="#F0F8FF",  image ="tomoe_1",who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 
 #navigation
 define n = Character(None, who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
@@ -24,6 +24,8 @@ define e0 = Character("{font=SukhumvitSet-Medium.ttf}???",color="#F0F8FF", who_o
 define en = Character("{font=SukhumvitSet-Medium.ttf}เอนโจว",color="#F0F8FF", image = "enjou2",who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 
 define o = Character("{font=SukhumvitSet-Medium.ttf}หญิงชรา",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+
+define m = Character("{font=SukhumvitSet-Medium.ttf}แม่",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")] )
 
 define AA = Character("{font=SukhumvitSet-Medium.ttf}นักเรียน A",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 define B = Character("{font=SukhumvitSet-Medium.ttf}นักเรียน B",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
@@ -41,6 +43,11 @@ transform crops:
 image side honoka_1:
     zoom 1.3
     im.Scale("Sprite/Honoka/honoka_normal.png",300,300)
+    yoffset 50
+
+image side tomoe_1:
+    zoom 1.3
+    im.Scale("Sprite/Tomoe/tomoe_01.png",300,300)
     yoffset 50
 
 image side enjou1:
@@ -387,7 +394,7 @@ image endCredit= im.Scale("credit.png",1920,1080)
 image _thankyouImg = im.Scale("thx.png",1920,1080)
 image _endCredit= im.Scale("credit.png",1920,1080)
 
-
+image phone = im.Scale("Sprite/Other/phone.png",1920,1080)
 
 image BadPic2 =  im.Scale("CG/Eimi_bird/BadPic2.png",1920,1080)
 image BirdPic =  im.Scale("CG/Eimi_bird/BirdPic.png",1920,1080)
