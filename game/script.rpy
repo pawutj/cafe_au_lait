@@ -3,6 +3,13 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
+
+define ho_u = Character("{font=SukhumvitSet-Medium.ttf}???",color="#F0F8FF",image ="honoka_1", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define h = Character("{font=SukhumvitSet-Medium.ttf}โฮโนกะ",color="#F0F8FF", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+
+define t_u = Character("{font=SukhumvitSet-Medium.ttf}???",color="#F0F8FF", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define t = Character("{font=SukhumvitSet-Medium.ttf}โทโมเอะ",color="#F0F8FF", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+
 #navigation
 define n = Character(None, who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 #eimi
@@ -18,6 +25,10 @@ define en = Character("{font=SukhumvitSet-Medium.ttf}เอนโจว",color="
 
 define o = Character("{font=SukhumvitSet-Medium.ttf}หญิงชรา",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 
+define AA = Character("{font=SukhumvitSet-Medium.ttf}นักเรียน A",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define B = Character("{font=SukhumvitSet-Medium.ttf}นักเรียน B",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define C = Character("{font=SukhumvitSet-Medium.ttf}นักเรียน C",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define T = Character("{font=SukhumvitSet-Medium.ttf}อาจารย์",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 transform crops:
     crop(650,-800,1920,2900)
 
@@ -26,6 +37,11 @@ transform crops:
 #     crops
 #     im.Composite((1920,2900), (0,1525), "Sprite/Eimi02/Eimi02.png")
 
+
+image side honoka_1:
+    zoom 1.3
+    im.Scale("Sprite/Honoka/honoka_normal.png",300,300)
+    yoffset 50
 
 image side enjou1:
     zoom 1.3
@@ -107,6 +123,8 @@ image artroom_afternoon = im.Scale("background/artroom/art-room1.jpg",1920,1080)
 
 image imagine = im.Scale("background/imagine.png",1920,1080)
 
+
+image Classroom1_Morning1 = im.Scale("background/classroom3/Classroom1_Morning1.png",1920,1080)
 
 image school_park_1= im.Scale("background/SchoolPark01/school-park1.png",1920,1080)
 image school_park_2= im.Scale("background/SchoolPark01/school-park2.png",1920,1080)
@@ -500,7 +518,7 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump q5_1
+    jump q6_1
 
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"

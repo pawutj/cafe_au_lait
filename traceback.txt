@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script5_9.rpy", line 138, in script
-    "เคยมีคนกล่าวไว้ว่าเวลาที่คนเรามีความสุขมักจะผ่านไปเร็วเสมอ "
-OSError: Couldn't find file 'audio/bgm/yumebokujou_to_haru_no_ toki.mp3'.
+  File "game/script6_3.rpy", line 50, in script
+    "ขณะเดียวกัน เอมิก็กำลังจ้องหน้าเด็กสาวผมเงินเขม็ง" with dissolve
+OSError: Couldn't find file 'audio/bgm/asa_no_nikiyaka_mura.mp3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script5_9.rpy", line 138, in script
-    "เคยมีคนกล่าวไว้ว่าเวลาที่คนเรามีความสุขมักจะผ่านไปเร็วเสมอ "
+  File "game/script6_3.rpy", line 50, in script
+    "ขณะเดียวกัน เอมิก็กำลังจ้องหน้าเด็กสาวผมเงินเขม็ง" with dissolve
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
     renpy.exports.say(who, what, *args, **kwargs)
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\exports.py", line 1373, in say
@@ -39,9 +39,9 @@ Full traceback:
     rv = renpy.loader.load(fn)
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\loader.py", line 820, in load
     raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'audio/bgm/yumebokujou_to_haru_no_ toki.mp3'.
+OSError: Couldn't find file 'audio/bgm/asa_no_nikiyaka_mura.mp3'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
 Cafe_au_lait 1.0
-Mon Jun  5 21:45:58 2023
+Thu Jun  8 23:42:29 2023

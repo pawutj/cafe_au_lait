@@ -2,9 +2,11 @@
 errors listed below, and try again.
 
 
-File "game/script5_5.rpy", line 187: expected 'label_name' not found.
-    jump 5_6
-        ^
+The label q6_6 is defined twice, at File "game/script6_5.rpy", line 1:
+label q6_6:    
+and File "game/script6_6.rpy", line 1:
+label q6_6:   
+
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Mon Jun  5 03:49:09 2023
+Thu Jun  8 23:17:25 2023
