@@ -1,17 +1,18 @@
 label q5_9:
     show Aquarium_Morning with Dissolve(1.0)
+    hide Restaurant_Morning1
     play music "audio/bgm/asa_no_nigiyaka_mura.mp3" volume 0.5
-    show eimi_date_body_Eimi_smile
+    show Eimi_date_body_Eimi_smile
     n "หลังจากพวกเราสองคนทานข้าวกันเสร็จ พวกเราสองคนก็แวะไปที่ซุ้มขายของฝาก" with dissolve
     "ชั้นวางของขายมีของหลากหลายประเภท ทั้งพวงกุญแจสวยงาม ทั้งตุ๊กตาสัตว์น้ำขนาดเท่าฝ่ามือจนถึงขนาดเท่าตัวคน รวมไปถึงเสื้อลายสัตว์น้ำต่างๆนานา"
-    hide eimi_date_body_Eimi_smile
+    hide Eimi_date_body_Eimi_smile
 
-    show eimi_date_body_Eimi_smile2
+    show Eimi_date_body_Eimi_smile2
     ei "รุ่นพี่คะๆ" with dissolve
     tk "อะไรเหรอ?"
-    hide eimi_date_body_Eimi_smile2
+    hide Eimi_date_body_Eimi_smile2
 
-    show shark02_
+    show shark02
     ei "รุ่นพี่ว่าตุ๊กตาปลาฉลามนี่น่ารักดีไหมคะ?" with dissolve
     n "เอมิหยิบตุ๊กตาฉลามหน้าตาดุๆฟันแหลมๆขนาดเท่าฝ่ามือยื่นให้ผมดูแล้วถามผม"
     "ผมรู้นะว่าเธอจะเล่นมุกอะไรนะ ผมรู้ไต๋เธอดี"
@@ -26,37 +27,37 @@ label q5_9:
     tk "....."
     n "เอมิทำตาเป็นประกายด้วยความดีใจ ผมไม่นึกว่าคำพูดที่ผมพูดผ่านๆจะทำให้เอมิอารมณ์ดีขึ้นอย่างเห็นได้ชัด"
     tk "ไม่ได้เข้าใจมากอย่างที่เธอคิดหรอก ก็แค่ทำได้บางทีน่ะ"
-    hide shark02_
+    hide shark02
 
-    show eimi_date_body_Eimi_confident
+    show Eimi_date_body_Eimi_confident
     ei "เขินเห็นๆเลยค่ะ" with dissolve
     tk "เธอมองไม่ออกหรอก ถ้าฉันเขินจริงๆ"
     stop music
-    hide eimi_date_body_Eimi_confident
+    hide Eimi_date_body_Eimi_confident
 
-    show eimi_date_body_Eimi_smug2
+    show Eimi_date_body_Eimi_smug2
     show laught with Dissolve(1.0)
     ei "เอมิก็มีตานะคะ ฮะๆๆ" with dissolve
     hide laught
     play music "audio/bgm/natsu_no_omoide.mp3" volume 0.5
     n "ผมจ้องมองตุ๊กตาฉลามในมือเอมิแล้วนึกถึงเรื่องเก่าๆที่ครอบครัวผมเคยมาเที่ยวอควาเรียมด้วยกัน"
-    hide eimi_date_body_Eimi_smug2
+    hide Eimi_date_body_Eimi_smug2
 
-    show eimi_date_body_Eimi_smile2
+    show Eimi_date_body_Eimi_smile2
     ei "รุ่นพี่ยิ้มทำไมเหรอคะ?" with dissolve
     tk "เอมิ เธอรู้ไหมว่าฉลามน่ะเป็นสัตว์ที่แสดงถึงความมุ่งมั่นและความแข็งแกร่ง"
-    hide eimi_date_body_Eimi_smile2
+    hide Eimi_date_body_Eimi_smile2
 
-    show eimi_date_body_Eimi_normal
+    show Eimi_date_body_Eimi_normal
     ei "ความมุ่งมั่นและความแข็งแกร่งเหรอคะ?" with dissolve
     n "ผมพยักหน้าให้เอมิเรียบๆ"
     tk "มันถูกถือว่าเป็นราชาแห่งท้องทะเลเพราะพลังที่เหนือกว่าสัตว์อื่น"
-    hide eimi_date_body_Eimi_normal
+    hide Eimi_date_body_Eimi_normal
 
-    show eimi_date_body_Eimi_smile
+    show Eimi_date_body_Eimi_smile
     ei "รุ่นพี่ดูจะชอบฉลามนะคะ" with dissolve
     tk "ฉันไม่ได้ชอบหน้าตามันหรอก..."
-    hide eimi_date_body_Eimi_smile
+    hide Eimi_date_body_Eimi_smile
 
     show Eimi02_date_body_Eimi02_wink
     ei "ก็หน้ามันเหมือนรุ่นพี่นี่คะ" with dissolve
@@ -99,30 +100,30 @@ label q5_9:
     "ไม่นานหลังจากนั้น เด็กสาวผมน้ำตาลก็ส่งเสียงหัวเราะออกมาเบาๆ"
     hide Eimi02_date_body_Eimi02_normal
 
-    show eimi_date_body_Eimi_smile
+    show Eimi_date_body_Eimi_smile
     ei "รุ่นพี่ยิ่งพูด รุ่นพี่ก็ยิ่งดูเข้ากับฉลามค่ะ" with dissolve
     tk "ไม่ได้เข้ากันขนาดนั้นสักหน่อย"
-    hide eimi_date_body_Eimi_smile
+    hide Eimi_date_body_Eimi_smile
 
-    show eimi_date_body_Eimi_smile4
+    show Eimi_date_body_Eimi_smile4
     ei "เข้ากันขนาดนี้ซื้อกลับบ้านไปเป็นของฝากดีไหมคะ รุ่นพี่?" with dissolve
     n "ข้อเสนอเอมิทำให้ผมสนใจขึ้นมา "
     "อันที่จริงแล้วตุ๊กตาขนาดเท่าฝ่ามือก็เป็นตัวเลือกที่ไม่เลวสำหรับของฝากหลังไปเที่ยว"
-    hide eimi_date_body_Eimi_smile4
+    hide Eimi_date_body_Eimi_smile4
 
-    show eimi_date_body_Eimi_smile3
+    show Eimi_date_body_Eimi_smile3
     ei "ถ้ารุ่นพี่ซื้อ เอมิจะได้ซื้อด้วยไงคะ" with dissolve
     tk "เธอก็จะซื้อด้วยเหรอ?"
     n "เอมิส่งยิ้มให้ผมพร้อมกับหยิบตุ๊กตาฉลามขึ้นมาอีกตัว "
     "เธอวางตุ๊กตาฉลามตัวหนึ่งในมือตัวเองและยื่นตุ๊กตาฉลามอีกตัวให้ผม"
-    hide eimi_date_body_Eimi_smile3
+    hide Eimi_date_body_Eimi_smile3
 
-    show eimi_date_body_Eimi_confident2
+    show Eimi_date_body_Eimi_confident2
     ei "เอมิก็อยากจะเป็นคนที่มุ่งมั่นและไม่ยอมแพ้แบบรุ่นพี่ทาคากิค่ะ" with dissolve
     tk "....."
-    hide eimi_date_body_Eimi_confident2
+    hide Eimi_date_body_Eimi_confident2
 
-    show eimi_date_body_Eimi_smile2
+    show Eimi_date_body_Eimi_smile2
     show laught with Dissolve(1.0)
     ei "นี่ไงคะ ถ้าพกตุ๊กตาฉลามเอาไว้ เอมิจะได้มีพลังมากขึ้นเหมือนรุ่นพี่ ฮะๆ" with dissolve
     hide laught
@@ -134,7 +135,7 @@ label q5_9:
     show Sunset4 with Dissolve(1.0)
     hide Aquarium_Morning
 
-    play music "audio/bgm/yumebokujou_to_haru_no_ toki.mp3" volume 0.5
+    play music "audio/bgm/yumebokujou_to_haru_no_toki.mp3" volume 0.5
     "เคยมีคนกล่าวไว้ว่าเวลาที่คนเรามีความสุขมักจะผ่านไปเร็วเสมอ "
     show station2 with Dissolve(1.0)
     hide Sunset4
@@ -142,7 +143,7 @@ label q5_9:
     "จริงๆเวลามันก็ไหลไปด้วยความเร็วเท่าเดิม แต่มันอาจจะเป็นเรื่องของความรู้สึกก็ได้ที่ทำให้ความรับรู้ของคนเราเปลี่ยนไป "
     "พระอาทิตย์ใกล้จะตกดินแล้ว"
     "ผมกับเอมินั่งรถไฟกลับมายังจุดเดิมที่เราพบกันตอนเช้าเพื่อเตรียมตัวแยกย้ายกลับบ้าน"
-    hide eimi_date_body_Eimi_smile2
+    hide Eimi_date_body_Eimi_smile2
 
     show Eimi02_date_body_Eimi02_smile
     ei "วันนี้สนุกมากเลยนะคะ รุ่นพี่" with dissolve
@@ -208,7 +209,7 @@ label q5_9:
     "ผมคงเผลอตามใจเธอจริงๆน่ะแหละ"
     hide Eimi02_date_body_Eimi02_smile3
 
-    show kiss_
+    show kiss
     "....." with dissolve
     "รู้สึกตัวอีกที สัมผัสอุ่นๆที่แฉะชื้นก็แปะลงที่แก้มขวาของผมเบาๆ"
     "ผมลืมตากว้างขึ้นเมื่อพบว่าใบหน้าของเอมิใกล้กับใบหน้าของผมมากจนอยู่ในระยะหายใจรดกัน"
@@ -218,14 +219,14 @@ label q5_9:
     "เด็กสาวผมน้ำตาลยิ้มให้ผม รอยยิ้มที่แสนสวยงามราวกับภาพวาด"
     ei "ของขวัญเล็กๆน้อยๆค่ะ"
     tk "....."
-    hide kiss_
+    hide kiss
 
-    show Eimi_date_shy_Eimi_smile
+    show Eimi_date_body_shy_Eimi_smile
     show laught with Dissolve(1.0)
     ei "เจอกันที่โรงเรียนนะคะ รุ่นพี่ ฮะๆๆๆ" with dissolve
     hide laught
     n "เอมิส่งเสียงหัวเราะร่วนให้ผมสักพักก่อนที่เธอจะวิ่งห่างจากผมไปอย่างรวดเร็วราวกับสายลม"
-    hide Eimi_date_shy_Eimi_smile
+    hide Eimi_date_body_shy_Eimi_smile
 
     "ผมที่มองเธอจากข้างหลังสังเกตเห็นใบหูแดงฉาน ผมใช้มือลูบตำแหน่งที่ริมฝีปากเอมิประทับลงและสัมผัสได้คืออุณหภูมิใบหน้าผมที่สูงขึ้นกว่าเดิม"
     tk "ยัยตัวแสบ ฮึๆๆ"
@@ -235,6 +236,6 @@ label q5_9:
     n "ผมหัวเราะในลำคอให้กับการจากลาที่ทำให้หัวใจผมเต้นเร็วขึ้น"
     stop music
     "...และแอบภาวนาในใจให้วันต่อๆไปมาถึงเร็วขึ้นเพื่อให้ได้พบกับเอมิอีกครั้งหนึ่ง"
-    hide Eimi_date_shy_Eimi_smile
+    hide Eimi_date_body_shy_Eimi_smile
     return 
 

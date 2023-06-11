@@ -1,7 +1,7 @@
 label q5_4:
     show Aquarium_Morning with Dissolve(1.0)
     play music "audio/bgm/nodokana_hi.mp3" volume 0.5
-    show eimi_date_body_Eimi_smile2
+    show Eimi_date_body_Eimi_smile2
     ei "หวาวววว" with dissolve
     n "เด็กสาวผมน้ำตาลจ้องมองสัตว์น้ำละลานตาในอควาเรียมด้วยแววตาเป็นประกาย"
     "ทั้งฝูงปลาหลากสีสัน สัตว์น้ำที่รูปร่างแปลกประหลาด ประกอบกับบรรยากาศในตึกที่เต็มไปด้วยสีฟ้าน้ำทะเลสวยสดทำให้เอมิหันซ้ายทีหันขวาทีอย่างสนุกสนาน"
@@ -9,40 +9,40 @@ label q5_4:
     "ตอนแรกๆเอมิก็ดูประหม่าๆแบบผม แต่พอเดินด้วยกันไปๆมาๆ ยัยนี่ก็ไหลตามบรรยากาศแล้วสนุกไปกับการเที่ยวได้อย่างเป็นธรรมชาติ"
     "เป็นคนที่ง่ายดีจริงๆนะ "
     "หรือผมจะเป็นคนที่คิดมากเกินไปกัน?"
-    hide eimi_date_body_Eimi_smile2
+    hide Eimi_date_body_Eimi_smile2
 
-    show eimi_date_body_Eimi_smile3
+    show Eimi_date_body_Eimi_smile3
     ei "รุ่นพี่ดูสิคะ พวกปลาเต็มไปหมดเลย" with dissolve
     tk "ก็สวยดีนะ"
-    hide eimi_date_body_Eimi_smile3
+    hide Eimi_date_body_Eimi_smile3
 
-    show eimi_date_body_Eimi_normal
+    show Eimi_date_body_Eimi_normal
     ei "รุ่นพี่ดูไม่ค่อยตะลึงเท่าไหร่นะคะ แสดงว่ามาที่แบบนี้บ่อยเหรอ?" with dissolve
     n "เอมิเอียงคอถามผมซื่อๆ "
     tk "ไม่ได้มาบ่อย แต่เห็นบ่อย"
-    hide eimi_date_body_Eimi_normal
+    hide Eimi_date_body_Eimi_normal
 
-    show eimi_date_body_Eimi_o
+    show Eimi_date_body_Eimi_o
     show question with Dissolve(1.0)
     ei "หา?" with dissolve
     hide question
     n "เด็กสาวผมน้ำตาลงงกับคำตอบแปลกๆของผม"
     "ผมคงต้องตอบคำถามให้เธอกระจ่าง"
     tk "เวลาอยากไปเที่ยวที่ไหนก็แค่ลองเปิดเว็บดูรูปที่นั่นเอา แค่นี้ก็รู้สึกได้เหมือนไปเที่ยวแล้ว และก็เอาภาพที่เห็นหลายๆมุมไปฝึกวาดรูปได้ด้วย"
-    hide eimi_date_body_Eimi_o
+    hide Eimi_date_body_Eimi_o
 
-    show eimi_date_body_Eimi_panic
+    show Eimi_date_body_Eimi_panic
     show panic with Dissolve(1.0)
     ei "หา?" with dissolve
     hide panic
     tk "อินเตอร์เน็ตน่ะทำให้เราไปได้ทุกสถานที่โดยที่เราไม่ต้องออกไปนอกบ้านเลย "
     n "ผมตอบด้วยความมั่นใจ ในขณะที่คนฟังอย่างเอมิอ้าปากค้าง ตัวสั่นงันงก"
-    hide eimi_date_body_Eimi_panic
+    hide Eimi_date_body_Eimi_panic
 
-    show eimi_date_body_Eimi_sad
+    show Eimi_date_body_Eimi_sad
     ei "รุ่นพี่คะ " with dissolve
     n "ไปๆมาๆ รุ่นน้องของผมก็มองหน้าผมด้วยสายตาสงสารซะงั้น ทำไมผมถึงรู้สึกเจ็บในอกแปลกๆเหมือนโดนยัยนี่สมเพชชอบกล"
-    hide eimi_date_body_Eimi_sad
+    hide Eimi_date_body_Eimi_sad
 
     show Eimi02_date_body_Eimi02_onegai
     ei "การเปิดอินเตอร์เน็ตดูรูปแล้วหลอกตัวเองว่าไปเที่ยวน่ะมันไม่ใช่การไปเที่ยวหรอกค่ะ " with dissolve
@@ -94,50 +94,46 @@ label q5_4:
     "หรือว่าชีวิตแบบที่กำลังเกิดขึ้นนี้ คือ ‘ชีวิตที่ไม่แห้งแล้ง’ กันนะ?"
     hide Eimi02_date_body_Eimi02_onegai
 
-    show eimi_date_body_Eimi_smug
+    show Eimi_date_body_Eimi_smug
     ei "วางใจได้เลยค่ะ " with dissolve
     tk "หา?"
-    hide eimi_date_body_Eimi_smug
+    hide Eimi_date_body_Eimi_smug
 
-    show eimi_date_body_Eimi_smile
+    show Eimi_date_body_Eimi_smile
     ei "เอมิจะทำให้การไปเที่ยวครั้งนี้ของรุ่นพี่มีสีสันเองค่ะ " with dissolve
     tk "ยังไงล่ะนั่น?"
-    hide eimi_date_body_Eimi_smile
+    hide Eimi_date_body_Eimi_smile
 
-    show eimi_date_body_Eimi_smile2
+    show Eimi_date_body_Eimi_smile2
     ei "เอมิจะสอนให้รุ่นพี่รู้เองค่ะว่าการไปเที่ยวที่แท้จริงเป็นยังไง " with dissolve
     n "จู่ๆเอมิก็เบิกตาโพลงและฮึดสู้ขึ้นมา ยัยนี่บทจะไฟลุกขึ้นมาก็ลุกง่ายๆ "
     "ผมไม่เข้าใจว่าเอมิจะดีดขึ้นมาทำไม ผมถึงกับสะดุ้งเมื่อเห็นเธอที่ทำท่าเหมือนเบ่งพลังในการ์ตูน"
-    hide eimi_date_body_Eimi_smile2
+    hide Eimi_date_body_Eimi_smile2
 
-    show eimi_date_body_Eimi_kira
+    show Eimi_date_body_Eimi_kira
     ei "ซูเxอร์เอมิ จะนำทางรุ่นพี่เองค่ะ " with dissolve
     tk "ตามสบาย -_-“"
     n "ผมเหงื่อตกเพราะเห็นพลังงานที่เปี่ยมล้นของยัยนี่จนพูดไม่ออก เอาเป็นว่าจะยอมยัยนี่สักครั้งก็ได้ เพราะขืนเถียงไปก็ไม่รู้ว่ายัยนี่จะพูดอะไรแปลกๆกลางสาธารณะชนหรือเปล่า"
-    hide eimi_date_body_Eimi_kira
+    hide Eimi_date_body_Eimi_kira
 
-    show eimi_date_body_Eimi_normal
+    show Eimi_date_body_Eimi_normal
     ei "ที่นี่มีปลาหลายพันธุ์มากเลยนะคะ" with dissolve
     tk "ฉันก็ไม่ค่อยได้มาที่นี่เหมือนกัน มันก็เยอะอย่างที่เธอพูดจริงๆน่ะแหละ"
-    hide eimi_date_body_Eimi_normal
+    hide Eimi_date_body_Eimi_normal
 
-    show eimi_date_body_Eimi_smile
+    show Eimi_date_body_Eimi_smile
     ei "รุ่นพี่เคยมาที่นี่เหรอคะ?" with dissolve
     tk "........."
     n "คำถามจากเอมิทำให้ผมเงียบลงไปชั่วขณะ "
     "สมัยเด็กๆ ผมเคยมาเที่ยวที่นี่กับครอบครัวมาก่อน แต่นั่นก็เป็นเรื่องนานมาแล้ว สมัยที่ครอบครัวผมยังรักใคร่กลมเกลียดกันดี"
     "เวลามันผ่านไปเร็วจนน่ากลัวจริงๆ..."
-    hide eimi_date_body_Eimi_smile
+    hide Eimi_date_body_Eimi_smile
 
-    show fish01_
+    show fish
     ei "นี่มันปลาอะไรเหรอคะ?" with dissolve
-    hide fish01_
 
-    show fish02_
     tk "ปลาที่เหมือนกับเธอ" with dissolve
-    hide fish02_
 
-    show fish03_
     ei "รุ่นพี่จะหาว่าเอมิหน้าตาเหมือนปลาเหรอคะ? " with dissolve
     n "เอมิสะดุ้งโหยงเมื่อผมพูดตรงไปตรงมากับเธอ "
     "ดูเหมือนว่าผมต้องเลือกใช้คำให้นุ่มนวลกว่านี้หน่อยเพื่อแก้ไขความเข้าใจผิด"
@@ -158,51 +154,51 @@ label q5_4:
     tk "ไม่หรอก แค่จะบอกว่าถ้าเทียบกับปลาตัวอื่นอาจจะไม่เด่นขนาดนั้น แต่ว่าถ้าไม่มีก็คงจะลำบากแย่น่ะ"
     n "คำพูดจากผมทำให้เอมิเลิกคิ้วขึ้นน้อยๆ ก่อนที่เธอจะทำหน้าแดงระเรื่อบางๆ"
     "หลังจากนั้น เธอก็สะดุ้งน้อยๆแล้วทำแก้มป่องใส่ผม"
-    hide fish03_
+    hide fish with dissolve
 
-    show eimi_date_body_Eimi_pout
+    show Eimi_date_body_Eimi_pout
     show pout with Dissolve(1.0)
     ei "ดูเผินๆเหมือนจะชมแต่ก็แอบหาว่าไม่เด่นแล้วชอบกินตะไคร่น้ำนี่คะ " with dissolve
     hide pout
     tk "มันก็แค่เปรียบเปรยเฉยๆน่ะ ไม่ได้บอกว่าเหมือนทั้งหมด"
-    hide eimi_date_body_Eimi_pout
+    hide Eimi_date_body_Eimi_pout
 
-    show eimi_date_body_Eimi_smug3
+    show Eimi_date_body_Eimi_smug3
     ei "รุ่นพี่นี่พูดเอาใจผู้หญิงไม่เก่งใช่ไหมคะเนี่ย " with dissolve
     tk "ใช่ "
     n "ผมพยักหน้ารับตรงๆ ทำให้เอมิทำหน้าเนือยๆใส่ผม"
-    hide eimi_date_body_Eimi_smug3
+    hide Eimi_date_body_Eimi_smug3
 
-    show eimi_date_body_Eimi_030_02
+    show Eimi_date_body_Eimi_030_02
     show down with Dissolve(1.0)
     ei "อย่ายอมแพ้ง่ายๆแบบนั้นสิคะ เถียงเอมิหน่อยก็ได้ " with dissolve
     hide down
     tk "วันนี้อุตส่าห์มาเที่ยวเป็นเพื่อนเธอ จะยอมเถียงน้อยลงสักวันก็ได้ "
     n "เอมิฟังผมแล้วก็ทำตาโตแล้วจ้องมองผมด้วยสายตาซาบซึ้ง ประกายวิ้งๆจากดวงตาเธอลุกลามออกมาจนผมที่สบตากับเธอรู้สึกแสบตา"
-    hide eimi_date_body_Eimi_030_02
+    hide Eimi_date_body_Eimi_030_02
 
-    show eimi_date_body_Eimi_smile
+    show Eimi_date_body_Eimi_smile
     ei "รุ่นพี่ใจดีจังเลยนะคะ " with dissolve
     tk "ก็นะ..."
-    hide eimi_date_body_Eimi_smile
+    hide Eimi_date_body_Eimi_smile
 
-    show eimi_date_body_Eimi_smile4
+    show Eimi_date_body_Eimi_smile4
     ei "แต่เอมิชอบรุ่นพี่ทาคากิที่เถียงเก่งนะคะ " with dissolve
     tk "...หา?"
-    hide eimi_date_body_Eimi_smile4
+    hide Eimi_date_body_Eimi_smile4
 
-    show eimi_date_body_Eimi_smile2
+    show Eimi_date_body_Eimi_smile2
     ei "เพราะฉะนั้นรุ่นพี่ทำตัวตามสบายเถอะค่ะ " with dissolve
     n "เอมิส่งยิ้มให้ผม ผมเลยหัวเราะในลำคอเบาๆ "
     "แทนที่จะชอบที่ผมยอมลงให้เธอ เธอกลับเลือกให้ผมเป็นตัวของตัวเอง "
     tk "งั้นวันนี้จะเถียงทั้งวันเลยนะ :D"
-    hide eimi_date_body_Eimi_smile2
+    hide Eimi_date_body_Eimi_smile2
 
-    show eimi_date_body_Eimi_shy_meme
+    show Eimi_date_body_Eimi_shy_meme
     show down with Dissolve(1.0)
     ei "เบาๆมือหน่อยก็ได้ค่ะ ใจเย็นๆ " with dissolve
     hide down
     n "เอมิเหงื่อตกน้อยๆ ผมดูออกว่าเธอน่าจะเสียใจภายหลังเพราะดันบอกให้ผมทำอะไรตามใจชอบ ผมจึงส่งเสียงหัวเราะกับใบหน้าแหยๆของเธอ"
-    hide eimi_date_body_Eimi_shy_meme
+    hide Eimi_date_body_Eimi_shy_meme
     jump q5_5
     return

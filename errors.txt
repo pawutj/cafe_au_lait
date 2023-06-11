@@ -2,11 +2,11 @@
 errors listed below, and try again.
 
 
-The label q5_6 is defined twice, at File "game/script5_5.rpy", line 1:
-label q5_6:
-and File "game/script5_6.rpy", line 1:
-label q5_6:
+The label q6_6 is defined twice, at File "game/script6_5.rpy", line 1:
+label q6_6:    
+and File "game/script6_6.rpy", line 1:
+label q6_6:   
 
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sun Jun  4 20:53:23 2023
+Thu Jun  8 23:17:25 2023

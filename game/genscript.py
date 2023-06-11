@@ -9,7 +9,7 @@ def printHide(c):
 
 import pandas as pd
 
-data = pd.read_csv('script5_9.csv',encoding="utf-8")
+data = pd.read_csv('script6_7.csv',encoding="utf-8")
 
 data = data.fillna("")
 

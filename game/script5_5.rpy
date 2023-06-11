@@ -32,47 +32,45 @@ label q5_5:
     n "เอมิว่าแล้วก็เอานิ้วยื่นเข้าไปจิ้มปลาดาวที่อยู่ใกล้มือที่สุดสองสามครั้ง"
     hide Eimi02_date_body_Eimi02_smug3
 
-    show eimi_date_body_Eimi_wakaranai
+    show Eimi_date_body_Eimi_wakaranai
     ei "มันนุ่มหยุ่นๆดีนะคะ แต่มันไม่ค่อยขยับตัวเลยค่ะ " with dissolve
     tk "ปลาดาวมันก็แบบนั้นแหละ"
     n "เอมิพูดจบแล้วก็จิ้มๆอีกครั้งสองครั้งอย่างสนุกมือ "
-    hide eimi_date_body_Eimi_wakaranai
+    hide Eimi_date_body_Eimi_wakaranai
 
-    show eimi_date_body_Eimi_smile2
+    show Eimi_date_body_Eimi_smile2
     "รอยยิ้มของเธอกว้างขึ้นเรื่อยๆ" with dissolve
     ei "เจ้านี่มันก็น่าเอ็นดูดีนะคะ อยากเอากลับไปเลี้ยงที่บ้านสักตัวจังค่ะ"
     tk "...งั้นเหรอ"
-    hide eimi_date_body_Eimi_smile2
+    hide Eimi_date_body_Eimi_smile2
 
-    show eimi_date_body_Eimi_confident2
-    show wink with Dissolve(1.0)
+    show Eimi02_date_body_Eimi02_wink
     ei "พากลับไปเลี้ยงที่บ้านสักตัวดีไหมคะ? รุ่นพี่ " with dissolve
-    hide wink
     tk "หา? "
     n "ผมทำตาปริบๆกับความคิดเห็นจากเอมิ "
     "ถ้าเป็นคนอื่นผมอาจจะคิดว่าพูดเล่น แต่พอเป็นเอมิแล้ว ผมแอบคิดว่าเธออาจจะพูดจริงก็ได้เพราะรุ่นน้องคนนี้ชอบมีความเห็นแผลงๆบ่อยๆ"
     "บางทีผมก็ไม่รู้ว่าหลังรอยยิ้มเย็นๆของเธอแอบซ่อนความคิดแบบไหนอยู่"
     "ยัยนี่จะมาไม้ไหนอีกนะ? ผมลอบมองรอยยิ้มของเธอและพยายามเดาว่าเธอจะพูดอะไร ถึงแม้ว่าจะไม่ได้คำตอบก็ตาม"
-    hide eimi_date_body_Eimi_confident2
+    hide Eimi02_date_body_Eimi02_wink
 
-    show eimi_date_body_Eimi_smug3
+    show Eimi_date_body_Eimi_smug3
     show laught with Dissolve(1.0)
     ei "ฮะๆๆๆ ล้อเล่นค่ะ รุ่นพี่ตกใจเลยใช่ไหมคะ" with dissolve
     hide laught
     n "เอมิหัวเราะเสียงกังวานใส น้ำเสียงหยอกล้อราวกับแกล้งกันทำให้ผมขมวดคิ้วเป็นปม"
     tk "เธอนี่มัน..."
-    hide eimi_date_body_Eimi_smug3
+    hide Eimi_date_body_Eimi_smug3
 
-    show eimi_date_body_Eimi_confident
-    show wink with Dissolve(1.0)
+    show Eimi_date_body_Eimi_confident
+    show shine with Dissolve(1.0)
     ei "เปิดช่องโหว่ค่ะ " with dissolve
-    hide wink
+    hide shine
     n "ทันทีที่ผมจะอ้าปากบ่นเธอ เอมิก็จับมือผมลงไปสัมผัสปลาดาวข้างในบ่อน้ำตื้น"
     "ผมตกใจที่จู่ๆก็ถูกเอมิสัมผัสตัวกะทันหัน แต่ก็ไม่กล้าชักมือหนีเพราะกลัวเสียมารยาท"
     tk "เธอ..."
-    hide eimi_date_body_Eimi_confident
+    hide Eimi_date_body_Eimi_confident
 
-    show eimi_date_body_Eimi_smile2
+    show Eimi_date_body_Eimi_smile2
     show laught with Dissolve(1.0)
     ei "ฮะๆ ลองแตะเองแล้วเป็นยังไงบ้างคะ รุ่นพี่ " with dissolve
     hide laught
@@ -80,16 +78,16 @@ label q5_5:
     "บางทีผมก็คิดว่ารอยยิ้มของเอมิเป็นรอยยิ้มที่สวยมาก"
     "การที่เธอจงใจใช้มันให้ผมหายโกรธ ไม่ว่าเธอจะรู้ตัวหรือไม่รู้ตัว...มันขี้โกงจริงๆ"
     tk "ก็นุ่มกว่าที่คิดดีนะ"
-    hide eimi_date_body_Eimi_smile2
+    hide Eimi_date_body_Eimi_smile2
 
-    show eimi_date_body_Eimi_smile
+    show Eimi_date_body_Eimi_smile
     ei "ใช่ไหมล่ะคะ?" with dissolve
     tk "........"
     n "อยากจะบอกเลยว่าผมไม่มีสมาธิถึงคิดถึงปลาดาวเลย พอเอมิเข้ามาแตะมือและส่งยิ้มให้ผม ผมก็รู้สึกหน้าอุ่นไปหมด "
     "สัมผัสจากเอมิทำให้ผมรู้สึกใจเต้นขึ้นมา"
     "........"
     "ทำไมผมถึงรู้สึกแปลกๆแบบนี้กันนะ?"
-    hide eimi_date_body_Eimi_smile
+    hide Eimi_date_body_Eimi_smile
 
     show Eimi02_date_body_Eimi02_panic
     show surprise with Dissolve(1.0)
@@ -137,47 +135,47 @@ label q5_5:
     tk "ฉลามในตู้นั่นน่ะ..."
     hide Eimi02_date_body_Eimi02_memeEYE
 
-    show eimi_date_body_Eimi_smug2
+    show Eimi_date_body_Eimi_smug2
     ei "หน้าตาเหมือนกับรุ่นพี่ทาคากิดีนะคะ " with dissolve
     tk "........"
     n "คำตอบตรงไปตรงมาพร้อมกับรอยยิ้มกว้างจากเอมิทำให้ผมรู้สึกเหมือนโดนค้อนทุบเข้าในอก"
     "ผมได้แต่ใช้ตาขวางๆจ้องหน้าเธอด้วยความรับไม่ได้กับความคิดเห็นของเด็กสาวตรงหน้า"
     tk "เธอคิดยังไงถึงให้ฉันเป็นสัตว์หน้าดุฟันแหลมแบบนั้น?"
-    hide eimi_date_body_Eimi_smug2
+    hide Eimi_date_body_Eimi_smug2
 
-    show eimi_date_body_Eimi_bubu
+    show Eimi_date_body_Eimi_bubu
     ei "ก็รุ่นพี่หาว่าเอมิเป็นปลากินตะไคร่น้ำก่อนอ่ะ " with dissolve
     n "เอมิทำท่าเป่าปากปู้ดๆราวกับเธอกำลังงอนผมไม่มีผิด"
     tk "อันนั้นฉันแค่เปรียบเทียบ "
-    hide eimi_date_body_Eimi_bubu
+    hide Eimi_date_body_Eimi_bubu
 
-    show eimi_date_body_Eimi_calm
+    show Eimi_date_body_Eimi_calm
     ei "เอมิก็กำลังเปรียบเทียบอยู่ค่ะ เพราะตารุ่นพี่ทาคากิดูโหดเหมือนกับฉลามเลยค่ะ" with dissolve
     tk "หา?"
-    hide eimi_date_body_Eimi_calm
+    hide Eimi_date_body_Eimi_calm
 
-    show eimi_date_body_Eimi_kuanteen
+    show Eimi_date_body_Eimi_kuanteen
     ei "แถมรุ่นพี่ยังชอบกินหัวคนรอบข้างอีก ถ้ารุ่นพี่เป็นฉลามในตู้นั่นก็คงทั้งดุทั้งโหดจนกินเจ้าหน้าที่โชว์ทุกคนแน่เลยค่ะ " with dissolve
     tk "นี่เธอมองฉันเป็นตัวอะไรกันเนี่ย?"
-    hide eimi_date_body_Eimi_kuanteen
+    hide Eimi_date_body_Eimi_kuanteen
 
-    show eimi_date_body_Eimi_confident
-    show wink with Dissolve(1.0)
+    show Eimi_date_body_Eimi_confident
+    show shine with Dissolve(1.0)
     ei "รุ่นพี่ที่ชอบกินหัวทุกคนที่ขวางหน้าค่ะ " with dissolve
-    hide wink
+    hide shine
     n "ผมกุมขมับตัวเองหลังฟังคำกล่าวหาจากเอมิ"
     "คราวก่อนก็เป็นปลาทอง คราวนี้ก็กลายเป็นฉลาม เธอจะให้ผมเป็นได้ทุกอย่างจริงๆสินะ"
     tk "เอมิ เรามีเรื่องต้องคุยกัน..."
-    hide eimi_date_body_Eimi_confident
+    hide Eimi_date_body_Eimi_confident
 
-    show eimi_date_body_Eimi_smug3
+    show Eimi_date_body_Eimi_smug3
     show laught with Dissolve(1.0)
     ei "โชว์ฉลามนี่ก็เจ๋งดีนะคะ แฮะๆๆๆ" with dissolve
     hide laught
     tk "ไม่เนียน อย่าเปลี่ยนเรื่อง"
-    hide eimi_date_body_Eimi_smug3
+    hide Eimi_date_body_Eimi_smug3
 
-    show eimi_date_body_Eimi_XD
+    show Eimi_date_body_Eimi_XD
     show laught with Dissolve(1.0)
     ei "ไม่ได้เปลี่ยนเรื่องสักนิดค่ะ แฮะๆๆๆ" with dissolve
     hide laught
@@ -185,6 +183,7 @@ label q5_5:
     n "เอมิทำเป็นเบือนหน้าหนีพร้อมกับเหงื่อตกเป็นสายน้ำ "
     hide sweat
     "เห็นได้ชัดว่าเธออยากแอบด่าผมเนียนๆก่อนเปลี่ยนเรื่องโดยใช้หน้ากากใสซื่อชัดๆ"
-    hide eimi_date_body_Eimi_XD
-    return q5_6
+    hide Eimi_date_body_Eimi_XD
+    jump q5_6
+    return 
 

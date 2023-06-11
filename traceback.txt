@@ -1,66 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While processing text tag {size = 40} in '{size = 40}หากเราไม่พยายามและไม่เชื่อในสิ่งที่ตัวเองทำก็เท่ากับแพ้ตั้งแต่แรก'.:
-  File "game/script.rpy", line 440, in script
-    $ renpy.pause(2)
-  File "game/script.rpy", line 440, in <module>
-    $ renpy.pause(2)
-Exception: Unknown text tag 'size = 40'
+While running game code:
+  File "game/script6_5.rpy", line 13, in script
+    m "ทาคากิ วันนี้อย่าลืมลงไปกินข้าวนะ"
+Exception: Sayer 'm' is not defined.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 440, in script
-    $ renpy.pause(2)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 1131, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\python.py", line 1061, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 440, in <module>
-    $ renpy.pause(2)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\exports.py", line 1537, in pause
-    rv = renpy.ui.interact(mouse='pause', type='pause', roll_forward=roll_forward, pause=delay, pause_modal=modal)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3912, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 2602, in draw_screen
-    surftree = renpy.display.render.render_screen(
-  File "render.pyx", line 495, in renpy.display.render.render_screen
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\layout.py", line 884, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\transform.py", line 747, in render
-    return transform_render(self, width, height, st, at)
-  File "accelerator.pyx", line 187, in renpy.display.accelerator.transform_render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\image.py", line 506, in render
-    return wrap_render(self.target, width, height, st, at)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\image.py", line 309, in wrap_render
-    rend = render(child, w, h, st, at)
-  File "render.pyx", line 170, in renpy.display.render.render
-  File "render.pyx", line 266, in renpy.display.render.render
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\text\text.py", line 2109, in render
-    virtual_layout = Layout(self, width, height, renders, drawable_res=False, size_only=True)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\text\text.py", line 627, in __init__
-    self.paragraphs = self.segment(text.tokens, style, renders, text)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\text\text.py", line 1278, in segment
-    raise Exception("Unknown text tag %r" % text)
-Exception: Unknown text tag 'size = 40'
+  File "game/script6_5.rpy", line 13, in script
+    m "ทาคากิ วันนี้อย่าลืมลงไปกินข้าวนะ"
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 881, in execute
+    who = eval_who(self.who, self.who_fast)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 774, in eval_who
+    raise Exception("Sayer '%s' is not defined." % who)
+Exception: Sayer 'm' is not defined.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
 Cafe_au_lait 1.0
-Sun Jun  4 20:55:46 2023
+Fri Jun  9 19:13:09 2023

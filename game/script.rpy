@@ -3,6 +3,13 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
+
+define ho_u = Character("{font=SukhumvitSet-Medium.ttf}???",color="#F0F8FF",image ="honoka_1", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define h = Character("{font=SukhumvitSet-Medium.ttf}โฮโนกะ",color="#F0F8FF", image ="honoka_1", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+
+define t_u = Character("{font=SukhumvitSet-Medium.ttf}???",color="#F0F8FF",image ="tomoe_1" , who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define t = Character("{font=SukhumvitSet-Medium.ttf}โทโมเอะ",color="#F0F8FF",  image ="tomoe_1",who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+
 #navigation
 define n = Character(None, who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 #eimi
@@ -15,6 +22,15 @@ define a = Character("{font=SukhumvitSet-Medium.ttf}นักเรียน A",
 define e0 = Character("{font=SukhumvitSet-Medium.ttf}???",color="#F0F8FF", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 # The game starts here.
 define en = Character("{font=SukhumvitSet-Medium.ttf}เอนโจว",color="#F0F8FF", image = "enjou2",who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+
+define o = Character("{font=SukhumvitSet-Medium.ttf}หญิงชรา",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+
+define m = Character("{font=SukhumvitSet-Medium.ttf}แม่",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")] )
+
+define AA = Character("{font=SukhumvitSet-Medium.ttf}นักเรียน A",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define B = Character("{font=SukhumvitSet-Medium.ttf}นักเรียน B",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define C = Character("{font=SukhumvitSet-Medium.ttf}นักเรียน C",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define T = Character("{font=SukhumvitSet-Medium.ttf}อาจารย์",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 transform crops:
     crop(650,-800,1920,2900)
 
@@ -23,6 +39,16 @@ transform crops:
 #     crops
 #     im.Composite((1920,2900), (0,1525), "Sprite/Eimi02/Eimi02.png")
 
+
+image side honoka_1:
+    zoom 1.3
+    im.Scale("Sprite/Honoka/honoka_normal.png",300,300)
+    yoffset 50
+
+image side tomoe_1:
+    zoom 1.3
+    im.Scale("Sprite/Tomoe/tomoe_01.png",300,300)
+    yoffset 50
 
 image side enjou1:
     zoom 1.3
@@ -105,6 +131,8 @@ image artroom_afternoon = im.Scale("background/artroom/art-room1.jpg",1920,1080)
 image imagine = im.Scale("background/imagine.png",1920,1080)
 
 
+image Classroom1_Morning1 = im.Scale("background/classroom3/Classroom1_Morning1.png",1920,1080)
+
 image school_park_1= im.Scale("background/SchoolPark01/school-park1.png",1920,1080)
 image school_park_2= im.Scale("background/SchoolPark01/school-park2.png",1920,1080)
 image school_park_3= im.Scale("background/SchoolPark01/school-park3.png",1920,1080)
@@ -125,7 +153,7 @@ image art_room5 = im.Scale("background/artroom/art-room5.jpg",1920,1080)
 image art_room6 = im.Scale("background/artroom/art-room6.jpg",1920,1080)
 
 image station5 = im.Scale("background/station/station5.jpg",1920,1080)
-
+image station2 = im.Scale("background/station/station2.jpg",1920,1080)
 image sunset1 = im.Scale("background/SKY/Sunset1.png",1920,1080)
 image sunset2 = im.Scale("background/SKY/Sunset2.png",1920,1080)
 image sunset3 = im.Scale("background/SKY/Sunset3.png",1920,1080)
@@ -172,6 +200,9 @@ image GoldenTime02 = im.Scale("CG/CG02/GoldenTime02.png",1920,1080)
 
 image PlayerHomeM_Night4 = im.Scale("background/male-room/PlayerHomeM_Morning1.png",1920,1080)
 
+image Aquarium_Morning = im.Scale("background/Aquarium/Aquarium_Morning.png",1920,1080)
+
+image Restaurant_Morning1 = im.Scale("background/restaurant/Restaurant_Morning1.png",1920,1080)
 
 image sexy1:
     "CG/SD_sexy/sexy01.png"
@@ -273,6 +304,14 @@ image wakaru:
 image spotlight:
     "Sprite/Effect/spotlight.png"
 
+image shark01:
+    "CG/shark/shark01.png"
+image shark02:
+    "CG/shark/shark02.png"
+
+image kiss:
+    "CG/kiss.png"
+
 image dot:
     "Sprite/Effect/dot1.png"
     pause 0.5
@@ -297,6 +336,43 @@ image panic:
     pause 0.5
     repeat
 
+image fish:
+    "CG/fish/fish01.png"
+    pause 0.5
+    "CG/fish/fish02.png"
+    pause 0.5
+    "CG/fish/fish03.png"
+    pause 0.5
+    repeat
+
+image seal01:
+    "CG/seal/seal01.png"
+    pause 0.5
+    "CG/seal/seal02.png"
+    pause 0.5
+    repeat
+
+image seal02:
+    "CG/seal/seal03.png"
+    pause 0.5
+    "CG/seal/seal04.png"
+    pause 0.5
+    repeat
+
+image seal03:
+    "CG/seal/seal05.png"
+    pause 0.5
+    "CG/seal/seal06.png"
+    pause 0.5
+    repeat
+
+image seal04:
+    "CG/seal/seal07.png"
+    pause 0.5
+    "CG/seal/seal08.png"
+    pause 0.5
+    repeat
+
 
 image main_scene_1 = im.Scale("Animation/anime01.png",1920,1080)
 image main_scene_2 = im.Scale("Animation/anime02.png",1920,1080)
@@ -318,7 +394,7 @@ image endCredit= im.Scale("credit.png",1920,1080)
 image _thankyouImg = im.Scale("thx.png",1920,1080)
 image _endCredit= im.Scale("credit.png",1920,1080)
 
-
+image phone = im.Scale("Sprite/Other/phone.png",1920,1080)
 
 image BadPic2 =  im.Scale("CG/Eimi_bird/BadPic2.png",1920,1080)
 image BirdPic =  im.Scale("CG/Eimi_bird/BirdPic.png",1920,1080)
@@ -449,7 +525,7 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump q5_1
+    jump q6_1
 
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
