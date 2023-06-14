@@ -15,13 +15,14 @@ label q1_5:
     "รู้สึกเหมือนขาดอะไรบางอย่างไปแฮะ? "
     "ผมพยายามนึกให้ออกว่าผมลืมอะไรไปกันแน่ แต่คิดมาเป็นนาทีแล้วก็นึกไม่ออกสักที"
     show coffee04 with Dissolve(1.0)
-    hide artroom_afternoon
+    hide artroom_afternoon 
 
+    voice "audio/voice/1_00.mp3"
     ei "ลืมกาแฟหรือเปล่าคะ?"
     tk "เออใช่เลย ขอบคุณนะ"
     show coffee02 with Dissolve(1.0)
     hide coffee04
-
+    voice "audio/voice/1_01.mp3"
     ei "ไม่เป็นไรค่ะ..."
     tk "ขอบคุณมา...เดี๋ยวนะ..."
     n "ผมเหลือบมองไปยังต้นเสียงที่มาจากข้างหลังผม "

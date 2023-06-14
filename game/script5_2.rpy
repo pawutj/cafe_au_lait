@@ -12,8 +12,7 @@ label q5_2:
     "......"
     show art_room2 with Dissolve(1.0)
     hide PlayerHomeM_Night4
-
-    show Eimi_shy_Eimi_smile2 with dissolve
+    show Eimi_shy_Eimi_smile2 with dissolve                       
     ei "รุ่นพี่ไปเที่ยวกับหนูได้ไหมคะ?" with dissolve
     hide Eimi_shy_Eimi_smile2 with dissolve
     show PlayerHomeM_Night4 with Dissolve(1.0)
