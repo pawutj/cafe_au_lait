@@ -29,12 +29,12 @@ label q4_3a:
     "พลังของ 85 นี่มันร้ายกาจจริงๆ!"
     show oppai04 with Dissolve(1.0)
     hide oppai03
-
+    voice "audio/voice/4_00.mp3"
     ei "รุ่นพี่คะ..."
     tk "หา?"
     show oppai05 with Dissolve(1.0)
     hide oppai04
-
+    voice "audio/voice/4_01.mp3"
     ei "รุ่นพี่ทะลึ่งค่า! "
     tk "ว้าก! "
     show oppai02 with Dissolve(1.0)
@@ -44,7 +44,7 @@ label q4_3a:
     "โลกหมุนไปหมดเพราะร่างของผมกลิ้งไปข้างๆลำตัวเธอ ขณะที่เธอดีดตัวขึ้นกะทันหัน มือข้างหนึ่งของเธอที่ถือลูกบาสอยู่ก็งัดขึ้นวูบทำให้ลูกบาสลอยหวือขึ้นสูงกลางอากาศ"
     show school_gym_b with Dissolve(1.0)
     hide oppai02
-
+    voice "audio/voice/4_02.mp3"
     ei "อ๊ะ! " with dissolve
     tk "ห๊ะ!?"
     n "ลูกบาสสีส้มลอยขึ้นเหนือแป้นอย่างเหมาะเจาะก่อนที่มันจะลงไปในแป้นอย่างสวยงาม"
