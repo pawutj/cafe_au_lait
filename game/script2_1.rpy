@@ -329,16 +329,19 @@ label q2_1:
     hide Eimi02_Eimi02_smile
 
     show Eimi02_Eimi02_smug3
+    voice "audio/voice/2_1_00.mp3"
     ei "ถ้ารุ่นพี่ทำให้เอมิอารมณ์ดีได้ เอมิจะเสนอตัวเองเป็นต้นแบบนางเอกของเรื่องเลยค่ะ" with dissolve
     tk "อย่าพูดเล่น"
     hide Eimi02_Eimi02_smug3
 
     show Eimi02_Eimi02_smile
+    voice "audio/voice/2_1_01.mp3"
     ei "เอมิพูดจริงๆค่ะ " with dissolve
     tk "......"
     hide Eimi02_Eimi02_smile
 
     show Eimi02_Eimi02_smug3
+    voice "audio/voice/2_1_02.mp3"
     ei "เห็นแบบนี้เอมิก็มั่นใจในรูปร่างตัวเองอยู่นะคะ " with dissolve
     n "ผมลอบสังเกตร่างกายของเอมิ "
     "จริงอยู่ที่ผมไม่สนใจเรื่องผู้หญิงหรือเรื่องความรัก แต่เอมิก็เป็นผู้หญิงที่รูปร่างหน้าตาดีมากคนหนึ่ง ยิ่งประกอบกับสัดส่วนโค้งเว้าที่สะดุดตา น่าจะทำให้ผู้ชายหลายคนเผลอหันมองตามได้ง่ายๆทีเดียว"
@@ -348,6 +351,7 @@ label q2_1:
 
     show Eimi_Eimi_panic
     show panic with Dissolve(1.0)
+    voice "audio/voice/2_1_03.mp3"
     ei "แหงะ สาวตัวเล็กๆก็มีเสน่ห์ของสาวตัวเล็กๆนะคะ " with dissolve
     hide panic
     tk "โฆษณาตัวเองอีกแล้ว"
@@ -355,6 +359,7 @@ label q2_1:
 
     show Eimi_Eimi_smug
     show laught with Dissolve(1.0)
+    voice "audio/voice/2_1_04.mp3"
     ei "ฮะๆๆ นั่นสิคะ " with dissolve
     hide laught
     n "รอยยิ้มกวนๆของเอมิทำให้ผมแยกไม่ออกว่าเธอพูดเล่น พยายามลองใจผมหรือว่าพูดจริงๆ"

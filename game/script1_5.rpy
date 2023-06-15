@@ -30,17 +30,17 @@ label q1_5:
     tk "เอมิ "
     show coffee06 with Dissolve(1.0)
     hide coffee02
-
+    voice "audio/voice/1_02.mp3"
     ei "ใช่ค้าๆ อิทสึกิ เอมิ รุ่นน้องปี 4 ผู้น่ารักเองค่า "
     tk "จะมาโฆษณาตัวเองทำไมเนี่ย?"
     show coffee03 with Dissolve(1.0)
     hide coffee06
-
+    voice "audio/voice/1_03.mp3"
     ei "กำลังอารมณ์ดีอยู่ค่ะ เลยอยากพูดอะไรแปลกๆค่ะ "
     tk "เธอนี่บ้าบอชะมัด"
     show coffee05 with Dissolve(1.0)
     hide coffee03
-
+    voice "audio/voice/1_04.mp3"
     ei "ฮะๆๆ"
     n "ทั้งๆที่โดนด่าแต่เธอคนนี้กลับหัวเราะให้ผม แปลกคนจริงๆ"
     "ที่แปลกยิ่งกว่าคือเธอจะกลับมาหาผมทำไมกัน?"
