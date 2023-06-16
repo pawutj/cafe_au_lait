@@ -205,6 +205,8 @@ image Restaurant_Morning1 = im.Scale("background/restaurant/Restaurant_Morning1.
 
 image border = im.Scale("Sprite/Effect/border.png",1920,1080)
 
+image honoka_ouki = im.Scale("Sprite/Effect/Honoka_ougi/honoka_ouki.jpg",1920,1080)
+
 image sexy1:
     "CG/SD_sexy/sexy01.png"
     pause 0.5
