@@ -203,6 +203,7 @@ image Aquarium_Morning = im.Scale("background/Aquarium/Aquarium_Morning.png",192
 
 image Restaurant_Morning1 = im.Scale("background/restaurant/Restaurant_Morning1.png",1920,1080)
 
+image border = im.Scale("Sprite/Effect/border.png",1920,1080)
 
 image sexy1:
     "CG/SD_sexy/sexy01.png"
