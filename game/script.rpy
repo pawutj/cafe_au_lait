@@ -199,7 +199,7 @@ image GoldenTime02 = im.Scale("CG/CG02/GoldenTime02.png",1920,1080)
 
 image PlayerHomeM_Night4 = im.Scale("background/male-room/PlayerHomeM_Morning1.png",1920,1080)
 
-image Aquarium_Morning = im.Scale("background/Aquarium/Aquarium_Morning.png",1920,1080)
+image Aquarium_Morning = im.Scale("background/Aquarium/Aquarium_Morning.jpg",1920,1080)
 
 image Restaurant_Morning1 = im.Scale("background/restaurant/Restaurant_Morning1.png",1920,1080)
 
@@ -530,7 +530,8 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump q7_3
+    jump q5_4
+    #jump q7_3
 
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
