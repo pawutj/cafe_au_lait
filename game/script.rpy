@@ -61,7 +61,6 @@ image side enjou2:
     yoffset 50
 
 
-
 image eimi_0: 
     zoom 0.75
     im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_Body.png" ,(0,1525),"Sprite/Eimi01/Eimi_0.0.png")
@@ -525,7 +524,7 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump q6_1
+    jump q8_1
 
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
