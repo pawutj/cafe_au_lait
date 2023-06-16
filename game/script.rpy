@@ -47,7 +47,7 @@ image side honoka_1:
 
 image side tomoe_1:
     zoom 1.3
-    im.Scale("Sprite/Tomoe/tomoe_01.png",300,300)
+    im.Scale("Sprite/Tomoe/tomoe_01.png",320,280)
     yoffset 50
 
 image side enjou1:
@@ -205,7 +205,8 @@ image Restaurant_Morning1 = im.Scale("background/restaurant/Restaurant_Morning1.
 
 image border = im.Scale("Sprite/Effect/border.png",1920,1080)
 
-image honoka_ouki = im.Scale("Sprite/Effect/Honoka_ougi/honoka_ouki.jpg",1920,1080)
+image honoka_ouki = im.Scale("Sprite/Effect/Honoka_ougi/honoka_ouki.png",1920,1080)
+image eimi_ouki = im.Scale("Sprite/Effect/Eimi_ougi/eimi_ougi.png",1920,1080)
 
 
 
@@ -530,8 +531,7 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump q5_4
-    #jump q7_3
+    jump q7_3
 
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
