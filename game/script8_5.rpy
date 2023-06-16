@@ -1,5 +1,5 @@
 label q8_5: 
-    show art_room2 with Dissolve(1.0)
+    scene art_room2 with Dissolve(1.0)
     play music "audio/bgm/yuki_no_owari_ni.mp3" volume 0.5
     show Eimi_Eimi_o
     ei "รูปนั้น...?" with dissolve
@@ -170,7 +170,7 @@ label q8_5:
     "ถึงแม้จะเข้าใจความจริงที่ว่าแต่ผมก็ไม่สามารถทำให้ตัวเองเจ็บปวดน้อยลงได้อยู่ดี"
     stop music
     "ผมน่ะ..."
-    play music "audio/bgm/Alphard .mp3" volume 0.5
+    play music "audio/bgm/alphard.mp3" volume 0.5
     hide Eimi_Eimi_sad2
 
     show Eimi02_Eimi02_sad
@@ -390,7 +390,6 @@ label q8_5:
     tk "ยัยบ้า ฮะๆๆ"
     hide Eimi02_Eimi02_smile
 
-    show Eimi02_hide
     n "ท่ามกลางท้องฟ้าตะวันใกล้ตกดิน ผมและเธอต่างส่งยิ้มให้กัน แลกเสียงหัวเราะให้กัน" with dissolve
     "ความฝันของพวกเรา มันอาจจะเป็นสิ่งที่ดูไม่ฉลาด ไม่เป็นผู้ใหญ่และอาจจะไม่มองความจริงในสายตาคนอื่น"
     "...แต่มันไม่สำคัญอีกต่อไป... "
@@ -400,7 +399,7 @@ label q8_5:
     "...เหมือนอย่างอิทสึกิ เอมิ..."
     "...เหมือนอย่างผู้หญิงที่ผมรัก..."
     "....."
-    show sunset1 with Dissolve(1.0)
+    scene sunset1 with Dissolve(1.0)
     hide art_room2
 
     "รอยยิ้มที่งดงามของเด็กสาวเรือนผมสีน้ำตาล อ้อมกอดที่อบอุ่นของเธอและคำพูดให้กำลังใจที่ทำให้ผมรู้สึกตื้นตัน"
@@ -408,6 +407,5 @@ label q8_5:
     "ไม่มีทางที่ผมจะลืมเลือนภาพที่แสนสวยงามนี้...จนถึงลมหายใจสุดท้ายของผม..."
     stop music
     "...อย่างแน่นอน..."
-    hide Eimi02_hide
     return
 

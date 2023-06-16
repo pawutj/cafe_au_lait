@@ -1,8 +1,8 @@
 label q8_3:
-    show Sky_Morning with Dissolve(1.0)
+    scene Sky_Morning with Dissolve(1.0)
     play music "audio/bgm/morning_talk.mp3" volume 0.5
     n "วันรุ่งขึ้นมาถึงในที่สุด" with dissolve
-    show Classroom1_Morning1 with Dissolve(1.0)
+    scene Classroom1_Morning1 with Dissolve(1.0)
     hide Sky_Morning
 
     show Eimi02_Eimi02_sawagashi
