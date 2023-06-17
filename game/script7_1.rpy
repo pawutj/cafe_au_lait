@@ -35,13 +35,13 @@ label q7_1:
     tk "เหรอ?"
     hide Eimi_Eimi_smile2
 
-    show Eimi_Eimi_0.0
+    show Eimi_Eimi_0_0
     show question with Dissolve(1.0)
     ei "นี่รุ่นพี่ไม่รู้สึกตัวเลยใช่ไหมคะ?" with dissolve
     hide question
     tk "ก็ไม่"
     n "ผมส่ายหน้าให้รุ่นน้องข้างตัว ทำให้เอมิทำตาปริบๆใส่ผมสองสามครั้ง"
-    hide Eimi_Eimi_0.0
+    hide Eimi_Eimi_0_0
 
     show Eimi_Eimi_smile
     ei "หลังๆมานี่รุ่นพี่ยิ้มง่ายขึ้นนะคะ แล้วก็ไม่ได้แผ่บรรยากาศแบบชาวบ้านอย่าเข้ามายุ่งเหมือนเมื่อก่อน" with dissolve
@@ -49,7 +49,7 @@ label q7_1:
     hide Eimi_Eimi_smile
 
     show Eimi_Eimi_smile2
-    ei "สมัยก่อนรุ่นพี่ทาคากิเหมือนกับปล่อยสนามพลังไล่คนอื่นได้ค่ะ แบบว่าคนข้างๆอยู่ด้วยก็กดดันแล้ว แต่หลังๆมานี้สนามพลังเหลือพลังงานไม่ถึง 30% ของเมื่อก่อน คนเลยกลัวกันน้อยลงค่ะ" with dissolve
+    ei "สมัยก่อนรุ่นพี่ทาคากิเหมือนกับปล่อยสนามพลังไล่คนอื่นได้ค่ะ แบบว่าคนข้างๆอยู่ด้วยก็กดดันแล้ว แต่หลังๆมานี้สนามพลังเหลือพลังงานไม่ถึง 30\% ของเมื่อก่อน คนเลยกลัวกันน้อยลงค่ะ" with dissolve
     tk "ฉันไม่ใช่เอสเปอร์นะเฮ้ย"
     hide Eimi_Eimi_smile2
 
@@ -64,37 +64,36 @@ label q7_1:
 
     hide Eimi_Eimi_smug3
 
-    show Eimi_hide
+
     en "รุ่นพี่อาจจะเปลี่ยนไปเพราะเธอคนนั้นก็ได้นะครับ" with dissolve
     show school_park_3 with Dissolve(1.0)
     hide art_room2
 
-    hide Eimi_hide
 
-    show Eimi02 _Eimi02_smile
+    show Eimi02_Eimi02_smile
     n "คำพูดของเอ็นโจแวบเข้ามาในหัวผมอีกครั้งหนึ่ง" with dissolve
     "ผมจ้องมองไปยังเอมิพลางคิดถึงหลายๆเรื่องที่ผ่านมา "
     "ตั้งแต่มีเธอคนนี้เข้ามาในชีวิต ผมก็รู้สึกว่าการนั่งอยู่ในห้องชมรมศิลปะคนเดียวเพื่อรอให้เธอคนนี้มาหาผมทุกวันก็เป็นชีวิตที่ไม่เลวเท่าไหร่"
     "บางทีชีวิตอย่างที่เป็นตอนนี้อาจจะไม่ได้แย่ขนาดนั้น..."
-    hide Eimi02 _Eimi02_smile
+    hide Eimi02_Eimi02_smile
 
-    show Eimi02 _Eimi02_smile2
+    show Eimi02_Eimi02_smile2
     ei "รุ่นพี่ทาคากิกำลังอมยิ้มอะไรอยู่คนเดียวคะ?" with dissolve
     tk "ห๊ะ?"
-    hide Eimi02 _Eimi02_smile2
+    hide Eimi02_Eimi02_smile2
 
-    show Eimi02 _Eimi02_smile3
+    show Eimi02_Eimi02_smile3
     ei "แบบว่าเดินด้วยกันกับเอมิแล้วจู่ๆก็ยิ้มขึ้นมาแบบไม่มีสาเหตุ หรือว่ากำลังดีใจที่ได้เดินกับรุ่นน้องสุดน่ารักอย่างเอมิกันค่ะ " with dissolve
     n "เอมิยิ้มกว้างให้ผม เจ้าของรอยยิ้มที่เจิดจ้าส่องประกายและเต็มไปด้วยความมั่นใจราวกับกำลังล้อผมไม่มีผิด"
     "ถ้าเป็นเมื่อก่อน ผมคงบอกเธอไปว่าอย่าหลงตัวเองไปหน่อยเลย "
     "แต่ผมในตอนนี้ไม่มีวันพูดแบบนั้นลงหรอก"
     tk "ก็น่าคิดนะ"
-    hide Eimi02 _Eimi02_smile3
+    hide Eimi02_Eimi02_smile3
 
-    show Eimi02 _Eimi02_ara
+    show Eimi02_Eimi02_ara
     ei "อ่าเร้?" with dissolve
     tk "ไม่เกี่ยวกับว่าน่ารักหรือไม่น่ารักหรอก เกี่ยวกับว่าได้เดินกลับบ้านกับเธอต่างหาก เอมิ"
-    hide Eimi02 _Eimi02_ara
+    hide Eimi02_Eimi02_ara
 
     show Eimi_shy_Eimi_normal
     ei "......" with dissolve

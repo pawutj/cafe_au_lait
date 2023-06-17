@@ -2,7 +2,7 @@ label q7_2:
     scene sky_morning with Dissolve(1.0)
     play music "audio/bgm/hijimeta_no_date.mp3" volume 0.5
     n "และแล้วก็มาถึงวันแข่งจริง" with dissolve
-    show school_gym_a with Dissolve(1.0)
+    scene school_gym_a with Dissolve(1.0)
     hide sky_morning
 
     "ผมเดินเข้ามาในโรงยิมก็พบกับผู้คนจำนวนมากยืนล้อมวงดูการแข่งขันคัดตัวจริงของชมรมบาสเกตบอลชั้นปีหนึ่งเต็มไปหมด"
@@ -106,7 +106,7 @@ label q7_2:
     h "เธอว่าไงนะ!?"
     ei "พูดมากไม่ช่วยอะไรหรอกนะ"
     n "เด็กสาวผมสีน้ำตาลและเด็กสาวผมสีเงินยืนสบตากัน ต่างฝ่ายต่างไม่มีใครหลบหน้าอีกฝ่ายไปไหน ทั้งสองคนต่างไม่กะพริบตากัน"
-    show school_gym_a with Dissolve(1.0)
+    scene school_gym_a with Dissolve(1.0)
     hide fight
 
     hide Eimi_bas_body_Eimi_serous
@@ -116,5 +116,6 @@ label q7_2:
     stop music
     h "ถ้าคิดว่าทำได้ก็ลองดู! เอมิ!"
     hide Eimi02_bas_body_Eimi02_confident2
-    return q7_3
+    jump q7_3
+    return
 
