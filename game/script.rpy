@@ -190,6 +190,12 @@ image school_gym_a = im.Scale("background/gym/school_gym_a2.jpg",1920,1080)
 image school_gym_b = im.Scale("background/gym/school_gym_b2.jpg",1920,1080)
 image school_gym_c = im.Scale("background/gym/school_gym_c2.jpg",1920,1080)
 
+
+
+image school_gym_a_zoom = im.Scale("background/gym/school_gym_a2.jpg",1920,1080)
+
+
+
 image School_Hallway1_sunset = im.Scale("background/school_Hallway/School_Hallway1_sunset.png",1920,1080)
 image School_Hallway1_1 = im.Scale("background/school_Hallway/School_Hallway1_1.png",1920,1080)
 image Roof = im.Scale("background/Roof2/Roof.jpg",1920,1080)
@@ -207,6 +213,13 @@ image border = im.Scale("Sprite/Effect/border.png",1920,1080)
 
 image honoka_ouki = im.Scale("Sprite/Effect/Honoka_ougi/honoka_ouki.png",1920,1080)
 image eimi_ouki = im.Scale("Sprite/Effect/Eimi_ougi/eimi_ougi.png",1920,1080)
+
+
+
+transform left_to_right:
+    zoom 2.0
+    yalign 0.5
+    linear 30.0 xalign 1.0
 
 
 

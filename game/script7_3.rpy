@@ -3,7 +3,13 @@ label q7_3:
     play music "audio/bgm/fair_battle.mp3" volume 0.5
 
     n "เสียงนกหวีดดังขึ้นเป็นสัญญาณเริ่มการแข่งขัน" with dissolve
+    
+ 
+    scene school_gym_a_zoom at left_to_right with Dissolve(0.5)
     show border with Dissolve(0.5)
+    
+
+    
     "ผู้เล่นทั้งสองทีมยืนประจันหน้ากันและต่างเข้าไปยังตำแหน่งที่เหมาะสมที่สุดเพื่อให้ได้บอลมาครอง แต่จะมีเพียงคนเดียวเท่านั้นที่ได้รับสิทธินั้น"
     "เงาร่างที่เร็วที่สุดและเปี่ยมด้วยพลังที่สุดพุ่งโฉบและครองบอลไว้ในกำมือ "
     "โฮโนกะนั่นเอง"
@@ -16,7 +22,10 @@ label q7_3:
     "เพื่อนในทีมเดียวกันน่าจะรู้ถึงสไตล์การเล่นของโฮโนกะดี พวกเธอจึงเลือกที่จะใช้ตัวเองเป็นแนวตั้งรับเพื่อขวางไม่ให้ทีมของเอมิไปถึงตัวโฮโนกะ"
     "เมื่อไม่มีคนขวางทาง โฮโนกะจึงพุ่งเข้าใกล้แป้นเข้าไปอย่างไม่มีใครหยุดยั้ง "
     "ยกเว้นแต่คนคนหนึ่งที่สามารถไล่ตามความเร็วของเธอมาทัน"
+    
     hide border with Dissolve(0.5)
+    scene school_gym_a with Dissolve(0.5)
+
     show Eimi_bas_body_Eimi_serous
     "อิทสึกิ เอมิ" with dissolve
     hide Eimi_bas_body_Eimi_serous
@@ -26,7 +35,10 @@ label q7_3:
     "เอมิเข้าใกล้โฮโนกะมากขึ้นจนระยะห่างระหว่างพวกเธอทั้งสองไม่เกินสามเมตร "
     "การตัดสินใจของโฮโนกะไม่ใช่การเลี้ยงลูกหลบหรือส่งลูกให้คนอื่น "
     hide Eimi_bas_body_Eimi_serous
+
+    hide school_gym_a_zoom
     hide border with Dissolve(0.5)
+
     show Eimi_bas_body_Eimi_angry
     ei "...!!!" with dissolve
     hide Eimi_bas_body_Eimi_angry
