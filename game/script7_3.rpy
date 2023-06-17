@@ -185,5 +185,6 @@ label q7_3:
     stop music
     "แต่จะเถียงก็ไม่ได้เพราะเรื่องมันก็ตีพิมพ์จบไปนานแล้วจริงๆ"
     hide Eimi02_bas_body_Eimi02_sawagashi
+    jump q7_5
     return
 
