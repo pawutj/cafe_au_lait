@@ -435,6 +435,12 @@ image _cutscene_3_2 =  im.Scale("Cutscene/unit03/unit03_02.png",1920,1080)
 image badend_0 = im.Scale("Cutscene/badend/badend02.png",1920,1080)
 image _badend_0 = im.Scale("Cutscene/badend/badend02.png",1920,1080)
 
+image hand01 = im.Scale("CG/hand/hand01.png",1920,1080)
+image hand02 = im.Scale("CG/hand/hand02.png",1920,1080)
+
+image fight = im.Scale("CG/CG04/fight.png",1920,1080)
+
+
 screen pausenow():
     key "dismiss" action NullAction()
 label cutscene_1:
