@@ -12,13 +12,13 @@ label q7_5:
     "ผมที่ยืนมองทั้งคู่ห่างๆดูออกว่าเอมิคงทำตัวไม่ถูก เธอไม่ใช่คนใจร้ายพอที่จะดูถูกคนแพ้ แต่ก็ไม่ได้โลกสวยพอขนาดสามารถให้อภัยต่อสิ่งที่โฮโนกะทำไว้กับเธอได้"
     hide Eimi02_bas_body_Eimi02_normal
 
-    show Eimi02_bas_body_Eimi02_meme02 
+    show Eimi_bas_body_Eimi_meh
     ei "เฮ้อ..." with dissolve
     h "เธอทำอะไรของเธอน่ะ?"
     stop music
     n "เอมิถอนหายใจเบาๆหนึ่งครั้งก่อนที่เธอจะยื่นมือให้กับโฮโนกะที่นั่งกอดเข่ากับพื้น การกระทำที่เหมือนจะบอกศัตรูว่าลุกขึ้นมาสิทำให้โฮโนกะตกใจจนตาเบิกโพลง"
     show hand01 with Dissolve(1.0)
-    hide Eimi02_bas_body_Eimi02_meme02
+    hide Eimi_bas_body_Eimi_meh with Dissolve(1.0)
     hide school_gym_a
 
     play music "audio/bgm/natsu_no_omoide.mp3" volume 0.5
@@ -44,8 +44,8 @@ label q7_5:
     "ผมที่ยืนดูทั้งสองคนอยู่ห่างๆเผลอยิ้ม ถึงแม้ว่าทั้งคู่จะไม่ได้ให้อภัยกันแต่ผมเชื่อว่าทั้งสองคนต่างยอมรับความสามารถของอีกฝ่ายแล้ว"
     "นี่อาจจะเป็นบทสรุปที่ลงตัวที่สุดแล้วก็ได้"
     "ผมค่อยๆเดินเข้าไปหาเอมิเพื่อหวังจะแสดงความดีใจกับเธอที่ได้ตำแหน่งตัวจริง แต่ผมสะดุ้งเฮือกเมื่อมีเงาร่างหนึ่งพุ่งผ่านข้างตัวผมด้วยความเร็วราวกับรถแข่ง"
-    show school_gym_a 
-    hide hand02 with Dissolve(1.0)
+    scene school_gym_a with Dissolve(0.5)
+    hide hand02
 
     en "โฮโนกะ น้องพี่!"
     h "พี่เอ็นโจ!"
@@ -61,9 +61,9 @@ label q7_5:
     hide Eimi02_bas_body_Eimi02_meh
 
     show Eimi_bas_body_Eimi_XD
-    show surprise with Dissolve(1.0)
+   
     ei "รุ่นพี่คะ หนูชนะแล้วค่า!" with dissolve
-    hide surprise
+ 
     tk "เอมิ...เธอพุ่งมาแรงแบบนี้ เดี๋ยวหลังฉันหักกันพอดี "
     hide Eimi_bas_body_Eimi_XD
 

@@ -1,16 +1,16 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script7_4.rpy", line 227, in script
+  File "game/script7_4.rpy", line 184, in script
     show excited with Dissolved(0.2)
-  File "game/script7_4.rpy", line 227, in <module>
+  File "game/script7_4.rpy", line 184, in <module>
     show excited with Dissolved(0.2)
 NameError: name 'Dissolved' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script7_4.rpy", line 227, in script
+  File "game/script7_4.rpy", line 184, in script
     show excited with Dissolved(0.2)
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 1654, in execute
     paired = renpy.python.py_eval(self.paired)
@@ -18,11 +18,11 @@ Full traceback:
     return py_eval_bytecode(code, globals, locals)
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\python.py", line 1085, in py_eval_bytecode
     return eval(bytecode, globals, locals)
-  File "game/script7_4.rpy", line 227, in <module>
+  File "game/script7_4.rpy", line 184, in <module>
     show excited with Dissolved(0.2)
 NameError: name 'Dissolved' is not defined
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
 Cafe_au_lait 1.0
-Sun Jun 18 21:27:54 2023
+Sun Jun 18 23:09:22 2023
