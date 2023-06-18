@@ -26,11 +26,14 @@ define en = Character("{font=SukhumvitSet-Medium.ttf}เอนโจว",color="
 define o = Character("{font=SukhumvitSet-Medium.ttf}หญิงชรา",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 
 define m = Character("{font=SukhumvitSet-Medium.ttf}แม่",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")] )
+define mo = Character("{font=SukhumvitSet-Medium.ttf}พิธีกร",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")] )
 
 define AA = Character("{font=SukhumvitSet-Medium.ttf}นักเรียน A",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 define B = Character("{font=SukhumvitSet-Medium.ttf}นักเรียน B",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 define C = Character("{font=SukhumvitSet-Medium.ttf}นักเรียน C",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 define T = Character("{font=SukhumvitSet-Medium.ttf}อาจารย์",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+
+
 transform crops:
     crop(650,-800,1920,2900)
 
@@ -129,6 +132,13 @@ image artroom_afternoon = im.Scale("background/artroom/art-room1.jpg",1920,1080)
 
 image imagine = im.Scale("background/imagine.png",1920,1080)
 
+image lastsmile = im.Scale("CG/lastsmile/lastsmile.png",1920,1080)
+
+
+transform zoomin_to_zoomout:
+    zoom 2.5
+    xalign 0.5 yalign 0.3
+    easein 20 zoom 1.00
 
 image Classroom1_Morning1 = im.Scale("background/classroom3/Classroom1_Morning1.png",1920,1080)
 
@@ -195,6 +205,7 @@ image school_gym_c = im.Scale("background/gym/school_gym_c2.jpg",1920,1080)
 image school_gym_a_zoom = im.Scale("background/gym/school_gym_a2.jpg",1920,1080)
 
 
+image white_scene = im.Scale("white.png",1920,1080)
 
 image School_Hallway1_sunset = im.Scale("background/school_Hallway/School_Hallway1_sunset.png",1920,1080)
 image School_Hallway1_1 = im.Scale("background/school_Hallway/School_Hallway1_1.png",1920,1080)
@@ -506,21 +517,6 @@ label cutscene_4:
 
     jump q5_1
 
-label cutscene_5:
-    $renpy.pause(0.01, hard=True)
-    scene black with Dissolve(1.0)
-    $renpy.pause(0.01, hard=True)
-    show cutscene_2_0 with Dissolve(1.0)
-    $renpy.pause(0.01, hard=True)
-    play sound "audio/SoundEffect/sumahokessai.mp3" volume 1.0
-    $renpy.pause(0.01, hard=True)
-    show cutscene_2_1 with Dissolve(1.0)
-    $renpy.pause(0.01, hard=True)
-    show cutscene_2_2 with Dissolve(1.0)
-    $renpy.pause(0.01, hard=True)
-    show _cutscene_2_2 with Dissolve(2.0)
-
-    jump q6_1
 
 label cutscene_5:
     $renpy.pause(0.01, hard=True)
@@ -571,26 +567,46 @@ label cutscene_7:
     jump q8_1
 
 
-
-
-label cutscene_3:
-    $renpy.pause(0.01, hard=True)
-    $ quick_menu = False
-    $renpy.pause(0.01, hard=True)
-    scene black with Dissolve(1.0)
-    $renpy.pause(0.01, hard=True)
-    show cutscene_3_0 with Dissolve(1.0)
-    $renpy.pause(0.01, hard=True)
-    play sound "audio/SoundEffect/sumahokessai.mp3" volume 1.0
-    $renpy.pause(0.01, hard=True)
-    show cutscene_3_1 with Dissolve(1.0)
-    $renpy.pause(0.01, hard=True)
-    show cutscene_3_2 with Dissolve(1.0)
-    $renpy.pause(0.01, hard=True)
-    show _cutscene_3_2 with Dissolve(2.0)
-    $renpy.pause(0.01, hard=True)
-    jump endcreditScreen
+label cutscene_after:
+    pause 0.01
+    scene white_scene with Dissolve(2.0)
+    jump splashscreen
     return
+    
+
+
+# label cutscene_3:
+#     $renpy.pause(0.01, hard=True)
+#     $ quick_menu = False
+#     $renpy.pause(0.01, hard=True)
+#     scene black with Dissolve(1.0)
+#     $renpy.pause(0.01, hard=True)
+#     show cutscene_3_0 with Dissolve(1.0)
+#     $renpy.pause(0.01, hard=True)
+#     play sound "audio/SoundEffect/sumahokessai.mp3" volume 1.0
+#     $renpy.pause(0.01, hard=True)
+#     show cutscene_3_1 with Dissolve(1.0)
+#     $renpy.pause(0.01, hard=True)
+#     show cutscene_3_2 with Dissolve(1.0)
+#     $renpy.pause(0.01, hard=True)
+#     show _cutscene_3_2 with Dissolve(2.0)
+#     $renpy.pause(0.01, hard=True)
+#     jump endcreditScreen
+#     return
+
+label cutscene_9:
+    pause 0.01
+    scene black with Dissolve(1.0)
+    scene endCredit with Dissolve(2.0)
+    pause 0.01
+    scene _endCredit with Dissolve(2.0)
+    pause 2
+    scene thankyouImg with Dissolve(2.0)
+    pause 0.01
+    scene _thankyouImg with Dissolve(2.0)
+    pause 2
+    jump splashscreen
+
 
 label endcreditScreen:
     pause 0.01
@@ -622,6 +638,8 @@ label badend:
 
 
 
+
+
     
 label transition_screen:
     scene Canvas with Dissolve(2.0)
@@ -649,7 +667,7 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump q7_3
+    jump q_9
 
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"

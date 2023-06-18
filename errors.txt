@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 216: expected 'simple_expression' not found.
-    yalign 
-           ^
+File "game/script9.rpy", line 16: expected statement.
+    scean lastsmile with zoomin_to_zoomout
+                    ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Sat Jun 17 15:55:55 2023
+Sun Jun 18 16:38:31 2023
