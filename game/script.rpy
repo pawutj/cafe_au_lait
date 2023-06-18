@@ -226,6 +226,10 @@ image honoka_ouki = im.Scale("Sprite/Effect/Honoka_ougi/honoka_ouki.png",1920,10
 image eimi_ouki = im.Scale("Sprite/Effect/Eimi_ougi/eimi_ougi.png",1920,1080)
 
 
+transform zoom_in:
+    zoom 1.0
+    yalign 0.5 xalign 0.5
+    linear 0.5 zoom 2.0
 
 transform left_to_right:
     zoom 2.0
