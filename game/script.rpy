@@ -26,11 +26,14 @@ define en = Character("{font=SukhumvitSet-Medium.ttf}เอนโจว",color="
 define o = Character("{font=SukhumvitSet-Medium.ttf}หญิงชรา",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 
 define m = Character("{font=SukhumvitSet-Medium.ttf}แม่",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")] )
+define mo = Character("{font=SukhumvitSet-Medium.ttf}พิธีกร",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")] )
 
 define AA = Character("{font=SukhumvitSet-Medium.ttf}นักเรียน A",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 define B = Character("{font=SukhumvitSet-Medium.ttf}นักเรียน B",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 define C = Character("{font=SukhumvitSet-Medium.ttf}นักเรียน C",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 define T = Character("{font=SukhumvitSet-Medium.ttf}อาจารย์",color="#F0F8FF" ,  who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+
+
 transform crops:
     crop(650,-800,1920,2900)
 
@@ -47,7 +50,7 @@ image side honoka_1:
 
 image side tomoe_1:
     zoom 1.3
-    im.Scale("Sprite/Tomoe/tomoe_01.png",300,300)
+    im.Scale("Sprite/Tomoe/tomoe_01.png",320,280)
     yoffset 50
 
 image side enjou1:
@@ -129,6 +132,13 @@ image artroom_afternoon = im.Scale("background/artroom/art-room1.jpg",1920,1080)
 
 image imagine = im.Scale("background/imagine.png",1920,1080)
 
+image lastsmile = im.Scale("CG/lastsmile/lastsmile.png",1920,1080)
+
+
+transform zoomin_to_zoomout:
+    zoom 2.5
+    xalign 0.5 yalign 0.3
+    easein 20 zoom 1.00
 
 image Classroom1_Morning1 = im.Scale("background/classroom3/Classroom1_Morning1.png",1920,1080)
 
@@ -190,6 +200,13 @@ image school_gym_a = im.Scale("background/gym/school_gym_a2.jpg",1920,1080)
 image school_gym_b = im.Scale("background/gym/school_gym_b2.jpg",1920,1080)
 image school_gym_c = im.Scale("background/gym/school_gym_c2.jpg",1920,1080)
 
+
+
+image school_gym_a_zoom = im.Scale("background/gym/school_gym_a2.jpg",1920,1080)
+
+
+image white_scene = im.Scale("white.png",1920,1080)
+
 image School_Hallway1_sunset = im.Scale("background/school_Hallway/School_Hallway1_sunset.png",1920,1080)
 image School_Hallway1_1 = im.Scale("background/school_Hallway/School_Hallway1_1.png",1920,1080)
 image Roof = im.Scale("background/Roof2/Roof.jpg",1920,1080)
@@ -199,13 +216,25 @@ image GoldenTime02 = im.Scale("CG/CG02/GoldenTime02.png",1920,1080)
 
 image PlayerHomeM_Night4 = im.Scale("background/male-room/PlayerHomeM_Morning1.png",1920,1080)
 
-image Aquarium_Morning = im.Scale("background/Aquarium/Aquarium_Morning.png",1920,1080)
+image Aquarium_Morning = im.Scale("background/Aquarium/Aquarium_Morning.jpg",1920,1080)
 
 image Restaurant_Morning1 = im.Scale("background/restaurant/Restaurant_Morning1.png",1920,1080)
 
 image border = im.Scale("Sprite/Effect/border.png",1920,1080)
 
-image honoka_ouki = im.Scale("Sprite/Effect/Honoka_ougi/honoka_ouki.jpg",1920,1080)
+image honoka_ouki = im.Scale("Sprite/Effect/Honoka_ougi/honoka_ouki.png",1920,1080)
+image eimi_ouki = im.Scale("Sprite/Effect/Eimi_ougi/eimi_ougi.png",1920,1080)
+
+
+transform zoom_in:
+    zoom 1.0
+    yalign 0.5 xalign 0.5
+    linear 0.5 zoom 2.0
+
+transform left_to_right:
+    zoom 2.0
+    yalign 0.5
+    linear 30.0 xalign 1.0
 
 
 
@@ -421,6 +450,12 @@ image _cutscene_3_2 =  im.Scale("Cutscene/unit03/unit03_02.png",1920,1080)
 image badend_0 = im.Scale("Cutscene/badend/badend02.png",1920,1080)
 image _badend_0 = im.Scale("Cutscene/badend/badend02.png",1920,1080)
 
+image hand01 = im.Scale("CG/hand/hand01.png",1920,1080)
+image hand02 = im.Scale("CG/hand/hand02.png",1920,1080)
+
+image fight = im.Scale("CG/CG04/fight.png",1920,1080)
+
+
 screen pausenow():
     key "dismiss" action NullAction()
 label cutscene_1:
@@ -456,22 +491,126 @@ label cutscene_2:
 
 label cutscene_3:
     $renpy.pause(0.01, hard=True)
-    $ quick_menu = False
-    $renpy.pause(0.01, hard=True)
     scene black with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show cutscene_3_0 with Dissolve(1.0)
+    show cutscene_2_0 with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
     play sound "audio/SoundEffect/sumahokessai.mp3" volume 1.0
     $renpy.pause(0.01, hard=True)
-    show cutscene_3_1 with Dissolve(1.0)
+    show cutscene_2_1 with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show cutscene_3_2 with Dissolve(1.0)
+    show cutscene_2_2 with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show _cutscene_3_2 with Dissolve(2.0)
+    show _cutscene_2_2 with Dissolve(2.0)
+
+    jump q4_1
+
+label cutscene_4:
     $renpy.pause(0.01, hard=True)
-    jump endcreditScreen
+    scene black with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
+    show cutscene_2_0 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
+    play sound "audio/SoundEffect/sumahokessai.mp3" volume 1.0
+    $renpy.pause(0.01, hard=True)
+    show cutscene_2_1 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
+    show cutscene_2_2 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
+    show _cutscene_2_2 with Dissolve(2.0)
+
+    jump q5_1
+
+
+label cutscene_5:
+    $renpy.pause(0.01, hard=True)
+    scene black with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
+    show cutscene_2_0 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
+    play sound "audio/SoundEffect/sumahokessai.mp3" volume 1.0
+    $renpy.pause(0.01, hard=True)
+    show cutscene_2_1 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
+    show cutscene_2_2 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
+    show _cutscene_2_2 with Dissolve(2.0)
+
+    jump q6_1
+
+label cutscene_6:
+    $renpy.pause(0.01, hard=True)
+    scene black with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
+    show cutscene_2_0 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
+    play sound "audio/SoundEffect/sumahokessai.mp3" volume 1.0
+    $renpy.pause(0.01, hard=True)
+    show cutscene_2_1 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
+    show cutscene_2_2 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
+    show _cutscene_2_2 with Dissolve(2.0)
+
+    jump q7_1
+
+label cutscene_7:
+    $renpy.pause(0.01, hard=True)
+    scene black with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
+    show cutscene_2_0 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
+    play sound "audio/SoundEffect/sumahokessai.mp3" volume 1.0
+    $renpy.pause(0.01, hard=True)
+    show cutscene_2_1 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
+    show cutscene_2_2 with Dissolve(1.0)
+    $renpy.pause(0.01, hard=True)
+    show _cutscene_2_2 with Dissolve(2.0)
+
+    jump q8_1
+
+
+label cutscene_after:
+    pause 0.01
+    scene white_scene with Dissolve(2.0)
+    jump splashscreen
     return
+    
+
+
+# label cutscene_3:
+#     $renpy.pause(0.01, hard=True)
+#     $ quick_menu = False
+#     $renpy.pause(0.01, hard=True)
+#     scene black with Dissolve(1.0)
+#     $renpy.pause(0.01, hard=True)
+#     show cutscene_3_0 with Dissolve(1.0)
+#     $renpy.pause(0.01, hard=True)
+#     play sound "audio/SoundEffect/sumahokessai.mp3" volume 1.0
+#     $renpy.pause(0.01, hard=True)
+#     show cutscene_3_1 with Dissolve(1.0)
+#     $renpy.pause(0.01, hard=True)
+#     show cutscene_3_2 with Dissolve(1.0)
+#     $renpy.pause(0.01, hard=True)
+#     show _cutscene_3_2 with Dissolve(2.0)
+#     $renpy.pause(0.01, hard=True)
+#     jump endcreditScreen
+#     return
+
+label cutscene_9:
+    pause 0.01
+    scene black with Dissolve(1.0)
+    scene endCredit with Dissolve(2.0)
+    pause 0.01
+    scene _endCredit with Dissolve(2.0)
+    pause 2
+    scene thankyouImg with Dissolve(2.0)
+    pause 0.01
+    scene _thankyouImg with Dissolve(2.0)
+    pause 2
+    jump splashscreen
+
 
 label endcreditScreen:
     pause 0.01
@@ -503,6 +642,8 @@ label badend:
 
 
 
+
+
     
 label transition_screen:
     scene Canvas with Dissolve(2.0)
@@ -530,7 +671,7 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump q7_3
+    jump q7_4
 
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
