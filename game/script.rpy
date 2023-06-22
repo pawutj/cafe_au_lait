@@ -407,6 +407,12 @@ image seal04:
     pause 0.5
     repeat
 
+image lineeffect:
+    "Sprite/Effect/lineeffect.png"
+    pause 0.1
+    "Sprite/Effect/lineeffect2.png"
+    pause 0.1
+    repeat
 
 image main_scene_1 = im.Scale("Animation/anime01.png",1920,1080)
 image main_scene_2 = im.Scale("Animation/anime02.png",1920,1080)
@@ -456,6 +462,8 @@ image hand02 = im.Scale("CG/hand/hand02.png",1920,1080)
 image fight = im.Scale("CG/CG04/fight.png",1920,1080)
 
 image basketball  = im.Scale("CG/basketball/basketball.png" ,1920,1080)
+
+
 
 image score0 = im.Scale("CG/basketball/score00.png" , 1920,1080)
 image score1 = im.Scale("CG/basketball/score01.png" , 1920,1080)

@@ -25,9 +25,9 @@ label q7_4:
     "หลังจากลูกลงห่วงไม่นาน การเล่นบอลรอบต่อไปก็เริ่มขึ้น "
     "ลูกบาสถูกแรงส่งให้ลอยออกจากมือสมาชิกทีมเอมิเพื่อไปยังสมาชิกคนต่อไปที่จะเดินเกมบุก"
     scene school_gym_a at zoom_in 
-    show excited with Dissolve(1.0)
+    show lineeffect with Dissolve(1.0)
     "หมับ!!"
-    hide excited with Dissolve(0.1)
+    hide lineeffect with Dissolve(0.1)
     scene school_gym_a with Dissolve(0.1)
     "ขณะที่ลูกทีมของเอมิกำลังส่งลูกให้กัน เงาร่างหนึ่งก็พุ่งโฉบผ่านลูกไปด้วยความไวสูงก่อนที่เธอคนนั้นจะถือครองลูกและเลี้ยงลูกหนีทุกคน"
     show Eimi02_bas_body_Eimi02_angry
@@ -57,9 +57,9 @@ label q7_4:
     "แต่นั่นก็เป็นจุดบอดอย่างที่สุดในเวลาเดียวกัน"
 
     scene school_gym_a at zoom_in 
-    show excited with Dissolve(1.0)
+    show lineeffect with Dissolve(1.0)
     "หมับ!!"
-    hide excited with Dissolve(0.1)
+    hide lineeffect with Dissolve(0.1)
     scene school_gym_a with Dissolve(0.1)
     
     show eimi_ouki with Dissolve(0.2)
@@ -94,10 +94,11 @@ label q7_4:
     
     show excited with Dissolve(0.2)
     "เพื่อความปลอดภัยที่มากกว่า เอมิจึงเลี้ยงลูกหลอกล่อสองคนนั้นให้อยู่กับที่กับเธอสักพักก่อนที่เธอส่งลูกโดยที่ทั้งสองคนนั้นไม่ทันตั้งตัวให้กับสมาชิกทีมเดียวกันที่วิ่งโฉบข้างเธอมา"
-    scene school_gym_a at zoom_in 
-    show excited with Dissolve(0.2)
-    "เอมิไม่ได้เอาตัวไปบล็อกทีมโฮโนกะสองคนนั้นเพราะรู้ว่าเธอสู้ด้านขนาดตัวไม่ได้  เธอใช้จุดแข็งที่เธอคล่องตัวกว่าวิ่งวนอ้อมไปข้างหลังทีมศัตรูสองคนและรับลูกที่สมาชิกในทีมโยนกลับมา"
     hide excited with Dissolve(0.2)
+    scene school_gym_a at zoom_in 
+    show lineeffect with Dissolve(0.2)
+    "เอมิไม่ได้เอาตัวไปบล็อกทีมโฮโนกะสองคนนั้นเพราะรู้ว่าเธอสู้ด้านขนาดตัวไม่ได้  เธอใช้จุดแข็งที่เธอคล่องตัวกว่าวิ่งวนอ้อมไปข้างหลังทีมศัตรูสองคนและรับลูกที่สมาชิกในทีมโยนกลับมา"
+    hide lineeffect with Dissolve(0.2)
     
     scene school_gym_a with Dissolve(0.2)
 
@@ -161,9 +162,9 @@ label q7_4:
     "ถึงแม้สถานการณ์จะเสียเปรียบแต่เอมิก็ยังไม่ยอมแพ้ง่ายๆ เธอพุ่งตัวด้วยความเร็วสูงพร้อมกับเลี้ยงลูกหนีจากโฮโนกะสุดแรง"
     
     scene school_gym_a at zoom_in
-    show excited with Dissolve(0.2)
+    show lineeffect with Dissolve(0.2)
     "ความเร็วของเอมิเป็นสิ่งที่น่าทึ่ง ผมมั่นใจเลยว่ามีผู้ชายไม่กี่คนในโรงเรียนที่สามารถวัดกับความเร็วของเธอได้ "
-    hide excited with Dissolve(0.2)
+    hide lineeffect with Dissolve(0.2)
 
     scene school_gym_a
     "อย่างไรก็ตาม ศัตรูของเธอก็มีความสามารถไม่แพ้เธอ"
@@ -209,9 +210,9 @@ label q7_4:
     hide Eimi02_bas_body_Eimi02_angry with dissolve
 
     scene school_gym_a at zoom_in
-    show excited with Dissolve(0.2)
+    show lineeffect with Dissolve(0.2)
     "ตึงงง!!!"
-    hide exited with Dissolve(0.2)
+    hide lineeffect with Dissolve(0.2)
 
     scene school_gym_a with Dissolve(0.5)
 
