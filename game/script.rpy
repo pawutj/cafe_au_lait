@@ -3,7 +3,6 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-
 define ho_u = Character("{font=SukhumvitSet-Medium.ttf}???",color="#F0F8FF",image ="honoka_1", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 define h = Character("{font=SukhumvitSet-Medium.ttf}โฮโนกะ",color="#F0F8FF", image ="honoka_1", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 
@@ -616,6 +615,17 @@ label cutscene_after:
     jump splashscreen
     return
     
+label cutscene_8:
+    pause 0.01
+    scene white_scene with Dissolve(2.0)
+    play movie "images/ed.mpg"
+    jump q_9
+    return
+
+
+
+
+    
 
 # label cutscene_3:
 #     $renpy.pause(0.01, hard=True)
@@ -708,7 +718,7 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump q5_1
+    jump cutscene_8
 
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
