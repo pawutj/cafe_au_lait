@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 622: expected statement.
-    renpy.movie_cutscene("On_Your_Mark.webm")
-                                             ^
+File "game/script.rpy", line 620: end of line expected.
+    key "dismiss" action NullAction()
+                  ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Thu Jun 22 20:27:26 2023
+Thu Jun 22 23:14:22 2023

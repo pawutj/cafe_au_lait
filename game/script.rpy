@@ -616,9 +616,11 @@ label cutscene_after:
     return
     
 label cutscene_8:
+    stop music
     pause 0.01
     scene white_scene with Dissolve(2.0)
     play movie "images/ed.mpg"
+    $renpy.pause(90, hard=True)
     jump q_9
     return
 
