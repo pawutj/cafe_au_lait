@@ -240,6 +240,7 @@ label q5_9:
     n "ผมหัวเราะในลำคอให้กับการจากลาที่ทำให้หัวใจผมเต้นเร็วขึ้น"
     stop music
     "...และแอบภาวนาในใจให้วันต่อๆไปมาถึงเร็วขึ้นเพื่อให้ได้พบกับเอมิอีกครั้งหนึ่ง"
-    hide Eimi_date_body_shy_Eimi_smile
+    hide Eimi_date_body_shy_Eimi_smile  with Dissolve(0.5)
+    jump cutscene_5
     return 
 

@@ -194,6 +194,6 @@ label q6_7:
     stop music
     n "เพราะสำหรับคนที่ไม่เข้าใจตัวเองแล้ว จะมีหน้าไปขอให้คนอื่นมาเข้าใจตัวเองได้ยังไงกัน"
     hide Eimi_Eimi_sad
-    jump q7_1
+    jump cutscene_6
     return
 

@@ -4,7 +4,9 @@ label q7_4:
     n "ทุกคนที่เฝ้ามองการแข่งขันรอบสนามต่างคิดแต่ต้นว่าการแข่งขันครั้งนี้จะจบลงด้วยคะแนนเทลงไปทางทีมโฮโนกะที่เป็นตัวเต็งรุ่น" with dissolve
 
     "แต่สิ่งที่ทุกคนคาดไม่ถึงกำลังเกิดขึ้น"
+    show score2 with Dissolve(0.5)
     "คะแนนของฝั่งเอมิและโฮโนกะเพิ่มขึ้นอย่างต่อเนื่องเพราะทั้งสองทีมทำแต้มไม่หยุด"
+    hide score2 with Dissolve(0.5)
     show Eimi_bas_body_Eimi_serous with Dissolve(0.5)
     "การเล่นทีมเอมิเน้นให้ทุกคนในทีมมีส่วนร่วมในการเล่นด้วยกันโดยมีเอมิเป็นตัวจ่ายลูกให้แต่ละคนในทีมมีจังหวะทำแต้มของตัวเองเพื่อให้ประสิทธิภาพทั้งทีมเป็นไปอย่างสูงสุด"
     hide Eimi_bas_body_Eimi_serous with Dissolve(0.5)
@@ -15,15 +17,17 @@ label q7_4:
     
     "ทีมของเอมิและทีมของโฮโนกะต่างก็ทำแต้มกันอย่างสูสีไม่มีใครยอมใคร"
     "การเล่นที่แตกต่างกันเข้าปะทะกันท่ามกลางผู้ชมมากมายที่คาดไม่ถึงว่าการแข่งคัดตัวจริงจะกลายเป็นการแข่งที่ดุเดือดไม่แพ้การแข่งระหว่างโรงเรียน"
+    show basketball with Dissolve(0.5)
     "ฟึ่บบ!!"
+    hide basketball with Dissolve(0.5)
     "ลูกบาสที่ถูกโยนออกจากมือของโฮโนกะพุ่งลงห่วงบาสอย่างแม่นยำ"
     "ทั้งๆที่แนวตั้งรับของทีมเอมิใช้คนสองคนในการขวางใต้ห่วงเพื่อหยุดโฮโนกะคนเดียว แต่เด็กสาวผมเงินก็ยังกระโดดขึ้นไปโยนลูกลงห่วงได้อย่างไม่ต้องใช้ความพยายาม"
     "หลังจากลูกลงห่วงไม่นาน การเล่นบอลรอบต่อไปก็เริ่มขึ้น "
     "ลูกบาสถูกแรงส่งให้ลอยออกจากมือสมาชิกทีมเอมิเพื่อไปยังสมาชิกคนต่อไปที่จะเดินเกมบุก"
     scene school_gym_a at zoom_in 
-    show excited with Dissolve(1.0)
+    show lineeffect with Dissolve(1.0)
     "หมับ!!"
-    hide excited with Dissolve(0.1)
+    hide lineeffect with Dissolve(0.1)
     scene school_gym_a with Dissolve(0.1)
     "ขณะที่ลูกทีมของเอมิกำลังส่งลูกให้กัน เงาร่างหนึ่งก็พุ่งโฉบผ่านลูกไปด้วยความไวสูงก่อนที่เธอคนนั้นจะถือครองลูกและเลี้ยงลูกหนีทุกคน"
     show Eimi02_bas_body_Eimi02_angry
@@ -53,9 +57,9 @@ label q7_4:
     "แต่นั่นก็เป็นจุดบอดอย่างที่สุดในเวลาเดียวกัน"
 
     scene school_gym_a at zoom_in 
-    show excited with Dissolve(1.0)
+    show lineeffect with Dissolve(1.0)
     "หมับ!!"
-    hide excited with Dissolve(0.1)
+    hide lineeffect with Dissolve(0.1)
     scene school_gym_a with Dissolve(0.1)
     
     show eimi_ouki with Dissolve(0.2)
@@ -90,16 +94,20 @@ label q7_4:
     
     show excited with Dissolve(0.2)
     "เพื่อความปลอดภัยที่มากกว่า เอมิจึงเลี้ยงลูกหลอกล่อสองคนนั้นให้อยู่กับที่กับเธอสักพักก่อนที่เธอส่งลูกโดยที่ทั้งสองคนนั้นไม่ทันตั้งตัวให้กับสมาชิกทีมเดียวกันที่วิ่งโฉบข้างเธอมา"
-    scene school_gym_a at zoom_in 
-    show excited with Dissolve(0.2)
-    "เอมิไม่ได้เอาตัวไปบล็อกทีมโฮโนกะสองคนนั้นเพราะรู้ว่าเธอสู้ด้านขนาดตัวไม่ได้  เธอใช้จุดแข็งที่เธอคล่องตัวกว่าวิ่งวนอ้อมไปข้างหลังทีมศัตรูสองคนและรับลูกที่สมาชิกในทีมโยนกลับมา"
     hide excited with Dissolve(0.2)
+    scene school_gym_a at zoom_in 
+    show lineeffect with Dissolve(0.2)
+    "เอมิไม่ได้เอาตัวไปบล็อกทีมโฮโนกะสองคนนั้นเพราะรู้ว่าเธอสู้ด้านขนาดตัวไม่ได้  เธอใช้จุดแข็งที่เธอคล่องตัวกว่าวิ่งวนอ้อมไปข้างหลังทีมศัตรูสองคนและรับลูกที่สมาชิกในทีมโยนกลับมา"
+    hide lineeffect with Dissolve(0.2)
     
     scene school_gym_a with Dissolve(0.2)
 
     "สมาชิกในทีมเอมิต่างส่งลูกและรับลูกกันและกันอย่างอิสระทำให้ทีมโฮโนกะสับสนและเลือกไม่ถูกว่าจะกระโจนเข้าบังใคร"
     "หลังจากการส่งลูกหลายต่อหลายครั้งและการประสานของทีมเอมิอย่างพร้อมเพรียง ในที่สุดสมาชิกของทีมเอมิหนึ่งคนที่อยู่ใกล้แป้นที่สุดก็ได้ครองลูก"
+
+    show basketball with Dissolve(0.5)
     "ฟึ่บบ!!"
+    hide basketball with Dissolve(0.5)
     "ลูกบาสถูกโยนลงเข้าห่วงทำให้คะแนนของทีมเอมิไล่ตามทีมโฮโนกะอย่างสูสี"
     "เสียงโห่ร้องด้วยความดีใจจากทีมเอมิดังทั่วสนาม ขณะที่โฮโนกะแสดงสีหน้าไม่พอใจมากขึ้นเรื่อยๆ"
     
@@ -108,8 +116,9 @@ label q7_4:
    
     "ถึงแม้การขับเคี่ยวครั้งนี้จะดุเดือดน่าดูชมแค่ไหนแต่ทุกเกมย่อมมีการสิ้นสุดลง"
     "การแข่งขันกำลังจะหมดลงภายในไม่ถึงสองนาที"
+    show score5 with Dissolve(0.5)
     "คะแนนของทีมโฮโนกะ 51 คะแนน คะแนนของทีมเอมิ 50 คะแนน"
-
+    hide score5 with Dissolve(0.5)
      
     scene school_gym_a_zoom at left_to_right with Dissolve(0.5)
     show border with Dissolve(0.5)
@@ -153,9 +162,9 @@ label q7_4:
     "ถึงแม้สถานการณ์จะเสียเปรียบแต่เอมิก็ยังไม่ยอมแพ้ง่ายๆ เธอพุ่งตัวด้วยความเร็วสูงพร้อมกับเลี้ยงลูกหนีจากโฮโนกะสุดแรง"
     
     scene school_gym_a at zoom_in
-    show excited with Dissolve(0.2)
+    show lineeffect with Dissolve(0.2)
     "ความเร็วของเอมิเป็นสิ่งที่น่าทึ่ง ผมมั่นใจเลยว่ามีผู้ชายไม่กี่คนในโรงเรียนที่สามารถวัดกับความเร็วของเธอได้ "
-    hide excited with Dissolve(0.2)
+    hide lineeffect with Dissolve(0.2)
 
     scene school_gym_a
     "อย่างไรก็ตาม ศัตรูของเธอก็มีความสามารถไม่แพ้เธอ"
@@ -201,9 +210,9 @@ label q7_4:
     hide Eimi02_bas_body_Eimi02_angry with dissolve
 
     scene school_gym_a at zoom_in
-    show excited with Dissolve(0.2)
+    show lineeffect with Dissolve(0.2)
     "ตึงงง!!!"
-    hide exited with Dissolve(0.2)
+    hide lineeffect with Dissolve(0.2)
 
     scene school_gym_a with Dissolve(0.5)
 
@@ -260,10 +269,13 @@ label q7_4:
     "เฟดอเวย์!!"
     hide eimi_ouki with Dissolve(0.2)
     "ลูกลอยขึ้นสูงโดยที่ไม่มีใครแตะมันได้อีกหลังจากมันหลุดจากมือเอมิ"
+    show basketball with Dissolve(0.5)
     "ฟึ่บบ!!"
+    hide basketball with Dissolve(0.5)
     "ลูกสองแต้มของเอมิลงแป้นอย่างพอดิบพอดีก่อนที่อีกไม่กี่วินาทีหลังจากนั้นเสียงเป่านกหวีดจบการแข่งขันจะดังขึ้น"
+    show score6 with Dissolve(0.5)
     "คะแนนของทีมโฮโนกะ 51 คะแนน คะแนนของทีมเอมิ 52 คะแนน"
-    
+    hide socre6 with Dissolve(0.5)
     hide Eimi02_bas_body_Eimi02_sawagashi with Dissolve(0.2)
     stop music
     scene sky_summer with Dissolve(0.5)

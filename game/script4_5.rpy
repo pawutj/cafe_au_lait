@@ -198,6 +198,7 @@ label q4_5:
     "....เพราะนี่เป็นครั้งแรกในชีวิตที่ผมจะได้ไปเที่ยวกับเพศตรงข้ามสองต่อสอง"
     stop music
     "หรือว่านี่คือดะ...เดตอย่างงั้นเหรอ"
-    hide Eimi_shy_Eimi_smile2
+    hide Eimi_shy_Eimi_smile2 with dissolve
+    jump cutscene_4
     return
 

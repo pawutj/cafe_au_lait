@@ -1,28 +1,43 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script7_4.rpy", line 184, in script
-    show excited with Dissolved(0.2)
-  File "game/script7_4.rpy", line 184, in <module>
-    show excited with Dissolved(0.2)
-NameError: name 'Dissolved' is not defined
+  File "game/script9.rpy", line 2, in script
+    show sky_morning with Dissolve(1.0)
+OSError: Couldn't find file 'images/ed1.mp4'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script7_4.rpy", line 184, in script
-    show excited with Dissolved(0.2)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 1654, in execute
-    paired = renpy.python.py_eval(self.paired)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\python.py", line 1092, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\python.py", line 1085, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script7_4.rpy", line 184, in <module>
-    show excited with Dissolved(0.2)
-NameError: name 'Dissolved' is not defined
+  File "game/script9.rpy", line 2, in script
+    show sky_morning with Dissolve(1.0)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 1658, in execute
+    renpy.exports.with_statement(trans, paired=paired)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\exports.py", line 1657, in with_statement
+    return renpy.game.interface.do_with(trans, paired, clear=clear)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 2798, in do_with
+    return self.interact(trans_pause=True,
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3846, in interact_core
+    renpy.audio.audio.interact()
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\audio\audio.py", line 1213, in interact
+    periodic()
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\audio\audio.py", line 1166, in periodic
+    raise_(exc[0], exc[1], exc[2])
+  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/site-packages/future/utils/__init__.py", line 441, in raise_
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\audio\audio.py", line 1144, in periodic_thread_main
+    periodic_pass()
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\audio\audio.py", line 1086, in periodic_pass
+    c.periodic()
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\audio\audio.py", line 517, in periodic
+    topf = load(filename)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\audio\audio.py", line 70, in load
+    rv = renpy.loader.load(fn)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\loader.py", line 820, in load
+    raise IOError("Couldn't find file '%s'." % name)
+OSError: Couldn't find file 'images/ed1.mp4'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
 Cafe_au_lait 1.0
-Sun Jun 18 23:09:22 2023
+Thu Jun 22 20:45:43 2023

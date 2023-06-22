@@ -181,9 +181,9 @@ label q5_5:
     hide laught
     show sweat with Dissolve(1.0)
     n "เอมิทำเป็นเบือนหน้าหนีพร้อมกับเหงื่อตกเป็นสายน้ำ "
-    hide sweat
+    hide sweat  
     "เห็นได้ชัดว่าเธออยากแอบด่าผมเนียนๆก่อนเปลี่ยนเรื่องโดยใช้หน้ากากใสซื่อชัดๆ"
-    hide Eimi_date_body_Eimi_XD
+    hide Eimi_date_body_Eimi_XD  with Dissolve(0.5)
     jump q5_6
     return 
 
