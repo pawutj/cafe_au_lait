@@ -455,6 +455,15 @@ image hand02 = im.Scale("CG/hand/hand02.png",1920,1080)
 
 image fight = im.Scale("CG/CG04/fight.png",1920,1080)
 
+image basketball  = im.Scale("CG/basketball/basketball.png" ,1920,1080)
+
+image score0 = im.Scale("CG/basketball/score00.png" , 1920,1080)
+image score1 = im.Scale("CG/basketball/score01.png" , 1920,1080)
+image score2 = im.Scale("CG/basketball/score02.png",1920,1080)
+image score3 = im.Scale("CG/basketball/score03.png",1920,1080)
+image score4 = im.Scale("CG/basketball/score04.png",1920,1080)
+image score5 = im.Scale("CG/basketball/score05.png",1920,1080)
+image score6 = im.Scale("CG/basketball/score06.png",1920,1080)
 
 screen pausenow():
     key "dismiss" action NullAction()
@@ -578,7 +587,6 @@ label cutscene_after:
     return
     
 
-
 # label cutscene_3:
 #     $renpy.pause(0.01, hard=True)
 #     $ quick_menu = False
@@ -638,7 +646,6 @@ label badend:
     $renpy.pause(0.01, hard=True)
     jump splashscreen
     return
-
 
 
 
