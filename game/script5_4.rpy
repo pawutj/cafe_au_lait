@@ -199,6 +199,6 @@ label q5_4:
     ei "เบาๆมือหน่อยก็ได้ค่ะ ใจเย็นๆ " with dissolve
     hide down
     n "เอมิเหงื่อตกน้อยๆ ผมดูออกว่าเธอน่าจะเสียใจภายหลังเพราะดันบอกให้ผมทำอะไรตามใจชอบ ผมจึงส่งเสียงหัวเราะกับใบหน้าแหยๆของเธอ"
-    hide Eimi_date_body_Eimi_shy_meme
+    hide Eimi_date_body_Eimi_shy_meme with dissolve
     jump q5_5
     return

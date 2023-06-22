@@ -118,6 +118,6 @@ label q7_5:
     stop music
     n "ผมส่งยิ้มให้รุ่นน้องที่สามารถทำตามเป้าหมายของตัวเองได้ พร้อมกับยอมรับอ้อมกอดอันอบอุ่นของเธอไว้"
     hide Eimi_bas_body_Eimi_smile
-    jump q8_1
+    jump cutscene_7
     return
 

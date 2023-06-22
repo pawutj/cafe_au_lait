@@ -453,6 +453,28 @@ image cutscene_3_1 =  im.Scale("Cutscene/unit03/unit03_01.png",1920,1080)
 image cutscene_3_2 =  im.Scale("Cutscene/unit03/unit03_02.png",1920,1080)
 image _cutscene_3_2 =  im.Scale("Cutscene/unit03/unit03_02.png",1920,1080)
 
+image cutscene_4_0 =  im.Scale("Cutscene/unit03/unit03_00.png",1920,1080)
+image cutscene_4_1 =  im.Scale("Cutscene/unit04/unit04_00.png",1920,1080)
+image cutscene_4_2 =  im.Scale("Cutscene/unit04/unit04_00.png",1920,1080)
+image _cutscene_4_2 =  im.Scale("Cutscene/unit04/unit04_01.png",1920,1080)
+
+image cutscene_5_0 =  im.Scale("Cutscene/unit03/unit03_00.png",1920,1080)
+image cutscene_5_1 =  im.Scale("Cutscene/unit05/unit05_00.png",1920,1080)
+image cutscene_5_2 =  im.Scale("Cutscene/unit05/unit05_01.png",1920,1080)
+image _cutscene_5_2 =  im.Scale("Cutscene/unit05/unit05_01.png",1920,1080)
+
+
+image cutscene_6_0 =  im.Scale("Cutscene/unit03/unit03_00.png",1920,1080)
+image cutscene_6_1 =  im.Scale("Cutscene/unit06/unit06_00.png",1920,1080)
+image cutscene_6_2 =  im.Scale("Cutscene/unit06/unit06_01.png",1920,1080)
+image _cutscene_6_2 =  im.Scale("Cutscene/unit06/unit06_01.png",1920,1080)
+
+image cutscene_7_0 =  im.Scale("Cutscene/unit03/unit03_00.png",1920,1080)
+image cutscene_7_1 =  im.Scale("Cutscene/unit07/unit07_00.png",1920,1080)
+image cutscene_7_2 =  im.Scale("Cutscene/unit07/unit07_01.png",1920,1080)
+image _cutscene_7_2 =  im.Scale("Cutscene/unit07/unit07_01.png",1920,1080)
+
+
 image badend_0 = im.Scale("Cutscene/badend/badend02.png",1920,1080)
 image _badend_0 = im.Scale("Cutscene/badend/badend02.png",1920,1080)
 
@@ -510,15 +532,15 @@ label cutscene_3:
     $renpy.pause(0.01, hard=True)
     scene black with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show cutscene_2_0 with Dissolve(1.0)
+    show cutscene_3_0 with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
     play sound "audio/SoundEffect/sumahokessai.mp3" volume 1.0
     $renpy.pause(0.01, hard=True)
-    show cutscene_2_1 with Dissolve(1.0)
+    show cutscene_3_1 with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show cutscene_2_2 with Dissolve(1.0)
+    show cutscene_3_2 with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show _cutscene_2_2 with Dissolve(2.0)
+    show _cutscene_3_2 with Dissolve(2.0)
 
     jump q4_1
 
@@ -526,15 +548,15 @@ label cutscene_4:
     $renpy.pause(0.01, hard=True)
     scene black with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show cutscene_2_0 with Dissolve(1.0)
+    show cutscene_4_0 with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
     play sound "audio/SoundEffect/sumahokessai.mp3" volume 1.0
     $renpy.pause(0.01, hard=True)
-    show cutscene_2_1 with Dissolve(1.0)
+    show cutscene_4_1 with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show cutscene_2_2 with Dissolve(1.0)
+    show cutscene_4_2 with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show _cutscene_2_2 with Dissolve(2.0)
+    show _cutscene_4_2 with Dissolve(2.0)
 
     jump q5_1
 
@@ -543,15 +565,15 @@ label cutscene_5:
     $renpy.pause(0.01, hard=True)
     scene black with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show cutscene_2_0 with Dissolve(1.0)
+    show cutscene_5_0 with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
     play sound "audio/SoundEffect/sumahokessai.mp3" volume 1.0
     $renpy.pause(0.01, hard=True)
-    show cutscene_2_1 with Dissolve(1.0)
+    show cutscene_5_1 with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show cutscene_2_2 with Dissolve(1.0)
+    show cutscene_5_2 with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show _cutscene_2_2 with Dissolve(2.0)
+    show _cutscene_5_2 with Dissolve(2.0)
 
     jump q6_1
 
@@ -559,15 +581,15 @@ label cutscene_6:
     $renpy.pause(0.01, hard=True)
     scene black with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show cutscene_2_0 with Dissolve(1.0)
+    show cutscene_6_0 with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
     play sound "audio/SoundEffect/sumahokessai.mp3" volume 1.0
     $renpy.pause(0.01, hard=True)
-    show cutscene_2_1 with Dissolve(1.0)
+    show cutscene_6_1 with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show cutscene_2_2 with Dissolve(1.0)
+    show cutscene_6_2 with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show _cutscene_2_2 with Dissolve(2.0)
+    show _cutscene_6_2 with Dissolve(2.0)
 
     jump q7_1
 
@@ -575,15 +597,15 @@ label cutscene_7:
     $renpy.pause(0.01, hard=True)
     scene black with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show cutscene_2_0 with Dissolve(1.0)
+    show cutscene_7_0 with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
     play sound "audio/SoundEffect/sumahokessai.mp3" volume 1.0
     $renpy.pause(0.01, hard=True)
-    show cutscene_2_1 with Dissolve(1.0)
+    show cutscene_7_1 with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show cutscene_2_2 with Dissolve(1.0)
+    show cutscene_7_2 with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show _cutscene_2_2 with Dissolve(2.0)
+    show _cutscene_7_2 with Dissolve(2.0)
 
     jump q8_1
 
@@ -686,7 +708,7 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump q7_3
+    jump q5_1
 
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
