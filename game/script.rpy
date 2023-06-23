@@ -419,9 +419,13 @@ image main_scene_3 = im.Scale("Animation/anime03.png",1920,1080)
 image main_scene_4 = im.Scale("Animation/anime04.png",1920,1080)
 image main_scene_5 = im.Scale("Animation/anime05.png",1920,1080)
 image main_scene_6 = im.Scale("Animation/anime06.png",1920,1080)
+image astral_seal = im.Scale("astralseal.png",1920,1080)
 label splashscreen:
+    scene white_scene with Dissolve(1.0)
+    show astral_seal with Dissolve(1.5)
     play sound "audio/system/System_1.mp3"
-    scene black with Dissolve(1.0)
+    pause 1.5
+    hide astral_seal with Dissolve(1.0)
     scene main_scene_1 with Dissolve(0.5)
     scene main_scene_2 with Dissolve(0.5)
     scene main_scene_3 with Dissolve(0.5)
