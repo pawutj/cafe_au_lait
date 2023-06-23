@@ -233,23 +233,40 @@ screen extra():
     add "extra/gallery_bg.png"
     $numbers = [f'{i:02d}' for i in range(1, 13)]
     $numbers2 = [f'{i:02d}' for i in range(1,13)]
+    $numbers3 = [f'{i:02d}' for i in range(1, 5)]
+
     imagebutton auto "extra/back_%s.png":
         focus_mask True
         action  Hide('extra')
         hover_sound "audio/UIsound/cursor.ogg"
         activate_sound "audio/UIsound/choice_confirm_01.ogg" 
-    for idx,i in enumerate(numbers) :
-        imagebutton:
-            focus_mask True
-            idle f"extra/pic{i}_idle.png"
-            action Show(f"show_cg{i}_01")
+    if persistent.extra_image_page == 1:
+        for idx,i in enumerate(numbers) :
+            imagebutton:
+                focus_mask True
+                idle f"extra/pic{i}_idle.png"
+                action Show(f"show_cg{i}_01")
+    if persistent.extra_image_page == 2:
+        for idx,i in enumerate(numbers3) :
+            imagebutton:
+                focus_mask True
+                idle f"extra/pic{i}_idle.png"
+                action Show(f"show_cg{i}_01") 
+    
     for idx,i in enumerate(numbers2) :
         imagebutton auto f"extra/music{i}_%s.png":
             focus_mask True
             action mr.Play(f"audio/bgm/{song_list[idx]}.mp3")
 
     # textbutton "Track 1" action mr.Play("audio/bgm/alphard.mp3")
+
+    imagebutton auto "extra/page1_%s.png":
+        focus_mask True
+        action SetVariable("persistent.extra_image_page" , 1)
     
+    imagebutton auto "extra/page2_%s.png":
+        focus_mask True
+        action SetVariable("persistent.extra_image_page" , 2)
 
 screen config_main():
     key "mouseup_3" action Hide('config_main')
