@@ -238,11 +238,11 @@ screen extra():
         action  Hide('extra')
         hover_sound "audio/UIsound/cursor.ogg"
         activate_sound "audio/UIsound/choice_confirm_01.ogg" 
-    for i in numbers:
+    for idx,i in enumerate(numbers) :
         imagebutton:
             focus_mask True
             idle f"extra/pic{i}_idle.png"
-            action Show("show_cg01_01")
+            action Show(f"show_cg{i}_01")
     for idx,i in enumerate(numbers2) :
         imagebutton auto f"extra/music{i}_%s.png":
             focus_mask True
