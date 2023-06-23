@@ -420,6 +420,7 @@ image main_scene_4 = im.Scale("Animation/anime04.png",1920,1080)
 image main_scene_5 = im.Scale("Animation/anime05.png",1920,1080)
 image main_scene_6 = im.Scale("Animation/anime06.png",1920,1080)
 label splashscreen:
+    play sound "audio/system/System_1.mp3"
     scene black with Dissolve(1.0)
     scene main_scene_1 with Dissolve(0.5)
     scene main_scene_2 with Dissolve(0.5)
@@ -427,6 +428,7 @@ label splashscreen:
     scene main_scene_4 with Dissolve(0.5)
     scene main_scene_5 with Dissolve(0.5)
     scene main_scene_6 with Dissolve(0.5)
+    play sound "audio/system/System_2.mp3"
     return
 image thankyouImg = im.Scale("thx.png",1920,1080)
 image endCredit= im.Scale("credit.png",1920,1080)
@@ -720,7 +722,7 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump cutscene_8
+    # jump cutscene_8
 
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"

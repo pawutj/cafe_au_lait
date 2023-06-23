@@ -553,14 +553,20 @@ screen quick_menu():
 
             xalign 0.95
             yalign 1.0
-            textbutton _("Save") action ShowMenu("save")
-            textbutton _("Load") action ShowMenu("load")
+            textbutton _("Save") :  
+                action ShowMenu("save")
+                activate_sound "audio/system/System_3.mp3" 
+            textbutton _("Load") :
+                action ShowMenu("load")
+                activate_sound "audio/system/System_4.mp3" 
             textbutton _("History") action ShowMenu('history2')
             textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
             textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Q.Save") action QuickSave()
             textbutton _("Q.Load") action QuickLoad()
-            textbutton _("Config") action ShowMenu("config")
+            textbutton _("Config") :
+                action ShowMenu("config")
+                activate_sound "audio/system/System_6.mp3" 
             # textbutton _("Prefs") action ShowMenu('preferences')
 
 
@@ -931,7 +937,7 @@ screen main_menu():
     
     imagebutton auto "main_menu/main_load_%s.png":
         hover_sound "audio/UIsound/cursor.ogg" 
-        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+        activate_sound "audio/system/System_4.mp3" 
         #idle "map/m bath house_idle.png" 
         #hover "map/m bath house_hover.png" 
         focus_mask True 
@@ -940,7 +946,7 @@ screen main_menu():
     
     imagebutton auto "main_menu/main_config_%s.png":
         hover_sound "audio/UIsound/cursor.ogg" 
-        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+        activate_sound "audio/system/System_6.mp3" 
         #idle "map/m bath house_idle.png" 
         #hover "map/m bath house_hover.png" 
         focus_mask True 
@@ -949,7 +955,7 @@ screen main_menu():
     
     imagebutton auto "main_menu/main_extra_%s.png":
         hover_sound "audio/UIsound/cursor.ogg" 
-        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+        activate_sound "audio/system/System_5.mp3" 
         #idle "map/m bath house_idle.png" 
         #hover "map/m bath house_hover.png" 
         focus_mask True 
@@ -958,7 +964,7 @@ screen main_menu():
     
     imagebutton auto "main_menu/main_exit_%s.png":
         hover_sound "audio/UIsound/cursor.ogg" 
-        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+        activate_sound "audio/system/System_8.mp3" 
         #idle "map/m bath house_idle.png" 
         #hover "map/m bath house_hover.png" 
         action Quit(confirm= True)
