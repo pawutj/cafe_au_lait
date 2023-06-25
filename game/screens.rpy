@@ -230,7 +230,11 @@ screen extra():
 
     key "mouseup_3" action Hide('extra')
     key "K_ESCAPE" action Hide('extra')
-    add "extra/gallery_bg.png"
+    imagebutton:
+        focus_mask True
+        idle "extra/gallery_bg.png"
+        hover "extra/gallery_bg.png"
+        action SetVariable("persistent.nothing" , 0)
     $numbers = [f'{i:02d}' for i in range(1, 13)]
     $numbers2 = [f'{i:02d}' for i in range(1,13)]
     $numbers3 = [f'{i:02d}' for i in range(1, 5)]
@@ -271,7 +275,12 @@ screen extra():
 screen config_main():
     key "mouseup_3" action Hide('config_main')
     key "K_ESCAPE" action Hide('config_main')
-    add "config/setting_th_bg.png"      
+    imagebutton:
+        focus_mask True
+        idle "config/setting_th_bg.png" 
+        hover "config/setting_th_bg.png" 
+        action SetVariable("persistent.nothing" , 0)
+    # add "config/setting_th_bg.png"      
     imagebutton auto "config/config_back_%s.png":
         focus_mask True
         action Hide('config_main')
@@ -367,6 +376,12 @@ screen config_main():
 screen config():
     key "mouseup_3" action Return()
     key "K_ESCAPE" action Return()
+    
+    imagebutton auto "config/config_back_%s.png":
+        focus_mask True
+        action Return()
+        hover_sound "audio/UIsound/cursor.ogg"
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
     add "config/setting_th_bg.png"      
     imagebutton auto "config/config_back_%s.png":
         focus_mask True
@@ -771,8 +786,13 @@ screen load_main():
     key "mouseup_3" action Return()
     key "K_ESCAPE" action Return()
     tag load_main
-    add gui.load_menu_background
 
+    imagebutton:
+        focus_mask True
+        idle gui.load_menu_background
+        hover gui.load_menu_background
+        action SetVariable("persistent.nothing" , 0)
+   
     imagebutton auto "save_load/back_%s.png":
         focus_mask True
         action Hide('load_main')

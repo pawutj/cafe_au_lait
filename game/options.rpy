@@ -14,7 +14,7 @@
 
 default persistent.page = 0
 default persistent.extra_image_page = 0
-
+default persistent.nothing = 0 
 define config.name = _("Cafe_au_lait")
 
 
