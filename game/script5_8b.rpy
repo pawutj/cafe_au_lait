@@ -1,6 +1,6 @@
 label q5_8b:
     hide Eimi_date_body_Eimi_XD with dissolve
-    show Restaurant_Morning1 with Dissolve(1.0)
+    show Restaurant_Morning3 with Dissolve(1.0)
     play music "audio/bgm/cafe_de_swing.mp3" volume 0.5
     show Eimi_date_body_Eimi_XD
     tk "ถ้าบอกว่ามีแล้วเธอจะว่ายังไงล่ะ" with dissolve

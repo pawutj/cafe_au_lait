@@ -137,7 +137,7 @@ image lastsmile = im.Scale("CG/lastsmile/lastsmile.png",1920,1080)
 transform zoomin_to_zoomout:
     zoom 2.5
     xalign 0.5 yalign 0.3
-    easein 20 zoom 1.00
+    easein 10 zoom 1.00
 
 image Classroom1_Morning1 = im.Scale("background/classroom3/Classroom1_Morning1.png",1920,1080)
 
@@ -282,7 +282,7 @@ image sexy6:
     repeat
 
 
-
+image Restaurant_Morning3 = im.Scale("background/restaurant/Restaurant_Morning3.png",1920,1080)
 
 
 image clickToContinue:
@@ -470,9 +470,9 @@ image _cutscene_5_2 =  im.Scale("Cutscene/unit05/unit05_01.png",1920,1080)
 
 
 image cutscene_6_0 =  im.Scale("Cutscene/unit03/unit03_00.png",1920,1080)
-image cutscene_6_1 =  im.Scale("Cutscene/unit06/unit06_00.png",1920,1080)
-image cutscene_6_2 =  im.Scale("Cutscene/unit06/unit06_01.png",1920,1080)
-image _cutscene_6_2 =  im.Scale("Cutscene/unit06/unit06_01.png",1920,1080)
+image cutscene_6_1 =  im.Scale("Cutscene/unit06/unit06_01.png",1920,1080)
+image cutscene_6_2 =  im.Scale("Cutscene/unit06/unit06_02.png",1920,1080)
+image _cutscene_6_2 =  im.Scale("Cutscene/unit06/unit06_02.png",1920,1080)
 
 image cutscene_7_0 =  im.Scale("Cutscene/unit03/unit03_00.png",1920,1080)
 image cutscene_7_1 =  im.Scale("Cutscene/unit07/unit07_00.png",1920,1080)
@@ -499,6 +499,8 @@ image score3 = im.Scale("CG/basketball/score03.png",1920,1080)
 image score4 = im.Scale("CG/basketball/score04.png",1920,1080)
 image score5 = im.Scale("CG/basketball/score05.png",1920,1080)
 image score6 = im.Scale("CG/basketball/score06.png",1920,1080)
+
+image PlayerHomeM_Night4 = im.Scale("background/male-room/PlayerHomeM_Night4.png",1920,1080)
 
 screen pausenow():
     key "dismiss" action NullAction()
@@ -724,9 +726,6 @@ label start:
 
     scene artroom_past with Dissolve(1.0)
     hide Canvas
-
-    jump q5_7
-
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
     n "ผมไม่เข้าใจว่าทำไมผมต้องพูดซ้ำด้วย"
