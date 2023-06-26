@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Scale object at 0x0000000008b7acd0>:
-  File "game/script6_6.rpy", line 8, in script
-    ei "รุ่นน้องที่น่ารักและทรงเสน่ห์ของรุ่นพี่ยังไงล่ะค้า!" with dissolve
-OSError: Couldn't find file 'background/male-room/eimi_room.jpg'.
+While loading <renpy.display.im.Scale object at 0x0000000008afd670>:
+  File "game/badend4.rpy", line 19, in script
+    "ผมเดินมาโรงเรียนเหมือนทุกวันที่ผ่านมา"
+OSError: Couldn't find file 'background/SchoolPark01/school-park01.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script6_6.rpy", line 8, in script
-    ei "รุ่นน้องที่น่ารักและทรงเสน่ห์ของรุ่นพี่ยังไงล่ะค้า!" with dissolve
+  File "game/badend4.rpy", line 19, in script
+    "ผมเดินมาโรงเรียนเหมือนทุกวันที่ผ่านมา"
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
     renpy.exports.say(who, what, *args, **kwargs)
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\exports.py", line 1373, in say
@@ -66,9 +66,9 @@ Full traceback:
     filelike = renpy.loader.load(self.filename)
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\loader.py", line 820, in load
     raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'background/male-room/eimi_room.jpg'.
+OSError: Couldn't find file 'background/SchoolPark01/school-park01.png'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
 Cafe_au_lait 1.0
-Mon Jun 26 19:44:44 2023
+Mon Jun 26 21:36:59 2023

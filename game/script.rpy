@@ -511,6 +511,8 @@ image score6 = im.Scale("CG/basketball/score06.png",1920,1080)
 
 image PlayerHomeM_Night4 = im.Scale("background/male-room/PlayerHomeM_Night4.png",1920,1080)
 
+image StudentdormitoryOutside_Morning = im.Scale("background/SchoolPark01/school-park1.png",1920,1080)
+
 screen pausenow():
     key "dismiss" action NullAction()
 label cutscene_1:
@@ -737,7 +739,7 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump q5_2
+    jump q6_5
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
     n "ผมไม่เข้าใจว่าทำไมผมต้องพูดซ้ำด้วย"
