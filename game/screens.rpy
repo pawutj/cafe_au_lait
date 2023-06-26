@@ -237,7 +237,7 @@ screen extra():
         action SetVariable("persistent.nothing" , 0)
     $numbers = [f'{i:02d}' for i in range(1, 13)]
     $numbers2 = [f'{i:02d}' for i in range(1,13)]
-    $numbers3 = [f'{i:02d}' for i in range(1, 5)]
+    $numbers3 = [f'{i:02d}' for i in range(13, 17)]
 
     imagebutton auto "extra/back_%s.png":
         focus_mask True
@@ -246,15 +246,20 @@ screen extra():
         activate_sound "audio/UIsound/choice_confirm_01.ogg" 
     if persistent.extra_image_page == 1:
         for idx,i in enumerate(numbers) :
+            # imagebutton:
+            #     focus_mask True
+            #     idle f"extra/pic{i}_idle.png"
+            #     action Show(f"show_cg{i}_01")
             imagebutton:
                 focus_mask True
-                idle f"extra/pic{i}_idle.png"
+                idle f"extra/image{i}_idle.png"
+                hover f"extra/image{i}_hover.png"
                 action Show(f"show_cg{i}_01")
     if persistent.extra_image_page == 2:
         for idx,i in enumerate(numbers3) :
             imagebutton:
                 focus_mask True
-                idle f"extra/pic{i}_idle.png"
+                idle f"extra/image{i}_idle.png"
                 action Show(f"show_cg{i}_01") 
     
     for idx,i in enumerate(numbers2) :
