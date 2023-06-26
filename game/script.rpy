@@ -3,9 +3,9 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define ho_u = Character("{font=SukhumvitSet-Medium.ttf}???",color="#F0F8FF",image ="honoka_1", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define ho_u = Character("{font=SukhumvitSet-Medium.ttf}???",color="#F0F8FF",image ="honoka_2", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 define h = Character("{font=SukhumvitSet-Medium.ttf}โฮโนกะ",color="#F0F8FF", image ="honoka_1", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
-
+define h_s = Character("{font=SukhumvitSet-Medium.ttf}โฮโนกะ",color="#F0F8FF", image ="honoka_2", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 define t_u = Character("{font=SukhumvitSet-Medium.ttf}???",color="#F0F8FF",image ="tomoe_1" , who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 define t = Character("{font=SukhumvitSet-Medium.ttf}โทโมเอะ",color="#F0F8FF",  image ="tomoe_1",who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 
@@ -42,9 +42,14 @@ transform crops:
 #     im.Composite((1920,2900), (0,1525), "Sprite/Eimi02/Eimi02.png")
 
 
-image side honoka_1:
+image side honoka_2:    
     zoom 1.3
     im.Scale("Sprite/Honoka/honoka_normal.png",300,300)
+    yoffset 50
+
+image side honoka_1:
+    zoom 1.3
+    im.Scale("Sprite/Honoka/honokabas_normal.png",300,300)
     yoffset 50
 
 image side tomoe_1:
@@ -739,7 +744,7 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump q6_5
+    jump q8_3
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
     n "ผมไม่เข้าใจว่าทำไมผมต้องพูดซ้ำด้วย"
