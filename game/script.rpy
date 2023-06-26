@@ -207,7 +207,7 @@ image school_gym_a = im.Scale("background/gym/school_gym_a2.jpg",1920,1080)
 image school_gym_b = im.Scale("background/gym/school_gym_b2.jpg",1920,1080)
 image school_gym_c = im.Scale("background/gym/school_gym_c2.jpg",1920,1080)
 
-
+image Moonlight3 = im.Scale("background/SKY/Moonlight3.png",1920,1080)
 
 image school_gym_a_zoom = im.Scale("background/gym/school_gym_a2.jpg",1920,1080)
 
@@ -221,8 +221,10 @@ image Roof = im.Scale("background/Roof2/Roof.jpg",1920,1080)
 image GoldenTime01 = im.Scale("CG/CG02/GoldenTime01.png",1920,1080)
 image GoldenTime02 = im.Scale("CG/CG02/GoldenTime02.png",1920,1080)
 
-image PlayerHomeM_Night4 = im.Scale("background/male-room/PlayerHomeM_Morning1.png",1920,1080)
-
+image PlayerHomeM_Night4 = im.Scale("background/male-room/PlayerHomeM_Night4.png",1920,1080)
+image PlayerHomeM_Morning1 = im.Scale("background/male-room/PlayerHomeM_Morning1.png",1920,1080)
+image PlayerHomeM_Morning2 = im.Scale("background/male-room/PlayerHomeM_Morning2.png",1920,1080)
+image PlayerHomeM_Morning3 = im.Scale("background/male-room/PlayerHomeM_Morning3.png",1920,1080)
 image Aquarium_Morning = im.Scale("background/Aquarium/Aquarium_Morning.jpg",1920,1080)
 
 image Restaurant_Morning1 = im.Scale("background/restaurant/Restaurant_Morning1.png",1920,1080)
@@ -744,7 +746,7 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump q8_3
+    jump q10_1
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
     n "ผมไม่เข้าใจว่าทำไมผมต้องพูดซ้ำด้วย"
