@@ -1,15 +1,15 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
-While loading <renpy.display.im.Scale object at 0x000000000604b2e0>:
-  File "game/script.rpy", line 595, in script
-    show cutscene_6_1 with Dissolve(1.0)
-OSError: Couldn't find file 'Cutscene/unit06/unit06_00.png'.
+While loading <renpy.display.im.Scale object at 0x00000000079efca0>:
+  File "game/script6_2.rpy", line 2, in script
+    show Classroom1_Morning1 with Dissolve(1.0)
+OSError: Couldn't find file 'background/classroom3/Classroom1_Morning12.png'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 595, in script
-    show cutscene_6_1 with Dissolve(1.0)
+  File "game/script6_2.rpy", line 2, in script
+    show Classroom1_Morning1 with Dissolve(1.0)
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 1658, in execute
     renpy.exports.with_statement(trans, paired=paired)
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\exports.py", line 1657, in with_statement
@@ -64,9 +64,9 @@ Full traceback:
     filelike = renpy.loader.load(self.filename)
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\loader.py", line 820, in load
     raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'Cutscene/unit06/unit06_00.png'.
+OSError: Couldn't find file 'background/classroom3/Classroom1_Morning12.png'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
 Cafe_au_lait 1.0
-Mon Jun 26 00:55:45 2023
+Mon Jun 26 19:23:48 2023
