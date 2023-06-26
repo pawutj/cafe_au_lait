@@ -730,7 +730,7 @@ label start:
     $ renpy.pause(2)
     hide text with Dissolve(1.0)
 
-    jump q6_6
+    jump q3_3
 
     scene artroom_past with Dissolve(1.0)
     hide Canvas
