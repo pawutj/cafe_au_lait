@@ -10,21 +10,21 @@ label q4_3b:
     ei "......."
     n "สิ่งแรกที่ผมเห็นคือใบหน้าเอมิที่อยู่ใกล้ใบหน้าผมในระยะประชิด"
     "ผมกำลังนอนขึ้นคร่อมร่างบางของเธอ พวกเราชิดกันขนาดที่ผมสัมผัสได้ถึงลมหายใจของอีกฝ่ายเพราะปลายจมูกสองเราแทบสัมผัสกัน"
-    show oppai_zoom03 with Dissolve(1.0)
+    show oppai04 at zoomout with Dissolve(2.0)
     hide oppai_zoom01
 
     "ผมพูดอะไรไม่ออก ส่วนเอมิก็หน้าแดงไปหมด"
     "แม้กระทั่งใบหน้าผมก็เริ่มอุ่นๆตามไปด้วย"
     "โรงยิมที่เคยเต็มไปด้วยเสียงเอะอะโวยวายของพวกเราสองคนเงียบลง"
     "มีเพียงเสียงหัวใจของผมที่ดังขึ้นมาท่ามกลางโลกที่ไร้สุ้มเสียง"
-    show oppai_zoom04 with Dissolve(1.0)
-    hide oppai_zoom03
+    show oppai04 at zoomout with Dissolve(1.0)
+    hide oppai03
 
     ei "รุ่นพี่...ทาคากิ...คะ..."
     tk "........."
     n "เด็กสาวผมสีน้ำตาลเรียกชื่อผมด้วยใบหน้าแดงระเรื่อและท่าทางเอียงอาย น้ำเสียงสั่นเครือของเธอทำให้ความรู้สึกประดักประเดิดค่อยๆกลืนกินพวกเราเข้าไป"
-    show oppai_zoom01 with Dissolve(1.0)
-    hide oppai_zoom04
+    show oppai01 at zoomout with Dissolve(1.0)
+    hide oppai04
 
     "ใบหน้านวลขาวขึ้นสีแดงอ่อนๆ "
     "เรือนผมสีน้ำตาลที่เต็มไปด้วยกลิ่นหอมราวกับดอกไม้"
@@ -34,13 +34,13 @@ label q4_3b:
     "น่ารักจริงๆน่ะแหละ"
     "ผมรำพึงในใจพร้อมกับเริ่มยอมรับความจริง"
     "นั่นเป็นขณะเดียวกันกับที่เอมิหน้าแดงมากขึ้นจนแทบจะกลายเป็นมะเขือเทศพูดได้อยู่แล้ว"
-    show oppai_zoom03 with Dissolve(1.0)
-    hide oppai_zoom01
+    show oppai03 at zoomout with Dissolve(1.0)
+    hide oppai01
 
     ei "รุ่นพี่...คะ..."
     tk "หา?"
-    show oppai_zoom04 with Dissolve(1.0)
-    hide oppai_zoom03
+    show oppai04 at zoomout with Dissolve(1.0)
+    hide oppai03
 
     ei "ขอร้องล่ะ...ลุกก่อนค่ะ..."
     tk "เธอว่าไงนะ?"
@@ -48,19 +48,19 @@ label q4_3b:
     "เพราะเสียงที่ขาดตอนและเบาเหมือนกระซิบทำให้ผมได้ยินเธอไม่ชัดเจนจนต้องถามอีกครั้ง"
     stop music
     "สุดท้ายเด็กสาวเรือนผมน้ำตาลเลยหันหน้าหลบผมและใช้มือดันตัวผมขึ้น"
-    show oppai_zoom05 with Dissolve(1.0)
-    hide oppai_zoom04
+    show oppai05 at zoomout with Dissolve(1.0)
+    hide oppai04
 
     play music "audio/bgm/dotabata_happening.mp3" volume 0.5
     ei "ลุกออกไปสักทีค่ะ หนูอาย! "
     tk "เฮ้ย! "
-    show oppai_zoom02 with Dissolve(1.0)
-    hide oppai_zoom05
+    show oppai02 at zoomout with Dissolve(1.0)
+    hide oppai05
 
     n "เอมิใช้แรงที่มากกว่าผลักผม "
     "โลกหมุนไปหมดเพราะร่างของผมกลิ้งไปข้างๆลำตัวเธอ ขณะที่เธอดีดตัวขึ้นกะทันหัน มือข้างหนึ่งของเธอที่ถือลูกบาสอยู่ก็งัดขึ้นวูบทำให้ลูกบาสลอยหวือขึ้นสูงกลางอากาศ"
     show school_gym_b with Dissolve(1.0)
-    hide oppai_zoom02
+    hide oppai02
 
     show Eimi02_Eimi02_ara
     show surprise with Dissolve(1.0)

@@ -139,6 +139,9 @@ transform zoomin_to_zoomout:
     xalign 0.5 yalign 0.3
     easein 10 zoom 1.00
 
+transform zoomout:
+    zoom 0.7
+
 image Classroom1_Morning1 = im.Scale("background/classroom3/Classroom1_Morning1.png",1920,1080)
 
 image school_park_1= im.Scale("background/SchoolPark01/school-park1.png",1920,1080)
@@ -701,6 +704,8 @@ label badend:
 
 
 
+
+
     
 label transition_screen:
     scene Canvas with Dissolve(2.0)
@@ -723,6 +728,7 @@ label start:
     $ renpy.pause(2)
     hide text with Dissolve(1.0)
 
+    jump q4_3b
 
     scene artroom_past with Dissolve(1.0)
     hide Canvas
