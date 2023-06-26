@@ -244,6 +244,13 @@ screen extra():
         action  Hide('extra')
         hover_sound "audio/UIsound/cursor.ogg"
         activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+    
+    imagebutton:
+        focus_mask True
+        idle "extra/memory_idle.png"
+        hover "extra/memory_hover.png"
+        action ShowMenu("black_screen",Dissolve(0.1)),Start("q10_1") 
+
     if persistent.extra_image_page == 1:
         for idx,i in enumerate(numbers) :
             # imagebutton:

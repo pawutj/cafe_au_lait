@@ -1,22 +1,28 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script10_1.rpy", line 219, in script
-    en "ที่ผมเล่าเมื่อกี้เป็นสาเหตุประมาณ 50% ครับ"
-ValueError: unsupported format character '?' (0xe04) at index 38
+  File "game/script10_1.rpy", line 2, in script
+    scene black_scene with Dissolved(1.0)
+  File "game/script10_1.rpy", line 2, in <module>
+    scene black_scene with Dissolved(1.0)
+NameError: name 'Dissolved' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script10_1.rpy", line 219, in script
-    en "ที่ผมเล่าเมื่อกี้เป็นสาเหตุประมาณ 50% ครับ"
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\exports.py", line 1362, in say
-    what = what % tag_quoting_dict
-ValueError: unsupported format character '?' (0xe04) at index 38
+  File "game/script10_1.rpy", line 2, in script
+    scene black_scene with Dissolved(1.0)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 1654, in execute
+    paired = renpy.python.py_eval(self.paired)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\python.py", line 1092, in py_eval
+    return py_eval_bytecode(code, globals, locals)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\python.py", line 1085, in py_eval_bytecode
+    return eval(bytecode, globals, locals)
+  File "game/script10_1.rpy", line 2, in <module>
+    scene black_scene with Dissolved(1.0)
+NameError: name 'Dissolved' is not defined
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
 Cafe_au_lait 1.0
-Mon Jun 26 23:13:25 2023
+Mon Jun 26 23:48:52 2023

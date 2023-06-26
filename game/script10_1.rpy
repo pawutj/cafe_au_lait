@@ -1,7 +1,8 @@
 label q10_1:
-    show PlayerHomeM_Morning1 with Dissolve(1.0)
+    scene black_scene with Dissolve(1.0)
+    scene PlayerHomeM_Morning1 with Dissolve(1.0)
     play music "audio/bgm/hijimeta_no_date.mp3" volume 0.5
-    show Eimi_date_body_Eimi_XD
+    show Eimi_date_body_Eimi_XD with dissolve
     show happy with Dissolve(1.0)
     ei "เฮฮฮฮ" with dissolve
     hide happy
