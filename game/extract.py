@@ -2,7 +2,7 @@
 #set PYTHONLEGACYWINDOWSSTDIO=utf-8
 
 import re
-with open("script3_4.rpy", encoding="utf-8") as file:
+with open("script6_6.rpy", encoding="utf-8") as file:
     content = file.read()
     lines  = content.split("\n")
     count = 0

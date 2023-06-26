@@ -227,6 +227,8 @@ image border = im.Scale("Sprite/Effect/border.png",1920,1080)
 image honoka_ouki = im.Scale("Sprite/Effect/Honoka_ougi/honoka_ouki.png",1920,1080)
 image eimi_ouki = im.Scale("Sprite/Effect/Eimi_ougi/eimi_ougi.png",1920,1080)
 
+image eimi_room = im.Scale("background/male-room/eimi_room.png",1920,1080)
+image phone = im.Scale("background/male-room/phone.png",1920,1080)
 
 transform zoom_in:
     zoom 1.0
@@ -442,7 +444,7 @@ image endCredit= im.Scale("credit.png",1920,1080)
 image _thankyouImg = im.Scale("thx.png",1920,1080)
 image _endCredit= im.Scale("credit.png",1920,1080)
 
-image phone = im.Scale("Sprite/Other/phone.png",1920,1080)
+# image phone = im.Scale("Sprite/Other/phone.png",1920,1080)
 
 image BadPic2 =  im.Scale("CG/Eimi_bird/BadPic2.png",1920,1080)
 image BirdPic =  im.Scale("CG/Eimi_bird/BirdPic.png",1920,1080)
@@ -511,12 +513,12 @@ label cutscene_1:
 
     scene black with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    scene cutscene_1_0 with Dissolve(1.0)
+    scene cutscene_1_0 with Dissolve(1.5)
     play sound "audio/system/System_2.mp3" volume 1.0
     $renpy.pause(0.01, hard=True)
-    scene cutscene_1_1 with Dissolve(1.0)
+    scene cutscene_1_1 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
-    scene cutscene_1_2 with Dissolve(1.0)
+    scene cutscene_1_2 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
     scene _cutscene_1_2 with Dissolve(2.0)
     hide artroom_afternoon
@@ -526,13 +528,13 @@ label cutscene_2:
     $renpy.pause(0.01, hard=True)
     scene black with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show cutscene_2_0 with Dissolve(1.0)
+    show cutscene_2_0 with Dissolve(1.5)
     $renpy.pause(0.01, hard=True)
     play sound "audio/system/System_2.mp3" volume 1.0
     $renpy.pause(0.01, hard=True)
-    show cutscene_2_1 with Dissolve(1.0)
+    show cutscene_2_1 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
-    show cutscene_2_2 with Dissolve(1.0)
+    show cutscene_2_2 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
     show _cutscene_2_2 with Dissolve(2.0)
 
@@ -542,13 +544,13 @@ label cutscene_3:
     $renpy.pause(0.01, hard=True)
     scene black with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show cutscene_3_0 with Dissolve(1.0)
+    show cutscene_3_0 with Dissolve(1.5)
     $renpy.pause(0.01, hard=True)
     play sound "audio/system/System_2.mp3" volume 1.0
     $renpy.pause(0.01, hard=True)
-    show cutscene_3_1 with Dissolve(1.0)
+    show cutscene_3_1 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
-    show cutscene_3_2 with Dissolve(1.0)
+    show cutscene_3_2 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
     show _cutscene_3_2 with Dissolve(2.0)
 
@@ -558,13 +560,13 @@ label cutscene_4:
     $renpy.pause(0.01, hard=True)
     scene black with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show cutscene_4_0 with Dissolve(1.0)
+    show cutscene_4_0 with Dissolve(1.5)
     $renpy.pause(0.01, hard=True)
     play sound "audio/system/System_2.mp3" volume 1.0
     $renpy.pause(0.01, hard=True)
-    show cutscene_4_1 with Dissolve(1.0)
+    show cutscene_4_1 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
-    show cutscene_4_2 with Dissolve(1.0)
+    show cutscene_4_2 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
     show _cutscene_4_2 with Dissolve(2.0)
 
@@ -575,13 +577,13 @@ label cutscene_5:
     $renpy.pause(0.01, hard=True)
     scene black with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show cutscene_5_0 with Dissolve(1.0)
+    show cutscene_5_0 with Dissolve(1.5)
     $renpy.pause(0.01, hard=True)
     play sound "audio/system/System_2.mp3" volume 1.0
     $renpy.pause(0.01, hard=True)
-    show cutscene_5_1 with Dissolve(1.0)
+    show cutscene_5_1 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
-    show cutscene_5_2 with Dissolve(1.0)
+    show cutscene_5_2 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
     show _cutscene_5_2 with Dissolve(2.0)
 
@@ -591,13 +593,13 @@ label cutscene_6:
     $renpy.pause(0.01, hard=True)
     scene black with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show cutscene_6_0 with Dissolve(1.0)
+    show cutscene_6_0 with Dissolve(1.5)
     $renpy.pause(0.01, hard=True)
     play sound "audio/system/System_2.mp3" volume 1.0
     $renpy.pause(0.01, hard=True)
-    show cutscene_6_1 with Dissolve(1.0)
+    show cutscene_6_1 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
-    show cutscene_6_2 with Dissolve(1.0)
+    show cutscene_6_2 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
     show _cutscene_6_2 with Dissolve(2.0)
 
@@ -607,13 +609,13 @@ label cutscene_7:
     $renpy.pause(0.01, hard=True)
     scene black with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show cutscene_7_0 with Dissolve(1.0)
+    show cutscene_7_0 with Dissolve(1.5)
     $renpy.pause(0.01, hard=True)
     play sound "audio/system/System_2.mp3" volume 1.0
     $renpy.pause(0.01, hard=True)
-    show cutscene_7_1 with Dissolve(1.0)
+    show cutscene_7_1 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
-    show cutscene_7_2 with Dissolve(1.0)
+    show cutscene_7_2 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
     show _cutscene_7_2 with Dissolve(2.0)
 
@@ -728,7 +730,7 @@ label start:
     $ renpy.pause(2)
     hide text with Dissolve(1.0)
 
-    jump q6_1
+    jump q6_6
 
     scene artroom_past with Dissolve(1.0)
     hide Canvas
