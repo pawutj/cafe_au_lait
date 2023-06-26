@@ -260,6 +260,7 @@ screen extra():
             imagebutton:
                 focus_mask True
                 idle f"extra/image{i}_idle.png"
+                hover f"extra/image{i}_hover.png"
                 action Show(f"show_cg{i}_01") 
     
     for idx,i in enumerate(numbers2) :
