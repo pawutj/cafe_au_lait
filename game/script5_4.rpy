@@ -111,6 +111,7 @@ label q5_4:
     hide Eimi_date_body_Eimi_smile2
 
     show Eimi_date_body_Eimi_kira
+    play sound "audio/bgm/ME_Level_Up_Success.mp3"
     ei "ซูเxอร์เอมิ จะนำทางรุ่นพี่เองค่ะ " with dissolve
     tk "ตามสบาย -_-“"
     n "ผมเหงื่อตกเพราะเห็นพลังงานที่เปี่ยมล้นของยัยนี่จนพูดไม่ออก เอาเป็นว่าจะยอมยัยนี่สักครั้งก็ได้ เพราะขืนเถียงไปก็ไม่รู้ว่ายัยนี่จะพูดอะไรแปลกๆกลางสาธารณะชนหรือเปล่า"

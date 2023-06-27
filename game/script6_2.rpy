@@ -2,6 +2,7 @@ label q6_2:
     show Classroom1_Morning1 with Dissolve(1.0)
     hide artroom_afternoon
     play music "audio/bgm/nodokana_hi.mp3" volume 0.5
+    play sound "audio/bgm/school_chalk_on_chalkboard.mp3"
     n "หลังจากใช้เวลาในห้องศิลปะและทานข้าวเสร็จ ผมก็มาเข้าเรียนรอบบ่ายตามปกติ" with dissolve
     "ทุกคนในห้องต่างจับกลุ่มคุยกันก่อนที่อาจารย์จะเข้ามาสอนรอบบ่าย ขณะที่ผมไม่มีคนเข้ามาคุยเลยแม้แต่คนเดียว"
     "มันเป็นเรื่องปกติที่ผมเคยชินไปแล้ว"

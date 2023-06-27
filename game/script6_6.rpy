@@ -201,6 +201,7 @@ label q6_6:
     hide Eimi_Eimi_sad
 
     show Eimi_Eimi_normal
+    play sound "audio/bgm/walk.mp3"
     ei "......" with dissolve
     tk "สิ่งที่สำคัญกว่าการเก่งขึ้นหรือการเอาชนะคนอื่น คือการรู้ว่าตัวเองทำอะไรได้บ้าง เธอต้องรู้ขีดจำกัดของตัวเอง"
     hide Eimi_Eimi_normal

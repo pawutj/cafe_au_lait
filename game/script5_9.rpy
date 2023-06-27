@@ -3,6 +3,7 @@ label q5_9:
     hide Restaurant_Morning1
     play music "audio/bgm/asa_no_nigiyaka_mura.mp3" volume 0.5
     show Eimi_date_body_Eimi_smile
+    play sound "audio/bgm/walk.mp3"
     n "หลังจากพวกเราสองคนทานข้าวกันเสร็จ พวกเราสองคนก็แวะไปที่ซุ้มขายของฝาก" with dissolve
     "ชั้นวางของขายมีของหลากหลายประเภท ทั้งพวงกุญแจสวยงาม ทั้งตุ๊กตาสัตว์น้ำขนาดเท่าฝ่ามือจนถึงขนาดเท่าตัวคน รวมไปถึงเสื้อลายสัตว์น้ำต่างๆนานา"
     hide Eimi_date_body_Eimi_smile
@@ -229,6 +230,7 @@ label q5_9:
     voice "audio/voice/5_03.mp3"
     ei "เจอกันที่โรงเรียนนะคะ รุ่นพี่ ฮะๆๆๆ" with dissolve
     hide laught
+    play sound "audio/bgm/footsteps_fast.mp3"
     n "เอมิส่งเสียงหัวเราะร่วนให้ผมสักพักก่อนที่เธอจะวิ่งห่างจากผมไปอย่างรวดเร็วราวกับสายลม"
     hide Eimi_date_body_shy_Eimi_smile
 
