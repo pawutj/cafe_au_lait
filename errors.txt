@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 238: 'add' is not a keyword argument or valid child for the imagebutton statement.
-    add "hidden1.png"
-       ^
+File "game/screens.rpy", line 252: expected a keyword argument or end of line.
+    action ShowMenu("black_screen",Dissolve(0.1)),Start() ,,Jump("q10_1")
+                                                           ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Mon Jun 26 01:58:42 2023
+Mon Jun 26 23:47:26 2023

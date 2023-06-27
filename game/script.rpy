@@ -3,9 +3,9 @@
 # Declare characters used by this game. The color argument colorizes the
 # name of the character.
 
-define ho_u = Character("{font=SukhumvitSet-Medium.ttf}???",color="#F0F8FF",image ="honoka_1", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
+define ho_u = Character("{font=SukhumvitSet-Medium.ttf}???",color="#F0F8FF",image ="honoka_2", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 define h = Character("{font=SukhumvitSet-Medium.ttf}โฮโนกะ",color="#F0F8FF", image ="honoka_1", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
-
+define h_s = Character("{font=SukhumvitSet-Medium.ttf}โฮโนกะ",color="#F0F8FF", image ="honoka_2", who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 define t_u = Character("{font=SukhumvitSet-Medium.ttf}???",color="#F0F8FF",image ="tomoe_1" , who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 define t = Character("{font=SukhumvitSet-Medium.ttf}โทโมเอะ",color="#F0F8FF",  image ="tomoe_1",who_outlines=[(2,"#000000")], what_outlines=[(2,"#000000")])
 
@@ -42,9 +42,14 @@ transform crops:
 #     im.Composite((1920,2900), (0,1525), "Sprite/Eimi02/Eimi02.png")
 
 
-image side honoka_1:
+image side honoka_2:    
     zoom 1.3
     im.Scale("Sprite/Honoka/honoka_normal.png",300,300)
+    yoffset 50
+
+image side honoka_1:
+    zoom 1.3
+    im.Scale("Sprite/Honoka/honokabas_normal.png",300,300)
     yoffset 50
 
 image side tomoe_1:
@@ -139,7 +144,10 @@ transform zoomin_to_zoomout:
     xalign 0.5 yalign 0.3
     easein 10 zoom 1.00
 
-image Classroom1_Morning1 = im.Scale("background/classroom3/Classroom1_Morning1.png",1920,1080)
+transform zoomout:
+    zoom 0.7
+
+image Classroom1_Morning1 = im.Scale("background/classroom3/Classroom1_Morning12.jpg",1920,1080)
 
 image school_park_1= im.Scale("background/SchoolPark01/school-park1.png",1920,1080)
 image school_park_2= im.Scale("background/SchoolPark01/school-park2.png",1920,1080)
@@ -199,7 +207,7 @@ image school_gym_a = im.Scale("background/gym/school_gym_a2.jpg",1920,1080)
 image school_gym_b = im.Scale("background/gym/school_gym_b2.jpg",1920,1080)
 image school_gym_c = im.Scale("background/gym/school_gym_c2.jpg",1920,1080)
 
-
+image Moonlight3 = im.Scale("background/SKY/Moonlight3.png",1920,1080)
 
 image school_gym_a_zoom = im.Scale("background/gym/school_gym_a2.jpg",1920,1080)
 
@@ -213,8 +221,10 @@ image Roof = im.Scale("background/Roof2/Roof.jpg",1920,1080)
 image GoldenTime01 = im.Scale("CG/CG02/GoldenTime01.png",1920,1080)
 image GoldenTime02 = im.Scale("CG/CG02/GoldenTime02.png",1920,1080)
 
-image PlayerHomeM_Night4 = im.Scale("background/male-room/PlayerHomeM_Morning1.png",1920,1080)
-
+image PlayerHomeM_Night4 = im.Scale("background/male-room/PlayerHomeM_Night4.png",1920,1080)
+image PlayerHomeM_Morning1 = im.Scale("background/male-room/PlayerHomeM_Morning1.png",1920,1080)
+image PlayerHomeM_Morning2 = im.Scale("background/male-room/PlayerHomeM_Morning2.png",1920,1080)
+image PlayerHomeM_Morning3 = im.Scale("background/male-room/PlayerHomeM_Morning3.png",1920,1080)
 image Aquarium_Morning = im.Scale("background/Aquarium/Aquarium_Morning.jpg",1920,1080)
 
 image Restaurant_Morning1 = im.Scale("background/restaurant/Restaurant_Morning1.png",1920,1080)
@@ -224,6 +234,8 @@ image border = im.Scale("Sprite/Effect/border.png",1920,1080)
 image honoka_ouki = im.Scale("Sprite/Effect/Honoka_ougi/honoka_ouki.png",1920,1080)
 image eimi_ouki = im.Scale("Sprite/Effect/Eimi_ougi/eimi_ougi.png",1920,1080)
 
+image eimi_room = im.Scale("background/male-room/eimi_room.png",1920,1080)
+image phone = im.Scale("background/male-room/phone.png",1920,1080)
 
 transform zoom_in:
     zoom 1.0
@@ -420,7 +432,11 @@ image main_scene_4 = im.Scale("Animation/anime04.png",1920,1080)
 image main_scene_5 = im.Scale("Animation/anime05.png",1920,1080)
 image main_scene_6 = im.Scale("Animation/anime06.png",1920,1080)
 image astral_seal = im.Scale("astralseal.png",1920,1080)
+image warning = im.Scale("warning.png",1920,1080)
+
 label splashscreen:
+    scene warning with Dissolve(1.0)
+    pause 1.5
     scene white_scene with Dissolve(1.0)
     show astral_seal with Dissolve(1.5)
     play sound "audio/system/System_1.mp3"
@@ -439,7 +455,7 @@ image endCredit= im.Scale("credit.png",1920,1080)
 image _thankyouImg = im.Scale("thx.png",1920,1080)
 image _endCredit= im.Scale("credit.png",1920,1080)
 
-image phone = im.Scale("Sprite/Other/phone.png",1920,1080)
+# image phone = im.Scale("Sprite/Other/phone.png",1920,1080)
 
 image BadPic2 =  im.Scale("CG/Eimi_bird/BadPic2.png",1920,1080)
 image BirdPic =  im.Scale("CG/Eimi_bird/BirdPic.png",1920,1080)
@@ -502,18 +518,20 @@ image score6 = im.Scale("CG/basketball/score06.png",1920,1080)
 
 image PlayerHomeM_Night4 = im.Scale("background/male-room/PlayerHomeM_Night4.png",1920,1080)
 
+image StudentdormitoryOutside_Morning = im.Scale("background/SchoolPark01/school-park1.png",1920,1080)
+
 screen pausenow():
     key "dismiss" action NullAction()
 label cutscene_1:
 
     scene black with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    scene cutscene_1_0 with Dissolve(1.0)
+    scene cutscene_1_0 with Dissolve(1.5)
     play sound "audio/system/System_2.mp3" volume 1.0
     $renpy.pause(0.01, hard=True)
-    scene cutscene_1_1 with Dissolve(1.0)
+    scene cutscene_1_1 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
-    scene cutscene_1_2 with Dissolve(1.0)
+    scene cutscene_1_2 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
     scene _cutscene_1_2 with Dissolve(2.0)
     hide artroom_afternoon
@@ -523,13 +541,13 @@ label cutscene_2:
     $renpy.pause(0.01, hard=True)
     scene black with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show cutscene_2_0 with Dissolve(1.0)
+    show cutscene_2_0 with Dissolve(1.5)
     $renpy.pause(0.01, hard=True)
     play sound "audio/system/System_2.mp3" volume 1.0
     $renpy.pause(0.01, hard=True)
-    show cutscene_2_1 with Dissolve(1.0)
+    show cutscene_2_1 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
-    show cutscene_2_2 with Dissolve(1.0)
+    show cutscene_2_2 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
     show _cutscene_2_2 with Dissolve(2.0)
 
@@ -539,13 +557,13 @@ label cutscene_3:
     $renpy.pause(0.01, hard=True)
     scene black with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show cutscene_3_0 with Dissolve(1.0)
+    show cutscene_3_0 with Dissolve(1.5)
     $renpy.pause(0.01, hard=True)
     play sound "audio/system/System_2.mp3" volume 1.0
     $renpy.pause(0.01, hard=True)
-    show cutscene_3_1 with Dissolve(1.0)
+    show cutscene_3_1 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
-    show cutscene_3_2 with Dissolve(1.0)
+    show cutscene_3_2 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
     show _cutscene_3_2 with Dissolve(2.0)
 
@@ -555,13 +573,13 @@ label cutscene_4:
     $renpy.pause(0.01, hard=True)
     scene black with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show cutscene_4_0 with Dissolve(1.0)
+    show cutscene_4_0 with Dissolve(1.5)
     $renpy.pause(0.01, hard=True)
     play sound "audio/system/System_2.mp3" volume 1.0
     $renpy.pause(0.01, hard=True)
-    show cutscene_4_1 with Dissolve(1.0)
+    show cutscene_4_1 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
-    show cutscene_4_2 with Dissolve(1.0)
+    show cutscene_4_2 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
     show _cutscene_4_2 with Dissolve(2.0)
 
@@ -572,13 +590,13 @@ label cutscene_5:
     $renpy.pause(0.01, hard=True)
     scene black with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show cutscene_5_0 with Dissolve(1.0)
+    show cutscene_5_0 with Dissolve(1.5)
     $renpy.pause(0.01, hard=True)
     play sound "audio/system/System_2.mp3" volume 1.0
     $renpy.pause(0.01, hard=True)
-    show cutscene_5_1 with Dissolve(1.0)
+    show cutscene_5_1 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
-    show cutscene_5_2 with Dissolve(1.0)
+    show cutscene_5_2 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
     show _cutscene_5_2 with Dissolve(2.0)
 
@@ -588,13 +606,13 @@ label cutscene_6:
     $renpy.pause(0.01, hard=True)
     scene black with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show cutscene_6_0 with Dissolve(1.0)
+    show cutscene_6_0 with Dissolve(1.5)
     $renpy.pause(0.01, hard=True)
     play sound "audio/system/System_2.mp3" volume 1.0
     $renpy.pause(0.01, hard=True)
-    show cutscene_6_1 with Dissolve(1.0)
+    show cutscene_6_1 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
-    show cutscene_6_2 with Dissolve(1.0)
+    show cutscene_6_2 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
     show _cutscene_6_2 with Dissolve(2.0)
 
@@ -604,13 +622,13 @@ label cutscene_7:
     $renpy.pause(0.01, hard=True)
     scene black with Dissolve(1.0)
     $renpy.pause(0.01, hard=True)
-    show cutscene_7_0 with Dissolve(1.0)
+    show cutscene_7_0 with Dissolve(1.5)
     $renpy.pause(0.01, hard=True)
     play sound "audio/system/System_2.mp3" volume 1.0
     $renpy.pause(0.01, hard=True)
-    show cutscene_7_1 with Dissolve(1.0)
+    show cutscene_7_1 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
-    show cutscene_7_2 with Dissolve(1.0)
+    show cutscene_7_2 with Dissolve(2)
     $renpy.pause(0.01, hard=True)
     show _cutscene_7_2 with Dissolve(2.0)
 
@@ -701,6 +719,8 @@ label badend:
 
 
 
+
+
     
 label transition_screen:
     scene Canvas with Dissolve(2.0)
@@ -723,9 +743,9 @@ label start:
     $ renpy.pause(2)
     hide text with Dissolve(1.0)
 
-
     scene artroom_past with Dissolve(1.0)
     hide Canvas
+
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
     n "ผมไม่เข้าใจว่าทำไมผมต้องพูดซ้ำด้วย"

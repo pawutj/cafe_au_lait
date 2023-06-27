@@ -338,3 +338,62 @@ screen show_cg12_02():
     key "mouseup_1" action Hide("show_cg12_02",Dissolve(0.1))
     add "black"
     add "CG/shark/shark02.png"
+
+#########################################################################################
+
+screen show_cg13_01():
+    key "mouseup_3" action Hide("show_cg13_01",Dissolve(0.1))
+    key "K_ESCAPE" action Hide("show_cg13_01",Dissolve(0.1))
+    key "mouseup_1" action Hide("show_cg13_01",Dissolve(0.1))
+    add "black"
+    add "CG/basketball/basketball.png"
+
+#################################################################################################
+
+screen show_cg14_01():
+    key "mouseup_3" action Hide("show_cg14_01",Dissolve(0.1))
+    key "K_ESCAPE" action Hide("show_cg14_01",Dissolve(0.1))
+    key "mouseup_1" action [Show("show_cg14_02",Dissolve(0.1)),Hide("show_cg14_01")]
+    add "black"
+    add "CG/basketball/score00.png"
+    
+screen show_cg14_02():
+    key "mouseup_3" action Hide("show_cg14_02",Dissolve(0.1))
+    key "K_ESCAPE" action Hide("show_cg14_02",Dissolve(0.1))
+    key "mouseup_1" action [Show("show_cg14_03",Dissolve(0.1)),Hide("show_cg14_02")]
+    add "black"
+    add "CG/basketball/score01.png"
+
+screen show_cg14_03():
+    key "mouseup_3" action Hide("show_cg14_03",Dissolve(0.1))
+    key "K_ESCAPE" action Hide("show_cg14_03",Dissolve(0.1))
+    key "mouseup_1" action [Show("show_cg14_04",Dissolve(0.1)),Hide("show_cg14_03")]
+    add "black"
+    add "CG/basketball/score02.png"
+
+screen show_cg14_04():
+    key "mouseup_3" action Hide("show_cg14_04",Dissolve(0.1))
+    key "K_ESCAPE" action Hide("show_cg14_04",Dissolve(0.1))
+    key "mouseup_1" action [Show("show_cg14_05",Dissolve(0.1)),Hide("show_cg14_04")]
+    add "black"
+    add "CG/basketball/score03.png"
+
+screen show_cg14_05():
+    key "mouseup_3" action Hide("show_cg14_05",Dissolve(0.1))
+    key "K_ESCAPE" action Hide("show_cg14_05",Dissolve(0.1))
+    key "mouseup_1" action [Show("show_cg14_06",Dissolve(0.1)),Hide("show_cg14_05")]
+    add "black"
+    add "CG/basketball/score04.png"
+screen show_cg14_06():
+    key "mouseup_3" action Hide("show_cg14_06",Dissolve(0.1))
+    key "K_ESCAPE" action Hide("show_cg14_06",Dissolve(0.1))
+    key "mouseup_1" action [Show("show_cg14_07",Dissolve(0.1)),Hide("show_cg14_06")]
+    add "black"
+    add "CG/basketball/score05.png"
+
+screen show_cg14_07():
+    key "mouseup_3" action Hide("show_cg14_07",Dissolve(0.1))
+    key "K_ESCAPE" action Hide("show_cg14_07",Dissolve(0.1))
+    key "mouseup_1" action Hide("show_cg14_07",Dissolve(0.1))
+    add "black"
+    add "CG/basketball/score06.png"

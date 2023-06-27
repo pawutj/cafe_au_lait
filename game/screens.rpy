@@ -237,30 +237,50 @@ screen extra():
         action SetVariable("persistent.nothing" , 0)
     $numbers = [f'{i:02d}' for i in range(1, 13)]
     $numbers2 = [f'{i:02d}' for i in range(1,13)]
-    $numbers3 = [f'{i:02d}' for i in range(1, 5)]
-
+    $numbers3 = [f'{i:02d}' for i in range(13, 17)]
+    $numbers4 = [f'{i:02d}' for i in range(13,25)]
     imagebutton auto "extra/back_%s.png":
         focus_mask True
         action  Hide('extra')
         hover_sound "audio/UIsound/cursor.ogg"
         activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+    
+    imagebutton:
+        focus_mask True
+        idle "extra/memory_idle.png"
+        hover "extra/memory_hover.png"
+        action ShowMenu("black_screen",Dissolve(0.1)),Start("q_memory_1") 
+
     if persistent.extra_image_page == 1:
         for idx,i in enumerate(numbers) :
+            # imagebutton:
+            #     focus_mask True
+            #     idle f"extra/pic{i}_idle.png"
+            #     action Show(f"show_cg{i}_01")
             imagebutton:
                 focus_mask True
-                idle f"extra/pic{i}_idle.png"
+                idle f"extra/image{i}_idle.png"
+                hover f"extra/image{i}_hover.png"
                 action Show(f"show_cg{i}_01")
     if persistent.extra_image_page == 2:
         for idx,i in enumerate(numbers3) :
             imagebutton:
                 focus_mask True
-                idle f"extra/pic{i}_idle.png"
+                idle f"extra/image{i}_idle.png"
+                hover f"extra/image{i}_hover.png"
                 action Show(f"show_cg{i}_01") 
-    
-    for idx,i in enumerate(numbers2) :
-        imagebutton auto f"extra/music{i}_%s.png":
-            focus_mask True
-            action mr.Play(f"audio/bgm/{song_list[idx]}.mp3")
+
+    if persistent.extra_bgm_page == 1:
+        for idx,i in enumerate(numbers2) :
+            imagebutton auto f"extra/music{i}_%s.png":
+                focus_mask True
+                action mr.Play(f"audio/bgm/{song_list[idx]}.mp3")
+
+    if persistent.extra_bgm_page == 2:
+        for idx,i in enumerate(numbers4) :
+            imagebutton auto f"extra/music{i}_%s.png":
+                focus_mask True
+                action mr.Play(f"audio/bgm/{song_list[idx]}.mp3")
 
     # textbutton "Track 1" action mr.Play("audio/bgm/alphard.mp3")
 
@@ -271,6 +291,18 @@ screen extra():
     imagebutton auto "extra/page2_%s.png":
         focus_mask True
         action SetVariable("persistent.extra_image_page" , 2)
+
+    imagebutton auto "extra/disk1_%s.png":
+        focus_mask True
+        action SetVariable("persistent.extra_bgm_page" , 1)
+
+    imagebutton auto "extra/disk2_%s.png":
+        focus_mask True
+        action SetVariable("persistent.extra_bgm_page" , 2)
+    
+    imagebutton auto "extra/disk3_%s.png":
+        focus_mask True
+        action SetVariable("persistent.extra_bgm_page" , 3)
 
 screen config_main():
     key "mouseup_3" action Hide('config_main')
