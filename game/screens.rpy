@@ -204,7 +204,7 @@ init python:
     mr = MusicRoom(fadeout=1.0)
 
     # Step 2. Add music files.
-    mr.add("audio/bgm/natsu_no_omoide.mp3", always_unlocked=True)
+    mr.add("audio/bgm/natsu_no_omoide.mp3")
     mr.add("audio/bgm/alphard.mp3")
     mr.add("audio/bgm/asa_no_nigiyaka_mura.mp3")
     mr.add("audio/bgm/battle_on_horizon.mp3")
@@ -233,6 +233,9 @@ init python:
     mr.add("audio/bgm/yuki_no_owari_ni.mp3")
     mr.add("audio/bgm/yumebokujou_to_haru_no_toki.mp3")
 
+    mr.add("audio/bgm/ashita_e_piano.mp3", always_unlocked=True)
+    mr.add("audio/bgm/ashita_e.mp3", always_unlocked=True)
+
 
 screen extra():
 
@@ -241,8 +244,8 @@ screen extra():
     ,"dotabata_happening","hijimeta_no_date" ,"luminous","midori_no_iko"
     ,"morning_talk","musukari_no_hana","nagai_no_yoru"
     ,"nodokana_hi","oshakai_no_junbi","remind", "tsuyukusa" , "yasashii_harp", "yuki_kaze"
-    ,"yuki_no_owari_ni" , "yumebokujou_to_haru_no_toki" , "tori_kago" , "alphard" ,"take_action" ,"fair_battle"
-    ,"battle_on_horizon","romance"
+    ,"yuki_no_owari_ni" , "yumebokujou_to_haru_no_toki" ,"tokai_no_kaze", "tori_kago" , "alphard" ,"take_action" ,"fair_battle"
+    ,"battle_on_horizon","romance","ashita_e_piano","ashita_e"
     ]
 
     key "mouseup_3" action Hide('extra')

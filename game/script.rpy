@@ -735,7 +735,7 @@ label start:
     scene dark with Dissolve(2.0)
     $ point = 0
     scene Canvas with Dissolve(2.0)
-    play music "audio/bgm/nagai_no_yoru.mp3" volume 0.5 
+    play music "audio/bgm/ashita_e_piano.mp3" volume 0.5 
     show text "{size= 40}หากเราไม่พยายามและไม่เชื่อในสิ่งที่ตัวเองทำก็เท่ากับแพ้ตั้งแต่แรก" with Dissolve(1.0)
     $ renpy.pause(2)
     hide text with Dissolve(1.0)
@@ -745,6 +745,7 @@ label start:
 
     scene artroom_past with Dissolve(1.0)
     hide Canvas
+
 
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"

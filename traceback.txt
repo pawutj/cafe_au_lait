@@ -1,77 +1,42 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/screens.rpy", line 237, in execute
-    screen extra():
-  File "game/screens.rpy", line 237, in execute
-    screen extra():
-  File "game/screens.rpy", line 297, in execute
-    if persistent.extra_bgm_page == 2:
-  File "game/screens.rpy", line 298, in execute
-    for idx,i in enumerate(numbers4) :
-  File "game/screens.rpy", line 299, in execute
-    imagebutton auto f"extra/music{i}_%s.png":
-  File "game/screens.rpy", line 299, in keywords
-    imagebutton auto f"extra/music{i}_%s.png":
-  File "game/screens.rpy", line 301, in <module>
-    action mr.Play(f"audio/bgm/{song_list[idx+12]}.mp3")
-  File "renpy/common/00musicroom.rpy", line 460, in Play
-    raise Exception("{0!r} is not a filename registered with this music room.".format(filename))
-Exception: 'audio/bgm/yumebokujou_to_haru_no_toki.mp3' is not a filename registered with this music room.
+  File "renpy/common/00start.rpy", line 215, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 517, in script
+    python hide:
+  File "renpy/common/00keymap.rpy", line 517, in <module>
+    python hide:
+  File "renpy/common/00keymap.rpy", line 528, in _execute_python_hide
+    renpy.load(renpy.session["_reload_slot"])
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in script
+  File "renpy/common/00start.rpy", line 215, in script call
+    call _load_reload_game from _call__load_reload_game_1
+  File "renpy/common/00keymap.rpy", line 517, in script
     python hide:
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 1131, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\python.py", line 1061, in py_exec_bytecode
     exec(bytecode, globals, locals)
-  File "renpy/common/_layout/screen_main_menu.rpym", line 28, in <module>
+  File "renpy/common/00keymap.rpy", line 517, in <module>
     python hide:
-  File "renpy/common/_layout/screen_main_menu.rpym", line 35, in _execute_python_hide
-    ui.interact()
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
-    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, pause_modal=pause_modal, **kwargs) # type: ignore
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3810, in interact_core
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 582, in visit_all
-    d.visit_all(callback, seen)
-  [Previous line repeated 1 more time]
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\screen.py", line 451, in visit_all
-    callback(self)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3810, in <lambda>
-    root_widget.visit_all(lambda i : i.per_interact())
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\screen.py", line 462, in per_interact
-    self.update()
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\screen.py", line 653, in update
-    self.screen.function(**self.scope)
-  File "game/screens.rpy", line 237, in execute
-    screen extra():
-  File "game/screens.rpy", line 237, in execute
-    screen extra():
-  File "game/screens.rpy", line 297, in execute
-    if persistent.extra_bgm_page == 2:
-  File "game/screens.rpy", line 298, in execute
-    for idx,i in enumerate(numbers4) :
-  File "game/screens.rpy", line 299, in execute
-    imagebutton auto f"extra/music{i}_%s.png":
-  File "game/screens.rpy", line 299, in keywords
-    imagebutton auto f"extra/music{i}_%s.png":
-  File "game/screens.rpy", line 301, in <module>
-    action mr.Play(f"audio/bgm/{song_list[idx+12]}.mp3")
-  File "renpy/common/00musicroom.rpy", line 460, in Play
-    raise Exception("{0!r} is not a filename registered with this music room.".format(filename))
-Exception: 'audio/bgm/yumebokujou_to_haru_no_toki.mp3' is not a filename registered with this music room.
+  File "renpy/common/00keymap.rpy", line 528, in _execute_python_hide
+    renpy.load(renpy.session["_reload_slot"])
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\loadsave.py", line 769, in load
+    log.unfreeze(roots, label="_after_load")
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\rollback.py", line 1078, in unfreeze
+    self.rollback(0, force=True, label=label, greedy=greedy, on_load=True)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\rollback.py", line 889, in rollback
+    self.load_failed()
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\rollback.py", line 807, in load_failed
+    raise Exception("Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?")
+Exception: Couldn't find a place to stop rolling back. Perhaps the script changed in an incompatible way?
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
 Cafe_au_lait 1.0
-Tue Jun 27 17:47:02 2023
+Tue Jun 27 18:27:36 2023

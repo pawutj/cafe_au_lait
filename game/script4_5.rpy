@@ -2,6 +2,7 @@ label q4_5:
     show art_room2 with Dissolve(1.0)
     play music "audio/bgm/cafe_de_swing.mp3" volume 0.5
     show Eimi_Eimi_normal
+    play sound  "audio/SoundEffect/walk.mp3"
     n "ผมกับเอมิเดินกลับมาห้องชมรมศิลปะด้วยกัน" with dissolve
     "พระอาทิตย์ใกล้จะตกดินแล้ว ตอนเย็นกำลังใกล้มาถึง "
     tk "เธอไม่รีบกลับบ้านเหรอ?"
@@ -90,6 +91,7 @@ label q4_5:
     show Eimi_Eimi_smile4
     ei "งั้นจะลองดูนะคะ" with dissolve
     tk "ฉันจะรอดู"
+    play sound  "audio/SoundEffect/writing_pencil_01.mp3"
     n "เอมิคว้าดินสอเข้ามาในมือและลากเส้นบนกระดาษสองสามครั้ง"
     "ผมคิดจะลากเก้าอี้มานั่งดูเธอวาดเพราะน่าจะใช้เวลานานแต่จู่ๆเอมิก็โพล่งขึ้นมาว่า"
     hide Eimi_Eimi_smile4

@@ -2,10 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 257: invalid syntax
-    $numbers5 = [f'{i:02d}' for i in range(26,32)]
-     ^
-    
+File "game/cg_screen.rpy", line 454: 'screen' is not a keyword argument or valid child for the add statement.
+    add "CG/boob/boob09.png"screen show_cg15_05():
+                                  ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Tue Jun 27 17:32:17 2023
+Tue Jun 27 19:03:28 2023
