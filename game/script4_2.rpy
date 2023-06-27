@@ -3,7 +3,7 @@ label q4_2:
     hide art_room2
     play music "audio/bgm/oshakai_no_junbi.mp3" volume 0.5
     show Eimi_Eimi_smile
-    play sound  "audio/SoundEffect/basketball_dribble.mp3"
+    play sound  "audio/SoundEffect/basketball_dribble.ogg"
     n "ผมพบตัวเองอยู่ที่โรงยิมโดยมีเอมิยืนอยู่ข้างๆ" with dissolve
     "ทำไมไปๆมาๆ พวกเราสองคนถึงมายืนใต้แป้นบาสกันนะ?"
     tk "ทำไมฉันต้องมาที่นี่ด้วย?"
@@ -159,7 +159,7 @@ label q4_2:
     hide Eimi02_Eimi02_smile
 
     show Eimi02_Eimi02_smug
-    play sound  "audio/SoundEffect/basketball_dribble.mp3"
+    play sound  "audio/SoundEffect/basketball_dribble.ogg"
     ei "คนแพ้ต้องทำตามที่คนชนะขอทุกอย่างนะคะ รุ่นพี่ " with dissolve
     tk "ทำไมไปๆมาๆเดิมพันมันเริ่มสูงขึ้นเนี่ย? "
     hide Eimi02_Eimi02_smug
@@ -217,7 +217,7 @@ label q4_2:
     ei "ช้าไปค่ะ! " with dissolve
     hide shine
     tk "เฮ้ย!"
-    play sound  "audio/SoundEffect/basketball_dribble.mp3"
+    play sound  "audio/SoundEffect/basketball_dribble.ogg"
     n "เอมิที่ยืนประจันหน้าผมพอดีรีบก้มตัวคว้าลูกเข้ามือ ด้วยความไวปานวอกของเธอทำให้มือผมจับได้แค่อากาศ ส่วนลูกบาสไปอยู่ในมือเอมิเป็นที่เรียบร้อย"
     tk "เพราะตัวเตี้ยเหมือนเม็ดถั่วก็เลยเร็วนี่เอง! ร้ายชะมัด"
     hide Eimi_Eimi_confident

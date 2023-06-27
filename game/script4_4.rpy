@@ -3,7 +3,7 @@ label q4_4:
     play music "audio/bgm/morning_talk.mp3" volume 0.5
     show Eimi02_Eimi02_smile3 with dissolve
     show happy with Dissolve(1.0)
-    play sound  "audio/SoundEffect/ME_Level_Up_Success.mp3"
+    play sound  "audio/SoundEffect/ME_Level_Up_Success.ogg"
     ei "หนูชนะแล้วค่า" with dissolve
     hide happy
     tk "....."

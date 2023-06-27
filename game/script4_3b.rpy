@@ -67,7 +67,7 @@ label q4_3b:
     ei "อ๊ะ! " with dissolve
     hide surprise
     tk "ห๊ะ!?"
-    play sound  "audio/SoundEffect/basketball_bounce_single.mp3"
+    play sound  "audio/SoundEffect/basketball_bounce_single.ogg"
     n "ลูกบาสสีส้มลอยขึ้นเหนือแป้นอย่างเหมาะเจาะก่อนที่มันจะลงไปในแป้นอย่างสวยงาม"
     "นับเป็นคะแนนแต้มที่สามซึ่งเกิดขึ้นโดยบังเอิญอย่างสวยสด"
     "........"

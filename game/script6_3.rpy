@@ -2,7 +2,7 @@ label q6_3:
     show sunset4 with Dissolve(1.0)
     hide Classroom1_Morning1
     play music "audio/bgm/oshakai_no_junbi.mp3" volume 0.5
-    play sound "audio/bgm/walk.mp3"
+    play sound "audio/SoundEffect/walk.mp3"
     n "หลังจากเลิกเรียน ผมกับเอมิเดินกลับบ้านด้วยกัน" with dissolve
     "ช่วงแรก ผมก็ถามเธอบ่อยๆว่าจะเดินมากับผมทำไมในเมื่อบ้านพวกเราไปกันคนละทาง แต่หลังๆผมเลิกถามแล้วเพราะว่ายัยนี่ก็ตามผมมาอยู่ดี"
     show school_park_3 with Dissolve(1.0)

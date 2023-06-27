@@ -119,7 +119,7 @@ label q5_6:
     hide seal04
 
     show Eimi_date_body_Eimi_smile
-    play sound "audio/bgm/walk.mp3" 
+    play sound "audio/SoundEffect/walk.mp3" 
     ei "วันนี้สนุกดีนะคะ" with dissolve
     tk "ถ้าเธอชอบก็ดีแล้วล่ะ"
     hide Eimi_date_body_Eimi_smile
@@ -147,7 +147,7 @@ label q5_6:
 
     show Eimi_date_body_Eimi_0_0
     show surprise with Dissolve(1.0)
-    play sound "audio/bgm/thud_02.mp3"
+    play sound "audio/SoundEffect/thud_02.mp3"
     ei "โอ๊ะ!" with dissolve
     hide surprise
     o "อึก!"

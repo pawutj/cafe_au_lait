@@ -91,7 +91,7 @@ label q4_5:
     show Eimi_Eimi_smile4
     ei "งั้นจะลองดูนะคะ" with dissolve
     tk "ฉันจะรอดู"
-    play sound  "audio/SoundEffect/writing_pencil_01.mp3"
+    play sound  "audio/SoundEffect/writing_pencil_01.ogg"
     n "เอมิคว้าดินสอเข้ามาในมือและลากเส้นบนกระดาษสองสามครั้ง"
     "ผมคิดจะลากเก้าอี้มานั่งดูเธอวาดเพราะน่าจะใช้เวลานานแต่จู่ๆเอมิก็โพล่งขึ้นมาว่า"
     hide Eimi_Eimi_smile4
