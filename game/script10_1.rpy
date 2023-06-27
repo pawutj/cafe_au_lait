@@ -70,6 +70,7 @@ label q10_1:
     stop music
     "...ถ้าเป็นแบบนี้ล่ะก็..."
     play music "audio/bgm/dotabata_happening.mp3" volume 0.5
+    play sound "audio/SoundEffect/fire_alarm_01.ogg"
     "กิ๊งก่องๆๆๆๆๆ"
     "ระหว่างที่บรรยากาศกำลังเข้าด้ายเข้าเข็ม จู่ๆเสียงกริ่งหน้าบ้านผมก็ดังขึ้น"
     hide Eimi02_date_body_shy_Eimi02_onegai
@@ -98,6 +99,7 @@ label q10_1:
     "....."
     "ถ้าเป็นแบบนั้นจริงๆคงตลกน่าดู"
     stop music
+    play sound "audio/SoundEffect/door_open.ogg"
     "ลองไปดูหลังประตูบ้านชั้นล่างก่อนก็ได้ ผมนึกในใจแล้วเปิดประตูห้องออกไป"
     "....."
     show PlayerHomeM_Morning1 with Dissolve(1.0)
