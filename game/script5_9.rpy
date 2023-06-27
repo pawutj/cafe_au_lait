@@ -230,7 +230,7 @@ label q5_9:
     voice "audio/voice/5_03.mp3"
     ei "เจอกันที่โรงเรียนนะคะ รุ่นพี่ ฮะๆๆๆ" with dissolve
     hide laught
-    play sound "audio/bgm/footsteps_fast.mp3"
+    play sound "audio/SoundEffect/footsteps_fast.ogg"
     n "เอมิส่งเสียงหัวเราะร่วนให้ผมสักพักก่อนที่เธอจะวิ่งห่างจากผมไปอย่างรวดเร็วราวกับสายลม"
     hide Eimi_date_body_shy_Eimi_smile
 

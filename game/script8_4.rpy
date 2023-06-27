@@ -21,7 +21,7 @@ label q8_4:
     "สุดท้ายน่ะ ผมก็..."
     play music "audio/bgm/musukari_no_hana.mp3" volume 0.5
     show Eimi_Eimi_sad
-    play sound "audio/bgm/door_open.mp3"
+    play sound "audio/SoundEffect/door_open.ogg"
     ei "สุดท้ายอะไรเหรอคะ?" with dissolve
     n "ความคิดของผมหยุดชะงักลงเมื่อเสียงของคนคนหนึ่งดังขึ้นมาจากหน้าประตูชมรมศิลปะ"
     play sound "audio/SoundEffect/walk.mp3"

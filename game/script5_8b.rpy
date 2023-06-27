@@ -23,7 +23,7 @@ label q5_8b:
     hide Eimi_date_body_shy_Eimi_smile
 
     show Eimi_date_body_shy_Eimi_0_0
-    play sound "audio/bgm/arere.mp3"
+    play sound "audio/SoundEffect/arere.mp3"
     ei "อะเร้?" with dissolve
     tk "มันจะสนุกกว่าถ้าเธอคิดออกเองนะ"
     n "ผมส่งยิ้มเรียบๆให้เธอเพื่อแสดงถึงความเหนือกว่าทางการคุมเกมบทสนทนา เอมิที่ไปไม่เป็นถึงกับทำตาโตกว่าเดิมและใบหน้าแดงขึ้นเรื่อยๆ"
@@ -103,14 +103,14 @@ label q5_8b:
     tk "นี่มันบทพูดอะไร? เธอหลงมาจากหนังย้อนยุคเรอะ?"
     hide Eimi_date_body_Eimi_panic_shy
 
-    show Eimi_date_body_Eimi_cry_meme
+    show Eimi_date_body_Eimi_cry_meme3
     ei "ถ้ารุ่นพี่ต้องการความบริสุทธิ์ของเอมิล่ะก็ เอมิก็คงไม่สามารถต้านทานรุ่นพี่ได้ค่ะ เอมิคงทำได้แต่ร้องขอให้รุ่นพี่อ่อนโยนกับเอมิหน่อยเพราะนี่เป็นครั้งแร... " with dissolve
     tk "เลิกเล่นมุกใต้สะดือใส่ฉันสักทีเถอะ ._.”"
     n "ผมฟังเธอแล้วก็เหงื่อตกมากขึ้นเรื่อยๆจนต้องขัดคอเธอเพราะทนฟังคำพูดออกทะเลจนจบไม่ไหว แถมพวกเรายังอยู่กลางสาธารณะชนอีก ให้ตายเถอะ"
     stop music
     "ไม่สิ แค่ออกทะเลมันยังนอกไป ยัยนี่คงระดับลอยเรือออกไปนอกอวกาศเลย "
     play music "audio/bgm/oshakai_no_junbi.mp3" volume 0.5
-    hide eimi_date_body_Eimi_cry_meme
+    hide Eimi_date_body_Eimi_cry_meme3
 
     show Eimi_date_body_Eimi_normal
     ei "ว่าแต่..." with dissolve
@@ -137,12 +137,12 @@ label q5_8b:
     tk "จริงๆฉันอาจจะแค่อยากเห็นเธอดีใจก็ได้นะ "
     hide Eimi_date_body_Eimi_pout
 
-    show Eimi_date_shy_Eimi_panic_shy
+    show Eimi_date_body_shy_Eimi_panic_shy
     ei "อ๊ะ..." with dissolve
     n "คำพูดจากผมทำให้เอมิเบิกตากว้างขึ้น "
     "ระหว่างเราสองคนไม่มีคำพูดให้กันไประยะหนึ่งเพราะเอมิหน้าแดงขึ้นกว่าเดิมด้วยความประหม่า เธอทำท่าเหมือนจะอ้าปากพูดหลายรอบ แต่เธอไม่ยอมพูดสักทีราวกับลังเล"
     "ท่าทางเอียงอายของเธอแสดงให้ผมรู้ว่าผมชนะเธอแล้ว"
-    hide Eimi_date_shy_Eimi_panic_shy
+    hide Eimi_date_body_shy_Eimi_panic_shy
 
     show Eimi02_date_body_shy_Eimi02_pout
     show pout with Dissolve(1.0)

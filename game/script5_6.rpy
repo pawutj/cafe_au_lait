@@ -147,7 +147,7 @@ label q5_6:
 
     show Eimi_date_body_Eimi_0_0
     show surprise with Dissolve(1.0)
-    play sound "audio/SoundEffect/thud_02.mp3"
+    play sound "audio/SoundEffect/thud_02.ogg"
     ei "โอ๊ะ!" with dissolve
     hide surprise
     o "อึก!"
