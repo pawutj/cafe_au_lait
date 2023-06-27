@@ -207,8 +207,10 @@ init python:
     mr.add("audio/bgm/natsu_no_omoide.mp3", always_unlocked=True)
     mr.add("audio/bgm/alphard.mp3")
     mr.add("audio/bgm/asa_no_nigiyaka_mura.mp3")
+    mr.add("audio/bgm/battle_on_horizon.mp3")
     mr.add("audio/bgm/cafe_de_swing.mp3")
     mr.add("audio/bgm/dotabata_happening.mp3")
+    mr.add("audio/bgm/fair_battle.mp3")
     mr.add("audio/bgm/hijimeta_no_date.mp3")
     mr.add("audio/bgm/luminous.mp3")
     mr.add("audio/bgm/midori_no_iko.mp3")
@@ -218,14 +220,29 @@ init python:
     mr.add("audio/bgm/nodokana_hi.mp3")
     mr.add("audio/bgm/oshakai_no_junbi.mp3")
 
+    mr.add("audio/bgm/remind.mp3")
+    mr.add("audio/bgm/romance.mp3")
+    mr.add("audio/bgm/take_action.mp3")
+    mr.add("audio/bgm/tokai_no_kaze.mp3")
+    mr.add("audio/bgm/tsuyukusa.mp3")
+    mr.add("audio/bgm/tori_kago.mp3")
+    mr.add("audio/bgm/tsuranuku_no_hikari.mp3")
+    mr.add("audio/bgm/yasashii_harp.mp3")
+
+    mr.add("audio/bgm/yuki_kaze.mp3")
+    mr.add("audio/bgm/yuki_no_owari_ni.mp3")
+    mr.add("audio/bgm/yumebokujou_to_haru_no_toki.mp3")
+
 
 screen extra():
 
 
-    $song_list = ["alphard","asa_no_nigiyaka_mura","cafe_de_swing"
+    $song_list = ["natsu_no_omoide","asa_no_nigiyaka_mura","cafe_de_swing"
     ,"dotabata_happening","hijimeta_no_date" ,"luminous","midori_no_iko"
     ,"morning_talk","musukari_no_hana","nagai_no_yoru"
-    ,"nodokana_hi","oshakai_no_junbi"
+    ,"nodokana_hi","oshakai_no_junbi","remind", "tsuyukusa" , "yasashii_harp", "yuki_kaze"
+    ,"yuki_no_owari_ni" , "yumebokujou_to_haru_no_toki" , "tori_kago" , "alphard" ,"take_action" ,"fair_battle"
+    ,"battle_on_horizon","romance"
     ]
 
     key "mouseup_3" action Hide('extra')
@@ -239,6 +256,7 @@ screen extra():
     $numbers2 = [f'{i:02d}' for i in range(1,13)]
     $numbers3 = [f'{i:02d}' for i in range(13, 17)]
     $numbers4 = [f'{i:02d}' for i in range(13,25)]
+    $numbers5 = [f'{i:02d}' for i in range(26,29)]
     imagebutton auto "extra/back_%s.png":
         focus_mask True
         action  Hide('extra')
@@ -280,7 +298,13 @@ screen extra():
         for idx,i in enumerate(numbers4) :
             imagebutton auto f"extra/music{i}_%s.png":
                 focus_mask True
-                action mr.Play(f"audio/bgm/{song_list[idx]}.mp3")
+                action mr.Play(f"audio/bgm/{song_list[idx+12]}.mp3")
+
+    if persistent.extra_bgm_page == 3:
+        for idx,i in enumerate(numbers5) :
+            imagebutton auto f"extra/music{i}_%s.png":
+                focus_mask True
+                action mr.Play(f"audio/bgm/{song_list[idx+24]}.mp3")
 
     # textbutton "Track 1" action mr.Play("audio/bgm/alphard.mp3")
 
@@ -1037,6 +1061,14 @@ screen main_menu():
         #idle "map/m bath house_idle.png" 
         #hover "map/m bath house_hover.png" 
         action Quit(confirm= True)
+        focus_mask True
+
+    imagebutton auto "main_menu/after_%s.png":
+        hover_sound "audio/UIsound/cursor.ogg" 
+        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+        #idle "map/m bath house_idle.png" 
+        #hover "map/m bath house_hover.png" 
+        action ShowMenu("black_screen",Dissolve(0.1)),Start("q10_1")
         focus_mask True
 
     
