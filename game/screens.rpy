@@ -249,7 +249,7 @@ screen extra():
         focus_mask True
         idle "extra/memory_idle.png"
         hover "extra/memory_hover.png"
-        action ShowMenu("black_screen",Dissolve(0.1)),Start("q10_1") 
+        action ShowMenu("black_screen",Dissolve(0.1)),Start("q_memory_1") 
 
     if persistent.extra_image_page == 1:
         for idx,i in enumerate(numbers) :

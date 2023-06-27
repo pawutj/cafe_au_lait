@@ -1,28 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script10_1.rpy", line 2, in script
-    scene black_scene with Dissolved(1.0)
-  File "game/script10_1.rpy", line 2, in <module>
-    scene black_scene with Dissolved(1.0)
-NameError: name 'Dissolved' is not defined
+  File "game/script_memory.rpy", line 472, in script
+    jump config
+ScriptError: could not find label 'config'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script10_1.rpy", line 2, in script
-    scene black_scene with Dissolved(1.0)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 1654, in execute
-    paired = renpy.python.py_eval(self.paired)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\python.py", line 1092, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\python.py", line 1085, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "game/script10_1.rpy", line 2, in <module>
-    scene black_scene with Dissolved(1.0)
-NameError: name 'Dissolved' is not defined
+  File "game/script_memory.rpy", line 472, in script
+    jump config
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 1974, in execute
+    rv = renpy.game.script.lookup(target)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\script.py", line 927, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'config'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
 Cafe_au_lait 1.0
-Mon Jun 26 23:48:52 2023
+Tue Jun 27 17:04:24 2023
