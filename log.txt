@@ -1,4 +1,4 @@
-Tue Jun 27 18:40:04 2023
+Tue Jun 27 19:06:35 2023
 Windows-10-10.0.19045
 Ren'Py 8.0.3.22090809
  
@@ -7,7 +7,7 @@ Bootstrap to the start of init.init took 0.03s
 Early init took 0.00s
 Loader init took 0.02s
 Loading error handling took 0.02s
-Loading script took 0.34s
+Loading script took 0.22s
 Loading save slot metadata. took 0.04s
 Loading persistent took 0.00s
 Faled to initialize steam: FileNotFoundError("Could not find module 'D:\\renpy-8.0.3-sdk\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
@@ -25,14 +25,59 @@ nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
 Creating interface object took 0.16s
 Cleaning stores took 0.00s
+Init translation took 0.05s
+Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.02s
+Save screen analysis took 0.02s
+Prepare screens took 0.04s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.04s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.23'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 594.40s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.06s
+Loading script took 1.16s
+Loading save slot metadata. took 0.11s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'D:\\renpy-8.0.3-sdk\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.12s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.04s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\astralaria\\AppData\\Roaming/RenPy/backups\\cafe_au_lait':
+Dump and make backups. took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.06s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.18s
+Cleaning stores took 0.00s
 Init translation took 0.06s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
-Save screen analysis took 0.01s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.04s
+Save screen analysis took 0.03s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
+Save bytecode. took 0.01s
 Running _start took 0.00s
 Performance test:
 Interface start took 0.08s
@@ -48,39 +93,39 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 204.51s
+Bootstrap to the start of init.init took 690.26s
 Early init took 0.00s
-Loader init took 0.02s
-Loading error handling took 0.02s
-Loading script took 0.19s
+Loader init took 0.03s
+Loading error handling took 0.01s
+Loading script took 0.23s
 Loading save slot metadata. took 0.04s
 Loading persistent took 0.00s
 Faled to initialize steam: FileNotFoundError("Could not find module 'D:\\renpy-8.0.3-sdk\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
 Running init code took 0.03s
 Loading analysis data took 0.02s
-Analyze and compile ATL took 0.04s
+Analyze and compile ATL took 0.05s
 Index archives took 0.00s
 Backing up script files to 'C:\\Users\\astralaria\\AppData\\Roaming/RenPy/backups\\cafe_au_lait':
-Dump and make backups. took 0.03s
+Dump and make backups. took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
-Initial gc. took 0.06s
+Initial gc. took 0.07s
 DPI scale factor: 1.250000
 nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
-Creating interface object took 0.17s
+Creating interface object took 0.16s
 Cleaning stores took 0.00s
-Init translation took 0.07s
+Init translation took 0.08s
 Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.02s
 Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
+Save pyanalysis. took 0.03s
 Save bytecode. took 0.01s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.06s
+Interface start took 0.05s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
@@ -93,11 +138,11 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 322.67s
+Bootstrap to the start of init.init took 700.71s
 Early init took 0.00s
-Loader init took 0.03s
+Loader init took 0.02s
 Loading error handling took 0.01s
-Loading script took 0.19s
+Loading script took 0.18s
 Loading save slot metadata. took 0.04s
 Loading persistent took 0.00s
 Faled to initialize steam: FileNotFoundError("Could not find module 'D:\\renpy-8.0.3-sdk\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
@@ -105,8 +150,52 @@ Running init code took 0.03s
 Loading analysis data took 0.02s
 Analyze and compile ATL took 0.02s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\astralaria\\AppData\\Roaming/RenPy/backups\\cafe_au_lait':
 Dump and make backups. took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.07s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.07s
+Build styles took 0.00s
+Load screen analysis took 0.02s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.23'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 723.68s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.22s
+Loading save slot metadata. took 0.04s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'D:\\renpy-8.0.3-sdk\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.03s
+Loading analysis data took 0.03s
+Analyze and compile ATL took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\astralaria\\AppData\\Roaming/RenPy/backups\\cafe_au_lait':
+Dump and make backups. took 0.04s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
 Initial gc. took 0.07s
@@ -120,8 +209,8 @@ Build styles took 0.00s
 Load screen analysis took 0.00s
 Analyze screens took 0.01s
 Save screen analysis took 0.02s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.03s
 Save bytecode. took 0.01s
 Running _start took 0.00s
 Performance test:
@@ -138,52 +227,7 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 333.51s
-Early init took 0.00s
-Loader init took 0.03s
-Loading error handling took 0.01s
-Loading script took 0.19s
-Loading save slot metadata. took 0.04s
-Loading persistent took 0.00s
-Faled to initialize steam: FileNotFoundError("Could not find module 'D:\\renpy-8.0.3-sdk\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.03s
-Loading analysis data took 0.02s
-Analyze and compile ATL took 0.01s
-Index archives took 0.00s
-Backing up script files to 'C:\\Users\\astralaria\\AppData\\Roaming/RenPy/backups\\cafe_au_lait':
-Dump and make backups. took 0.03s
-Cleaning cache took 0.00s
-Making clean stores took 0.00s
-Initial gc. took 0.07s
-DPI scale factor: 1.250000
-nvdrs: Loaded, about to disable thread optimizations.
-nvdrs: Disabled thread optimizations.
-Creating interface object took 0.17s
-Cleaning stores took 0.00s
-Init translation took 0.07s
-Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.04s
-Save pyanalysis. took 0.00s
-Save bytecode. took 0.00s
-Running _start took 0.00s
-Performance test:
-Interface start took 0.06s
-
-Initializing gl2 renderer:
-primary display bounds: (0, 0, 1920, 1080)
-swap interval: 1 frames
-Windowed mode.
-Vendor: "b'NVIDIA Corporation'"
-Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
-Version: b'4.6.0 NVIDIA 536.23'
-Display Info: None
-Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
-Maximum texture size: 4096x4096
-Resetting cache.
-Bootstrap to the start of init.init took 338.02s
+Bootstrap to the start of init.init took 735.33s
 Early init took 0.00s
 Loader init took 0.02s
 Loading error handling took 0.01s
@@ -193,8 +237,53 @@ Loading persistent took 0.00s
 Faled to initialize steam: FileNotFoundError("Could not find module 'D:\\renpy-8.0.3-sdk\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
 Running init code took 0.03s
 Loading analysis data took 0.02s
-Analyze and compile ATL took 0.01s
+Analyze and compile ATL took 0.02s
 Index archives took 0.00s
+Dump and make backups. took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.10s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.17s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.00s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.00s
+Save bytecode. took 0.00s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.07s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.23'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 775.00s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.22s
+Loading save slot metadata. took 0.04s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'D:\\renpy-8.0.3-sdk\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.05s
+Index archives took 0.00s
+Backing up script files to 'C:\\Users\\astralaria\\AppData\\Roaming/RenPy/backups\\cafe_au_lait':
 Dump and make backups. took 0.03s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
@@ -206,10 +295,54 @@ Creating interface object took 0.16s
 Cleaning stores took 0.00s
 Init translation took 0.06s
 Build styles took 0.00s
+Load screen analysis took 0.00s
+Analyze screens took 0.01s
+Save screen analysis took 0.02s
+Prepare screens took 0.05s
+Save pyanalysis. took 0.04s
+Save bytecode. took 0.01s
+Running _start took 0.00s
+Performance test:
+Interface start took 0.06s
+
+Initializing gl2 renderer:
+primary display bounds: (0, 0, 1920, 1080)
+swap interval: 1 frames
+Windowed mode.
+Vendor: "b'NVIDIA Corporation'"
+Renderer: b'NVIDIA GeForce RTX 3070/PCIe/SSE2'
+Version: b'4.6.0 NVIDIA 536.23'
+Display Info: None
+Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
+Maximum texture size: 4096x4096
+Resetting cache.
+Bootstrap to the start of init.init took 782.90s
+Early init took 0.00s
+Loader init took 0.02s
+Loading error handling took 0.01s
+Loading script took 0.18s
+Loading save slot metadata. took 0.04s
+Loading persistent took 0.00s
+Faled to initialize steam: FileNotFoundError("Could not find module 'D:\\renpy-8.0.3-sdk\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
+Running init code took 0.03s
+Loading analysis data took 0.02s
+Analyze and compile ATL took 0.02s
+Index archives took 0.00s
+Dump and make backups. took 0.03s
+Cleaning cache took 0.00s
+Making clean stores took 0.00s
+Initial gc. took 0.08s
+DPI scale factor: 1.250000
+nvdrs: Loaded, about to disable thread optimizations.
+nvdrs: Disabled thread optimizations.
+Creating interface object took 0.16s
+Cleaning stores took 0.00s
+Init translation took 0.09s
+Build styles took 0.00s
 Load screen analysis took 0.03s
 Analyze screens took 0.00s
 Save screen analysis took 0.00s
-Prepare screens took 0.05s
+Prepare screens took 0.04s
 Save pyanalysis. took 0.00s
 Save bytecode. took 0.00s
 Running _start took 0.00s
@@ -227,19 +360,18 @@ Display Info: None
 Screen sizes: virtual=(1920, 1080) physical=(1724, 970) drawable=(1724, 970)
 Maximum texture size: 4096x4096
 Resetting cache.
-Bootstrap to the start of init.init took 386.95s
+Bootstrap to the start of init.init took 784.23s
 Early init took 0.00s
-Loader init took 0.03s
+Loader init took 0.02s
 Loading error handling took 0.01s
-Loading script took 0.21s
-Loading save slot metadata. took 0.05s
+Loading script took 0.18s
+Loading save slot metadata. took 0.04s
 Loading persistent took 0.00s
 Faled to initialize steam: FileNotFoundError("Could not find module 'D:\\renpy-8.0.3-sdk\\renpy-8.0.3-sdk\\lib\\py3-windows-x86_64\\steam_api64.dll' (or one of its dependencies). Try using the full path with constructor syntax.")
-Running init code took 0.04s
-Loading analysis data took 0.03s
+Running init code took 0.03s
+Loading analysis data took 0.02s
 Analyze and compile ATL took 0.02s
 Index archives took 0.00s
-Backing up script files to 'C:\\Users\\astralaria\\AppData\\Roaming/RenPy/backups\\cafe_au_lait':
 Dump and make backups. took 0.03s
 Cleaning cache took 0.00s
 Making clean stores took 0.00s
@@ -249,17 +381,17 @@ nvdrs: Loaded, about to disable thread optimizations.
 nvdrs: Disabled thread optimizations.
 Creating interface object took 0.16s
 Cleaning stores took 0.00s
-Init translation took 0.06s
+Init translation took 0.07s
 Build styles took 0.00s
-Load screen analysis took 0.00s
-Analyze screens took 0.01s
-Save screen analysis took 0.02s
-Prepare screens took 0.04s
+Load screen analysis took 0.03s
+Analyze screens took 0.00s
+Save screen analysis took 0.00s
+Prepare screens took 0.05s
 Save pyanalysis. took 0.00s
-Save bytecode. took 0.01s
+Save bytecode. took 0.00s
 Running _start took 0.00s
 Performance test:
-Interface start took 0.06s
+Interface start took 0.07s
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1920, 1080)
