@@ -442,6 +442,10 @@ label splashscreen:
     play sound "audio/system/System_1.mp3"
     pause 1.5
     hide astral_seal with Dissolve(1.0)
+    jump titlescreen
+    return
+
+label titlescreen:
     scene main_scene_1 with Dissolve(0.5)
     scene main_scene_2 with Dissolve(0.5)
     scene main_scene_3 with Dissolve(0.5)
@@ -450,6 +454,7 @@ label splashscreen:
     scene main_scene_6 with Dissolve(0.5)
     play sound "audio/system/System_2.mp3"
     return
+
 image thankyouImg = im.Scale("thx.png",1920,1080)
 image endCredit= im.Scale("credit.png",1920,1080)
 image _thankyouImg = im.Scale("thx.png",1920,1080)
@@ -638,7 +643,7 @@ label cutscene_7:
 label cutscene_after:
     pause 0.01
     scene white_scene with Dissolve(2.0)
-    jump splashscreen
+    jump titlescreen
     return
     
 label cutscene_8:
@@ -745,6 +750,8 @@ label start:
 
     scene artroom_past with Dissolve(1.0)
     hide Canvas
+
+    jump q_9
 
 
     tk "นายน่ะ เลิกเถอะ..."
