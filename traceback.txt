@@ -3,7 +3,7 @@
 While running game code:
   File "game/script9.rpy", line 23, in script
     n "ทันทีที่เสียงประกาศของพิธีกรดังขึ้น เสียงปรบมือของผู้คนมากมายและเสียงถ่ายรูปที่เกิดขึ้นพร้อมกับแสงแฟลชจำนวนมากก็ปรากฏขึ้นต่อหน้าผมไม่หยุด"
-OSError: Couldn't find file 'audio/bgm/claps-44774.mp3'.
+OSError: Couldn't find file 'audio/SoundEffect/claps-44774.mp3'.
 
 -- Full Traceback ------------------------------------------------------------
 
@@ -39,9 +39,9 @@ Full traceback:
     rv = renpy.loader.load(fn)
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\loader.py", line 820, in load
     raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'audio/bgm/claps-44774.mp3'.
+OSError: Couldn't find file 'audio/SoundEffect/claps-44774.mp3'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
 Cafe_au_lait 1.0
-Tue Jun 27 23:22:38 2023
+Tue Jun 27 23:29:44 2023
