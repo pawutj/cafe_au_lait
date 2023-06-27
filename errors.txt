@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/cg_screen.rpy", line 454: 'screen' is not a keyword argument or valid child for the add statement.
-    add "CG/boob/boob09.png"screen show_cg15_05():
-                                  ^
+File "game/screens.rpy", line 1052: imagebutton expects a non-empty block.
+    imagebutton auto "main_menu/main_extra_%s.png":
+                                                   ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Tue Jun 27 19:03:28 2023
+Tue Jun 27 23:48:37 2023

@@ -12,6 +12,8 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
+default persistent.endgame = False
+
 default persistent.page = 0
 default persistent.extra_image_page = 0
 default persistent.extra_bgm_page = 1

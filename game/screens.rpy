@@ -1048,14 +1048,19 @@ screen main_menu():
         focus_mask True 
         action ShowMenu("config_main")
 
-    
-    imagebutton auto "main_menu/main_extra_%s.png":
-        hover_sound "audio/UIsound/cursor.ogg" 
-        activate_sound "audio/system/System_5.mp3" 
-        #idle "map/m bath house_idle.png" 
-        #hover "map/m bath house_hover.png" 
-        focus_mask True 
-        action ShowMenu("extra")
+    if(persistent.endgame == False):
+        imagebutton auto "main_menu/main_extra_disabled_%s.png":
+            focus_mask True 
+         
+    if(persistent.endgame == True):
+        imagebutton auto "main_menu/main_extra_%s.png":
+            hover_sound "audio/UIsound/cursor.ogg" 
+            activate_sound "audio/system/System_5.mp3" 
+            #idle "map/m bath house_idle.png" 
+            #hover "map/m bath house_hover.png" 
+            focus_mask True 
+            action ShowMenu("extra")
+
 
     
     imagebutton auto "main_menu/main_exit_%s.png":
