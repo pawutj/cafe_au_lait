@@ -21,8 +21,10 @@ label q8_4:
     "สุดท้ายน่ะ ผมก็..."
     play music "audio/bgm/musukari_no_hana.mp3" volume 0.5
     show Eimi_Eimi_sad
+    play sound "audio/bgm/door_open.mp3"
     ei "สุดท้ายอะไรเหรอคะ?" with dissolve
     n "ความคิดของผมหยุดชะงักลงเมื่อเสียงของคนคนหนึ่งดังขึ้นมาจากหน้าประตูชมรมศิลปะ"
+    play sound "audio/bgm/walk.mp3"
     "ผมตาเบิกโพลงเมื่อเห็นเจ้าของเสียงที่ค่อยๆเดินเข้ามาหาผมช้าๆ"
     hide Eimi_Eimi_sad
 
@@ -362,6 +364,7 @@ label q8_4:
     hide question
     tk "แต่ในเมื่อทางงานประกวดเค้าส่งคืนมาแล้วหลังประกาศผลมาพักหนึ่ง ฉันก็เอามันกลับมาที่ห้องนี้แล้วล่ะ"
     stop music
+    play sound "audio/bgm/walk.mp3"
     n "ผมลุกขึ้นจากเก้าอี้แล้วค่อยๆเดินไปยังรูปที่วางพิงอยู่ตรงผนังที่ใกล้ที่สุดซึ่งถูกคลุม\nด้วยผ้าสีขาวก่อนที่จะใช้มือดึงเอาผ้าที่บดบังรูปวาดออกมา"
     hide Eimi_Eimi_normal
     jump q8_5

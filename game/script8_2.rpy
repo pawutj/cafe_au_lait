@@ -1,6 +1,7 @@
 label q8_2:
     scene sunset4 with Dissolve(1.0)
     play music "audio/bgm/yuki_kaze.mp3" volume 0.5
+    play sound "audio/bgm/walk.mp3"
     n "พักหลัง ผมกับเอมิกลับบ้านด้วยกันบ่อยขึ้น" with dissolve
     "ตอนแรกผมถามเธอว่าเธอจะตามผมมาทำไมในเมื่อกลับบ้านคนละทางกัน แต่ผมถามเธอไปหลายรอบจนผมเลิกคิดที่จะถามไปแล้ว"
     "ว่ากันตามตรง การมีรุ่นน้องเดินกลับบ้านมาด้วยกันก็ไม่ใช่เรื่องแย่เท่าไหร่"
@@ -45,6 +46,7 @@ label q8_2:
     hide Eimi_Eimi_smug3
 
     show Eimi02_Eimi02_stupid
+    play sound "audio/bgm/arere.mp3"
     ei "อ่าเร้!?" with dissolve
     tk "ดูยังไงเธอก็แอบมองฉันเห็นๆ"
     hide Eimi02_Eimi02_stupid

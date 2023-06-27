@@ -1,6 +1,7 @@
 label q8_3:
     scene Sky_Morning with Dissolve(1.0)
     play music "audio/bgm/morning_talk.mp3" volume 0.5
+    play sound "audio/bgm/ME_-_school_chimes_01.mp3"
     n "วันรุ่งขึ้นมาถึงในที่สุด" with dissolve
     scene Classroom1_Morning1 with Dissolve(1.0)
     hide Sky_Morning
