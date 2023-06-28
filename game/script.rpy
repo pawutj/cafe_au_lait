@@ -493,7 +493,7 @@ image _cutscene_3_2 =  im.Scale("Cutscene/unit03/unit03_02.png",1920,1080)
 
 image cutscene_4_0 =  im.Scale("Cutscene/unit03/unit03_00.png",1920,1080)
 image cutscene_4_1 =  im.Scale("Cutscene/unit04/unit04_00.png",1920,1080)
-image cutscene_4_2 =  im.Scale("Cutscene/unit04/unit04_00.png",1920,1080)
+image cutscene_4_2 =  im.Scale("Cutscene/unit04/unit04_01.png",1920,1080)
 image _cutscene_4_2 =  im.Scale("Cutscene/unit04/unit04_01.png",1920,1080)
 
 image cutscene_5_0 =  im.Scale("Cutscene/unit03/unit03_00.png",1920,1080)
@@ -729,7 +729,7 @@ label badend:
     $renpy.pause(0.01, hard=True)
     scene _badend_0 with Dissolve(3.0)
     $renpy.pause(0.01, hard=True)
-    jump splashscreen
+    jump titlescreen
     return
 
 
@@ -763,7 +763,7 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump q4_2
+    jump q4_5
 
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
