@@ -54,7 +54,7 @@ image side honoka_1:
 
 image side tomoe_1:
     zoom 1.3
-    im.Scale("Sprite/Tomoe/tomoe_01.png",320,280)
+    im.Scale("Sprite/Tomoe/tomoe_01.png",325,280)
     yoffset 50
 
 image side enjou1:
@@ -763,7 +763,7 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump q4_5
+    jump q5_1
 
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"

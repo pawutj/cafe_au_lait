@@ -166,31 +166,31 @@ label q4_5:
     tk "อะไร?"
     hide Eimi_Eimi_smile
 
-    show Eimi_Eimi_smile2
+    show Eimi_Eimi_smile2 at zoom_eimi
     n "จู่ๆเอมิก็เดินเข้ามาใกล้ผมแล้วส่งยิ้มให้ผม " with dissolve
     "ผมคิดไปเองหรือเปล่านะว่ารอยยิ้มของเธอมันหวานกว่าปกติ"
     "เธอต้องการอะไรจากผมกัน?"
     hide Eimi_Eimi_smile2
 
-    show Eimi_Eimi_smile3
+    show Eimi_Eimi_smile3 at zoom_eimi
     ei "ที่ว่าขออะไรก็ได้หลังชนะเดิมพัน ขอตอนนี้เลยได้ไหมคะ?" with dissolve
     n "เอมิขยิบตาให้ผมหนึ่งครั้ง...เรื่องนี้เองอย่างงั้นเหรอ? ผมเพิ่งนึกได้"
     tk "เอาสิ จะขออะไรก็บอกมาเลย"
     hide Eimi_Eimi_smile3
 
-    show Eimi_Eimi_smug
+    show Eimi_Eimi_smug at zoom_eimi
     ei "อย่าเสียใจทีหลังนะคะ" with dissolve
     n "เอมิส่งเสียงหัวเราะคิกคักในลำคอเบาๆจนผมเริ่มระแวงว่าเธอจะขออะไรพิลึกๆหรือเปล่า"
     "แน่นอนว่าถ้าเธอขออะไรแปลกๆ ผมก็จะรีบปฏิเสธไปทันที "
     hide Eimi_Eimi_smug
 
-    show Eimi_Eimi_smile
+    show Eimi_Eimi_smile at zoom_eimi
     ei "วันหยุดนี้น่ะ..." with dissolve
     tk "วันหยุดนี้?"
     n "ผมทวนคำเธอด้วยความสงสัยเพราะจู่ๆคำพูดเอมิก็ขาดตอนไป"
     hide Eimi_Eimi_smile
 
-    show Eimi_shy_Eimi_smile2
+    show Eimi_shy_Eimi_smile2 at zoom_eimi
     "เธอส่งยิ้มให้ผมด้วยใบหน้าที่แดงระเรื่อบางๆ" with dissolve
     ei "รุ่นพี่ไปเที่ยวกับหนูได้ไหมคะ?"
     n "ข้อเสนอของเอมิทำให้ผมชะงักไปชั่วขณะ"

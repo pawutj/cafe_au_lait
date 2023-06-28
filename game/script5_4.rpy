@@ -1,5 +1,6 @@
 label q5_4:
-    show Aquarium_Morning with Dissolve(1.0)
+    scene black_scene with dissolve
+    scene Aquarium_Morning with Dissolve(1.0)
     play music "audio/bgm/nodokana_hi.mp3" volume 0.5
     show Eimi_date_body_Eimi_smile2
     ei "หวาวววว" with dissolve
