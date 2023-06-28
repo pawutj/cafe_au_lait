@@ -33,30 +33,33 @@ label q10_2:
     ei "....." with dissolve
     tk "ฉันอยากให้ความสัมพันธ์ของเราค่อยเป็นค่อยไปน่ะเพราะเธอสำคัญกับฉันมากจริงๆ...เอมิ"
     n "คำตอบตรงไปตรงมาของผมทำให้เอมิหน้าแดงแจ๋"
-    hide Eimi02_date_body_shy_Eimi02_onegai with dissolve
-
-    "เอมิไม่ได้ตอบอะไรผม เธอเพียงแค่เลื่อนใบหน้าเข้ามาใกล้ผมช้าๆและหลับตาลง"
     
+
+
+    show Eimi_kiss at zoom_eimi with Dissolve(1)
+    hide Eimi02_date_body_shy_Eimi02_onegai with dissolve
+    "เอมิไม่ได้ตอบอะไรผม เธอเพียงแค่เลื่อนใบหน้าเข้ามาใกล้ผมช้าๆและหลับตาลง" with dissolve
+    show Eimi_kiss2 at zoom_eimi with Dissolve(1)
+    hide Eimi_kiss
     "สัมผัสอบอุ่นก่อตัวที่ริมฝีปากของผม"
     "ริมฝีปากของพวกเราสองคนสัมผัสกัน"
     "เอมิวางริมฝีปากอวบอิ่มของเธอลงบนปากของผมอย่างนุ่มนวล ก่อนที่เธอจะโถมตัวเข้าหาผมและสร้างสัมผัสที่แนบแน่นกว่าเดิม"
     "รอยจูบที่อ่อนโยนแปรเปลี่ยนเป็นรอยจูบที่ร้อนแรงขึ้น ราวกับเจ้าของจุมพิตกระหายความรักที่เธอปรารถนาจากชายซึ่งเธอผูกพัน"
-    "การเชื่อมต่อระหว่างพวกเราสองคนเลือนหายไปเมื่อเอมิเลื่อนใบหน้าสีแดงสดห่างออกไปจากผม"
-    hide Eimi02_date_body_shy_Eimi02_onegai
-
-    show Eimi_date_body_shy_Eimi_angry
+    "การเชื่อมต่อระหว่างพวกเราสองคนเลือนหายไปเมื่อเอมิเลื่อนใบหน้าสีแดงสดห่างออกไปจากผม" 
+    show Eimi_date_body_shy_Eimi_angry at zoom_eimi 
+    hide Eimi_kiss2 with dissolve
     ei "รุ่นพี่อาจจะเป็นสุภาพบุรุษ แต่หนูน่ะไม่เล่นเป็นสุภาพสตรีกับพี่อีกแล้วค่ะ" with dissolve
     tk "เอมิ..."
     hide Eimi_date_body_shy_Eimi_angry
 
-    show Eimi_date_body_shy_Eimi_smile2
+    show Eimi_date_body_shy_Eimi_smile2 at zoom_eimi
     ei "หนูก็ไม่อยากทำแบบนี้หรอกนะคะ แต่ถ้ารุ่นพี่ไม่เริ่มก่อนสักทีทั้งๆที่พวกเราก็คบกันมานานมากแล้ว หนูก็คงต้องเล่นไม้นี้ค่ะ" with dissolve
     hide Eimi_date_body_shy_Eimi_smile2
 
-    show Eimi_date_body_shy_Eimi_smug
+    show Eimi_date_body_shy_Eimi_smug at zoom_eimi
     n "เด็กสาวผมน้ำตาลเผยยิ้มยั่วยวนให้ผมพร้อมกับปลดเสื้อผ้าออกจากร่างกายตัวเองทีละชิ้นๆ" with dissolve
     stop music
-    hide Eimi_date_body_shy_Eimi_smug
+    hide Eimi_date_body_shy_Eimi_smug with dissolve
 
     "ดูเหมือนว่าเธอคงไม่มีทางปล่อยให้ผมหนีไปไหนแล้ว"
     "....."

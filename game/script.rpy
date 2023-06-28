@@ -228,6 +228,10 @@ image Eimi_kiss:
     zoom 0.75
     im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_kissu01.png")
 
+image Eimi_kiss2:
+    zoom 0.75
+    im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_kissu02.png")
+
 image white_scene = im.Scale("white.png",1920,1080)
 
 image School_Hallway1_sunset = im.Scale("background/school_Hallway/School_Hallway1_sunset.png",1920,1080)
