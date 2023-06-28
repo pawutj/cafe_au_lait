@@ -2,7 +2,8 @@ label q8_4:
     scene sunset4 with Dissolve(1.0)
     play music "audio/bgm/tsuyukusa.mp3" volume 0.5
     n "วันแต่ละวันผ่านไปเร็วเหลือเกิน" with dissolve
-    scene art_room2 with Dissolve(1.0)
+    scene art_room2_zoom at left_to_right with Dissolve(0.5)
+    show border with Dissolve(0.5)
     hide sunset4
 
     "ผมวางพู่กันลงบนโต๊ะที่ใกล้ตัวเองที่สุดหลังจากฝึกวาดภาพเป็นเวลานาน "
@@ -20,6 +21,9 @@ label q8_4:
     stop music
     "สุดท้ายน่ะ ผมก็..."
     play music "audio/bgm/musukari_no_hana.mp3" volume 0.5
+    hide border with Dissolve(0.5)
+    scene art_room2 with Dissolve(0.5)
+    
     show Eimi_Eimi_sad
     play sound "audio/SoundEffect/door_open.ogg"
     ei "สุดท้ายอะไรเหรอคะ?" with dissolve
