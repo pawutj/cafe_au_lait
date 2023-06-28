@@ -38,21 +38,22 @@ label q10_4:
     ei "ฮะๆๆ รุ่นพี่ทาคากินี่หน้าบางจังเลยค่ะ" with dissolve
     hide laught
     n "เสียงหัวเราะกังวานดังมาจากเด็กสาวผมน้ำตาล ผมถอนหายใจต่อหน้าเอมิที่ยิ้มซุกซนให้ผม"
+    show Eimi_date_body_Eimi_smug3 at zoom_eimi with dissolve
     "ระหว่างที่สองเราเดินด้วยกัน จู่ๆเอมิขยับตัวเข้าใกล้ผม สองแขนของเธอเกาะเข้าที่แขนขวาของผมอย่างแนบแน่น"
     hide Eimi_date_body_Eimi_smug3
 
-    show Eimi02_date_body_Eimi02_smile
+    show Eimi02_date_body_Eimi02_smile at zoom_eimi
     ei "เอมิดีใจนะคะที่พวกเราสองคนทำตามความฝันได้แล้ว" with dissolve
     n "รอยยิ้มใสซื่อของเอมิทำให้ความอบอุ่นก่อตัวขึ้นข้างในอกผม"
     tk "ฉันก็ดีใจเหมือนกัน"
     hide Eimi02_date_body_Eimi02_smile
 
-    show Eimi02_date_body_shy_Eimi02_normal
+    show Eimi02_date_body_shy_Eimi02_normal at zoom_eimi
     ei "....." with dissolve
     n "เอมิไม่ได้พูดอะไร เธอเพียงแค่หน้าแดงขึ้นเมื่อเห็นรอยยิ้มของผม"
     hide Eimi02_date_body_shy_Eimi02_normal
 
-    show Eimi02_date_body_Eimi02_narrowEYE
+    show Eimi02_date_body_Eimi02_narrowEYE at zoom_eimi
     ei "ไม่นึกเลยนะคะว่าพวกเราจะมาไกลได้ขนาดนี้" with dissolve
     tk "นั่นสินะ"
     n "ผมเองก็ไม่เคยนึกเหมือนกันว่าเด็กสาวที่วิ่งชนงานศิลปะของผมจะกลายเป็นผู้หญิงที่อยู่เคียงข้างผมในภายหลัง"
@@ -60,26 +61,26 @@ label q10_4:
     "แต่มันก็เป็นสิ่งที่เลอค่าสำหรับผมเหลือเกิน"
     hide Eimi02_date_body_Eimi02_narrowEYE
 
-    show Eimi02_date_body_Eimi02_onegai
+    show Eimi02_date_body_Eimi02_onegai at zoom_eimi
     ei "ว่าแต่วันพรุ่งนี้รุ่นพี่ก็ต้องกลับไปเรียนหนังสือหนักๆอีกแล้วใช่ไหมคะ?" with dissolve
     tk "ก็นะ..."
     n "หลังจากผมเข้าเรียนมหาวิทยาลัยแพทย์ ชีวิตของผมก็มีอะไรให้ทำมากขึ้น"
     "ผมคงต้องพยายามในเส้นทางที่ตัวเองตัดสินใจไปแล้ว"
     hide Eimi02_date_body_Eimi02_onegai
 
-    show Eimi02_date_body_Eimi02_smile3
+    show Eimi02_date_body_Eimi02_smile3 at zoom_eimi
     ei "พยายามเข้านะคะ รุ่นพี่" with dissolve
     tk "ช่วงที่ต้องอ่านหนังสือเยอะๆแถมยังต้องฝึกวาดรูปก็ต้องโต้รุ่ง แต่หลังๆฉันก็เริ่มชินแล้วล่ะ"
     hide Eimi02_date_body_Eimi02_smile3
 
-    show Eimi02_date_body_Eimi02_smile
+    show Eimi02_date_body_Eimi02_smile at zoom_eimi
     show aware with Dissolve(1.0)
     ei "พูดถึงอ่านหนังสือดึกๆทำให้เอมินึกอะไรขึ้นได้ค่ะ" with dissolve
     hide aware
     tk "หา?"
     hide Eimi02_date_body_Eimi02_smile
 
-    show Eimi_date_body_Eimi_smile4
+    show Eimi_date_body_Eimi_smile4 at zoom_eimi
     ei "นี่ค่ะ" with dissolve
     stop music
     tk "...นี่มัน"
@@ -87,13 +88,13 @@ label q10_4:
     n "สิ่งที่เอมิยื่นให้ผมคือกาแฟกระป๋อง "
     hide Eimi_date_body_Eimi_smile4
 
-    show Eimi_date_body_Eimi_smile
+    show Eimi_date_body_Eimi_smile at zoom_eimi
     "เด็กสาวผมน้ำตาลวางกาแฟที่เธอซื้อมาไว้บนฝ่ามือของผมก่อนที่เธอจะส่งรอยยิ้มซื่อๆให้" with dissolve
     ei "‘คาเฟอีนมันเพิ่มพลังในการคลอดผลงานได้ยังไงล่ะ’"
     tk "....."
     hide Eimi_date_body_Eimi_smile
 
-    show Eimi_date_body_Eimi_smile2
+    show Eimi_date_body_Eimi_smile2 at zoom_eimi
     ei "รุ่นพี่เคยบอกกับหนูไม่ใช่เหรอคะ " with dissolve
     tk "...เอมิ"
     n "ไม่นึกเลยว่าเธอยังจำเหตุการณ์ที่เราพบกันครั้งแรกๆได้อย่างแม่นยำ"
@@ -101,21 +102,21 @@ label q10_4:
     tk "ขอบคุณมากนะ"
     hide Eimi_date_body_Eimi_smile2
 
-    show Eimi_date_body_Eimi_smile3
+    show Eimi_date_body_Eimi_smile3 at zoom_eimi
     show laught with Dissolve(1.0)
     ei "เล็กๆน้อยๆค่ะ ฮะๆๆ" with dissolve
     hide laught
     n "เด็กสาวผมน้ำตาลหัวเราะให้ผมเบาๆ "
     hide Eimi_date_body_Eimi_smile3
 
-    show Eimi_date_body_Eimi_o
+    show Eimi_date_body_Eimi_o at zoom_eimi
     show question with Dissolve(1.0)
     ei "ว่าแต่รุ่นพี่ยังดื่มมันทุกวันเหมือนหนึ่งปีก่อนอีกไหมคะ?" with dissolve
     hide question
     tk "วันละสิบแก้ว"
     hide Eimi_date_body_Eimi_o
 
-    show Eimi_date_body_Eimi_panic
+    show Eimi_date_body_Eimi_panic at zoom_eimi
     show panic1 with Dissolve(1.0)
     ei "อย่างงั้นมันไม่เยอะไปเหรอคะ!?" with dissolve
     hide panic1
@@ -123,19 +124,19 @@ label q10_4:
     tk "ฉันล้อเล่นน่า ฮึๆๆ"
     hide Eimi_date_body_Eimi_panic
 
-    show Eimi_date_body_Eimi_cry_meme2
+    show Eimi_date_body_Eimi_cry_meme2 at zoom_eimi
     show down with Dissolve(1.0)
     ei "เอมิตกใจแทบแย่ค่ะ" with dissolve
     hide down
     tk "เพราะเคยมีผู้หญิงคนหนึ่งบอกกับฉันน่ะว่า ‘ห่วงสุขภาพตัวเองด้วยนะคะ กินแต่กาแฟเนี่ย’...ฉันเลยไม่ได้ดื่มมันพร่ำเพรื่อทุกวันไง..."
     hide Eimi_date_body_Eimi_cry_meme2
 
-    show Eimi_date_body_Eimi_o
+    show Eimi_date_body_Eimi_o at zoom_eimi
     n "เอมิเบิกตากว้างขึ้นน้อยๆด้วยความประหลาดใจ" with dissolve
     "คำพูดของผมคือสิ่งที่เธอเตือนผมเมื่อหนึ่งปีก่อน"
     hide Eimi_date_body_Eimi_o
 
-    show Eimi02_date_body_shy_Eimi02_smile
+    show Eimi02_date_body_shy_Eimi02_smile at zoom_eimi
     ei "รุ่นพี่นี่ความจำดีจังนะคะ" with dissolve
     tk "เธอก็ไม่แพ้ฉันหรอก เอมิ"
     hide Eimi02_date_body_shy_Eimi02_smile with dissolve
