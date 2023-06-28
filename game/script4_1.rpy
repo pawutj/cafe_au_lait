@@ -3,7 +3,7 @@ label q4_1:
     play music "audio/bgm/cafe_de_swing.mp3" volume 0.5
     n "เวลาผ่านมาสองสามสัปดาห์" with dissolve
     "วันนี้เป็นวันศุกร์ซึ่งเป็นวันก่อนวันหยุดทำให้เหล่านักเรียนกลับบ้านกันค่อนข้างไว หลังเลิกเรียนที่แทบไม่มีใครเหลืออยู่ ผมก็ยังนั่งวาดรูป "
-    play sound  "audio/SoundEffect/zakuxtu.mp3"
+    play sound  "audio/SoundEffect/writing_inkpen.ogg" volume 1.3
     "ไม่มีเหตุผลให้กลับบ้านเร็วอยู่แล้ว ผมเลยนั่งวาดรูปเงียบๆคนเดียว"
     "ห้องชมรมศิลปะก็ยังไร้ผู้คนไม่ต่างจากเดิม เดือนนี้ก็ยังไม่มีสมาชิกใหม่เช่นเคย"
     "สมัยก่อนผมเคยมีความหวังที่จะให้มีคนกลับมาเข้าชมรม แต่ตอนนี้ผมไม่ค่อยหวังแล้ว "
@@ -61,6 +61,7 @@ label q4_1:
 
     show Eimi02_Eimi02_meme02
     show panic1 with Dissolve(1.0)
+    play sound "audio/SoundEffect/zakuxtu.mp3" volume 1.0
     ei "กรี๊ดด! รุ่นพี่จะฆาตกรรมหนู! " with dissolve
     hide panic1
     tk "ไม่มีคนตายเพราะแค่โดนด้ามพู่กันแทงหรอกนะ"
@@ -76,6 +77,7 @@ label q4_1:
     ei "รุ่นพี่กัดหนูอีกแล้ววว " with dissolve
     hide panic
     tk "โวยวายนักก็โดนอีก นี่แหนะ!"
+    play sound "audio/SoundEffect/zakuxtu.mp3" volume 1.0
     n "ด้ามพู่กันในมือผมเสียบเข้าที่เอวเอมิจนคนโดนทำร้ายสะดุ้งเฮือก"
     hide Eimi02_Eimi02_panic
 
@@ -119,6 +121,7 @@ label q4_1:
 
     show Eimi02_Eimi02_ara
     show question with Dissolve(1.0)
+    play sound "audio/SoundEffect/arere.mp3" volume 1.3
     ei "อ่าเร้?" with dissolve
     hide question
     n "ผมไม่เข้าใจความคิดเอมิเท่าไหร่"

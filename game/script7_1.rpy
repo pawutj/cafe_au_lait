@@ -91,6 +91,7 @@ label q7_1:
     hide Eimi02_Eimi02_smile3
 
     show Eimi02_Eimi02_ara
+    play sound "audio/SoundEffect/arere.mp3" volume 1.3
     ei "อ่าเร้?" with dissolve
     tk "ไม่เกี่ยวกับว่าน่ารักหรือไม่น่ารักหรอก เกี่ยวกับว่าได้เดินกลับบ้านกับเธอต่างหาก เอมิ"
     hide Eimi02_Eimi02_ara

@@ -46,7 +46,7 @@ label q8_2:
     hide Eimi_Eimi_smug3
 
     show Eimi02_Eimi02_stupid
-    play sound "audio/SoundEffect/arere.mp3"
+    play sound "audio/SoundEffect/arere.mp3" volume 1.3
     ei "อ่าเร้!?" with dissolve
     tk "ดูยังไงเธอก็แอบมองฉันเห็นๆ"
     hide Eimi02_Eimi02_stupid

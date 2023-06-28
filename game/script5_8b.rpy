@@ -23,7 +23,7 @@ label q5_8b:
     hide Eimi_date_body_shy_Eimi_smile
 
     show Eimi_date_body_shy_Eimi_0_0
-    play sound "audio/SoundEffect/arere.mp3"
+    play sound "audio/SoundEffect/arere.mp3" volume 1.3
     ei "อะเร้?" with dissolve
     tk "มันจะสนุกกว่าถ้าเธอคิดออกเองนะ"
     n "ผมส่งยิ้มเรียบๆให้เธอเพื่อแสดงถึงความเหนือกว่าทางการคุมเกมบทสนทนา เอมิที่ไปไม่เป็นถึงกับทำตาโตกว่าเดิมและใบหน้าแดงขึ้นเรื่อยๆ"

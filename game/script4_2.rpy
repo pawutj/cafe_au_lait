@@ -15,12 +15,12 @@ label q4_2:
     tk "ทำไมฉันต้องเล่นบาสด้วย?"
     hide Eimi_Eimi_smug2
 
-    show Eimi_Eimi_wakaranai
+    show Eimi_Eimi_cry_meme2
     show down with Dissolve(1.0)
     ei "แล้วทำไมหนูต้องวาดรูปล่ะคะ?" with dissolve
     hide down
     tk "เพราะเธอเป็นสมาชิกสำรองของชมรมฉันไง -_-+"
-    hide Eimi_Eimi_wakaranai
+    hide Eimi_Eimi_cry_meme2
 
     show Eimi_Eimi_panic_shy
     show panic with Dissolve(1.0)
@@ -189,6 +189,7 @@ label q4_2:
     ei "ฮัดโชะ หนึ่งแต้ม " with dissolve
     hide aware
     n "เอมิไม่ทันปล่อยให้ผมพูดท้าทายจนจบด้วยซ้ำ เธอกระโดดชู้ตลูกข้ามหัวผมไปหน้าด้านๆ"
+    play sound "audio/SoundEffect/ball-hitting-the-net.mp3" volume 0.8
     "ลูกบาสสีส้มกระเด้งลงห่วงพอดิบพอดีก่อนที่มันจะตกตุบๆกับพื้นยิมเป็นสัญญาณว่าผมถูกเธอเล่นงานไปแล้วหนึ่งครั้ง"
     hide Eimi_Eimi_confident2
 
@@ -238,12 +239,12 @@ label q4_2:
     tk "อย่ามาหาว่าฉันเป็นตัวประกอบนะ! "
     hide Eimi_Eimi_panic_shy
 
-    show Eimi_Eimi_panic
+    show Eimi_Eimi_hurt
     show surprise with Dissolve(1.0)
     ei "ก็รุ่นพี่กัดหนู หนูเลยกัดตอบไงคะ!" with dissolve
     hide surprise
     n "เด็กสาวผมสีน้ำตาลหลับตาปี๋ก่อนที่เธอจะค่อยๆเปลี่ยนสีหน้า"
-    hide Eimi_Eimi_panic
+    hide Eimi_Eimi_hurt
 
     show Eimi_Eimi_smug3
     "เอมิยิ้มกว้างราวกับเธอไม่คิดว่าตัวเองจะแพ้เลย ทั้งๆที่ส่วนสูงที่น้อยกว่านั้นเป็นข้อเสียเปรียบในกีฬาบาสและผมขวางระหว่างเธอกับแป้นพอดิบพอดี" with dissolve
@@ -260,6 +261,7 @@ label q4_2:
     tk "เฮ้ย!"
     n "ผมตาตั้งเมื่อลืมนึกไปว่ามีวิธีแก้ทางผมที่ง่ายๆอยู่"
     "เอมิกระโดดถอยไปข้างหลังพร้อมกับชู้ตลูกไปด้วย "
+    play sound "audio/SoundEffect/ball-hitting-the-net.mp3" volume 0.8
     "วิถีลูกที่สูงโค้งกว่าระยะมือผมทำให้ผมไม่มีทางหยุดมันได้ ไม่ช้าหลังจากนั้นลูกบาสสีส้มก็ลงห่วงในชั่วอึดใจต่อมา ทำให้เอมินำหน้าผมไปสองแต้ม"
     "เฟดอเวย์คือการทำแต้มโดยการกระโดดถอยไปข้างหลังแล้วชู้ต ทำให้ผู้เล่นของอีกฝ่ายไม่สามารถเข้ามาสกัดได้และน้ำหนักบวกทิศทางจะแม่นยำมาก จึงนิยมใช้ท่ากระโดนถอยหลังแล้วชู้ตเพื่อทำคะแนน"
     "ผมโดนยัยนี่เล่นเข้าให้แล้ว! ให้ตายสิ!"

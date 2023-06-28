@@ -55,12 +55,12 @@ label q2_2:
     n "เอมิร้องขึ้นพร้อมกับเด้งตัวจากเก้าอี้เพราะโดนผมใช้พู่กันจิ้มเข้าที่บั้นท้าย"
     "เธอกระโดดดึ๋งขึ้นสักพักก่อนจะกลับมานั่งลงแล้วงอแงใส่ผม"
     hide Eimi_Eimi_panic_shy
-    show Eimi02_Eimi02_0
+    show Eimi_Eimi_cry_meme2
     ei "แงง...รุ่นพี่ทำร้ายสุภาพสตรีอ่ะ " with dissolve
     tk "ปกติฉันไม่ชอบทำร้ายสุภาพสตรีแต่เธอไม่ใช่สุภาพสตรี"
 
     show Eimi_Eimi_cry_meme2 
-    hide Eimi02_Eimi02_0
+    hide Eimi_Eimi_cry_meme2
     show panic with Dissolve(1.0)
     n "คำวิจารณ์ของผมทำให้เอมิอ้าปากค้างเป็นเวลานานพอจะให้แมลงสิบกว่าตัวบินเข้าไปพร้อมๆกัน" with dissolve
     hide panic
