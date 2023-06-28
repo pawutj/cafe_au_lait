@@ -224,6 +224,10 @@ image Moonlight3 = im.Scale("background/SKY/Moonlight3.png",1920,1080)
 image school_gym_a_zoom = im.Scale("background/gym/school_gym_a2.jpg",1920,1080)
 
 
+image Eimi_kiss:
+    zoom 0.75
+    im.Composite((1920,2900), (0,1525), "Sprite/Eimi01/Eimi_kissu01.png")
+
 image white_scene = im.Scale("white.png",1920,1080)
 
 image School_Hallway1_sunset = im.Scale("background/school_Hallway/School_Hallway1_sunset.png",1920,1080)
@@ -763,7 +767,7 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump q10_4
+    jump q6_5
 
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"

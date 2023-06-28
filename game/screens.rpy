@@ -201,7 +201,7 @@ style input:
 init python:
 
     # Step 1. Create a MusicRoom instance.
-    mr = MusicRoom(fadeout=1.0)
+    mr = MusicRoom(fadeout=1.0, single_track=True)
 
     # Step 2. Add music files.
     mr.add("audio/bgm/natsu_no_omoide.mp3")
