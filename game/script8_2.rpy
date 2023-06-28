@@ -1,7 +1,7 @@
 label q8_2:
     scene sunset4 with Dissolve(1.0)
     play music "audio/bgm/yuki_kaze.mp3" volume 0.5
-    play sound "audio/SoundEffect/walk.mp3"
+    play sound "audio/SoundEffect/walk.mp3" volume 5.0
     n "พักหลัง ผมกับเอมิกลับบ้านด้วยกันบ่อยขึ้น" with dissolve
     "ตอนแรกผมถามเธอว่าเธอจะตามผมมาทำไมในเมื่อกลับบ้านคนละทางกัน แต่ผมถามเธอไปหลายรอบจนผมเลิกคิดที่จะถามไปแล้ว"
     "ว่ากันตามตรง การมีรุ่นน้องเดินกลับบ้านมาด้วยกันก็ไม่ใช่เรื่องแย่เท่าไหร่"

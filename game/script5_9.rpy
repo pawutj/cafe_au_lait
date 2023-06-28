@@ -3,7 +3,7 @@ label q5_9:
     hide Restaurant_Morning1
     play music "audio/bgm/asa_no_nigiyaka_mura.mp3" volume 0.5
     show Eimi_date_body_Eimi_smile
-    play sound "audio/SoundEffect/walk.mp3"
+    play sound "audio/SoundEffect/walk.mp3" volume 5.0
     n "หลังจากพวกเราสองคนทานข้าวกันเสร็จ พวกเราสองคนก็แวะไปที่ซุ้มขายของฝาก" with dissolve
     "ชั้นวางของขายมีของหลากหลายประเภท ทั้งพวงกุญแจสวยงาม ทั้งตุ๊กตาสัตว์น้ำขนาดเท่าฝ่ามือจนถึงขนาดเท่าตัวคน รวมไปถึงเสื้อลายสัตว์น้ำต่างๆนานา"
     hide Eimi_date_body_Eimi_smile

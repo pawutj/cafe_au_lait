@@ -2,7 +2,7 @@ label q4_5:
     show art_room2 with Dissolve(1.0)
     play music "audio/bgm/cafe_de_swing.mp3" volume 0.5
     show Eimi_Eimi_normal
-    play sound  "audio/SoundEffect/walk.mp3"
+    play sound  "audio/SoundEffect/walk.mp3" volume 5.0
     n "ผมกับเอมิเดินกลับมาห้องชมรมศิลปะด้วยกัน" with dissolve
     "พระอาทิตย์ใกล้จะตกดินแล้ว ตอนเย็นกำลังใกล้มาถึง "
     tk "เธอไม่รีบกลับบ้านเหรอ?"

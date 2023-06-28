@@ -119,7 +119,7 @@ label q5_6:
     hide seal04
 
     show Eimi_date_body_Eimi_smile
-    play sound "audio/SoundEffect/walk.mp3" 
+    play sound "audio/SoundEffect/walk.mp3" volume 5.0
     ei "วันนี้สนุกดีนะคะ" with dissolve
     tk "ถ้าเธอชอบก็ดีแล้วล่ะ"
     hide Eimi_date_body_Eimi_smile
