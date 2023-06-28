@@ -1,9 +1,8 @@
 label q4_3b:
-    show school_gym_b with Dissolve(1.0)
+    show black_scene with Dissolve(1.0)
     play music "audio/bgm/yuki_kaze.mp3" volume 0.5
     n "ผมลืมตาขึ้นก่อนเป็นอย่างแรก" with dissolve
     "เพื่อที่จะรู้ว่าตัวเองอยู่ที่ไหนก็คงต้องเรียกการมองเห็นกลับมาดีๆก่อน"
-    scene black_scene with Dissolve(0.5)
     show oppai_zoom01 with Dissolve(1.0)
     hide school_gym_b
 
