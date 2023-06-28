@@ -68,56 +68,56 @@ label q7_5:
     play music "audio/bgm/yumebokujou_to_haru_no_toki.mp3" volume 0.5
     hide Eimi02_bas_body_Eimi02_meh
 
-    show Eimi_bas_body_Eimi_XD
+    show Eimi_bas_body_Eimi_XD  at zoom_eimi
    
     ei "รุ่นพี่คะ หนูชนะแล้วค่า!" with dissolve
  
     tk "เอมิ...เธอพุ่งมาแรงแบบนี้ เดี๋ยวหลังฉันหักกันพอดี "
     hide Eimi_bas_body_Eimi_XD
 
-    show Eimi_bas_body_Eimi_smile3
+    show Eimi_bas_body_Eimi_smile3 at zoom_eimi
     ei "รุ่นพี่คะ หนูได้เป็นตัวจริงของชมรมแล้วค่ะ!" with dissolve
     n "เอมิที่กำลังดีใจอย่างสุดขีดกอดผมแน่นขึ้นเรื่อยๆและส่งเสียงหัวเราะออกมา ผมที่เห็นเธอดีใจก็เผลออดยิ้มตามไม่ได้"
     tk "เธอทำได้ดีมากเลยนะ เอมิ"
     hide Eimi_bas_body_Eimi_smile3
 
-    show Eimi_bas_body_Eimi_smile
+    show Eimi_bas_body_Eimi_smile at zoom_eimi
     ei "ถ้าไม่มีรุ่นพี่ เอมิไม่มีวันมาได้ถึงขนาดนี้หรอกนะคะ" with dissolve
     n "คำชมเชยจากเธอทำให้ผมรู้สึกว่าใบหน้าตัวเองอุ่นขึ้น"
     tk "ฉันก็ไม่ได้ทำอะไรขนาดนั้นสักหน่อย"
     hide Eimi_bas_body_Eimi_smile
 
-    show Eimi_bas_body_Eimi_smug2
+    show Eimi_bas_body_Eimi_smug2 at zoom_eimi
     ei "แล้วที่ตะโกนว่า ‘อย่ายอมแพ้นะ! เอมิ!’ นั่นมันคืออะไรเหรอคะ?" with dissolve
     tk "......"
     n "ผมถึงกับพูดไม่ออกเพราะเอมิเอาคำพูดที่หลุดจากปากของผมตามอารมณ์มาเล่นงานผมเอง"
     "หน้าผมกำลังร้อนขึ้นเรื่อยๆขณะที่เสียงหัวเราะร่วนของเอมิดังขึ้น"
     hide Eimi_bas_body_Eimi_smug2
 
-    show Eimi_bas_body_Eimi_smug3
-    show laught with Dissolve(1.0)
+    show Eimi_bas_body_Eimi_smug3 at zoom_eimi
+    show laught at zoom_emote with Dissolve(1.0)
     ei "ฮะๆๆ รุ่นพี่นี่เขินง่ายจังเลยนะคะ" with dissolve
     hide laught
     tk "ไม่ได้เขินสักหน่อย"
     hide Eimi_bas_body_Eimi_smug3
 
-    show Eimi_bas_body_Eimi_smile4
+    show Eimi_bas_body_Eimi_smile4 at zoom_eimi
     ei "ไม่เนียนค่ะไม่เนียน" with dissolve
     n "ผมได้แต่เบือนหน้าหนีจากรอยยิ้มเจ้าเล่ห์ของเอมิเพราะไม่กล้ามองหน้าเธอตรงๆ "
     "ผมรู้สึกเลยว่าถ้าผมสบตากับเธอตอนนี้ ผมจะต้องเผลอพูดอะไรที่น่าอายออกมาแน่ๆ"
     "เราสองคนยืนเงียบกันหลายวินาทีก่อนที่เอมิจะพูดขึ้นด้วยเสียงนุ่มนวล"
     hide Eimi_bas_body_Eimi_smile4
 
-    show Eimi_bas_body_Eimi_smile
+    show Eimi_bas_body_Eimi_smile at zoom_eimi
     ei "ขอบคุณนะคะ ที่ช่วยเอมิมาตลอดค่ะ" with dissolve
     n "ผมกลับไปสบตากับเธอตรงๆเมื่อเธอเลิกหัวเราะและส่งยิ้มที่ดูใสซื่อให้กับผมแทน "
     "ช่วงเวลาที่ความฝันของเอมิเป็นจริง สำหรับวันนี้ ผมคงไม่มีอะไรที่ต้องการไปมากกว่านี้อีกแล้ว"
-    hide Eimi_bas_body_Eimi_smile
+    hide Eimi_bas_body_Eimi_smile  with dissolve
 
     tk "พยายามได้ดีมากเลยนะ เอมิ"
     stop music
     n "ผมส่งยิ้มให้รุ่นน้องที่สามารถทำตามเป้าหมายของตัวเองได้ พร้อมกับยอมรับอ้อมกอดอันอบอุ่นของเธอไว้"
-    hide Eimi_bas_body_Eimi_smile
+    hide Eimi_bas_body_Eimi_smile with dissolve
     jump cutscene_7
     return
 
