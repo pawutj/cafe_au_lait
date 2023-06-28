@@ -47,7 +47,9 @@ label q6_7:
     hide Eimi02_Eimi02_shock
 
     show Eimi02_Eimi02_sawagashi
+    show excited
     ei "จะมาทำร้ายรุ่นพี่ทาคากิเพื่อล้างแค้น ข้ามศพเอมิให้ได้ก่อนเถอะ! ย้า--!" with dissolve
+    hide excited
     tk "เอมิ พอเลย"
     hide Eimi02_Eimi02_sawagashi
 

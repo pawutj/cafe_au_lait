@@ -59,7 +59,7 @@ label q7_1:
     hide laught
     n "เอมิพูดแก้ตัวเพราะผมร้องเสียงดังขึ้นใส่เธอ เธอจึงได้แต่หัวเราะเจื่อนๆให้ผม"
     "นี่คือเหตุผลที่คนรอบตัวผมชอบแอบคุยกันว่าผมดูน่ากลัวน้อยลงสินะ"
-    show art_room2 with Dissolve(1.0)
+    show art_room1 with Dissolve(1.0)
     hide school_park_3
 
     hide Eimi_Eimi_smug3
@@ -67,7 +67,7 @@ label q7_1:
 
     en "รุ่นพี่อาจจะเปลี่ยนไปเพราะเธอคนนั้นก็ได้นะครับ" with dissolve
     show school_park_3 with Dissolve(1.0)
-    hide art_room2
+    hide art_room1
 
 
     show Eimi02_Eimi02_smile

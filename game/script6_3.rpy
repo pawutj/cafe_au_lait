@@ -32,6 +32,8 @@ label q6_3:
     show moyamoya with Dissolve(1.0)
     ei "ถ้าเรื่องฝีมือก็จัดว่าไม่เลวอยู่ค่ะ แต่เรื่องนิสัยนี่ก็..." with dissolve
     hide moyamoya
+    stop music
+    play music "audio/bgm/asa_no_nigiyaka_mura.mp3" volume 0.5
     ho_u "อิทสึกิ เอมิ นี่เธอกำลังนินทาอะไรฉันอยู่กันเหรอ!?"
     hide Eimi_Eimi_meh
 
@@ -42,9 +44,9 @@ label q6_3:
     ho_u "พอลับหลังก็เอาเรื่องฉันมานินทาเลยนะ เอมิ เธอนี่มันแสบจริงๆ"
     t_u"โฮโนกะ อย่าตะโกนแล้วชี้หน้าคนอื่นสิจ้ะ"
     h_s "ไม่รู้ล่ะ โดนคนจากทีมศัตรูนินทา จะไปยอมได้ยังไงกันล่ะ! โทโมเอะ!"
-    stop music
+
     n "เด็กสาวหัวเงินที่น่าจะชื่อโฮโนกะหันไปร้องใส่เพื่อนหัวทองที่ยืนอยู่ข้างๆกัน สาวผมทองที่ฟังเสียงร้องของเพื่อนได้แต่หัวเราะแห้งๆกับเพื่อนที่กำลังอารมณ์ขึ้นอยู่"
-    play music "audio/bgm/asa_no_nigiyaka_mura.mp3" volume 0.5
+   
     hide Eimi_Eimi_normal
 
     show Eimi02_Eimi02_angry
@@ -114,7 +116,9 @@ label q6_3:
     hide Eimi_Eimi_angry
 
     show Eimi_Eimi_panic
+    show excited 
     ei "เลิกบราค่อนได้แล้ว! " with dissolve
+    hide excited
     h_s "ไม่ได้บราค่อนย่ะ แค่รักพี่ชายมากกว่าคนอื่นแค่นั้นเอง"
     hide Eimi_Eimi_panic
 
