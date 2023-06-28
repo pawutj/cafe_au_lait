@@ -35,10 +35,10 @@ label q10_2:
     n "คำตอบตรงไปตรงมาของผมทำให้เอมิหน้าแดงแจ๋"
     
 
-
+    hide Eimi02_date_body_shy_Eimi02_onegai
     show Eimi_kiss at zoom_eimi with Dissolve(1)
-    hide Eimi02_date_body_shy_Eimi02_onegai with dissolve
-    "เอมิไม่ได้ตอบอะไรผม เธอเพียงแค่เลื่อนใบหน้าเข้ามาใกล้ผมช้าๆและหลับตาลง" with dissolve
+    
+    "เอมิไม่ได้ตอบอะไรผม เธอเพียงแค่เลื่อนใบหน้าเข้ามาใกล้ผมช้าๆและหลับตาลง"
     show Eimi_kiss2 at zoom_eimi with Dissolve(1)
     hide Eimi_kiss
     "สัมผัสอบอุ่นก่อตัวที่ริมฝีปากของผม"
