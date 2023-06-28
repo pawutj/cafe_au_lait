@@ -805,7 +805,7 @@ screen save():
         imagebutton auto "save_load/load_button_%s.png":
             focus_mask True
             action [ShowMenu("load"),Hide("save")]
-            activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+            activate_sound "audio/system/System_4.mp3" 
 
 
         grid gui.file_slot_cols gui.file_slot_rows:
@@ -950,7 +950,7 @@ screen load():
     imagebutton auto "save_load/save_button_%s.png":
         focus_mask True
         action [ShowMenu("save"),Hide("load")]
-        activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+        activate_sound "audio/system/System_3.mp3" 
 
     
 

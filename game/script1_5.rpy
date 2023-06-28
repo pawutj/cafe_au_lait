@@ -108,7 +108,7 @@ label q1_5:
     hide Eimi02_Eimi02_kirakira
 
     show Eimi_Eimi_smile3
-    ei "ไม่ไล่ฉันไปเหรอคะ?" with dissolve
+    ei "ไม่ไล่หนูไปเหรอคะ?" with dissolve
     tk "อุตส่าห์ซื้อกาแฟมาให้ จะไล่ไปก็ใจร้ายไปหน่อย"
     hide Eimi_Eimi_smile3
 

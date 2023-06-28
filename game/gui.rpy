@@ -13,6 +13,10 @@ init python:
     config.keymap['accessibility'] =[]
     config.keymap['game_menu'] = ['K_MENU', 'K_PAUSE']
     config.keymap['hide_windows'] = ['mouseup_3','K_ESCAPE']
+    config.keymap['help'] = []
+    config.keymap['self_voicing'] = []
+    config.keymap['screenshot'] =[]
+    config.keymap['progress_screen'] = []
 
 
 

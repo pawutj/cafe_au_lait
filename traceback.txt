@@ -1,25 +1,23 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script5_9.rpy", line 217, in script
-    "....." with dissolve
-OSError: Couldn't find file 'audio/SounfEffect/nc45215.mp3'.
+  File "renpy/common/00gamemenu.rpy", line 170, in script
+    $ ui.interact()
+  File "renpy/common/00gamemenu.rpy", line 170, in <module>
+    $ ui.interact()
+OSError: Couldn't find file 'audio/voice/System_3.mp3'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script5_9.rpy", line 217, in script
-    "....." with dissolve
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 921, in execute
-    renpy.exports.say(who, what, *args, **kwargs)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\exports.py", line 1373, in say
-    who(what, *args, **kwargs)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\character.py", line 1266, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, dtt=dtt, **display_args)
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\character.py", line 927, in do_display
-    display_say(who,
-  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\character.py", line 666, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
+  File "renpy/common/00gamemenu.rpy", line 170, in script
+    $ ui.interact()
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\python.py", line 1061, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "renpy/common/00gamemenu.rpy", line 170, in <module>
+    $ ui.interact()
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\ui.py", line 299, in interact
     rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\display\core.py", line 3377, in interact
@@ -39,9 +37,9 @@ Full traceback:
     rv = renpy.loader.load(fn)
   File "D:\renpy-8.0.3-sdk\renpy-8.0.3-sdk\renpy\loader.py", line 820, in load
     raise IOError("Couldn't find file '%s'." % name)
-OSError: Couldn't find file 'audio/SounfEffect/nc45215.mp3'.
+OSError: Couldn't find file 'audio/voice/System_3.mp3'.
 
 Windows-10-10.0.19045 AMD64
 Ren'Py 8.0.3.22090809
 Cafe_au_lait 1.0
-Wed Jun 28 23:33:31 2023
+Thu Jun 29 00:09:29 2023
