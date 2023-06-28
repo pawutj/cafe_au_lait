@@ -213,6 +213,7 @@ label q5_9:
     hide Eimi02_date_body_Eimi02_smile3
 
     show kiss
+    play sound "audio/SoundEffect/nc45215.mp3" volume 0.2
     "....." with dissolve
     "รู้สึกตัวอีกที สัมผัสอุ่นๆที่แฉะชื้นก็แปะลงที่แก้มขวาของผมเบาๆ"
     "ผมลืมตากว้างขึ้นเมื่อพบว่าใบหน้าของเอมิใกล้กับใบหน้าของผมมากจนอยู่ในระยะหายใจรดกัน"

@@ -170,13 +170,13 @@ label q5_4:
     n "ผมพยักหน้ารับตรงๆ ทำให้เอมิทำหน้าเนือยๆใส่ผม"
     hide Eimi_date_body_Eimi_smug3
 
-    show Eimi_date_body_Eimi_030_02
+    show Eimi_date_body_Eimi_kira
     show down with Dissolve(1.0)
     ei "อย่ายอมแพ้ง่ายๆแบบนั้นสิคะ เถียงเอมิหน่อยก็ได้ " with dissolve
     hide down
     tk "วันนี้อุตส่าห์มาเที่ยวเป็นเพื่อนเธอ จะยอมเถียงน้อยลงสักวันก็ได้ "
     n "เอมิฟังผมแล้วก็ทำตาโตแล้วจ้องมองผมด้วยสายตาซาบซึ้ง ประกายวิ้งๆจากดวงตาเธอลุกลามออกมาจนผมที่สบตากับเธอรู้สึกแสบตา"
-    hide Eimi_date_body_Eimi_030_02
+    hide Eimi_date_body_Eimi_kira
 
     show Eimi_date_body_Eimi_smile
     ei "รุ่นพี่ใจดีจังเลยนะคะ " with dissolve

@@ -1,5 +1,5 @@
 label q5_5:
-    show Aquarium_Morning with Dissolve(1.0)
+    scene Aquarium_Morning with Dissolve(1.0)
     play music "audio/bgm/oshakai_no_junbi.mp3" volume 0.5
     show Eimi02_date_body_Eimi02_0
     show question with Dissolve(1.0)
@@ -87,7 +87,9 @@ label q5_5:
     "สัมผัสจากเอมิทำให้ผมรู้สึกใจเต้นขึ้นมา"
     "........"
     "ทำไมผมถึงรู้สึกแปลกๆแบบนี้กันนะ?"
+    scene black_scene with dissolve
     hide Eimi_date_body_Eimi_smile
+    scene Aquarium_Morning with dissolve
 
     show Eimi02_date_body_Eimi02_panic
     show surprise with Dissolve(1.0)
@@ -184,6 +186,7 @@ label q5_5:
     hide sweat  
     "เห็นได้ชัดว่าเธออยากแอบด่าผมเนียนๆก่อนเปลี่ยนเรื่องโดยใช้หน้ากากใสซื่อชัดๆ"
     hide Eimi_date_body_Eimi_XD  with Dissolve(0.5)
+    scene black_scene with dissolve
     jump q5_6
     return 
 

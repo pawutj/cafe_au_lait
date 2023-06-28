@@ -11,10 +11,10 @@ label q5_3a:
     tk "ต้องตกใจขนาดนั้นเลยเหรอ?"
     hide Eimi_date_body_shy_Eimi_o
 
-    show Eimi_date_body_shy_Eimi_sad
+    show Eimi_date_body_shy_Eimi_hurt
     ei "ไม่ได้ตกใจหรอก แค่แบบว่า..." with dissolve
     n "เอมิหลับตาปี๋ทั้งๆที่หน้าแดงไปหมด เธอสะบัดตัวบิดซ้ายบิดขวาไปมา"
-    hide Eimi_date_body_shy_Eimi_sad
+    hide Eimi_date_body_shy_Eimi_hurt
 
     show Eimi_date_body_shy_Eimi_smile
     ei "เอมิไม่นึกว่ารุ่นพี่จะชมหนูตรงๆค่ะ" with dissolve
