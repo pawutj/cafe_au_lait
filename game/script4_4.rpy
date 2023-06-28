@@ -1,5 +1,5 @@
 label q4_4:
-    show school_gym_b with Dissolve(1.0)
+    scene school_gym_b with Dissolve(1.0)
     play music "audio/bgm/morning_talk.mp3" volume 0.5
     show Eimi02_Eimi02_smile3 with dissolve
     show happy with Dissolve(1.0)

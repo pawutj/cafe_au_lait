@@ -1,11 +1,12 @@
 label q4_3a:    
-    show school_gym_b with Dissolve(1.0)
+    scene school_gym_b with Dissolve(1.0)
     n "ผมขยับฝ่ามือไปมาเพื่อคลำหาทางยันตัวขึ้น" with dissolve
     tk "เอ๊ะ?"
     n "แต่ไม่รู้ทำไม สัมผัสที่มือผมมันนุ่มๆอย่างบอกไม่ถูก"
     tk "อะไรเนี่ย? เดี๋ยวนะ?"
     n "ผมเบิกตากว้างเพราะพอจะเดาได้ว่าเกิดอะไรขึ้น"
     "...อย่าบอกนะว่า!"
+    scene black_scene with Dissolve(0.5)
     show oppai01 with Dissolve(1.0)
     hide school_gym_b
 

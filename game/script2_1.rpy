@@ -352,7 +352,7 @@ label q2_1:
     show Eimi_Eimi_panic
     show panic with Dissolve(1.0)
     voice "audio/voice/2_1_03.mp3"
-    ei "แหงะ สาวตัวเล็กๆก็มีเสน่ห์ของสาวตัวเล็กๆนะคะ " with dissolve
+    ei "แหงะ สาวตัวเล็กๆก็มีเสน่ห์ของสาวตัวเล็กๆอยู่นะคะ " with dissolve
     hide panic
     tk "โฆษณาตัวเองอีกแล้ว"
     hide Eimi_Eimi_panic

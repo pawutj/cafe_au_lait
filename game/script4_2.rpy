@@ -286,25 +286,29 @@ label q4_2:
     stop music
     n "เพราะโดนเอมิหัวเราะใส่หน้า ความเลือดร้อนของผมเลยพุ่งทะยานเข้ามา"
     play music "audio/bgm/dotabata_happening.mp3" volume 0.5
+  
     "ขณะที่เอมิกำลังเก็บลูกบาสที่เด้งกลับมาเข้ามือ ผมที่หน้ามืดเพราะความแค้นก็กระโจนเข้าหาเอมิอย่างรวดเร็วไม่ต่างจากเร่งรถพุ่งชน"
+    
+
+    show Eimi_Eimi_panic at zoom_eimi with dissolve
     hide Eimi_Eimi_smug3
-
-    show Eimi_Eimi_panic
-    show panic1 with Dissolve(1.0)
-    ei "กรี๊ดด! รุ่นพี่ใจเย็นก่อนค่า " with dissolve
-    hide panic1
+    show panic at zoom_emote with Dissolve(1.0)
+    ei "กรี๊ดด! รุ่นพี่ใจเย็นก่อนค่า " 
+    hide panic
     tk "ใครจะเย็นไหว!?"
-    hide Eimi_Eimi_panic
+    
 
-    show Eimi_Eimi_hurt
-    ei "เล่นบาสนะคะไม่ใช่ฆ่าแกงกัน " with dissolve
+    show Eimi_Eimi_hurt  at zoom_eimi with dissolve
+    hide Eimi_Eimi_panic
+    ei "เล่นบาสนะคะไม่ใช่ฆ่าแกงกัน" 
     tk "ฉันไม่ยอมแพ้เธอง่ายๆหรอก! ดูซะ!"
     n "เพราะว่าผมกระโจนเร็วเกินไปแถมเอมิยังยื่นขามาโดนเท้าผม ร่างผมเลยลอยขึ้นกลางอากาศในขณะที่แรงส่งจากเท้าผมยังพาลำตัวพุ่งเข้าหาเอมิ"
-    hide Eimi_Eimi_hurt
+    
 
-    show Eimi_Eimi_panic_shy
+    show Eimi_Eimi_panic_shy  at zoom_eimi with dissolve
+    hide Eimi_Eimi_hurt
     show panic with Dissolve(1.0)
-    ei "กรี๊ดดด!" with dissolve
+    ei "กรี๊ดดด!" 
     hide panic
     tk "อ้ากก!"
     hide Eimi_Eimi_panic_shy

@@ -147,6 +147,16 @@ transform zoomin_to_zoomout:
 transform zoomout:
     zoom 0.7
 
+transform zoom_eimi:
+
+    xalign 0.5 yalign 0.85
+    zoom 1.3
+
+transform zoom_emote:
+    xalign 0.5 yalign 0.40
+    zoom 1.3
+
+
 image Classroom1_Morning1 = im.Scale("background/classroom3/Classroom1_Morning12.jpg",1920,1080)
 
 image school_park_1= im.Scale("background/SchoolPark01/school-park1.png",1920,1080)
@@ -753,7 +763,7 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump q8_3
+    jump q4_2
 
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
