@@ -265,12 +265,12 @@ screen extra():
         action  Hide('extra')
         hover_sound "audio/UIsound/cursor.ogg"
         activate_sound "audio/UIsound/choice_confirm_01.ogg" 
-    
-    imagebutton:
-        focus_mask True
-        idle "extra/memory_idle.png"
-        hover "extra/memory_hover.png"
-        action ShowMenu("black_screen",Dissolve(0.1)),Start("q_memory_1") 
+    if renpy.exists("script10.rpy"):
+        imagebutton:
+            focus_mask True
+            idle "extra/memory_idle.png"
+            hover "extra/memory_hover.png"
+            action ShowMenu("black_screen",Dissolve(0.1)),Start("q_memory_1") 
 
     if persistent.extra_image_page == 1:
         for idx,i in enumerate(numbers) :
@@ -285,11 +285,14 @@ screen extra():
                 action Show(f"show_cg{i}_01")
     if persistent.extra_image_page == 2:
         for idx,i in enumerate(numbers3) :
-            imagebutton:
-                focus_mask True
-                idle f"extra/image{i}_idle.png"
-                hover f"extra/image{i}_hover.png"
-                action Show(f"show_cg{i}_01") 
+            if not renpy.exists("script10.rpy") and (idx ==2 or idx ==3):
+                pass
+            else :
+                imagebutton:
+                    focus_mask True
+                    idle f"extra/image{i}_idle.png"
+                    hover f"extra/image{i}_hover.png"
+                    action Show(f"show_cg{i}_01") 
 
     if persistent.extra_bgm_page == 1:
         for idx,i in enumerate(numbers2) :
