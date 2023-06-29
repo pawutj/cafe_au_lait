@@ -672,7 +672,7 @@ label cutscene_after:
     
 label cutscene_8:
     stop music
-    pause 0.01
+    $renpy.pause(1, hard=True)
     scene white_scene with Dissolve(2.0)
     play movie "images/ed.mpg"
     $renpy.pause(90, hard=True)
@@ -775,7 +775,7 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump q4_2
+    jump q8_5
 
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
