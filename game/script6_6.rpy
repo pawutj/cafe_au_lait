@@ -3,7 +3,6 @@ label q6_6:
     n "ผมหยุดคิดไม่เข้าเรื่องและกดรับสายมือถือ" with dissolve
     tk "สวัสดีครับ ทาเคโอมิ ทาคากิครับ...นั่นใครพูดสา--..."
     play music "audio/bgm/oshakai_no_junbi.mp3" volume 0.5
-    scene eimi_room  with Dissolve(1.0)
     show phone with Dissolve(0.5)
     show Eimi_Eimi_XD
     ei "รุ่นน้องที่น่ารักและทรงเสน่ห์ของรุ่นพี่ยังไงล่ะค้า!" with dissolve
