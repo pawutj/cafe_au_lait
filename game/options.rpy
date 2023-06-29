@@ -12,6 +12,16 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
+init -3 python:
+    persistent.patch_installed = False
+init -1 python:
+    if persistent.patch_installed and not persistent.patch_first_time:
+        persistent.patch_enabled = True
+        persistent.patch_first_time = True
+    elif not persistent.patch_installed:
+        persistent.patch_first_time = False
+        persistent.patch_enabled = False
+
 default persistent.endgame = False
 
 default persistent.page = 0
@@ -193,20 +203,29 @@ init python:
   
 
     #buildPatch
-    # build.classify("game/script10**.rpy","patch")
-    # build.classify("game/images/CG/boob/**","patch")
-    # build.classify("game/images/CG/sex/**","patch")
+    build.classify("game/script_memory.rpy","patch")
+    build.classify("game/script10.rpy","patch")
+    build.classify("game/script10**.rpy","patch")
+    build.classify("game/script_memory.rpyc","patch")
+    build.classify("game/script10.rpyc","patch")
+    build.classify("game/script10**.rpyc","patch")
+    build.classify("game/images/CG/boob/**","patch")
+    build.classify("game/images/CG/sex/**","patch")
 
     #build data
-    build.classify("game/script_memory.rpy",None)
-    build.classify("game/script10.rpy",None)
-    build.classify("game/script10**.rpy",None)
-    build.classify("game/images/CG/boob/**",None)
-    build.classify("game/images/CG/sex/**",None)
+    # build.classify("game/script_memory.rpy",None)
+    # build.classify("game/script10.rpy",None)
+    # build.classify("game/script10**.rpy",None)
+    # build.classify("game/script_memory.rpyc",None)
+    # build.classify("game/script10.rpyc",None)
+    # build.classify("game/script10**.rpyc",None)
+    # build.classify("game/images/CG/boob/**",None)
+    # build.classify("game/images/CG/sex/**",None)
     #exclude
     build.classify("game/**.csv",None)
     build.classify("game/**.py",None)
-    build.classify("game/**","data")
+    
+    # build.classify("game/**","data")
 
     ## To archive files, classify them as 'archive'.
 

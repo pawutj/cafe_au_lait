@@ -265,7 +265,7 @@ screen extra():
         action  Hide('extra')
         hover_sound "audio/UIsound/cursor.ogg"
         activate_sound "audio/UIsound/choice_confirm_01.ogg" 
-    if renpy.exists("script10.rpy"):
+    if persistent.patch_installed:
         imagebutton:
             focus_mask True
             idle "extra/memory_idle.png"
@@ -285,7 +285,7 @@ screen extra():
                 action Show(f"show_cg{i}_01")
     if persistent.extra_image_page == 2:
         for idx,i in enumerate(numbers3) :
-            if not renpy.exists("script10.rpy") and (idx ==2 or idx ==3):
+            if not persistent.patch_installed and (idx ==2 or idx ==3):
                 pass
             else :
                 imagebutton:
@@ -1075,13 +1075,13 @@ screen main_menu():
         focus_mask True
 
 
-    if renpy.exists("script10.rpy"):
+    if persistent.patch_installed == True:
         if(persistent.endgame == False):
             imagebutton:
                 idle "main_menu/after_idle.png"
                 focus_mask True
     
-    if  renpy.exists("script10.rpy"):
+    if  persistent.patch_installed == True:
         if(persistent.endgame == True):
             imagebutton auto "main_menu/after_%s.png":
                 hover_sound "audio/UIsound/cursor.ogg" 

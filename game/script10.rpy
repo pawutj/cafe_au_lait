@@ -1,3 +1,6 @@
+init -2:
+    $ persistent.patch_installed = True
+
 define output_width = 1920
 define output_height = 1080
 
