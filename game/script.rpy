@@ -775,8 +775,6 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump q8_5
-
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"
     n "ผมไม่เข้าใจว่าทำไมผมต้องพูดซ้ำด้วย"

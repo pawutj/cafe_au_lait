@@ -2,7 +2,7 @@ label q7_5:
     show school_gym_a with Dissolve(1.0)
     play music "audio/bgm/musukari_no_hana.mp3" volume 0.5
     show Eimi02_bas_body_Eimi02_normal
-    voice "audio/voice/7_03.mp3"
+    voice "audio/voice/7_03.mp3" 
     ei "ไปนั่งอะไรอยู่ตรงนั้นล่ะ?" with dissolve
     play sound "audio/SoundEffect/walk.mp3" volume 5.0
     n "หลังจากการแข่งขันสิ้นสุดลงไม่กี่นาที เอมิก็เดินเข้าไปหาโฮโนกะที่นั่งอยู่กลางสนามบาส"
@@ -20,12 +20,12 @@ label q7_5:
     ei "เฮ้อ..." with dissolve
     voice "audio/voice/ho_07.mp3"
     h "เธอทำอะไรของเธอน่ะ?"
-    stop music
+    
     n "เอมิถอนหายใจเบาๆหนึ่งครั้งก่อนที่เธอจะยื่นมือให้กับโฮโนกะที่นั่งกอดเข่ากับพื้น การกระทำที่เหมือนจะบอกศัตรูว่าลุกขึ้นมาสิทำให้โฮโนกะตกใจจนตาเบิกโพลง"
     show hand01 with Dissolve(1.0)
     hide Eimi_bas_body_Eimi_meh with Dissolve(1.0)
     hide school_gym_a
-
+    stop music
     play music "audio/bgm/natsu_no_omoide.mp3" volume 0.5
     voice "audio/voice/7_05.mp3"
     ei "ลุกขึ้นมาเถอะ โฮโนกะ"

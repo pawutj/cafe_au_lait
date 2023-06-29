@@ -96,7 +96,7 @@ label q7_2:
     hide school_gym_a
 
     play music "audio/bgm/take_action.mp3" volume 0.5
-    voice "audio/voice/ho_01.mp3"
+    
   
     n "เอมิยิ้มเหี้ยมๆให้โฮโนกะ ทั้งๆที่รอยยิ้มบนใบหน้าน่ารักของเอมิเป็นสิ่งที่ควรจะดึงดูดตาผู้คน แต่ผมกลับรู้สึกได้ถึงเงาทมิฬข้างหลัง"
     voice "audio/voice/ho_02.mp3"

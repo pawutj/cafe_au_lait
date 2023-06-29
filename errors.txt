@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script2_2.rpy", line 4: Line is indented, but the preceding show statement statement does not expect a block. Please check this line's indentation.
-    hide sexy1
-    ^
+File "game/script7_5.rpy", line 10: expected end of line
+    voice "audio/voice/ho_06.mp3" volume 1.5
+                                  ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Thu Jun 29 23:03:43 2023
+Fri Jun 30 02:02:57 2023
