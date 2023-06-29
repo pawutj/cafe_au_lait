@@ -771,7 +771,7 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump q8_4
+    jump q2_1
 
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"

@@ -1,10 +1,10 @@
 label q2_2:    
-    show artroom_afternoon with Dissolve(1.0)
     play music "audio/bgm/oshakai_no_junbi.mp3" volume 0.5
-    show Eimi_Eimi_smile
+    show sexy3 with Dissolve(1.0)
+    hide sexy1
     tk "อย่ามาล้อเล่นกับคนอายุมากกว่าสิ" with dissolve
-    hide Eimi_Eimi_smile
-    show sexy1 with Dissolve(1.0)
+ 
+    
     voice "audio/voice/2_2_00.mp3"
     ei "แหม...รุ่นพี่ก็ทำเกรงใจไปได้นะคะ"
 
@@ -12,8 +12,8 @@ label q2_2:
     voice "audio/voice/2_2_01.mp3"
     ei "ถึงพูดแบบนี้อาจจะดูหลงตัวเอง แต่เอมิก็มั่นใจในรูปร่างหน้าตาตัวเองพอสมควรนะคะ "
     tk "ทำไมจู่ๆกลายเป็นรายการโฆษณาตัวเองเนี่ย ._."
-    show sexy3 with Dissolve(1.0)
-    hide sexy1
+ 
+    
     voice "audio/voice/2_2_02.mp3"
     ei "รุ่นพี่จำไม่ได้เหรอคะ 85 เชียวนะคะ... 85 น่ะ!"
 
