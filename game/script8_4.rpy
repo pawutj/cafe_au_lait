@@ -370,7 +370,7 @@ label q8_4:
     stop music
     play sound "audio/SoundEffect/walk.mp3" volume 5.0
     n "ผมลุกขึ้นจากเก้าอี้แล้วค่อยๆเดินไปยังรูปที่วางพิงอยู่ตรงผนังที่ใกล้ที่สุดซึ่งถูกคลุม\nด้วยผ้าสีขาวก่อนที่จะใช้มือดึงเอาผ้าที่บดบังรูปวาดออกมา"
-    hide Eimi_Eimi_normal
+    hide Eimi_Eimi_normal with dissolve
     jump q8_5
     return
 

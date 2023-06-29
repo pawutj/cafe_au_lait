@@ -1,17 +1,15 @@
 label q8_5: 
     scene art_room2 with Dissolve(1.0)
     play music "audio/bgm/yuki_no_owari_ni.mp3" volume 0.5
-    show Eimi_Eimi_o
-    ei "รูปนั้น...?" with dissolve
+    scene main_scene_4 with Dissolve(1.0)
+    ei "รูปนั้น...?" 
     tk "....."
     n "ไม่มีคำพูดใดๆที่หลุดมาจากปากของผม เพราะแค่ภาพที่อยู่บนกระดาษวาดรูปก็เป็นถ้อยคำที่ทรงพลังพอแล้วสำหรับผมและเอมิ"
-    hide Eimi_Eimi_o
 
-    show Eimi_Eimi_angry
     ei "นี่มัน..." with dissolve
     tk "....."
-    hide Eimi_Eimi_angry
 
+    scene art_room2 with Dissolve(1.0)
     show Eimi_Eimi_o
     ei "รูปของหนูเหรอคะ?" with dissolve
     n "ผมพยักหน้าให้เอมิ"
