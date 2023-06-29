@@ -139,6 +139,10 @@ image imagine = im.Scale("background/imagine.png",1920,1080)
 image lastsmile = im.Scale("CG/lastsmile/lastsmile.png",1920,1080)
 
 
+transform zoom:
+    xalign 0.6 yalign 0.8
+    zoom 1.7
+
 transform zoomin_to_zoomout:
     zoom 2.5
     xalign 0.5 yalign 0.3
@@ -771,7 +775,7 @@ label start:
     scene artroom_past with Dissolve(1.0)
     hide Canvas
 
-    jump q7_2
+    jump q4_2
 
     tk "นายน่ะ เลิกเถอะ..."
     a "รุ่นพี่ว่ายังไงนะครับ?"

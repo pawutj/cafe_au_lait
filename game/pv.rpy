@@ -106,7 +106,7 @@ label pv:
     show Eimi_Eimi_smile2
     voice "audio/voice/PV_18.mp3"
     ei "เส้นทางสู่การเป็นตัวจริงน่ะไม่ใช่เรื่องง่าย เพราะการฝึกของชมรมเป็นไปอย่างเข้มงวด แถมยังมีคนฝีมือดีในชมรมที่เป็นคู่แข่งของเอมิด้วยค่ะ" with dissolve
-    scene oppai01 at zoomout with Dissolve(1.0)
+    scene oppai01 with Dissolve(1.0)
     hide artroom_afternoon
 
     hide Eimi_Eimi_smile2
