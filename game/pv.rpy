@@ -1,5 +1,6 @@
 label pv: 
-    scene artroom_afternoon with Dissolve(1.0)
+    scene white_scene with Dissolve(2.0)
+    scene artroom_afternoon with Dissolve(2.0)
     play music "audio/bgm/cafe_de_swing.mp3" volume 0.5
     show Eimi_Eimi_smile
     show happy with Dissolve(1.0)
@@ -56,17 +57,17 @@ label pv:
 
     show Eimi_Eimi_bubu
     voice "audio/voice/PV_10.mp3"
-    ei "บู่วๆ อย่าสบประมาทพลังของสาวตัวเล็กสิคะ ถึงเอมิจะตัวเล็กแต่เอมิก็มั่นใจว่าเอมิมีความสามารถไม่แพ้คนอื่นหรอกค่ะ!" with dissolve
+    ei "บู่วๆ อย่าสบประมาทพลังของสาวตัวเล็กสิคะ ถึงเอมิจะตัวเล็กก็จริง แต่ว่านะ เอมิก็มั่นใจว่าเอมิมีความสามารถไม่แพ้คนอื่นหรอกค่ะ!" with dissolve
     hide Eimi_Eimi_bubu
 
     show Eimi_Eimi_calm
     voice "audio/voice/PV_11.mp3"
-    ei "คุยเรื่องทั่วๆไปบ้างดีกว่าค่ะ ของกินที่เอมิชอบมีมากมายค่ะ" with dissolve
+    ei "คุยเรื่องทั่วๆไปบ้างดีกว่าค่ะ ของกินที่เอมิชอบมีมากมายเลยค่ะ" with dissolve
     hide Eimi_Eimi_calm
 
     show Eimi02_Eimi02_smile
     voice "audio/voice/PV_12.mp3"
-    ei "เอมิไม่ค่อยเลือกกินค่ะ ถ้าเลือกกินก็เดี๋ยวตัวไม่สูงขึ้นสักที" with dissolve
+    ei "เอมิไม่ค่อยเลือกกินค่ะ ถ้าเลือกกินเดี๋ยวตัวไม่สูงขึ้นสักที" with dissolve
     hide Eimi02_Eimi02_smile
 
     show Eimi02_Eimi02_shock
@@ -104,7 +105,7 @@ label pv:
 
     show Eimi_Eimi_smile2
     voice "audio/voice/PV_18.mp3"
-    ei "เส้นทางสู่การเป็นตัวจริงน่ะไม่ใช่เรื่องง่าย เพราะการฝึกของชมรมเป็นไปอย่างเข้มงวด แถมยังมีคนฝีมือดีในชมรมที่เป็นคู่แข่งของเอมิค่ะ" with dissolve
+    ei "เส้นทางสู่การเป็นตัวจริงน่ะไม่ใช่เรื่องง่าย เพราะการฝึกของชมรมเป็นไปอย่างเข้มงวด แถมยังมีคนฝีมือดีในชมรมที่เป็นคู่แข่งของเอมิด้วยค่ะ" with dissolve
     scene oppai01 at zoomout with Dissolve(1.0)
     hide artroom_afternoon
 
@@ -119,18 +120,18 @@ label pv:
 
     show Eimi_Eimi_panic_shy
     show surprise with Dissolve(1.0)
-    voice "audio/voice/PV_19.mp3"
+    voice "audio/voice/PV_20.mp3"
     ei "นี่มัน...ว้ายๆๆๆๆ" with dissolve
     hide surprise
     hide Eimi_Eimi_panic_shy
 
     show Eimi_Eimi_shy_meme
-    voice "audio/voice/PV_20.mp3"
+    voice "audio/voice/PV_21.mp3"
     ei "อย่ามองนะคะ! " with dissolve
     hide Eimi_Eimi_shy_meme
 
     show Eimi_Eimi_cry_meme2
-    voice "audio/voice/PV_21.mp3"
+    voice "audio/voice/PV_22.mp3"
     ei "นี่มันเป็นเหตุการณ์น่าอายที่เกิดขึ้นค่ะ อย่าดูไปมากกว่านี้นะคะ " with dissolve
     scene artroom_afternoon with Dissolve(1.0)
     hide oppai01
@@ -139,21 +140,22 @@ label pv:
 
     show Eimi02_Eimi02_onegai
     show down with Dissolve(1.0)
-    voice "audio/voice/PV_22.mp3"
+    voice "audio/voice/PV_23.mp3"
     ei "นี่มันอะไรกันคะตะกี้นี้" with dissolve
     hide down
     hide Eimi02_Eimi02_onegai
 
     show Eimi02_Eimi02_smug3
-    voice "audio/voice/PV_22.mp3"
+    voice "audio/voice/PV_24.mp3"
     ei "อะแฮ่ม ถ้าอยากจะรู้ว่าเส้นทางสู่ความฝันของเอมิจะเป็นจริงหรือเปล่า " with dissolve
     hide Eimi02_Eimi02_smug3
 
     show Eimi02_Eimi02_smile2
     show happy with Dissolve(1.0)
-    voice "audio/voice/PV_22.mp3"
+    voice "audio/voice/PV_25.mp3"
     ei "เชิญติดตามได้ในเกม The picture of Café au lait เลยค่า!" with dissolve
     hide happy
     hide Eimi02_Eimi02_smile2
+    scene white_scene with Dissolve(2.0)
     return
 
