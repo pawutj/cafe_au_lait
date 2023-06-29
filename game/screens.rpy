@@ -781,11 +781,13 @@ screen save():
                     background f"save_load/page0{str(i+1)}_hover.png"
                     focus_mask True
                     action SetVariable("persistent.page" , i)
+                    activate_sound "audio/UIsound/choice_confirm_01.ogg" 
             else:
                 button :
                     background f"save_load/page0{str(i+1)}_idle.png"
                     focus_mask True
                     action SetVariable("persistent.page" , i)
+                    activate_sound "audio/UIsound/choice_confirm_01.ogg" 
     
 
     
@@ -867,11 +869,13 @@ screen load_main():
                 background f"save_load/page0{str(i+1)}_hover.png"
                 focus_mask True
                 action SetVariable("persistent.page" , i)
+                activate_sound "audio/UIsound/choice_confirm_01.ogg" 
         else:
             button :
                 background f"save_load/page0{str(i+1)}_idle.png"
                 focus_mask True
                 action SetVariable("persistent.page" , i)
+                activate_sound "audio/UIsound/choice_confirm_01.ogg" 
     
 
     grid gui.file_slot_cols gui.file_slot_rows:
@@ -931,11 +935,13 @@ screen load():
                     background f"save_load/page0{str(i+1)}_hover.png"
                     focus_mask True
                     action SetVariable("persistent.page" , i)
+                    activate_sound "audio/UIsound/choice_confirm_01.ogg" 
         else:
             button :
                 background f"save_load/page0{str(i+1)}_idle.png"
                 focus_mask True
                 action SetVariable("persistent.page" , i)
+                activate_sound "audio/UIsound/choice_confirm_01.ogg" 
 
     imagebutton auto "save_load/back_%s.png":
         focus_mask True

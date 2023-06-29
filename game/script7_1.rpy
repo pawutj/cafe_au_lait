@@ -3,6 +3,7 @@ label q7_1:
     show school_park_3 with Dissolve(1.0)
     play music "audio/bgm/yuki_kaze.mp3" volume 0.5
     show Eimi_Eimi_smile
+    play sound "audio/SoundEffect/walk.mp3" volume 5.0
     n "ขณะที่ผมกับเอมิเดินกลับบ้านด้วยกันสองคน ผมถามเอมิขึ้นมาด้วยความสงสัย" with dissolve
     tk "ฉันดูเปลี่ยนไปอย่างที่เอ็นโจพูดจริงเหรอ? เอมิ"
     hide Eimi_Eimi_smile
