@@ -1072,20 +1072,21 @@ screen main_menu():
         focus_mask True
 
 
+    if renpy.exists("script10.rpy"):
+        if(persistent.endgame == False):
+            imagebutton:
+                idle "main_menu/after_idle.png"
+                focus_mask True
     
-    if(persistent.endgame == False):
-        imagebutton:
-            idle "main_menu/after_idle.png"
-            focus_mask True
-    
-    if(persistent.endgame == True):
-        imagebutton auto "main_menu/after_%s.png":
-            hover_sound "audio/UIsound/cursor.ogg" 
-            activate_sound "audio/UIsound/choice_confirm_01.ogg" 
-            #idle "map/m bath house_idle.png" 
-            #hover "map/m bath house_hover.png" 
-            action ShowMenu("black_screen",Dissolve(0.1)),Start("q10_1")
-            focus_mask True
+    if  renpy.exists("script10.rpy"):
+        if(persistent.endgame == True):
+            imagebutton auto "main_menu/after_%s.png":
+                hover_sound "audio/UIsound/cursor.ogg" 
+                activate_sound "audio/UIsound/choice_confirm_01.ogg" 
+                #idle "map/m bath house_idle.png" 
+                #hover "map/m bath house_hover.png" 
+                action ShowMenu("black_screen",Dissolve(0.1)),Start("q10_1")
+                focus_mask True
 
     
     # imagebutton auto "main_menu/main_language_%s.png":

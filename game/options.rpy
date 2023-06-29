@@ -181,11 +181,32 @@ init python:
 
     ## Classify files as None to exclude them from the built distributions.
 
-    build.classify('**~', None)
-    build.classify('**.bak', None)
-    build.classify('**/.**', None)
-    build.classify('**/#**', None)
-    build.classify('**/thumbs.db', None)
+    # build.classify('**~', None)
+    # build.classify('**.bak', None)
+    # build.classify('**/.**', None)
+    # build.classify('**/#**', None)
+    # build.classify('**/thumbs.db', None)
+
+    build.archive("data", "all")
+    build.archive("patch", "all")
+
+  
+
+    #buildPatch
+    # build.classify("game/script10**.rpy","patch")
+    # build.classify("game/images/CG/boob/**","patch")
+    # build.classify("game/images/CG/sex/**","patch")
+
+    #build data
+    build.classify("game/script_memory.rpy",None)
+    build.classify("game/script10.rpy",None)
+    build.classify("game/script10**.rpy",None)
+    build.classify("game/images/CG/boob/**",None)
+    build.classify("game/images/CG/sex/**",None)
+    #exclude
+    build.classify("game/**.csv",None)
+    build.classify("game/**.py",None)
+    build.classify("game/**","data")
 
     ## To archive files, classify them as 'archive'.
 
