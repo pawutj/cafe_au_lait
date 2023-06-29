@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/screens.rpy", line 1052: imagebutton expects a non-empty block.
-    imagebutton auto "main_menu/main_extra_%s.png":
-                                                   ^
+File "game/screens.rpy", line 1078: 'add' is not a keyword argument or valid child for the imagebutton statement.
+    add "main_menu/after_idle.png"
+       ^
 
 Ren'Py Version: Ren'Py 8.0.3.22090809
-Tue Jun 27 23:48:37 2023
+Thu Jun 29 14:45:50 2023
