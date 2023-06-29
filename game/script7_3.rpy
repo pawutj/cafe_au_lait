@@ -127,10 +127,12 @@ label q7_3:
     "เอมิโฉบผ่านวงนอกของทีมโฮโนกะที่ล้อมผู้ครองบอลอยู่และยื่นมือเข้ามาสมาชิกที่ถือบอลราวกับเป็นสัญญาณว่าให้ส่งลูกมาให้เธอ"
     hide Eimi02_bas_body_Eimi02_angry with Dissolve(0.2)
     "ลูกบอลสีส้มถูกส่งเพื่อให้กระดอนไปหาเด็กสาวผมสีน้ำตาลที่เข้ามาใกล้" 
+    play sound  "audio/SoundEffect/mixkit-hand-receiving-a-basketball-2090.mp3"
     "ถึงแม้ว่าผู้รับลูกจะวิ่งด้วยความไวแต่เธอก็สามารถรับลูกที่เข้ามาหาเธออย่างสะเปะสะปะได้\nหลังจากลูกบอลถูกกระทบจากมือของฝ่ายตรงข้ามที่คว้าลูกไม่ทันราวกับมือของเธอมีแรงโน้มถ่วงอยู่ไม่มีผิด"
     
     scene school_gym_a at zoom_in with Dissolve(0.2)
     show lineeffect with Dissolve(0.2)
+    play sound  "audio/SoundEffect/basketball_dribble.ogg"
     "เอมิที่ได้ครองบอลอีกครั้งพุ่งทะยานเข้าหาใต้แป้นตัวเองอย่างไม่ลังเลเมื่อสมาชิกทีมโฮโนกะทุกทิ้งให้คล้อยหลังเธอ มันจึงเป็นจังหวะดีที่จะโต้กลับ"
     hide lineeffect with Dissolve(0.2)
     scene school_gym_a with Dissolve(0.2)
@@ -155,6 +157,7 @@ label q7_3:
     hide eimi_ouki with Dissolve(0.3)
 
     show basketball with Dissolve(0.5)
+    play sound "audio/SoundEffect/ball-hitting-the-net.mp3" volume 0.8
     "ฟึ่บบ!!"
     hide basketball with Dissolve(0.5)
     
