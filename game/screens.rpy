@@ -428,6 +428,7 @@ screen config_main():
         box_wrap True
         vbox:
             bar :
+                bar_invert True
                 value Preference("auto-forward time")
                 xsize 450
             xpos 1075
@@ -535,6 +536,7 @@ screen config():
         box_wrap True
         vbox:
             bar :
+                bar_invert True
                 value Preference("auto-forward time")
                 xsize 450
             xpos 1075
