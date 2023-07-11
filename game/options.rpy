@@ -203,29 +203,29 @@ init python:
   
 
     #buildPatch
-    build.classify("game/script_memory.rpy","patch")
-    build.classify("game/script10.rpy","patch")
-    build.classify("game/script10**.rpy","patch")
-    build.classify("game/script_memory.rpyc","patch")
-    build.classify("game/script10.rpyc","patch")
-    build.classify("game/script10**.rpyc","patch")
-    build.classify("game/images/CG/boob/**","patch")
-    build.classify("game/images/CG/sex/**","patch")
+    # build.classify("game/script_memory.rpy","patch")
+    # build.classify("game/script10.rpy","patch")
+    # build.classify("game/script10**.rpy","patch")
+    # build.classify("game/script_memory.rpyc","patch")
+    # build.classify("game/script10.rpyc","patch")
+    # build.classify("game/script10**.rpyc","patch")
+    # build.classify("game/images/CG/boob/**","patch")
+    # build.classify("game/images/CG/sex/**","patch")
 
     #build data
-    # build.classify("game/script_memory.rpy",None)
-    # build.classify("game/script10.rpy",None)
-    # build.classify("game/script10**.rpy",None)
-    # build.classify("game/script_memory.rpyc",None)
-    # build.classify("game/script10.rpyc",None)
-    # build.classify("game/script10**.rpyc",None)
-    # build.classify("game/images/CG/boob/**",None)
-    # build.classify("game/images/CG/sex/**",None)
+    build.classify("game/script_memory.rpy",None)
+    build.classify("game/script10.rpy",None)
+    build.classify("game/script10**.rpy",None)
+    build.classify("game/script_memory.rpyc",None)
+    build.classify("game/script10.rpyc",None)
+    build.classify("game/script10**.rpyc",None)
+    build.classify("game/images/CG/boob/**",None)
+    build.classify("game/images/CG/sex/**",None)
     #exclude
     build.classify("game/**.csv",None)
     build.classify("game/**.py",None)
     
-    # build.classify("game/**","data")
+    build.classify("game/**","data")
 
     ## To archive files, classify them as 'archive'.
 
